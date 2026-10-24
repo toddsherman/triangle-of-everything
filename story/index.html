@@ -124,11 +124,20 @@
   .playlist li { margin: 0 0 10px; padding-left: 4px; }
   .playlist li::marker { color: var(--red); }
 
+  /* the to-scale diagrams are tall (the chart is twice as high as it is wide), so they sit beside their text */
+  .walls-layout { display: grid; grid-template-columns: minmax(0, 330px) minmax(0, 1fr); gap: 36px; align-items: center; margin: 32px 0 28px; }
+  .walls-layout figure { margin: 0; }
+  .walls-layout .walls { margin: 0; }
+  .side-figure { display: grid; grid-template-columns: minmax(0, 300px) minmax(0, 1fr); gap: 36px; align-items: center; }
+  .side-figure figcaption { margin: 0; font-size: 14px; }
+
   /* diagram text */
-  .dg-label { font-family: var(--sans); font-size: 12px; fill: var(--ink); }
-  .dg-wall { font-family: var(--sans); font-size: 12px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
-  .dg-region { font-family: var(--sans); font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; fill: var(--stone); }
-  .dg-axis { font-family: var(--sans); font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; fill: var(--muted); }
+  .dg-label { font-family: var(--sans); font-size: 14px; fill: var(--ink); }
+  .dg-wall { font-family: var(--sans); font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
+  .dg-region { font-family: var(--sans); font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; fill: var(--stone); }
+  .dg-axis { font-family: var(--sans); font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; fill: var(--muted); }
+  .dg-tick { font-family: var(--sans); font-size: 12px; fill: var(--muted); }
+  .dg-strong { font-weight: 700; }
 
   /* ---- sources ---------------------------------------------------------- */
   .sources { font-family: var(--sans); font-size: 14px; line-height: 1.55; padding-left: 20px; color: #3A382F; }
@@ -150,6 +159,9 @@
     figure.wide { margin-left: -20px; margin-right: -20px; }
     figure.wide video { border-radius: 0; border-left: 0; border-right: 0; }
     figure.wide figcaption { padding: 0 20px; }
+    .walls-layout, .side-figure { grid-template-columns: minmax(0, 1fr); gap: 20px; }
+    .walls-layout figure svg { max-width: 330px; margin: 0 auto; }
+    .side-figure svg { max-width: 300px; margin: 0 auto; }
   }
 </style>
 </head>
@@ -187,68 +199,105 @@
   <h2 data-sanity-copy="walls_title">Three walls</h2>
   <p data-sanity-copy="walls_p1">Both axes are logarithmic, so each step along them is a factor of ten. On those axes, three lines fence everything in.</p>
 
-  <figure>
-    <svg viewBox="0 0 640 390" role="img" aria-label="Schematic of the triangle: the Schwarzschild wall above, the Compton wall below, the Hubble wall on the right, meeting at the Big Bang corner">
-      <rect x="40" y="20" width="580" height="350" fill="#E9E4D9" opacity=".45"/>
-      <polygon points="40,20 90,20 90,370 40,370" fill="#8D887E" opacity=".18"/>
-      <polygon points="90,20 620,20 620,25.7 90,215" fill="#B64832" opacity=".10"/>
-      <polygon points="90,215 620,361 620,370 90,370" fill="#31566B" opacity=".10"/>
-      <polygon points="580,40 620,25.7 620,361 580,350" fill="#8D887E" opacity=".14"/>
-      <polygon points="90,215 580,40 580,350" fill="#F4F1EA"/>
-      <line x1="90" y1="215" x2="620" y2="25.7" stroke="#B64832" stroke-width="2.5"/>
-      <line x1="90" y1="215" x2="620" y2="361" stroke="#31566B" stroke-width="2.5"/>
-      <line x1="580" y1="20" x2="580" y2="370" stroke="#1D1C19" stroke-width="2.5"/>
-      <line x1="40" y1="370" x2="620" y2="370" stroke="#8D887E"/>
-      <line x1="40" y1="20" x2="40" y2="370" stroke="#8D887E"/>
-      <text class="dg-wall" fill="#B64832" text-anchor="middle" transform="translate(330,122) rotate(-19.65) translate(0,-8)">Schwarzschild radius</text>
-      <text class="dg-wall" fill="#31566B" text-anchor="middle" transform="translate(330,281) rotate(15.4) translate(0,20)">Compton limit</text>
-      <text class="dg-wall" fill="#1D1C19" text-anchor="middle" transform="translate(596,195) rotate(90)">Hubble radius</text>
-      <text class="dg-region" x="230" y="58">Forbidden by gravity</text>
-      <text class="dg-region" x="200" y="352">Forbidden by quantum uncertainty</text>
-      <text class="dg-region" text-anchor="middle" transform="translate(66,110) rotate(-90)">Below the Planck length</text>
-      <circle cx="90" cy="215" r="6" fill="#1D1C19"/>
-      <text class="dg-label" x="98" y="244" font-weight="700">Big Bang</text>
-      <circle cx="440" cy="90" r="5" fill="#B64832"/><text class="dg-label" x="448" y="108">black hole</text>
-      <circle cx="200" cy="245" r="5" fill="#31566B"/><text class="dg-label" x="196" y="266" text-anchor="middle">proton</text>
-      <circle cx="240" cy="235" r="4.5" fill="#8D887E"/><text class="dg-label" x="248" y="230">atom</text>
-      <circle cx="322" cy="214" r="4.5" fill="#8D887E"/><text class="dg-label" x="330" y="218">virus</text>
-      <circle cx="388" cy="182" r="4.5" fill="#B58A43"/><text class="dg-label" x="396" y="186">you</text>
-      <circle cx="455" cy="140" r="4.5" fill="#B58A43"/><text class="dg-label" x="463" y="144">the Sun</text>
-      <circle cx="530" cy="88" r="4.5" fill="#8D887E"/><text class="dg-label" x="537" y="104">galaxy</text>
-      <circle cx="580" cy="40" r="6" fill="#1D1C19"/><text class="dg-label" x="570" y="36" text-anchor="end">observable universe</text>
-      <text class="dg-axis" x="616" y="386" text-anchor="end">Size →</text>
-      <text class="dg-axis" text-anchor="end" transform="translate(30,24) rotate(-90)">Mass →</text>
-    </svg>
-    <figcaption data-sanity-copy="walls_caption">A sketch of the chart. Black holes sit on the top wall and fundamental particles on the bottom one; everything else is somewhere in between.</figcaption>
-  </figure>
-
-  <ul class="walls">
-    <li style="--c: var(--red)"><strong data-sanity-copy="wall1_name">Schwarzschild radius</strong><span data-sanity-copy="wall1_text">Squeeze any mass inside this size and it becomes a black hole. Nothing can be denser, so nothing sits above the line, and every black hole sits right on it.</span></li>
-    <li style="--c: var(--blue)"><strong data-sanity-copy="wall2_name">Compton limit</strong><span data-sanity-copy="wall2_text">Quantum uncertainty smears a particle over a size set by its mass, and nothing can be pinned down any smaller. Fundamental particles sit on this line.</span></li>
-    <li style="--c: var(--ink)"><strong data-sanity-copy="wall3_name">Hubble radius</strong><span data-sanity-copy="wall3_text">The distance beyond which space recedes from us faster than light. Fill a sphere that wide at the universe's average density and it is exactly as dense as a black hole of the same size, which is why this wall meets the black-hole line at the top corner.</span></li>
-  </ul>
+  <div class="walls-layout">
+    <figure>
+      <!-- diagram:walls -->
+      <svg viewBox="0 0 369 613" role="img" aria-label="The chart drawn to scale: the black-hole wall rising at 45 degrees, the quantum wall falling at 45 degrees, the Hubble wall upright on the right, with a proton, an atom, a virus, a person, Earth, the Sun, a black hole and a galaxy inside">
+      <polygon points="50.0,572.8 356.6,572.8 356.6,10.0 50.0,10.0" fill="#E9E4D9" opacity="0.45"/>
+      <polygon points="50.0,572.8 73.1,572.8 73.1,10.0 50.0,10.0" fill="#8D887E" opacity="0.18"/>
+      <polygon points="329.0,572.8 356.6,572.8 356.6,10.0 329.0,10.0" fill="#8D887E" opacity="0.14"/>
+      <polygon points="73.1,291.2 354.4,10.0 73.1,10.0" fill="#B64832" opacity="0.1"/>
+      <polygon points="73.1,291.2 354.7,572.8 73.1,572.8" fill="#31566B" opacity="0.1"/>
+      <polygon points="73.1,291.2 329.0,35.4 329.0,547.1" fill="#F4F1EA"/>
+      <line x1="50.0" y1="572.8" x2="356.6" y2="572.8" stroke="#8D887E" stroke-width="1"/>
+      <line x1="50.0" y1="572.8" x2="50.0" y2="10.0" stroke="#8D887E" stroke-width="1"/>
+      <line x1="92.0" y1="572.8" x2="92.0" y2="577.8" stroke="#8D887E" stroke-width="1"/>
+      <text class="dg-tick" x="92.0" y="587.8" text-anchor="middle">10⁻³⁰</text>
+      <line x1="176.0" y1="572.8" x2="176.0" y2="577.8" stroke="#8D887E" stroke-width="1"/>
+      <text class="dg-tick" x="176.0" y="587.8" text-anchor="middle">10⁻¹⁰</text>
+      <line x1="260.0" y1="572.8" x2="260.0" y2="577.8" stroke="#8D887E" stroke-width="1"/>
+      <text class="dg-tick" x="260.0" y="587.8" text-anchor="middle">10¹⁰</text>
+      <line x1="344.0" y1="572.8" x2="344.0" y2="577.8" stroke="#8D887E" stroke-width="1"/>
+      <text class="dg-tick" x="344.0" y="587.8" text-anchor="middle">10³⁰</text>
+      <line x1="50.0" y1="509.8" x2="55.0" y2="509.8" stroke="#8D887E" stroke-width="1"/>
+      <text class="dg-tick" x="45.0" y="513.8" text-anchor="end">10⁻⁶⁰</text>
+      <line x1="50.0" y1="425.8" x2="55.0" y2="425.8" stroke="#8D887E" stroke-width="1"/>
+      <text class="dg-tick" x="45.0" y="429.8" text-anchor="end">10⁻⁴⁰</text>
+      <line x1="50.0" y1="341.8" x2="55.0" y2="341.8" stroke="#8D887E" stroke-width="1"/>
+      <text class="dg-tick" x="45.0" y="345.8" text-anchor="end">10⁻²⁰</text>
+      <line x1="50.0" y1="257.8" x2="55.0" y2="257.8" stroke="#8D887E" stroke-width="1"/>
+      <text class="dg-tick" x="45.0" y="261.8" text-anchor="end">10⁰</text>
+      <line x1="50.0" y1="173.8" x2="55.0" y2="173.8" stroke="#8D887E" stroke-width="1"/>
+      <text class="dg-tick" x="45.0" y="177.8" text-anchor="end">10²⁰</text>
+      <line x1="50.0" y1="89.8" x2="55.0" y2="89.8" stroke="#8D887E" stroke-width="1"/>
+      <text class="dg-tick" x="45.0" y="93.8" text-anchor="end">10⁴⁰</text>
+      <text class="dg-axis" x="356.6" y="607" text-anchor="end">Width (m) →</text>
+      <text class="dg-axis" text-anchor="end" transform="translate(12,10.0) rotate(-90)">Mass (kg) →</text>
+      <line x1="73.1" y1="291.2" x2="354.4" y2="10.0" stroke="#B64832" stroke-width="2.5"/>
+      <line x1="73.1" y1="291.2" x2="354.7" y2="572.8" stroke="#31566B" stroke-width="2.5"/>
+      <line x1="329.0" y1="572.8" x2="329.0" y2="10.0" stroke="#1D1C19" stroke-width="2.5"/>
+      <text class="dg-wall" fill="#B64832" text-anchor="middle" transform="translate(142.4,222.0) rotate(-45) translate(0,-8)">Schwarzschild radius</text>
+      <text class="dg-wall" fill="#31566B" text-anchor="middle" transform="translate(243.2,461.3) rotate(45) translate(0,17)">Compton limit</text>
+      <text class="dg-wall" fill="#1D1C19" text-anchor="middle" transform="translate(342.0,291.4) rotate(90)">Hubble radius</text>
+      <text class="dg-region" text-anchor="middle"><tspan x="134.0" y="64.6">Forbidden</tspan><tspan x="134.0" dy="13">by gravity</tspan></text>
+      <text class="dg-region" text-anchor="middle"><tspan x="150.8" y="501.4">Forbidden by</tspan><tspan x="150.8" dy="13">quantum uncertainty</tspan></text>
+      <text class="dg-region" text-anchor="middle" transform="translate(65.6,131.8) rotate(-90)">Below the Planck length</text>
+      <circle cx="165.9" cy="384.0" r="4.5" fill="#31566B"/>
+      <text class="dg-label" x="172.9" y="400.0" text-anchor="start">electron</text>
+      <circle cx="152.2" cy="370.3" r="4.5" fill="#31566B"/>
+      <text class="dg-label" x="145.2" y="374.3" text-anchor="end">proton</text>
+      <circle cx="178.0" cy="365.2" r="4.5" fill="#8D887E"/>
+      <text class="dg-label" x="186.0" y="369.2" text-anchor="start">atom</text>
+      <circle cx="188.6" cy="333.4" r="4.5" fill="#8D887E"/>
+      <text class="dg-label" x="196.6" y="337.4" text-anchor="start">virus</text>
+      <circle cx="219.0" cy="250.1" r="4.5" fill="#B58A43"/>
+      <text class="dg-label" x="227.0" y="254.1" text-anchor="start">you</text>
+      <circle cx="247.8" cy="153.7" r="4.5" fill="#8D887E"/>
+      <text class="dg-label" x="255.8" y="157.7" text-anchor="start">Earth</text>
+      <circle cx="256.4" cy="130.5" r="4.5" fill="#B58A43"/>
+      <text class="dg-label" x="264.4" y="134.5" text-anchor="start">the Sun</text>
+      <circle cx="279.3" cy="85.1" r="4.5" fill="#B64832"/>
+      <text class="dg-label" x="271.3" y="81.1" text-anchor="end">black hole</text>
+      <circle cx="306.1" cy="79.4" r="4.5" fill="#8D887E"/>
+      <text class="dg-label" x="306.1" y="98.4" text-anchor="middle">galaxy</text>
+      <circle cx="73.1" cy="291.2" r="5.5" fill="#1D1C19"/>
+      <text class="dg-label dg-strong" x="81.1" y="295.2">Big Bang</text>
+      <circle cx="329.0" cy="35.4" r="5" fill="#1D1C19"/>
+      <text class="dg-label" x="321.0" y="29.4" text-anchor="end">Hubble sphere</text>
+      </svg>
+      <!-- /diagram:walls -->
+      <figcaption data-sanity-copy="walls_caption">The chart drawn to scale, with a few real things at their real places. Black holes sit on the top wall and particles on the bottom one; everything else is in between.</figcaption>
+    </figure>
+    <ul class="walls">
+      <li style="--c: var(--red)"><strong data-sanity-copy="wall1_name">Schwarzschild radius</strong><span data-sanity-copy="wall1_text">Squeeze any mass inside this size and it becomes a black hole. Nothing can be denser, so nothing sits above the line, and every black hole sits right on it.</span></li>
+      <li style="--c: var(--blue)"><strong data-sanity-copy="wall2_name">Compton limit</strong><span data-sanity-copy="wall2_text">Quantum uncertainty smears a particle over a size set by its mass, and nothing can be pinned down any smaller. Fundamental particles sit on this line.</span></li>
+      <li style="--c: var(--ink)"><strong data-sanity-copy="wall3_name">Hubble radius</strong><span data-sanity-copy="wall3_text">The distance beyond which space recedes from us faster than light. Fill a sphere that wide at the universe's average density and it is exactly as dense as a black hole of the same size, which is why this wall meets the black-hole line at the top corner.</span></li>
+    </ul>
+  </div>
   <p data-sanity-copy="walls_p2">The two slanted walls meet at the Planck scale, the smallest size and the highest density physics can describe. That corner is the Big Bang.</p>
 
   <h2 data-sanity-copy="play_q_title">Could it play?</h2>
   <p data-sanity-copy="play_q_p1">The longer I looked, the more I wondered whether it could be more than a picture. The right-hand wall isn't fixed. The Hubble radius measures the universe at one moment, and it has been growing since the beginning. Wind the clock back and that wall slides down the black-hole line toward the corner, until all three walls meet at a single point.</p>
 
-  <figure>
-    <svg viewBox="0 0 640 290" role="img" aria-label="Three nested triangles sharing the Big Bang corner, their right-hand walls at a tiny fraction of a second, at one second and today">
-      <polygon points="70,150 590,35.6 590,254" fill="#E9E4D9"/>
-      <polygon points="70,150 439,68.8 439,223.8" fill="#D4CEC2" opacity=".7"/>
-      <polygon points="70,150 184,124.9 184,172.8" fill="#8D887E" opacity=".55"/>
-      <line x1="70" y1="150" x2="620" y2="29" stroke="#B64832" stroke-width="2"/>
-      <line x1="70" y1="150" x2="620" y2="260" stroke="#31566B" stroke-width="2"/>
-      <line x1="184" y1="124.9" x2="184" y2="172.8" stroke="#1D1C19" stroke-width="1.5" stroke-dasharray="4 3"/>
-      <line x1="439" y1="68.8" x2="439" y2="223.8" stroke="#1D1C19" stroke-width="1.5" stroke-dasharray="4 3"/>
-      <line x1="590" y1="35.6" x2="590" y2="254" stroke="#1D1C19" stroke-width="2.5"/>
-      <circle cx="70" cy="150" r="5" fill="#1D1C19"/>
-      <text class="dg-label" x="62" y="154" text-anchor="end" font-weight="700">Big Bang</text>
-      <text class="dg-label" x="184" y="192" text-anchor="middle">10⁻³⁰ seconds</text>
-      <text class="dg-label" x="439" y="243" text-anchor="middle">1 second</text>
-      <text class="dg-label" x="590" y="274" text-anchor="middle" font-weight="700">today</text>
-    </svg>
-    <figcaption data-sanity-copy="grow_caption">The Hubble wall at three moments, roughly to scale on the chart's log axes. Most of the widening happens in the first second.</figcaption>
+  <figure class="side-figure">
+    <!-- diagram:growth -->
+      <svg viewBox="0 0 315 479" role="img" aria-label="The triangle at three moments, to scale: tiny at 10 to the minus 30 seconds, most of its final size by one second, and today">
+      <polygon points="74.3,230.9 281.5,23.7 281.5,438.0" fill="#E9E4D9"/>
+      <polygon points="74.3,230.9 222.5,82.7 222.5,379.0" fill="#D4CEC2" opacity="0.75"/>
+      <polygon points="74.3,230.9 120.5,184.7 120.5,277.0" fill="#8D887E" opacity="0.55"/>
+      <line x1="74.3" y1="230.9" x2="295.2" y2="10.0" stroke="#B64832" stroke-width="2"/>
+      <line x1="74.3" y1="230.9" x2="292.1" y2="448.6" stroke="#31566B" stroke-width="2"/>
+      <line x1="120.5" y1="184.7" x2="120.5" y2="277.0" stroke="#1D1C19" stroke-width="1.5" stroke-dasharray="4 3"/>
+      <text class="dg-label" x="114.5" y="293.0" text-anchor="end">10⁻³⁰ seconds</text>
+      <line x1="222.5" y1="82.7" x2="222.5" y2="379.0" stroke="#1D1C19" stroke-width="1.5" stroke-dasharray="4 3"/>
+      <text class="dg-label" x="216.5" y="395.0" text-anchor="end">1 second</text>
+      <line x1="281.5" y1="23.7" x2="281.5" y2="438.0" stroke="#1D1C19" stroke-width="2.5"/>
+      <text class="dg-label dg-strong" x="275.5" y="454.0" text-anchor="end">today</text>
+      <circle cx="74.3" cy="230.9" r="5" fill="#1D1C19"/>
+      <text class="dg-label dg-strong" x="65.3" y="235.9" text-anchor="end">Big Bang</text>
+      </svg>
+    <!-- /diagram:growth -->
+    <figcaption data-sanity-copy="grow_caption">The triangle at three moments, to scale. On the chart's log axes, most of the widening happens in the first second.</figcaption>
   </figure>
 
   <p data-sanity-copy="play_q_p2">So the chart isn't only a map of everything. It's one frame of a triangle that has been opening for 13.8 billion years. I wanted to watch it open: to press play at the Big Bang and see each kind of thing appear when it first existed.</p>
@@ -257,7 +306,7 @@
   <p data-sanity-copy="data_p1">A chart you can play needs data, not pixels. Working with Claude Code, I transcribed the chart, and an illustrated poster version of it, into datasets: 53 objects, the 17 entries of its stellar-evolution inset, 19 particles, the timeline of cosmic eras, and 33 points from Lineweaver and Patel's chart.</p>
   <p data-sanity-copy="data_p2">Then I stopped trusting the artwork. Every wall, density line and time line is drawn from its equation with exact constants. Black holes are placed from their mass by the Schwarzschild formula and particles by their Compton wavelength, so a dot that belongs on a wall stays on it even zoomed in 150 times. Checking everything that way turned up 14 places where the poster contradicts itself or physics, from a mislabelled mass axis to a legend that swaps leptons and hadrons. They're listed beside the chart.</p>
   <p data-sanity-copy="data_p3">The motion comes from cosmology. Using the Planck 2018 model of the expanding universe, I worked out 701 moments from the instant the walls meet to today: how dense the universe was, how wide its Hubble sphere and observable universe were, and how hot it was. Every object carries the date it first existed, and at each moment the chart draws only what existed then and fit inside the universe of the time.</p>
-  <p data-sanity-copy="data_p4">Later I added all 118 elements, with masses and sizes from PubChem and the cosmic source of each one's atoms: the Big Bang for hydrogen and helium, exploding stars for oxygen and iron, merging neutron stars for gold, and laboratories for the last two dozen.</p>
+  <p data-sanity-copy="data_p4">Later I added all 118 elements as dots on the triangle, with masses and sizes from PubChem and the cosmic source of each one's atoms: the Big Bang for hydrogen and helium, exploding stars for oxygen and iron, merging neutron stars for gold, and laboratories for the last two dozen.</p>
 
   <figure class="wide">
     <img src="assets/early.webp" width="1600" height="1000" loading="lazy" alt="The interactive chart at 380,000 years after the Big Bang: a small triangle with particles, hydrogen and helium atoms, and the background light glowing in the infrared">
@@ -273,12 +322,7 @@
     <li data-sanity-copy="playing_li4">Nothing is drawn beyond the Hubble wall of the moment, so the chart only ever shows a universe that could exist then.</li>
     <li data-sanity-copy="playing_li5">A Shepard tone rises underneath without end. Each new arrival gets a ring that closes in on it and a pop pitched by its mass: particles ring high and galaxies low.</li>
   </ul>
-  <p data-sanity-copy="playing_p2">From the triangle you can open views of stellar evolution, the particle zoo, the periodic table and the timeline.</p>
-
-  <figure class="wide">
-    <img src="assets/elements.webp" width="1600" height="1000" loading="lazy" alt="The periodic table view, each element coloured by where its atoms are made, with gold selected and its details in the sidebar">
-    <figcaption data-sanity-copy="elements_caption">The periodic table, coloured by where each element's atoms are made. Gold comes from merging neutron stars.</figcaption>
-  </figure>
+  <p data-sanity-copy="playing_p2">From the triangle you can open views of stellar evolution, the particle zoo and the timeline.</p>
 
   <div class="actions">
     <a class="button primary" href="../site/"><span data-sanity-copy="cta_play_end">Play the universe</span>&nbsp;&rarr;</a>

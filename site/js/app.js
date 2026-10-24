@@ -3,16 +3,15 @@ import { createTriangle, TRIANGLE_LAYERS } from "./triangle.js";
 import { createStars, STARS_LAYERS } from "./stars.js";
 import { createParticles, PARTICLE_LAYERS, PARTICLE_CLASSES } from "./particles.js";
 import { createTimeline } from "./timeline.js";
-import { createElements, ELEMENT_LAYERS, elementLegend } from "./elements.js";
 import { renderIntro, renderDetails } from "./details.js";
 import { createCosmicClock } from "./cosmictime.js";
 import { createSound } from "./sound.js";
 import { esc, sci, friendlyLength } from "./format.js";
 
 const $ = (s) => document.querySelector(s);
-const VIEWS = ["triangle", "stars", "particles", "elements", "timeline"];
-const LAYERS = { triangle: TRIANGLE_LAYERS, stars: STARS_LAYERS, particles: PARTICLE_LAYERS, elements: ELEMENT_LAYERS, timeline: [] };
-const FACTORIES = { triangle: createTriangle, stars: createStars, particles: createParticles, elements: createElements, timeline: createTimeline };
+const VIEWS = ["triangle", "stars", "particles", "timeline"];
+const LAYERS = { triangle: TRIANGLE_LAYERS, stars: STARS_LAYERS, particles: PARTICLE_LAYERS, timeline: [] };
+const FACTORIES = { triangle: createTriangle, stars: createStars, particles: createParticles, timeline: createTimeline };
 const LEGEND_GROUPS = Object.keys(GROUPS).filter((g) => !["time", "erratum", "boundary"].includes(g));
 
 const state = { view: "triangle", selected: null, hidden: new Set(), tour: -1 };
@@ -68,7 +67,7 @@ async function boot() {
 }
 
 // ------------------------------------------------------------------------------------------ views
-// The triangle is home; Stars, Particles, Elements and Timeline open from it (zoom boxes, the time bar, details, search)
+// The triangle is home; Stars, Particles and Timeline open from it (zoom boxes, the time bar, details, search)
 const canShow = (it, view) => it.views.includes(view);
 const bestView = (it) => (canShow(it, state.view) ? state.view : it.views[0] ?? it.relatedView ?? state.view);
 
@@ -400,11 +399,6 @@ function renderLegend() {
   const el = $("#legend");
   if (state.view === "particles") {
     el.innerHTML = PARTICLE_CLASSES.map((c) => `<button disabled><span class="dot" style="--c:${c.color}"></span>${esc(c.label)}</button>`).join("");
-    return;
-  }
-  if (state.view === "elements") {
-    el.innerHTML = elementLegend(data, layerState.elements.origin).map((c) => `<button disabled>
-      <span class="dot" style="--c:${c.color}"></span>${esc(c.label)}<span class="count">${c.count}</span></button>`).join("");
     return;
   }
   el.innerHTML = LEGEND_GROUPS.filter((g) => counts[g]).map((id) => `<button data-group="${id}" aria-pressed="${!state.hidden.has(id)}">

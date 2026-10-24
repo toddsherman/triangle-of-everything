@@ -1,10 +1,15 @@
 // Renders the sidebar details panel for any item type.
 
 import { GROUPS } from "./data.js";
-import { ELEMENT_ORIGINS } from "./elements.js";
 import { esc, sci, friendlyMass, friendlyLength, friendlyEnergy, friendlyTime, compare } from "./format.js";
 
 const LOG_MSUN = 30.2986;
+
+// where an element's atoms come from (elements.json -> sources)
+const ELEMENT_ORIGINS = {
+  big_bang: "#6ea8ff", cosmic_rays: "#f07ad8", massive_stars: "#7ee081", low_mass_stars: "#ffd166",
+  white_dwarfs: "#4dd6c9", neutron_star_mergers: "#b48cff", decay: "#ff8c69", laboratory: "#8a8799",
+};
 const LOG_EV_KG = -35.749;
 
 const IDENT = {
@@ -27,9 +32,8 @@ export function renderIntro(el, data) {
       <p>The walls meet at the <strong>Big Bang</strong>. Press <strong>&#9654;</strong> or drag the time bar to watch the
          triangle grow from that instant to today, with each thing appearing when it first existed.</p>
       <p>Click any dot, or take the <strong>scale tour</strong> from smallest to largest. The <strong>Open Stars</strong> and
-         <strong>Open Particles</strong> boxes zoom into stellar evolution and the particle zoo, any element's
-         <strong>Show in Elements</strong> opens the periodic table, and <strong>Timeline &#8250;</strong> lays cosmic history
-         out end to end.</p>
+         <strong>Open Particles</strong> boxes zoom into stellar evolution and the particle zoo, and <strong>Timeline &#8250;</strong>
+         lays cosmic history out end to end.</p>
       <p class="note">${n("object")} objects · ${data.elements.elements.length} elements · ${n("stellar")} stellar-evolution entries · ${n("particle")} particles ·
          ${n("time") + n("era")} timeline entries · ${n("lp")} extra Lineweaver &amp; Patel points · ${n("erratum")} poster errors</p>
     </div>`;
@@ -188,7 +192,7 @@ function origins(e, data) {
     ${e.origin_note ? `<p class="note">${esc(e.origin_note)}</p>` : ""}`;
 }
 
-/** For a main-chart atom that is also an element of the periodic table (oxygen, helium). */
+/** For a main-chart atom that is also one of the elements (oxygen, helium). */
 function elementFacts(it, data) {
   const e = it.element;
   if (!e) return "";
@@ -229,7 +233,7 @@ export function renderDetails(el, it, data, { canShow, onSelect, onShowIn, onSho
     for (const k of [`time:${it.raw.from_marker}`, `time:${it.raw.to_marker}`]) if (data.byKey.has(k)) links.push(data.byKey.get(k));
   }
   const views = [["triangle", "Show on the triangle"], ["stars", "Show in Stars"], ["particles", "Show in Particles"],
-    ["elements", "Show in Elements"], ["timeline", "Show on the timeline"]].filter(([v]) => canShow(it, v));
+    ["timeline", "Show on the timeline"]].filter(([v]) => canShow(it, v));
   if (it.type === "erratum") views.push([it.relatedView, `Open ${it.relatedView[0].toUpperCase()}${it.relatedView.slice(1)}`]);
 
   el.innerHTML = `

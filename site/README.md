@@ -16,8 +16,8 @@ Then open <http://localhost:8642/site/>. Opening `index.html` straight from disk
 
 ## Layout
 
-The **Triangle** is the home view, and the cosmic-time bar is always along its bottom. The page opens on today, paused. **Stars**, **Particles**, **Elements** and **Timeline** are reached from the triangle instead of from tabs:
-- the **Open Stars ›** and **Open Particles ›** zoom boxes on the chart. The Stars box covers only the stars, stellar remnants, brown dwarfs and stellar black holes, not the planets that the Stars view also lists. The elements have no box; any element's **Show in Elements** opens the periodic table.
+The **Triangle** is the home view, and the cosmic-time bar is always along its bottom. The page opens on today, paused. **Stars**, **Particles** and **Timeline** are reached from the triangle instead of from tabs:
+- the **Open Stars ›** and **Open Particles ›** zoom boxes on the chart. The Stars box covers only the stars, stellar remnants, brown dwarfs and stellar black holes, not the planets that the Stars view also lists.
 - the **Timeline ›** button at the right end of the time bar
 - an item's details ("Show in Stars", "Show on the timeline" …), search results and deep links
 
@@ -39,7 +39,7 @@ A **‹ Triangle** button at the top left of those views goes back. The brand li
   The Hubble radius (solid) and the observable universe's edge (dashed particle horizon, about 3.2× wider) are both clickable. Each opens an explanation of what it is and why the two differ.
 - **Stars.** Diameter against mass (in solar masses), with the black-hole region, the main-sequence band, the TOV and Chandrasekhar limits, the water-density line, and evolution arrows between objects.
 - **Particles.** A mass ladder by family (quarks, leptons, bosons, hadrons). Neutrinos show as upper limits, the photon sits in a massless row, and decays and combinations are drawn as arcs that light up for the selected particle.
-- **Elements.** The periodic table, coloured by where each element's atoms are made (the Big Bang, exploding massive stars, merging neutron stars, laboratories …), with a stripe along the bottom of each cell for every source. Turning off its one layer colours it by kind (alkali metal, noble gas …) instead. All 118 atoms are also dots on the triangle, by van der Waals diameter and atomic mass; zoomed in, they show the periodic pattern, with the alkali metals the widest of each period. Oxygen and helium are the poster's own atom dots, so they aren't drawn twice, and they're drawn at the same small size as the other atoms. In cosmic time, hydrogen, helium and lithium atoms appear at recombination, the elements forged in stars from ~200 million years on, and the lab-made elements in the last 82 years.
+- **Elements.** All 118 atoms are dots on the triangle, by van der Waals diameter and atomic mass, with no view of their own. Each one's details say where its atoms are made (the Big Bang, exploding massive stars, merging neutron stars, laboratories …); zoomed in, they show the periodic pattern, with the alkali metals the widest of each period. Oxygen and helium are the poster's own atom dots, so they aren't drawn twice, and they're drawn at the same small size as the other atoms. In cosmic time, hydrogen, helium and lithium atoms appear at recombination, the elements forged in stars from ~200 million years on, and the lab-made elements in the last 82 years.
 - **Timeline.** A log-time axis that compares the poster's era brackets with when things actually happened, shows every marked moment, and has a second axis for the universe's mean density.
 
 Every dot is plotted at its true value. Where the original artwork puts something elsewhere, the details panel gives the poster's value next to the real one, and the **poster errors** list collects the big mistakes.
@@ -66,7 +66,6 @@ The views share one selection. Clicking anything opens its details: the poster's
 | `js/data.js` | Loads the JSON and turns every dataset into one list of items (key, group, colour, views, true positions, the poster's drawn values for comparison) |
 | `js/chart.js` | Shared zoomable log-log scatter: axes, points, collision-free labels, tooltips, camera fitting |
 | `js/triangle.js`, `js/stars.js`, `js/particles.js` | Each view's positions and data-drawn layers |
-| `js/elements.js` | The periodic table view and its colours |
 | `js/timeline.js` | The timeline (log-time axis) |
 | `js/cosmictime.js` | The cosmic-time clock: story-scale slider mapping, interpolation of the history table, readout labels |
 | `js/sound.js` | The Shepard tone and the pops, in Web Audio |

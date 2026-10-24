@@ -84,7 +84,7 @@ export function createTriangle({ svgEl, tooltipEl, data, onSelect, onOpenView, o
     position,
     priority: (it) => ({ object: it.raw?.labeled_on_chart ? 100 : 40, particle: 70, stellar: 60, lp: 5,
       element: FAMILIAR.has(it.id) ? 30 : 10 }[it.type] ?? 0) - (it.hypothetical ? 30 : 0),
-    // atoms (including the poster's oxygen and helium) are small dots, like the rest of the periodic table
+    // atoms (including the poster's oxygen and helium) are small dots, like the other elements
     radius: (it) => (it.type === "element" || it.element || it.type === "lp" ? 3.5 : it.type === "object" ? 5.5 : 4.5),
     pointClass: (it) => `${it.type === "lp" ? "lp" : ""} ${it.hypothetical && it.type !== "lp" ? "hyp" : ""}`,
     tooltip: (d, p) => {

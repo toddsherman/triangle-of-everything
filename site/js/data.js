@@ -121,13 +121,13 @@ export async function loadData() {
     });
   }
 
-  // the periodic table: one item per element, except where a main-chart atom already is it (folded in below)
+  // the 118 elements: one item each, except where a main-chart atom already is it (folded in below)
   for (const e of elements.elements) {
     if (e.same_as) continue;
     const r = e.reference;
     add({
       key: `element:${e.id}`, type: "element", id: e.id, name: e.name, symbol: e.symbol,
-      group: "chemistry", categoryLabel: e.kind, views: ["elements", "triangle"],
+      group: "chemistry", categoryLabel: e.kind, views: ["triangle"],
       real: pos(r.log10_width_m, r.log10_mass_kg), raw: e,
     });
   }
@@ -184,7 +184,6 @@ export async function loadData() {
     target.element = e;
     target.symbol = e.symbol;
     target.search += ` ${e.name} ${e.symbol}`.toLowerCase();
-    target.views.push("elements");
     byKey.set(`element:${e.id}`, target);
   }
   // the other Lineweaver & Patel points join the item that already stands for them: their reading shows in its

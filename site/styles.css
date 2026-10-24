@@ -328,20 +328,6 @@ button:focus-visible, input:focus-visible { outline: 2px solid var(--focus); out
 .chart .light-peak { fill: #fff; stroke-width: 3; filter: drop-shadow(0 0 6px rgba(255, 255, 255, .85)); pointer-events: none; }
 .chart .light-peak-label { fill: #fff; font-size: 11px; paint-order: stroke; stroke: #0b0612; stroke-width: 3px; }
 
-/* periodic table (Elements view) */
-.chart .el { cursor: pointer; }
-.chart .el-box { fill-opacity: .36; stroke-opacity: .9; stroke-width: 1; }
-.chart .el:hover .el-box { fill-opacity: .55; }
-.chart .el.selected .el-box { fill-opacity: .6; stroke: #fff; stroke-opacity: 1; stroke-width: 2.5; }
-.chart .el.lab .el-box { stroke-dasharray: 3 2; }
-.chart .el text { pointer-events: none; }
-.chart .el-z { fill: var(--muted); }
-.chart .el-sym { fill: #fff; font-weight: 700; paint-order: stroke; stroke: rgba(11,6,18,.55); stroke-width: 2px; }
-.chart .el-name { fill: #d8d2e6; }
-.chart .el-nums text { fill: var(--faint); }
-.chart .el-nums .el-ph { fill: var(--muted); }
-.chart .el-caption-title { fill: var(--text); font-weight: 700; }
-.chart .el-caption-sub { fill: var(--muted); }
 .details .origins { list-style: none; margin: 6px 0 0; padding: 0; }
 .details .origins li { margin: 0 0 8px; }
 .details .origins .sub { display: block; color: var(--faint); font-size: 12px; margin: 2px 0 0 16px; }
