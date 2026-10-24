@@ -186,7 +186,7 @@ export function createTriangle({ svgEl, tooltipEl, data, onSelect, onOpenView, o
     });
     gT.selectAll("text").data(timeLabels, (d) => d.id).join("text").attr("class", "time-label")
       .attr("x", (d) => d.lx).attr("y", (d) => d.ly).attr("text-anchor", "end")
-      .text((d) => d.printed_text ?? friendlyTime(d.seconds));
+      .text((d) => (d.seconds < 1 ? friendlyTime(d.seconds) : d.printed_text ?? friendlyTime(d.seconds)));   // units, not exponents
 
     // --- cosmic-time mode: the universe's mean density at this moment, drawn up to the Hubble corner
     const gNow = layer(mid, "cosmic-now", past);

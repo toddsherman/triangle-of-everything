@@ -96,7 +96,7 @@ export function createTimeline({ svgEl, tooltipEl, data, onSelect }) {
     const lanes = [];
     const placed = [...markers].sort((a, b) => a.raw.log10_seconds - b.raw.log10_seconds).map((m) => {
       const x = zx(m.raw.log10_seconds);
-      const label = m.raw.printed_text ?? friendlyTime(m.raw.seconds);
+      const label = m.raw.seconds < 1 ? friendlyTime(m.raw.seconds) : m.raw.printed_text ?? friendlyTime(m.raw.seconds);
       const w = textWidth(label) + 14;
       const flip = x + w > margin.left + pw;          // near the right edge: put the label on the left
       const start = flip ? x - w : x;

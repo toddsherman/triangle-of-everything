@@ -142,9 +142,9 @@ def growth_diagram():
         return hist[-1][3]
 
     f = Frame((-54, 34), (-72, 57), 3.4, (8, 10, 8, 30))   # room left of the corner for its label
-    moments = [(hub_at(1e-30), "10⁻³⁰ seconds"), (hub_at(1), "1 second"), (HUB, "today")]
+    moments = [(hub_at(1e-18), "1 attosecond"), (hub_at(1), "1 second"), (HUB, "today")]
     fills = [(STONE, 0.55), ("#D4CEC2", 0.75), (PAPER_DEEP, 1)]
-    out = [f'<svg viewBox="0 0 {f.w:.0f} {f.h:.0f}" role="img" aria-label="The triangle at three moments, to scale: tiny at 10 to the minus 30 seconds, most of its final size by one second, and today">']
+    out = [f'<svg viewBox="0 0 {f.w:.0f} {f.h:.0f}" role="img" aria-label="The triangle at three moments, to scale: small at one attosecond, most of its final size by one second, and today">']
     for (h, _), (fill, op) in reversed(list(zip(moments, fills))):
         out.append(f.poly([P, (h, h + S), (h, C - h)], fill, op))
     out.append(f.line(P, (f.yr[1] - S, f.yr[1]), RED, 2))

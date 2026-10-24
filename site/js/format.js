@@ -64,11 +64,25 @@ export function friendlyEnergy(logEv) {
 }
 
 const YEAR = 3.156e7;
+// Times under a second get the largest SI unit that keeps the number at 1 or more, down to the smallest SI
+// prefix (quecto, 10^-30 s). Before that SI runs out, and the natural unit is the Planck time.
+const PLANCK_TIME = 5.391247e-44;
+const SI_TIMES = [[1e-3, "millisecond"], [1e-6, "microsecond"], [1e-9, "nanosecond"], [1e-12, "picosecond"],
+  [1e-15, "femtosecond"], [1e-18, "attosecond"], [1e-21, "zeptosecond"], [1e-24, "yoctosecond"],
+  [1e-27, "rontosecond"], [1e-30, "quectosecond"]];
+const count = (n, unit) => {
+  const text = n >= 1e6 ? longCompact.format(n) : plain.format(n);   // 18.6 million, 1,860, 3.74
+  return `${text} ${unit}${text === "1" ? "" : "s"}`;
+};
+
 export function friendlyTime(seconds) {
   if (seconds == null) return "";
   const lg = Math.log10(seconds);
-  if (seconds < 1) return `${sci(lg)} seconds`;
-  if (seconds < 120) return `${plain.format(seconds)} seconds`;
+  if (seconds < 1) {
+    const si = SI_TIMES.find(([unit]) => seconds >= unit * 0.9995);   // 999.6 fs reads as 1 picosecond
+    return si ? count(seconds / si[0], si[1]) : count(seconds / PLANCK_TIME, "Planck time");
+  }
+  if (seconds < 120) return count(seconds, "second");
   if (seconds < 7200) return `${plain.format(seconds / 60)} minutes`;
   if (seconds < YEAR) return `${plain.format(seconds / 86400)} days`;
   const ly = lg - Math.log10(YEAR);

@@ -857,7 +857,7 @@
         "seconds_after_big_bang": 2.47680215449183e-22,
         "years_ago": null,
         "log10_seconds": -21.606109,
-        "label": "10^-22 seconds after the Big Bang",
+        "label": "248 yoctoseconds after the Big Bang",
         "basis": "physics",
         "confidence": "low",
         "note": "If primordial black holes exist, one forms when its mass fits inside the horizon: t ~ GM/c^3."
@@ -3286,7 +3286,7 @@
         "seconds_after_big_bang": 1e-12,
         "years_ago": null,
         "log10_seconds": -12.0,
-        "label": "10^-12 seconds after the Big Bang",
+        "label": "1 picosecond after the Big Bang",
         "basis": "first_of_its_kind",
         "confidence": "medium",
         "note": "Quarks, leptons and the W and Z gained their masses when the Higgs field switched on, ~10^-12 s after the Big Bang."
@@ -3353,7 +3353,7 @@
         "seconds_after_big_bang": 1e-36,
         "years_ago": null,
         "log10_seconds": -36.0,
-        "label": "10^-36 seconds after the Big Bang",
+        "label": "18.5 million Planck times after the Big Bang",
         "basis": "first_of_its_kind",
         "confidence": "low",
         "note": "Hypothetical: would belong to the grand-unification era, before ~10^-36 s."

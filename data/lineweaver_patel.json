@@ -1395,7 +1395,7 @@
         "seconds_after_big_bang": 1e-12,
         "years_ago": null,
         "log10_seconds": -12.0,
-        "label": "10^-12 seconds after the Big Bang",
+        "label": "1 picosecond after the Big Bang",
         "basis": "first_of_its_kind",
         "confidence": "medium",
         "note": "Quarks, leptons and the W and Z gained their masses when the Higgs field switched on, ~10^-12 s after the Big Bang."
@@ -1450,7 +1450,7 @@
         "seconds_after_big_bang": 1e-12,
         "years_ago": null,
         "log10_seconds": -12.0,
-        "label": "10^-12 seconds after the Big Bang",
+        "label": "1 picosecond after the Big Bang",
         "basis": "first_of_its_kind",
         "confidence": "medium",
         "note": "Quarks, leptons and the W and Z gained their masses when the Higgs field switched on, ~10^-12 s after the Big Bang."
@@ -1505,7 +1505,7 @@
         "seconds_after_big_bang": 1e-12,
         "years_ago": null,
         "log10_seconds": -12.0,
-        "label": "10^-12 seconds after the Big Bang",
+        "label": "1 picosecond after the Big Bang",
         "basis": "first_of_its_kind",
         "confidence": "medium",
         "note": "Quarks, leptons and the W and Z gained their masses when the Higgs field switched on, ~10^-12 s after the Big Bang."
@@ -1560,7 +1560,7 @@
         "seconds_after_big_bang": 1e-12,
         "years_ago": null,
         "log10_seconds": -12.0,
-        "label": "10^-12 seconds after the Big Bang",
+        "label": "1 picosecond after the Big Bang",
         "basis": "first_of_its_kind",
         "confidence": "medium",
         "note": "Quarks, leptons and the W and Z gained their masses when the Higgs field switched on, ~10^-12 s after the Big Bang."
@@ -1615,7 +1615,7 @@
         "seconds_after_big_bang": 1e-12,
         "years_ago": null,
         "log10_seconds": -12.0,
-        "label": "10^-12 seconds after the Big Bang",
+        "label": "1 picosecond after the Big Bang",
         "basis": "first_of_its_kind",
         "confidence": "medium",
         "note": "Quarks, leptons and the W and Z gained their masses when the Higgs field switched on, ~10^-12 s after the Big Bang."
@@ -1670,7 +1670,7 @@
         "seconds_after_big_bang": 1e-12,
         "years_ago": null,
         "log10_seconds": -12.0,
-        "label": "10^-12 seconds after the Big Bang",
+        "label": "1 picosecond after the Big Bang",
         "basis": "first_of_its_kind",
         "confidence": "medium",
         "note": "Quarks, leptons and the W and Z gained their masses when the Higgs field switched on, ~10^-12 s after the Big Bang."
@@ -1722,7 +1722,7 @@
         "seconds_after_big_bang": 1e-12,
         "years_ago": null,
         "log10_seconds": -12.0,
-        "label": "10^-12 seconds after the Big Bang",
+        "label": "1 picosecond after the Big Bang",
         "basis": "first_of_its_kind",
         "confidence": "medium",
         "note": "Quarks, leptons and the W and Z gained their masses when the Higgs field switched on, ~10^-12 s after the Big Bang."
@@ -1765,7 +1765,7 @@
         "seconds_after_big_bang": 1e-12,
         "years_ago": null,
         "log10_seconds": -12.0,
-        "label": "10^-12 seconds after the Big Bang",
+        "label": "1 picosecond after the Big Bang",
         "basis": "first_of_its_kind",
         "confidence": "medium",
         "note": "Light as we know it separated from the weak force at the electroweak transition."
@@ -1820,7 +1820,7 @@
         "seconds_after_big_bang": 5.39e-44,
         "years_ago": null,
         "log10_seconds": -43.268411,
-        "label": "10^-43 seconds after the Big Bang",
+        "label": "1 Planck time after the Big Bang",
         "basis": "physics",
         "confidence": "high",
         "note": "The Planck time, the earliest moment physics can describe."
@@ -1875,7 +1875,7 @@
         "seconds_after_big_bang": 3.580068338371692e-24,
         "years_ago": null,
         "log10_seconds": -23.446109,
-        "label": "10^-23 seconds after the Big Bang",
+        "label": "3.58 yoctoseconds after the Big Bang",
         "basis": "physics",
         "confidence": "low",
         "note": "Hypothetical primordial black hole; t ~ GM/c^3."
@@ -1927,7 +1927,7 @@
         "seconds_after_big_bang": 1.1151118687294156e-13,
         "years_ago": null,
         "log10_seconds": -12.952682,
-        "label": "10^-13 seconds after the Big Bang",
+        "label": "112 femtoseconds after the Big Bang",
         "basis": "physics",
         "confidence": "low",
         "note": "Hypothetical: only a primordial black hole could be this light; t ~ GM/c^3."

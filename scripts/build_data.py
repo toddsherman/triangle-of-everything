@@ -1035,6 +1035,30 @@ for _pid in ("proton", "neutron", "meson"):
                                           "Quarks bound into protons, neutrons and mesons about a microsecond after the Big Bang.")
 
 
+PLANCK_TIME_S = 5.391247e-44
+# Under a second: the largest SI unit that keeps the number at 1 or more, down to the smallest SI prefix
+# (quecto, 10^-30 s); before that SI runs out and the natural unit is the Planck time. Same rule as the site.
+SI_TIMES = ((1e-3, "millisecond"), (1e-6, "microsecond"), (1e-9, "nanosecond"), (1e-12, "picosecond"),
+            (1e-15, "femtosecond"), (1e-18, "attosecond"), (1e-21, "zeptosecond"), (1e-24, "yoctosecond"),
+            (1e-27, "rontosecond"), (1e-30, "quectosecond"))
+
+
+def _count(n, unit):
+    """3 significant digits, in words above a million: '18.5 million Planck times', '1 picosecond'."""
+    for div, word in ((1e12, " trillion"), (1e9, " billion"), (1e6, " million")):
+        if n >= div:
+            return f"{float(f'{n / div:.3g}'):g}{word} {unit}s"
+    text = f"{float(f'{n:.3g}'):,.10g}"
+    return f"{text} {unit}{'' if text == '1' else 's'}"
+
+
+def short_time_label(seconds):
+    for unit, name in SI_TIMES:
+        if seconds >= unit * 0.9995:
+            return _count(seconds / unit, name)
+    return _count(seconds / PLANCK_TIME_S, "Planck time")
+
+
 def _when_label(seconds, years_ago):
     if years_ago is not None and years_ago < 6e9:
         for div, unit in ((1e9, "billion years ago"), (1e6, "million years ago"), (1e3, "thousand years ago")):
@@ -1047,8 +1071,8 @@ def _when_label(seconds, years_ago):
     if yrs >= 1e3: return f"{yrs / 1e3:.3g} thousand years after the Big Bang"
     if seconds >= 3600: return f"{seconds / 3600:.3g} hours after the Big Bang"
     if seconds >= 60: return f"{seconds / 60:.3g} minutes after the Big Bang"
-    if seconds >= 1: return f"{seconds:.3g} seconds after the Big Bang"
-    return f"10^{math.log10(seconds):.0f} seconds after the Big Bang"
+    if seconds >= 1: return f"{_count(seconds, 'second')} after the Big Bang"
+    return f"{short_time_label(seconds)} after the Big Bang"
 
 
 def first_appeared(key, mass_kg=None):

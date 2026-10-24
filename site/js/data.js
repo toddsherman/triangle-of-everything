@@ -2,6 +2,7 @@
 // Each item lists the views it appears in; positions are log10 values (w = width in m, m = mass in kg).
 // Anything whose width follows from its mass (black holes, particles) is computed here with the same
 // constants the chart uses for its walls, so it sits exactly on them at any zoom.
+import { friendlyTime } from "./format.js";
 
 export const GROUPS = {
   cosmic: { label: "Universe & galaxies", color: "#8fa8ff" },
@@ -157,7 +158,7 @@ export async function loadData() {
 
   for (const t of timeline.markers) {
     add({
-      key: `time:${t.id}`, type: "time", id: t.id, name: t.printed_text ?? `10${t.printed_value} s`,
+      key: `time:${t.id}`, type: "time", id: t.id, name: t.seconds < 1 ? friendlyTime(t.seconds) : t.printed_text ?? friendlyTime(t.seconds),
       printed: t.printed_value ? `${t.printed_value}${t.printed_text ? ` · ${t.printed_text}` : ""}` : t.printed_text,
       group: "time", categoryLabel: "Time marker", views: ["timeline"], raw: t,
     });

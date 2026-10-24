@@ -1107,7 +1107,7 @@
         "seconds_after_big_bang": 1.2384010772459151e-24,
         "years_ago": null,
         "log10_seconds": -23.907139,
-        "label": "10^-24 seconds after the Big Bang",
+        "label": "1.24 yoctoseconds after the Big Bang",
         "basis": "physics",
         "confidence": "low",
         "note": "Hypothetical. A primordial black hole forms with about the mass inside the horizon, M ~ c^3 t / G, so the band grows along the wall as time passes."
@@ -1511,7 +1511,7 @@
         "seconds_after_big_bang": 1e-12,
         "years_ago": null,
         "log10_seconds": -12.0,
-        "label": "10^-12 seconds after the Big Bang",
+        "label": "1 picosecond after the Big Bang",
         "basis": "first_of_its_kind",
         "confidence": "medium",
         "note": "Light as we know it separated from the weak force at the electroweak transition."
