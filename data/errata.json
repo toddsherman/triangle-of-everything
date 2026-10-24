@@ -1,0 +1,229 @@
+{
+  "errata": [
+    {
+      "id": "mass_axis_labels",
+      "where": "Main chart, right MASS axis above 0",
+      "issue": "Printed tick labels read 3, 9, 12, 15, 15, 12, 15, 18 ... 42 going up; the ticks are really 3, 6, 9, 12, 15, 18, 21 ... 48.",
+      "evidence": "The solar-mass, tonne and kilotonne reference lines line up with the corrected values to within 0.02 decades.",
+      "handling": "Calibration uses the corrected values; mass_axis.ticks lists printed vs true.",
+      "anchor": {
+        "px": [
+          5200,
+          3100
+        ],
+        "norm": [
+          0.71233,
+          0.40581
+        ]
+      }
+    },
+    {
+      "id": "particle_legend_swap",
+      "where": "Fundamental particles inset legend",
+      "issue": "Green is labelled LEPTON and blue HADRONS, but green dots are proton/neutron/meson (hadrons) and blue dots are electron/muon/tau/neutrinos (leptons).",
+      "handling": "Each particle carries its real 'class' plus the chart colour.",
+      "anchor": {
+        "px": [
+          1960,
+          3300
+        ],
+        "norm": [
+          0.26849,
+          0.43199
+        ]
+      }
+    },
+    {
+      "id": "density_ruler_labels",
+      "where": "Main chart, density ruler",
+      "issue": "With a uniform 9 decades per tall tick, the first four labels (92, 83, 74, 65) are one too low and '-120'/'-147' sit where -114/-141 fall.",
+      "handling": "density_ruler.tall_ticks gives both printed and uniform-scale values.",
+      "anchor": {
+        "px": [
+          3400,
+          1300
+        ],
+        "norm": [
+          0.46575,
+          0.17018
+        ]
+      }
+    },
+    {
+      "id": "stellar_inset_diameters",
+      "where": "Stellar evolution inset, diameter axis",
+      "issue": "Objects sit ~1 decade to the right of their real diameters (Sun at 10^7.3 km vs 1.4x10^6 km). Masses are accurate.",
+      "handling": "chart.* keeps the drawn position; reference.* has the real values.",
+      "anchor": {
+        "px": [
+          1230,
+          600
+        ],
+        "norm": [
+          0.16849,
+          0.07854
+        ]
+      }
+    },
+    {
+      "id": "width_label_10pm",
+      "where": "Main chart, width axis",
+      "issue": "'10 pm' sits on the 10^-12 m tick (1 pm).",
+      "handling": "Recorded as printed; true value given.",
+      "anchor": {
+        "px": [
+          3125,
+          6535
+        ],
+        "norm": [
+          0.42808,
+          0.85548
+        ]
+      }
+    },
+    {
+      "id": "inch_and_light_second",
+      "where": "Main chart, width axis dotted lines",
+      "issue": "'1 inch' and '1light-second' are drawn ~0.8 decade too far right; the other distance lines are within ~0.25 decade.",
+      "handling": "offset_decades on each width reference line.",
+      "anchor": {
+        "px": [
+          3684,
+          6820
+        ],
+        "norm": [
+          0.50466,
+          0.89279
+        ]
+      }
+    },
+    {
+      "id": "water_temperatures",
+      "where": "Main chart, energy axis",
+      "issue": "100 °C, 0 °C and the Bose-Einstein condensate bracket are spread out for legibility rather than at kT.",
+      "handling": "chart vs true values on each energy annotation.",
+      "anchor": {
+        "px": [
+          1650,
+          5710
+        ],
+        "norm": [
+          0.22603,
+          0.74748
+        ]
+      }
+    },
+    {
+      "id": "energy_axis_offset",
+      "where": "Main chart, energy axis",
+      "issue": "The energy axis is aligned to the mass axis with a 35.4-decade shift; E = mc^2 gives 35.75, so eV/c^2 reference lines sit ~0.3 decade high on the mass axis.",
+      "handling": "Mass reference lines record offset_decades.",
+      "anchor": {
+        "px": [
+          5470,
+          5370
+        ],
+        "norm": [
+          0.74932,
+          0.70297
+        ]
+      }
+    },
+    {
+      "id": "era_brackets",
+      "where": "Main chart, time axis",
+      "issue": "The BIG BANG NUCLEOSYNTHESIS bracket covers 10^-11-10^3 s and RECOMBINATION ERA covers 10^3-10^21 s; the physical events are much narrower.",
+      "handling": "Each era carries reference_log10_seconds.",
+      "anchor": {
+        "px": [
+          4625,
+          640
+        ],
+        "norm": [
+          0.63356,
+          0.08378
+        ]
+      }
+    },
+    {
+      "id": "spelling",
+      "where": "Main chart labels",
+      "issue": "'LANIKEA' should be 'Laniakea'; 'SAG A' is Sagittarius A*; 'MONOCEROTIS' presumably V616 Monocerotis.",
+      "handling": "printed_label keeps the original text; name has the corrected one.",
+      "anchor": {
+        "px": [
+          4590,
+          1815
+        ],
+        "norm": [
+          0.62877,
+          0.2376
+        ]
+      }
+    },
+    {
+      "id": "neutrino_masses",
+      "where": "Fundamental particles inset",
+      "issue": "Neutrinos are plotted at old direct upper limits (up to MeV); current limits are below ~1 eV.",
+      "handling": "reference.notes on each neutrino.",
+      "anchor": {
+        "px": [
+          1834,
+          3912
+        ],
+        "norm": [
+          0.25123,
+          0.51211
+        ]
+      }
+    },
+    {
+      "id": "time_marker_spacing",
+      "where": "Main chart, time axis",
+      "issue": "Time markers are only roughly on the density scale (e.g. 1 microsecond is far from the 10^20 g/L its density implies).",
+      "handling": "Each marker carries both the ruler density and a Friedmann estimate.",
+      "anchor": {
+        "px": [
+          4583,
+          900
+        ],
+        "norm": [
+          0.62781,
+          0.11782
+        ]
+      }
+    },
+    {
+      "id": "pbh_inside_horizon",
+      "where": "Main chart, primordial black hole icon",
+      "issue": "The icon is drawn ~0.5 decade above the Schwarzschild line, i.e. denser than a black hole can be.",
+      "handling": "reference places it exactly on the line (width = Schwarzschild diameter).",
+      "anchor": {
+        "px": [
+          3116,
+          3367
+        ],
+        "norm": [
+          0.42685,
+          0.44076
+        ]
+      }
+    },
+    {
+      "id": "dark_matter_boxes",
+      "where": "Main chart, 'DARK MATTER* (areas not yet excluded)'",
+      "issue": "The boxes approximate the macro-dark-matter windows of Jacobs, Starkman & Lynn (2015): 55 g-1e17 g and 2e20-4e24 g for nuclear-density objects. The lower box starts at 1 g, and the boxes' left edges follow the poster's own black-hole line, which sits ~0.2-0.3 decade off the true one.",
+      "handling": "main_chart.json physics.macro_dark_matter holds the published windows; the site plots them on the nuclear-density line.",
+      "anchor": {
+        "px": [
+          3110,
+          3727
+        ],
+        "norm": [
+          0.42603,
+          0.48789
+        ]
+      }
+    }
+  ]
+}

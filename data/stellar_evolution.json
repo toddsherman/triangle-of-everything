@@ -1,0 +1,1664 @@
+{
+  "title": "STELLAR EVOLUTION",
+  "description": "Zoom of the stars-and-planets region: diameter vs mass, with arrows showing how stars evolve.",
+  "frame": [
+    {
+      "px": [
+        605.5,
+        625.5
+      ],
+      "norm": [
+        0.08295,
+        0.08188
+      ]
+    },
+    {
+      "px": [
+        1855.5,
+        1875.0
+      ],
+      "norm": [
+        0.25418,
+        0.24545
+      ]
+    }
+  ],
+  "axes": {
+    "x": {
+      "quantity": "log10 diameter",
+      "unit": "km",
+      "pixel_axis": "x",
+      "formula": "value = (x - 334.55) / 138.2321",
+      "px_at_zero": 334.55,
+      "px_per_decade": 138.2321,
+      "max_tick_residual_decades": 0.003,
+      "calibration_ticks": [
+        {
+          "value": 3,
+          "px": 749.5
+        },
+        {
+          "value": 4,
+          "px": 887.5
+        },
+        {
+          "value": 5,
+          "px": 1025.5
+        },
+        {
+          "value": 6,
+          "px": 1163.5
+        },
+        {
+          "value": 7,
+          "px": 1302.5
+        },
+        {
+          "value": 8,
+          "px": 1440.5
+        },
+        {
+          "value": 9,
+          "px": 1578.5
+        },
+        {
+          "value": 10,
+          "px": 1717.0
+        }
+      ],
+      "note": "Top axis 'DIAMETER 10^n km' (frame spans 2..11)."
+    },
+    "y": {
+      "quantity": "log10 mass",
+      "unit": "solar masses",
+      "pixel_axis": "y",
+      "formula": "value = (y - 1043.11) / -138.3036",
+      "px_at_zero": 1043.11,
+      "px_per_decade": -138.3036,
+      "max_tick_residual_decades": 0.003,
+      "calibration_ticks": [
+        {
+          "value": 2,
+          "px": 766.5
+        },
+        {
+          "value": 1,
+          "px": 904.5
+        },
+        {
+          "value": 0,
+          "px": 1043.5
+        },
+        {
+          "value": -1,
+          "px": 1181.5
+        },
+        {
+          "value": -2,
+          "px": 1319.5
+        },
+        {
+          "value": -3,
+          "px": 1458.0
+        },
+        {
+          "value": -4,
+          "px": 1596.5
+        },
+        {
+          "value": -5,
+          "px": 1734.5
+        }
+      ],
+      "note": "Left axis 'MASS 10^n solar masses' (frame spans -6..3)."
+    }
+  },
+  "equations": {
+    "schwarzschild_radius": "log10 D[km] = log10 M[Msun] + schwarzschild_offset  (D = 4GM/c^2)",
+    "schwarzschild_offset": 0.771418,
+    "water_density_line": "log10 M[Msun] = 3 log10 D[km] + water_offset  (sphere at 1000 kg/m^3)",
+    "water_offset": -18.579636,
+    "tov_limit_msun": [
+      2.2,
+      2.9
+    ],
+    "chandrasekhar_limit_msun": 1.44
+  },
+  "objects": [
+    {
+      "id": "black_holes",
+      "name": "Stellar black holes",
+      "printed_label": "BLACK HOLES",
+      "category": "black_hole",
+      "image": {
+        "icon": {
+          "px": [
+            842,
+            780
+          ],
+          "norm": [
+            0.11534,
+            0.10211
+          ]
+        },
+        "all_icons_px": [
+          [
+            842,
+            780
+          ],
+          [
+            649,
+            954
+          ]
+        ],
+        "label": {
+          "px": [
+            770,
+            778
+          ],
+          "norm": [
+            0.10548,
+            0.10185
+          ]
+        }
+      },
+      "chart": {
+        "log10_diameter_km": 3.671,
+        "log10_mass_msun": 1.902
+      },
+      "reference": {
+        "mass_msun": 10.0,
+        "diameter_km": 59.08,
+        "log10_mass_msun": 1.0,
+        "log10_diameter_km": 1.771418,
+        "confidence": "medium",
+        "notes": "Representative 10 solar masses; diameter = Schwarzschild diameter."
+      },
+      "description": "Region above the Schwarzschild line; the W.R.-star arrow ends at a black hole.",
+      "main_chart_object_id": "v616_monocerotis",
+      "first_appeared": {
+        "seconds_after_big_bang": 6312000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.800167,
+        "label": "200 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Stellar black holes first formed when the earliest massive stars collapsed, ~200 million years after the Big Bang."
+      }
+    },
+    {
+      "id": "neutron_stars",
+      "name": "Neutron stars",
+      "printed_label": "NEUTRON STARS",
+      "category": "stellar_remnant",
+      "image": {
+        "icon": {
+          "px": [
+            706,
+            978
+          ],
+          "norm": [
+            0.09671,
+            0.12803
+          ]
+        },
+        "all_icons_px": [
+          [
+            706,
+            978
+          ],
+          [
+            692,
+            1021
+          ],
+          [
+            682,
+            1057
+          ]
+        ],
+        "label": {
+          "px": [
+            752,
+            1146
+          ],
+          "norm": [
+            0.10301,
+            0.15002
+          ]
+        }
+      },
+      "chart": {
+        "log10_diameter_km": 2.687,
+        "log10_mass_msun": 0.471
+      },
+      "reference": {
+        "mass_msun": 1.4,
+        "diameter_km": 24.0,
+        "log10_mass_msun": 0.146128,
+        "log10_diameter_km": 1.380211,
+        "confidence": "medium",
+        "notes": "Typical 1.4 solar masses, ~12 km radius."
+      },
+      "description": "Collapsed cores held up by neutron degeneracy; arrows from white dwarfs and red giants point here.",
+      "main_chart_object_id": "neutron_star",
+      "first_appeared": {
+        "seconds_after_big_bang": 6312000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.800167,
+        "label": "200 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "The first supernovae, ~200 million years after the Big Bang, left the first neutron stars."
+      }
+    },
+    {
+      "id": "white_dwarfs",
+      "name": "White dwarfs",
+      "printed_label": "WHITE DWARFS",
+      "category": "stellar_remnant",
+      "image": {
+        "icon": {
+          "px": [
+            1107,
+            1060
+          ],
+          "norm": [
+            0.15164,
+            0.13876
+          ]
+        },
+        "all_icons_px": [
+          [
+            1107,
+            1060
+          ],
+          [
+            1140,
+            1074
+          ],
+          [
+            1179,
+            1103
+          ]
+        ],
+        "label": {
+          "px": [
+            1033,
+            1146
+          ],
+          "norm": [
+            0.14151,
+            0.15002
+          ]
+        }
+      },
+      "chart": {
+        "log10_diameter_km": 5.588,
+        "log10_mass_msun": -0.122
+      },
+      "reference": {
+        "mass_msun": 0.6,
+        "diameter_km": 17000.0,
+        "log10_mass_msun": -0.221849,
+        "log10_diameter_km": 4.230449,
+        "confidence": "medium",
+        "notes": "Typical 0.6 solar masses."
+      },
+      "description": "Earth-sized remnants of Sun-like stars.",
+      "main_chart_object_id": "white_dwarfs",
+      "first_appeared": {
+        "seconds_after_big_bang": 9468000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.976258,
+        "label": "300 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Stars of a few solar masses live tens to hundreds of millions of years before leaving white dwarfs."
+      }
+    },
+    {
+      "id": "sun",
+      "name": "Sun",
+      "printed_label": "SUN",
+      "category": "star",
+      "image": {
+        "icon": {
+          "px": [
+            1343,
+            1045
+          ],
+          "norm": [
+            0.18397,
+            0.1368
+          ]
+        },
+        "all_icons_px": [
+          [
+            1343,
+            1045
+          ]
+        ],
+        "label": {
+          "px": [
+            1408,
+            1081
+          ],
+          "norm": [
+            0.19288,
+            0.14151
+          ]
+        }
+      },
+      "chart": {
+        "log10_diameter_km": 7.295,
+        "log10_mass_msun": -0.014
+      },
+      "reference": {
+        "mass_msun": 1.0,
+        "diameter_km": 1393000.0,
+        "log10_mass_msun": 0.0,
+        "log10_diameter_km": 6.143858,
+        "confidence": "high",
+        "notes": ""
+      },
+      "description": "Our star; an arrow shows it will expand into a red giant.",
+      "main_chart_object_id": "sun",
+      "first_appeared": {
+        "seconds_after_big_bang": 2.8978297277750957e+17,
+        "years_ago": 4603000000.0,
+        "log10_seconds": 17.462073,
+        "label": "4.6 billion years ago",
+        "basis": "this_object",
+        "confidence": "high",
+        "note": "Formed 4.6 billion years ago from a collapsing cloud of gas and dust."
+      }
+    },
+    {
+      "id": "main_sequence",
+      "name": "Main-sequence stars",
+      "printed_label": "MAIN SEQUENCE",
+      "category": "star",
+      "image": {
+        "icon": {
+          "px": [
+            1296,
+            1131
+          ],
+          "norm": [
+            0.17753,
+            0.14806
+          ]
+        },
+        "all_icons_px": [
+          [
+            1296,
+            1131
+          ],
+          [
+            1293,
+            1203
+          ],
+          [
+            1418,
+            967
+          ],
+          [
+            1443,
+            917
+          ]
+        ],
+        "label": {
+          "px": [
+            1358,
+            942
+          ],
+          "norm": [
+            0.18603,
+            0.12331
+          ]
+        }
+      },
+      "chart": {
+        "log10_diameter_km": 6.955,
+        "log10_mass_msun": -0.636
+      },
+      "reference": {
+        "mass_msun": null,
+        "diameter_km": null,
+        "log10_mass_msun": null,
+        "log10_diameter_km": null,
+        "confidence": "medium",
+        "notes": "Range ~0.08-100 solar masses; diameters ~1.4e5-3e7 km.",
+        "mass_msun_range": [
+          0.08,
+          100
+        ],
+        "diameter_km_range": [
+          140000.0,
+          28000000.0
+        ]
+      },
+      "description": "Stars fusing hydrogen in their cores, drawn as a diagonal band from red dwarfs up to massive blue stars.",
+      "main_chart_object_id": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 3156000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.499137,
+        "label": "100 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "The first stars lit up ~100-200 million years after the Big Bang."
+      }
+    },
+    {
+      "id": "red_giants",
+      "name": "Red giants",
+      "printed_label": "RED GIANTS",
+      "category": "star",
+      "image": {
+        "icon": {
+          "px": [
+            1604,
+            1045
+          ],
+          "norm": [
+            0.21973,
+            0.1368
+          ]
+        },
+        "all_icons_px": [
+          [
+            1604,
+            1045
+          ],
+          [
+            1655,
+            1043
+          ],
+          [
+            1761,
+            992
+          ],
+          [
+            1787,
+            1035
+          ]
+        ],
+        "label": {
+          "px": [
+            1783,
+            1096
+          ],
+          "norm": [
+            0.24425,
+            0.14347
+          ]
+        }
+      },
+      "chart": {
+        "log10_diameter_km": 9.183,
+        "log10_mass_msun": -0.014
+      },
+      "reference": {
+        "mass_msun": 1.08,
+        "diameter_km": 35340000.0,
+        "log10_mass_msun": 0.033424,
+        "log10_diameter_km": 7.548286,
+        "confidence": "medium",
+        "notes": "Values for Arcturus."
+      },
+      "description": "Swollen, cool stars late in life.",
+      "main_chart_object_id": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 9468000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.976258,
+        "label": "300 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Stars swell into red giants as they run out of core hydrogen."
+      }
+    },
+    {
+      "id": "super_giants",
+      "name": "Supergiants",
+      "printed_label": "SUPER GIANTS",
+      "category": "star",
+      "image": {
+        "icon": {
+          "px": [
+            1501,
+            825
+          ],
+          "norm": [
+            0.20562,
+            0.108
+          ]
+        },
+        "all_icons_px": [
+          [
+            1501,
+            825
+          ],
+          [
+            1608,
+            859
+          ],
+          [
+            1694,
+            902
+          ],
+          [
+            1737,
+            856
+          ],
+          [
+            1529,
+            753
+          ]
+        ],
+        "label": {
+          "px": [
+            1844,
+            802
+          ],
+          "norm": [
+            0.2526,
+            0.10499
+          ]
+        }
+      },
+      "chart": {
+        "log10_diameter_km": 8.438,
+        "log10_mass_msun": 1.577
+      },
+      "reference": {
+        "mass_msun": 18.0,
+        "diameter_km": 1063000000.0,
+        "log10_mass_msun": 1.255273,
+        "log10_diameter_km": 9.026545,
+        "confidence": "medium",
+        "notes": "Values for Betelgeuse."
+      },
+      "description": "The largest stars, evolved from massive main-sequence stars.",
+      "main_chart_object_id": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 4734000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.675228,
+        "label": "150 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Massive first stars swelled into supergiants within a few million years of forming."
+      }
+    },
+    {
+      "id": "wr_stars",
+      "name": "Wolf-Rayet stars",
+      "printed_label": "W.R. STARS",
+      "category": "star",
+      "image": {
+        "icon": {
+          "px": [
+            1353,
+            778
+          ],
+          "norm": [
+            0.18534,
+            0.10185
+          ]
+        },
+        "all_icons_px": [
+          [
+            1353,
+            778
+          ],
+          [
+            1339,
+            859
+          ]
+        ],
+        "label": {
+          "px": [
+            1189,
+            791
+          ],
+          "norm": [
+            0.16288,
+            0.10355
+          ]
+        }
+      },
+      "chart": {
+        "log10_diameter_km": 7.368,
+        "log10_mass_msun": 1.917
+      },
+      "reference": {
+        "mass_msun": 20.0,
+        "diameter_km": 6957000.0,
+        "log10_mass_msun": 1.30103,
+        "log10_diameter_km": 6.842422,
+        "confidence": "low",
+        "notes": "Representative: ~20 solar masses, ~5 solar radii."
+      },
+      "description": "Very hot massive stars that have shed their outer layers; an arrow shows them collapsing to black holes.",
+      "main_chart_object_id": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 4734000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.675228,
+        "label": "150 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Massive stars strip to Wolf-Rayet stars within a few million years."
+      }
+    },
+    {
+      "id": "brown_dwarfs",
+      "name": "Brown dwarfs",
+      "printed_label": "BROWN DWARFS",
+      "category": "substellar",
+      "image": {
+        "icon": {
+          "px": [
+            1200,
+            1207
+          ],
+          "norm": [
+            0.16438,
+            0.158
+          ]
+        },
+        "all_icons_px": [
+          [
+            1200,
+            1207
+          ],
+          [
+            1234,
+            1237
+          ],
+          [
+            1253,
+            1253
+          ]
+        ],
+        "label": {
+          "px": [
+            1479,
+            1250
+          ],
+          "norm": [
+            0.2026,
+            0.16363
+          ]
+        }
+      },
+      "chart": {
+        "log10_diameter_km": 6.261,
+        "log10_mass_msun": -1.185
+      },
+      "reference": {
+        "mass_msun": 0.04,
+        "diameter_km": 140000.0,
+        "log10_mass_msun": -1.39794,
+        "log10_diameter_km": 5.146128,
+        "confidence": "medium",
+        "notes": "Representative ~40 Jupiter masses, about Jupiter's size."
+      },
+      "description": "Objects too light to fuse hydrogen (~13-80 Jupiter masses).",
+      "main_chart_object_id": "brown_dwarf",
+      "first_appeared": {
+        "seconds_after_big_bang": 2.477365277750957e+16,
+        "years_ago": 13000000000.0,
+        "log10_seconds": 16.39399,
+        "label": "785 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Formed like stars, from the earliest generations of star formation."
+      }
+    },
+    {
+      "id": "beta_pictoris_b",
+      "name": "Beta Pictoris b",
+      "printed_label": "BETA PICTORIS B",
+      "category": "planet",
+      "image": {
+        "icon": {
+          "px": [
+            1201,
+            1332
+          ],
+          "norm": [
+            0.16452,
+            0.17437
+          ]
+        },
+        "all_icons_px": [
+          [
+            1201,
+            1332
+          ]
+        ],
+        "label": {
+          "px": [
+            1425,
+            1317
+          ],
+          "norm": [
+            0.19521,
+            0.1724
+          ]
+        }
+      },
+      "chart": {
+        "log10_diameter_km": 6.268,
+        "log10_mass_msun": -2.089
+      },
+      "reference": {
+        "mass_msun": 0.0105,
+        "diameter_km": 204100.0,
+        "log10_mass_msun": -1.978946,
+        "log10_diameter_km": 5.309928,
+        "confidence": "medium",
+        "notes": "Mass estimates ~9-13 Jupiter masses."
+      },
+      "description": "A young super-Jupiter imaged directly around the star Beta Pictoris.",
+      "main_chart_object_id": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 4.3432777277750957e+17,
+        "years_ago": 23000000.0,
+        "log10_seconds": 17.637818,
+        "label": "23 million years ago",
+        "basis": "this_object",
+        "confidence": "medium",
+        "note": "Its star is about 20-25 million years old."
+      }
+    },
+    {
+      "id": "jupiter",
+      "name": "Jupiter",
+      "printed_label": "JUPITER",
+      "category": "planet",
+      "image": {
+        "icon": {
+          "px": [
+            1193,
+            1472
+          ],
+          "norm": [
+            0.16342,
+            0.1927
+          ]
+        },
+        "all_icons_px": [
+          [
+            1193,
+            1472
+          ]
+        ],
+        "label": {
+          "px": [
+            1319,
+            1458
+          ],
+          "norm": [
+            0.18068,
+            0.19086
+          ]
+        }
+      },
+      "chart": {
+        "log10_diameter_km": 6.21,
+        "log10_mass_msun": -3.101
+      },
+      "reference": {
+        "mass_msun": 0.0009542,
+        "diameter_km": 139800.0,
+        "log10_mass_msun": -3.020339,
+        "log10_diameter_km": 5.145569,
+        "confidence": "high",
+        "notes": ""
+      },
+      "description": "Largest planet in the Solar System.",
+      "main_chart_object_id": "jupiter",
+      "first_appeared": {
+        "seconds_after_big_bang": 2.8987765277750957e+17,
+        "years_ago": 4600000000.0,
+        "log10_seconds": 17.462215,
+        "label": "4.6 billion years ago",
+        "basis": "this_object",
+        "confidence": "high",
+        "note": "The first planet to form, within a few million years of the Sun."
+      }
+    },
+    {
+      "id": "saturn",
+      "name": "Saturn",
+      "printed_label": "SATURN",
+      "category": "planet",
+      "image": {
+        "icon": {
+          "px": [
+            1197,
+            1561
+          ],
+          "norm": [
+            0.16397,
+            0.20435
+          ]
+        },
+        "all_icons_px": [
+          [
+            1197,
+            1561
+          ]
+        ],
+        "label": {
+          "px": [
+            1345,
+            1545
+          ],
+          "norm": [
+            0.18425,
+            0.20225
+          ]
+        }
+      },
+      "chart": {
+        "log10_diameter_km": 6.239,
+        "log10_mass_msun": -3.745
+      },
+      "reference": {
+        "mass_msun": 0.0002857,
+        "diameter_km": 116500.0,
+        "log10_mass_msun": -3.544057,
+        "log10_diameter_km": 5.066177,
+        "confidence": "high",
+        "notes": ""
+      },
+      "description": "Ringed gas giant, less dense than water.",
+      "main_chart_object_id": "saturn",
+      "first_appeared": {
+        "seconds_after_big_bang": 2.9303365277750957e+17,
+        "years_ago": 4500000000.0,
+        "log10_seconds": 17.466917,
+        "label": "4.5 billion years ago",
+        "basis": "this_object",
+        "confidence": "high",
+        "note": ""
+      }
+    },
+    {
+      "id": "uranus",
+      "name": "Uranus",
+      "printed_label": "URANUS, NEPTUNE",
+      "category": "planet",
+      "image": {
+        "icon": {
+          "px": [
+            1107,
+            1677
+          ],
+          "norm": [
+            0.15164,
+            0.21953
+          ]
+        },
+        "all_icons_px": [
+          [
+            1107,
+            1677
+          ]
+        ],
+        "label": {
+          "px": [
+            1372,
+            1655
+          ],
+          "norm": [
+            0.18795,
+            0.21665
+          ]
+        }
+      },
+      "chart": {
+        "log10_diameter_km": 5.588,
+        "log10_mass_msun": -4.583
+      },
+      "reference": {
+        "mass_msun": 4.365e-05,
+        "diameter_km": 50720.0,
+        "log10_mass_msun": -4.360065,
+        "log10_diameter_km": 4.705213,
+        "confidence": "high",
+        "notes": "Left of the two icons (tentative)."
+      },
+      "description": "Ice giant.",
+      "main_chart_object_id": "uranus",
+      "first_appeared": {
+        "seconds_after_big_bang": 2.9303365277750957e+17,
+        "years_ago": 4500000000.0,
+        "log10_seconds": 17.466917,
+        "label": "4.5 billion years ago",
+        "basis": "this_object",
+        "confidence": "high",
+        "note": ""
+      }
+    },
+    {
+      "id": "neptune",
+      "name": "Neptune",
+      "printed_label": "URANUS, NEPTUNE",
+      "category": "planet",
+      "image": {
+        "icon": {
+          "px": [
+            1138,
+            1677
+          ],
+          "norm": [
+            0.15589,
+            0.21953
+          ]
+        },
+        "all_icons_px": [
+          [
+            1138,
+            1677
+          ]
+        ],
+        "label": {
+          "px": [
+            1372,
+            1655
+          ],
+          "norm": [
+            0.18795,
+            0.21665
+          ]
+        }
+      },
+      "chart": {
+        "log10_diameter_km": 5.812,
+        "log10_mass_msun": -4.583
+      },
+      "reference": {
+        "mass_msun": 5.148e-05,
+        "diameter_km": 49240.0,
+        "log10_mass_msun": -4.288335,
+        "log10_diameter_km": 4.692353,
+        "confidence": "high",
+        "notes": "Right of the two icons (tentative)."
+      },
+      "description": "Ice giant.",
+      "main_chart_object_id": "neptune",
+      "first_appeared": {
+        "seconds_after_big_bang": 2.9303365277750957e+17,
+        "years_ago": 4500000000.0,
+        "log10_seconds": 17.466917,
+        "label": "4.5 billion years ago",
+        "basis": "this_object",
+        "confidence": "high",
+        "note": ""
+      }
+    },
+    {
+      "id": "kepler_22b",
+      "name": "Kepler-22b",
+      "printed_label": "KEPLER 22-B",
+      "category": "planet",
+      "image": {
+        "icon": {
+          "px": [
+            1083,
+            1761
+          ],
+          "norm": [
+            0.14836,
+            0.23053
+          ]
+        },
+        "all_icons_px": [
+          [
+            1083,
+            1761
+          ]
+        ],
+        "label": {
+          "px": [
+            1272,
+            1731
+          ],
+          "norm": [
+            0.17425,
+            0.2266
+          ]
+        }
+      },
+      "chart": {
+        "log10_diameter_km": 5.414,
+        "log10_mass_msun": -5.191
+      },
+      "reference": {
+        "mass_msun": null,
+        "diameter_km": 30330.0,
+        "log10_mass_msun": null,
+        "log10_diameter_km": 4.481815,
+        "confidence": "medium",
+        "notes": "Radius ~2.4 Earth radii; only upper limits exist for its mass."
+      },
+      "description": "A planet in its star's habitable zone, ~600 light-years away.",
+      "main_chart_object_id": null,
+      "first_appeared": null
+    },
+    {
+      "id": "earth",
+      "name": "Earth",
+      "printed_label": "EARTH, VENUS",
+      "category": "planet",
+      "image": {
+        "icon": {
+          "px": [
+            1028,
+            1844
+          ],
+          "norm": [
+            0.14082,
+            0.24139
+          ]
+        },
+        "all_icons_px": [
+          [
+            1028,
+            1844
+          ]
+        ],
+        "label": {
+          "px": [
+            1233,
+            1813
+          ],
+          "norm": [
+            0.1689,
+            0.23733
+          ]
+        }
+      },
+      "chart": {
+        "log10_diameter_km": 5.017,
+        "log10_mass_msun": -5.791
+      },
+      "reference": {
+        "mass_msun": 3.003e-06,
+        "diameter_km": 12740.0,
+        "log10_mass_msun": -5.522515,
+        "log10_diameter_km": 4.105238,
+        "confidence": "high",
+        "notes": ""
+      },
+      "description": "One icon is drawn for both Earth and Venus.",
+      "main_chart_object_id": "earth",
+      "first_appeared": {
+        "seconds_after_big_bang": 2.9177125277750957e+17,
+        "years_ago": 4540000000.0,
+        "log10_seconds": 17.465043,
+        "label": "4.54 billion years ago",
+        "basis": "this_object",
+        "confidence": "high",
+        "note": ""
+      }
+    },
+    {
+      "id": "venus",
+      "name": "Venus",
+      "printed_label": "EARTH, VENUS",
+      "category": "planet",
+      "image": {
+        "icon": {
+          "px": [
+            1028,
+            1844
+          ],
+          "norm": [
+            0.14082,
+            0.24139
+          ]
+        },
+        "all_icons_px": [
+          [
+            1028,
+            1844
+          ]
+        ],
+        "label": {
+          "px": [
+            1233,
+            1813
+          ],
+          "norm": [
+            0.1689,
+            0.23733
+          ]
+        }
+      },
+      "chart": {
+        "log10_diameter_km": 5.017,
+        "log10_mass_msun": -5.791
+      },
+      "reference": {
+        "mass_msun": 2.447e-06,
+        "diameter_km": 12100.0,
+        "log10_mass_msun": -5.611373,
+        "log10_diameter_km": 4.082929,
+        "confidence": "high",
+        "notes": ""
+      },
+      "description": "Shares the Earth icon.",
+      "main_chart_object_id": "venus",
+      "first_appeared": {
+        "seconds_after_big_bang": 2.9303365277750957e+17,
+        "years_ago": 4500000000.0,
+        "log10_seconds": 17.466917,
+        "label": "4.5 billion years ago",
+        "basis": "this_object",
+        "confidence": "high",
+        "note": ""
+      }
+    }
+  ],
+  "transitions": [
+    {
+      "id": "wr_collapse",
+      "from": "wr_stars",
+      "to": "black_holes",
+      "printed_label": null,
+      "polyline": [
+        {
+          "px": [
+            1495,
+            785
+          ],
+          "norm": [
+            0.20479,
+            0.10276
+          ]
+        },
+        {
+          "px": [
+            950,
+            775
+          ],
+          "norm": [
+            0.13014,
+            0.10145
+          ]
+        }
+      ],
+      "meaning": "Massive Wolf-Rayet stars collapse into black holes."
+    },
+    {
+      "id": "red_giants_decay",
+      "from": "red_giants",
+      "to": "neutron_stars",
+      "printed_label": "DECAYS INTO..",
+      "polyline": [
+        {
+          "px": [
+            1720,
+            1020
+          ],
+          "norm": [
+            0.23562,
+            0.13353
+          ]
+        },
+        {
+          "px": [
+            1300,
+            975
+          ],
+          "norm": [
+            0.17808,
+            0.12763
+          ]
+        },
+        {
+          "px": [
+            805,
+            970
+          ],
+          "norm": [
+            0.11027,
+            0.12698
+          ]
+        }
+      ],
+      "meaning": "Drawn from the red giants to the neutron stars (massive stars end as neutron stars; Sun-like ones as white dwarfs)."
+    },
+    {
+      "id": "white_dwarf_to_neutron_star",
+      "from": "white_dwarfs",
+      "to": "neutron_stars",
+      "printed_label": null,
+      "polyline": [
+        {
+          "px": [
+            1040,
+            1060
+          ],
+          "norm": [
+            0.14247,
+            0.13876
+          ]
+        },
+        {
+          "px": [
+            770,
+            1060
+          ],
+          "norm": [
+            0.10548,
+            0.13876
+          ]
+        }
+      ],
+      "meaning": "Arrow from the white dwarfs toward the neutron stars (a white dwarf pushed past the Chandrasekhar limit collapses)."
+    },
+    {
+      "id": "sun_to_red_giant",
+      "from": "sun",
+      "to": "red_giants",
+      "printed_label": null,
+      "polyline": [
+        {
+          "px": [
+            1380,
+            1045
+          ],
+          "norm": [
+            0.18904,
+            0.1368
+          ]
+        },
+        {
+          "px": [
+            1550,
+            1045
+          ],
+          "norm": [
+            0.21233,
+            0.1368
+          ]
+        }
+      ],
+      "meaning": "The Sun will swell into a red giant in ~5 billion years."
+    },
+    {
+      "id": "main_sequence_to_supergiants",
+      "from": "main_sequence",
+      "to": "super_giants",
+      "printed_label": "EXPANDS INTO..",
+      "polyline": [
+        {
+          "px": [
+            1465,
+            925
+          ],
+          "norm": [
+            0.20068,
+            0.12109
+          ]
+        },
+        {
+          "px": [
+            1650,
+            925
+          ],
+          "norm": [
+            0.22603,
+            0.12109
+          ]
+        }
+      ],
+      "meaning": "Massive main-sequence stars expand into supergiants."
+    },
+    {
+      "id": "degenerate_track",
+      "from": "brown_dwarfs",
+      "to": "white_dwarfs",
+      "printed_label": "DEGENERATE MATTER",
+      "polyline": [
+        {
+          "px": [
+            1350,
+            1395
+          ],
+          "norm": [
+            0.18493,
+            0.18262
+          ]
+        },
+        {
+          "px": [
+            1240,
+            1300
+          ],
+          "norm": [
+            0.16986,
+            0.17018
+          ]
+        },
+        {
+          "px": [
+            1145,
+            1190
+          ],
+          "norm": [
+            0.15685,
+            0.15578
+          ]
+        }
+      ],
+      "meaning": "Dashed line: for degenerate objects, radius shrinks as mass grows (gas giants -> brown dwarfs -> white dwarfs)."
+    }
+  ],
+  "lines": [
+    {
+      "id": "tov_limit",
+      "printed_label": "TOLMAN-OPPENHEIMER-VOLKOFF LIMIT",
+      "style": "dotted horizontal",
+      "polyline": [
+        {
+          "px": [
+            675,
+            973
+          ],
+          "norm": [
+            0.09247,
+            0.12737
+          ]
+        },
+        {
+          "px": [
+            1855,
+            973
+          ],
+          "norm": [
+            0.25411,
+            0.12737
+          ]
+        }
+      ],
+      "text": {
+        "px": [
+          2174,
+          935
+        ],
+        "norm": [
+          0.29781,
+          0.1224
+        ]
+      },
+      "meaning": "Maximum neutron-star mass, ~2.2-2.9 solar masses.",
+      "chart_log10_mass_msun": 0.507,
+      "reference_mass_msun_range": [
+        2.2,
+        2.9
+      ]
+    },
+    {
+      "id": "chandrasekhar_limit",
+      "printed_label": "CHANDRASEKHAR LIMIT",
+      "style": "dotted horizontal",
+      "polyline": [
+        {
+          "px": [
+            1072,
+            1007
+          ],
+          "norm": [
+            0.14685,
+            0.13182
+          ]
+        },
+        {
+          "px": [
+            1855,
+            1007
+          ],
+          "norm": [
+            0.25411,
+            0.13182
+          ]
+        }
+      ],
+      "text": {
+        "px": [
+          2159,
+          1018
+        ],
+        "norm": [
+          0.29575,
+          0.13326
+        ]
+      },
+      "meaning": "Maximum white-dwarf mass, ~1.44 solar masses.",
+      "chart_log10_mass_msun": 0.261,
+      "reference_mass_msun_range": [
+        1.44,
+        1.44
+      ]
+    },
+    {
+      "id": "schwarzschild_radius",
+      "printed_label": "SCHWARZSCHILD RADIUS",
+      "style": "region edge",
+      "polyline": [
+        {
+          "px": [
+            957,
+            670
+          ],
+          "norm": [
+            0.1311,
+            0.08771
+          ]
+        },
+        {
+          "px": [
+            610,
+            1028
+          ],
+          "norm": [
+            0.08356,
+            0.13457
+          ]
+        }
+      ],
+      "text": {
+        "px": [
+          850,
+          420
+        ],
+        "norm": [
+          0.11644,
+          0.05498
+        ]
+      },
+      "meaning": "Edge of the black-hole region."
+    },
+    {
+      "id": "water_density_line",
+      "printed_label": "WATER DENSITY / WATER DENSITY LINE",
+      "style": "blue dotted (traced from pixels)",
+      "polyline": [
+        {
+          "px": [
+            1484,
+            630
+          ],
+          "norm": [
+            0.20329,
+            0.08247
+          ]
+        },
+        {
+          "px": [
+            1440,
+            775
+          ],
+          "norm": [
+            0.19726,
+            0.10145
+          ]
+        },
+        {
+          "px": [
+            1380,
+            925
+          ],
+          "norm": [
+            0.18904,
+            0.12109
+          ]
+        },
+        {
+          "px": [
+            1333,
+            1075
+          ],
+          "norm": [
+            0.1826,
+            0.14073
+          ]
+        },
+        {
+          "px": [
+            1285,
+            1225
+          ],
+          "norm": [
+            0.17603,
+            0.16036
+          ]
+        },
+        {
+          "px": [
+            1232,
+            1375
+          ],
+          "norm": [
+            0.16877,
+            0.18
+          ]
+        },
+        {
+          "px": [
+            1188,
+            1525
+          ],
+          "norm": [
+            0.16274,
+            0.19963
+          ]
+        },
+        {
+          "px": [
+            1156,
+            1625
+          ],
+          "norm": [
+            0.15836,
+            0.21272
+          ]
+        },
+        {
+          "px": [
+            1111,
+            1775
+          ],
+          "norm": [
+            0.15219,
+            0.23236
+          ]
+        },
+        {
+          "px": [
+            1078,
+            1873
+          ],
+          "norm": [
+            0.14767,
+            0.24519
+          ]
+        }
+      ],
+      "text": {
+        "px": [
+          1474,
+          400
+        ],
+        "norm": [
+          0.20192,
+          0.05236
+        ]
+      },
+      "meaning": "Constant density of water (slope ~3 in log space); passes the Sun, Jupiter and Saturn (~0.7-1.4 g/cm^3)."
+    }
+  ],
+  "region_labels": [
+    {
+      "printed_label": "BLACK HOLES",
+      "text": {
+        "px": [
+          770,
+          778
+        ],
+        "norm": [
+          0.10548,
+          0.10185
+        ]
+      }
+    },
+    {
+      "printed_label": "GAS GIANTS",
+      "text": {
+        "px": [
+          1078,
+          1422
+        ],
+        "norm": [
+          0.14767,
+          0.18615
+        ]
+      }
+    },
+    {
+      "printed_label": "TERRESTRIAL PLANETS",
+      "text": {
+        "px": [
+          892,
+          1737
+        ],
+        "norm": [
+          0.12219,
+          0.22739
+        ]
+      }
+    },
+    {
+      "printed_label": "MAIN SEQUENCE",
+      "text": {
+        "px": [
+          1358,
+          942
+        ],
+        "norm": [
+          0.18603,
+          0.12331
+        ]
+      }
+    }
+  ]
+}

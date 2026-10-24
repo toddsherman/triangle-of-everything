@@ -1,0 +1,14 @@
+.DS_Store
+.claude/
+.vercel/
+__pycache__/
+
+# the deployable site, built by scripts/build-web.mjs
+web/
+
+# The source images are other people's work, so they stay out of the repository: the illustrated poster
+# and Lineweaver & Patel's chart (see data/README.md for where they come from). The QA overlays in
+# data/qa/ are drawn on top of them, so they stay out too.
+/Triangle_of_Everything.png
+/b6y2fthj95ie1.png
+data/qa/

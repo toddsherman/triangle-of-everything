@@ -1,0 +1,3412 @@
+{
+  "count": 53,
+  "objects": [
+    {
+      "id": "observable_universe",
+      "name": "Observable Universe",
+      "printed_label": "OBSERVABLE UNIVERSE",
+      "category": "cosmic_structure",
+      "subcategory": null,
+      "hypothetical": false,
+      "labeled_on_chart": true,
+      "identification": "printed",
+      "image": {
+        "icon": {
+          "px": [
+            4900,
+            1605
+          ],
+          "norm": [
+            0.67123,
+            0.21011
+          ]
+        },
+        "all_icons_px": [
+          [
+            4900,
+            1605
+          ]
+        ],
+        "label": {
+          "px": [
+            5254,
+            1591
+          ],
+          "norm": [
+            0.71973,
+            0.20827
+          ]
+        }
+      },
+      "chart": {
+        "log10_width_m": 25.497,
+        "log10_mass_kg": 52.057,
+        "log10_energy_eV": 87.514,
+        "log10_density_proxy_kg_m3": -24.435,
+        "position_is_schematic": false
+      },
+      "reference": {
+        "mass_kg": 1.5e+53,
+        "width_m": 8.739243e+26,
+        "width_basis": "particle_horizon_diameter",
+        "log10_mass_kg": 53.176091,
+        "log10_width_m": 26.941474,
+        "log10_density_proxy_kg_m3": -27.648,
+        "confidence": "medium",
+        "representative": false,
+        "notes": "Ordinary (baryonic) matter only; with dark matter ~9e53 kg. Width = diameter of the particle horizon (~93 billion ly), computed from the same LambdaCDM model as the Hubble radius - about 3x the Hubble sphere, so it plots on the dashed observable-universe edge."
+      },
+      "description": "Everything close enough that its light has reached us since the Big Bang - about 93 billion light-years across.",
+      "links": {},
+      "first_appeared": {
+        "seconds_after_big_bang": 4.3505365277750957e+17,
+        "years_ago": 0.0,
+        "log10_seconds": 17.638543,
+        "label": "today",
+        "basis": "this_object",
+        "confidence": "high",
+        "note": "Plotted as it is today; its edge has been growing since the Big Bang (the dashed line)."
+      }
+    },
+    {
+      "id": "bootes_void",
+      "name": "Boötes Void",
+      "printed_label": "BOOTES VOID",
+      "category": "cosmic_structure",
+      "subcategory": null,
+      "hypothetical": false,
+      "labeled_on_chart": true,
+      "identification": "printed",
+      "image": {
+        "icon": {
+          "px": [
+            4880,
+            1725
+          ],
+          "norm": [
+            0.66849,
+            0.22581
+          ]
+        },
+        "all_icons_px": [
+          [
+            4880,
+            1725
+          ]
+        ],
+        "label": {
+          "px": [
+            4657,
+            1707
+          ],
+          "norm": [
+            0.63795,
+            0.22346
+          ]
+        }
+      },
+      "chart": {
+        "log10_width_m": 25.064,
+        "log10_mass_kg": 49.458,
+        "log10_energy_eV": 84.915,
+        "log10_density_proxy_kg_m3": -25.735,
+        "position_is_schematic": false
+      },
+      "reference": {
+        "mass_kg": 1e+46,
+        "width_m": 3.1e+24,
+        "width_basis": "diameter",
+        "log10_mass_kg": 46.0,
+        "log10_width_m": 24.491362,
+        "log10_density_proxy_kg_m3": -27.474,
+        "confidence": "low",
+        "representative": false,
+        "notes": "Diameter ~330 million ly (~100 Mpc). Mass is a rough estimate (underdense matter in that volume)."
+      },
+      "description": "One of the largest known cosmic voids: a nearly empty region ~330 million light-years across in the direction of Boötes.",
+      "links": {},
+      "first_appeared": {
+        "seconds_after_big_bang": 9.468e+16,
+        "years_ago": null,
+        "log10_seconds": 16.976258,
+        "label": "3 billion years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Voids deepen as matter drains into the cosmic web; big ones emerge over the first few billion years."
+      }
+    },
+    {
+      "id": "laniakea_supercluster",
+      "name": "Laniakea Supercluster",
+      "printed_label": "LANIKEA SUPERCLUSTER",
+      "category": "cosmic_structure",
+      "subcategory": null,
+      "hypothetical": false,
+      "labeled_on_chart": true,
+      "identification": "printed",
+      "image": {
+        "icon": {
+          "px": [
+            4850,
+            1810
+          ],
+          "norm": [
+            0.66438,
+            0.23694
+          ]
+        },
+        "all_icons_px": [
+          [
+            4850,
+            1810
+          ]
+        ],
+        "label": {
+          "px": [
+            4590,
+            1815
+          ],
+          "norm": [
+            0.62877,
+            0.2376
+          ]
+        }
+      },
+      "chart": {
+        "log10_width_m": 24.415,
+        "log10_mass_kg": 47.618,
+        "log10_energy_eV": 83.074,
+        "log10_density_proxy_kg_m3": -25.627,
+        "position_is_schematic": false
+      },
+      "reference": {
+        "mass_kg": 1.989e+47,
+        "width_m": 4.93712e+24,
+        "width_basis": "diameter",
+        "log10_mass_kg": 47.298635,
+        "log10_width_m": 24.693474,
+        "log10_density_proxy_kg_m3": -26.782,
+        "confidence": "medium",
+        "representative": false,
+        "notes": "~1e17 solar masses, ~520 million ly (160 Mpc) across."
+      },
+      "description": "The galaxy supercluster that contains the Milky Way (printed on the chart as 'LANIKEA').",
+      "links": {},
+      "first_appeared": {
+        "seconds_after_big_bang": 1.578e+17,
+        "years_ago": null,
+        "log10_seconds": 17.198107,
+        "label": "5 billion years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Superclusters are still assembling; their outlines emerge over billions of years."
+      }
+    },
+    {
+      "id": "el_gordo",
+      "name": "El Gordo (ACT-CL J0102-4915)",
+      "printed_label": "EL GORDO",
+      "category": "cosmic_structure",
+      "subcategory": null,
+      "hypothetical": false,
+      "labeled_on_chart": true,
+      "identification": "printed",
+      "image": {
+        "icon": {
+          "px": [
+            4750,
+            1935
+          ],
+          "norm": [
+            0.65068,
+            0.25331
+          ]
+        },
+        "all_icons_px": [
+          [
+            4750,
+            1935
+          ]
+        ],
+        "label": {
+          "px": [
+            4943,
+            1958
+          ],
+          "norm": [
+            0.67712,
+            0.25632
+          ]
+        }
+      },
+      "chart": {
+        "log10_width_m": 22.25,
+        "log10_mass_kg": 44.911,
+        "log10_energy_eV": 80.366,
+        "log10_density_proxy_kg_m3": -21.84,
+        "position_is_schematic": false
+      },
+      "reference": {
+        "mass_kg": 3.978e+45,
+        "width_m": 1.1e+23,
+        "width_basis": "diameter",
+        "log10_mass_kg": 45.599665,
+        "log10_width_m": 23.041393,
+        "log10_density_proxy_kg_m3": -23.525,
+        "confidence": "low",
+        "representative": false,
+        "notes": "~2e15 solar masses; width ~2 x r200 (~3.6 Mpc)."
+      },
+      "description": "A massive pair of colliding galaxy clusters about 7 billion light-years away - one of the heaviest distant clusters known.",
+      "links": {},
+      "first_appeared": {
+        "seconds_after_big_bang": 2.0466565277750957e+17,
+        "years_ago": 7300000000.0,
+        "log10_seconds": 17.311045,
+        "label": "6.48 billion years after the Big Bang",
+        "basis": "this_object",
+        "confidence": "medium",
+        "note": "Seen as it was 7.3 billion years ago (redshift 0.87), already assembled."
+      }
+    },
+    {
+      "id": "milky_way",
+      "name": "Milky Way",
+      "printed_label": "MILKY WAY",
+      "category": "galaxy",
+      "subcategory": null,
+      "hypothetical": false,
+      "labeled_on_chart": true,
+      "identification": "printed",
+      "image": {
+        "icon": {
+          "px": [
+            4680,
+            2065
+          ],
+          "norm": [
+            0.6411,
+            0.27032
+          ]
+        },
+        "all_icons_px": [
+          [
+            4680,
+            2065
+          ]
+        ],
+        "label": {
+          "px": [
+            4885,
+            2062
+          ],
+          "norm": [
+            0.66918,
+            0.26993
+          ]
+        }
+      },
+      "chart": {
+        "log10_width_m": 20.735,
+        "log10_mass_kg": 42.096,
+        "log10_energy_eV": 77.551,
+        "log10_density_proxy_kg_m3": -20.11,
+        "position_is_schematic": false
+      },
+      "reference": {
+        "mass_kg": 2.9835e+42,
+        "width_m": 9.4607e+20,
+        "width_basis": "diameter",
+        "log10_mass_kg": 42.474726,
+        "log10_width_m": 20.975923,
+        "log10_density_proxy_kg_m3": -20.453,
+        "confidence": "medium",
+        "representative": false,
+        "notes": "Total mass including dark-matter halo; width = stellar disc (~100,000 ly)."
+      },
+      "description": "Our home galaxy, a barred spiral about 100,000 light-years across.",
+      "links": {},
+      "first_appeared": {
+        "seconds_after_big_bang": 1.5305652777509568e+16,
+        "years_ago": 13300000000.0,
+        "log10_seconds": 16.184852,
+        "label": "485 million years after the Big Bang",
+        "basis": "this_object",
+        "confidence": "medium",
+        "note": "Its oldest stars are ~13 billion years old; the disc built up over the following billions of years."
+      }
+    },
+    {
+      "id": "smc_galaxy",
+      "name": "Small Magellanic Cloud",
+      "printed_label": "SMC GALAXY",
+      "category": "galaxy",
+      "subcategory": null,
+      "hypothetical": false,
+      "labeled_on_chart": true,
+      "identification": "printed",
+      "image": {
+        "icon": {
+          "px": [
+            4665,
+            2200
+          ],
+          "norm": [
+            0.63904,
+            0.288
+          ]
+        },
+        "all_icons_px": [
+          [
+            4665,
+            2200
+          ]
+        ],
+        "label": {
+          "px": [
+            4885,
+            2210
+          ],
+          "norm": [
+            0.66918,
+            0.2893
+          ]
+        }
+      },
+      "chart": {
+        "log10_width_m": 20.411,
+        "log10_mass_kg": 39.173,
+        "log10_energy_eV": 74.626,
+        "log10_density_proxy_kg_m3": -22.059,
+        "position_is_schematic": false
+      },
+      "reference": {
+        "mass_kg": 1.3923e+40,
+        "width_m": 1.788072e+20,
+        "width_basis": "diameter",
+        "log10_mass_kg": 40.143733,
+        "log10_width_m": 20.252385,
+        "log10_density_proxy_kg_m3": -20.613,
+        "confidence": "medium",
+        "representative": false,
+        "notes": "~7e9 solar masses, ~19,000 ly across."
+      },
+      "description": "A dwarf galaxy orbiting the Milky Way, visible to the naked eye from the Southern Hemisphere.",
+      "links": {},
+      "first_appeared": {
+        "seconds_after_big_bang": 5.633365277750957e+16,
+        "years_ago": 12000000000.0,
+        "log10_seconds": 16.750768,
+        "label": "1.78 billion years after the Big Bang",
+        "basis": "this_object",
+        "confidence": "low",
+        "note": "Its oldest stars are roughly 10-12 billion years old."
+      }
+    },
+    {
+      "id": "globular_clusters",
+      "name": "Globular clusters",
+      "printed_label": "GLOBULAR CLUSTERS",
+      "category": "star_cluster",
+      "subcategory": null,
+      "hypothetical": false,
+      "labeled_on_chart": true,
+      "identification": "printed",
+      "image": {
+        "icon": {
+          "px": [
+            4555,
+            2375
+          ],
+          "norm": [
+            0.62397,
+            0.3109
+          ]
+        },
+        "all_icons_px": [
+          [
+            4555,
+            2375
+          ]
+        ],
+        "label": {
+          "px": [
+            4855,
+            2395
+          ],
+          "norm": [
+            0.66507,
+            0.31352
+          ]
+        }
+      },
+      "chart": {
+        "log10_width_m": 18.03,
+        "log10_mass_kg": 35.384,
+        "log10_energy_eV": 70.836,
+        "log10_density_proxy_kg_m3": -18.705,
+        "position_is_schematic": false
+      },
+      "reference": {
+        "mass_kg": 5.967e+35,
+        "width_m": 1e+18,
+        "width_basis": "diameter",
+        "log10_mass_kg": 35.775756,
+        "log10_width_m": 18.0,
+        "log10_density_proxy_kg_m3": -18.224,
+        "confidence": "medium",
+        "representative": true,
+        "notes": "Typical: 1e5-1e6 solar masses, ~100 ly across."
+      },
+      "description": "Dense, spherical swarms of hundreds of thousands of old stars orbiting a galaxy.",
+      "links": {},
+      "first_appeared": {
+        "seconds_after_big_bang": 3.108565277750957e+16,
+        "years_ago": 12800000000.0,
+        "log10_seconds": 16.49256,
+        "label": "985 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "medium",
+        "note": "The oldest Milky Way globular clusters are about 12.5-13 billion years old."
+      }
+    },
+    {
+      "id": "ton_618",
+      "name": "TON 618",
+      "printed_label": "TON618",
+      "category": "black_hole",
+      "subcategory": "supermassive",
+      "hypothetical": false,
+      "labeled_on_chart": true,
+      "identification": "printed",
+      "image": {
+        "icon": {
+          "px": [
+            4435,
+            2055
+          ],
+          "norm": [
+            0.60753,
+            0.26901
+          ]
+        },
+        "all_icons_px": [
+          [
+            4435,
+            2055
+          ]
+        ],
+        "label": {
+          "px": [
+            4252,
+            2073
+          ],
+          "norm": [
+            0.58247,
+            0.27137
+          ]
+        }
+      },
+      "chart": {
+        "log10_width_m": 15.432,
+        "log10_mass_kg": 42.313,
+        "log10_energy_eV": 77.767,
+        "log10_density_proxy_kg_m3": -3.984,
+        "position_is_schematic": false
+      },
+      "reference": {
+        "mass_kg": 1.31274e+41,
+        "width_m": 389907600000000.0,
+        "width_basis": "schwarzschild_diameter",
+        "log10_mass_kg": 41.118179,
+        "log10_width_m": 14.590962,
+        "log10_density_proxy_kg_m3": -2.655,
+        "confidence": "medium",
+        "representative": false,
+        "notes": "~6.6e10 solar masses."
+      },
+      "description": "A hyper-luminous quasar powered by one of the most massive black holes known.",
+      "links": {},
+      "first_appeared": {
+        "seconds_after_big_bang": 9.420565277750957e+16,
+        "years_ago": 10800000000.0,
+        "log10_seconds": 16.974077,
+        "label": "2.98 billion years after the Big Bang",
+        "basis": "this_object",
+        "confidence": "medium",
+        "note": "Seen as it was 10.8 billion years ago (redshift 2.2), already enormous."
+      }
+    },
+    {
+      "id": "cygnus_a",
+      "name": "Cygnus A",
+      "printed_label": "CYGNUS-A",
+      "category": "black_hole",
+      "subcategory": "supermassive",
+      "hypothetical": false,
+      "labeled_on_chart": true,
+      "identification": "printed",
+      "image": {
+        "icon": {
+          "px": [
+            4270,
+            2200
+          ],
+          "norm": [
+            0.58493,
+            0.288
+          ]
+        },
+        "all_icons_px": [
+          [
+            4270,
+            2200
+          ]
+        ],
+        "label": {
+          "px": [
+            4103,
+            2222
+          ],
+          "norm": [
+            0.56205,
+            0.29088
+          ]
+        }
+      },
+      "chart": {
+        "log10_width_m": 11.861,
+        "log10_mass_kg": 39.173,
+        "log10_energy_eV": 74.626,
+        "log10_density_proxy_kg_m3": 3.591,
+        "position_is_schematic": false
+      },
+      "reference": {
+        "mass_kg": 4.9725e+39,
+        "width_m": 14769230000000.0,
+        "width_basis": "schwarzschild_diameter",
+        "log10_mass_kg": 39.696575,
+        "log10_width_m": 13.169358,
+        "log10_density_proxy_kg_m3": 0.189,
+        "confidence": "medium",
+        "representative": false,
+        "notes": "Central black hole ~2.5e9 solar masses (the radio galaxy itself is far larger)."
+      },
+      "description": "A powerful radio galaxy whose central supermassive black hole drives jets hundreds of thousands of light-years long.",
+      "links": {},
+      "first_appeared": {
+        "seconds_after_big_bang": 2.2092e+16,
+        "years_ago": null,
+        "log10_seconds": 16.344235,
+        "label": "700 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Billion-solar-mass black holes (quasars) existed within ~700 million years of the Big Bang; Cygnus A's own history is unknown."
+      }
+    },
+    {
+      "id": "sagittarius_a_star",
+      "name": "Sagittarius A*",
+      "printed_label": "SAG A",
+      "category": "black_hole",
+      "subcategory": "supermassive",
+      "hypothetical": false,
+      "labeled_on_chart": true,
+      "identification": "printed",
+      "image": {
+        "icon": {
+          "px": [
+            4105,
+            2385
+          ],
+          "norm": [
+            0.56233,
+            0.31221
+          ]
+        },
+        "all_icons_px": [
+          [
+            4105,
+            2385
+          ]
+        ],
+        "label": {
+          "px": [
+            4235,
+            2405
+          ],
+          "norm": [
+            0.58014,
+            0.31483
+          ]
+        }
+      },
+      "chart": {
+        "log10_width_m": 8.289,
+        "log10_mass_kg": 35.167,
+        "log10_energy_eV": 70.619,
+        "log10_density_proxy_kg_m3": 10.3,
+        "position_is_schematic": false
+      },
+      "reference": {
+        "mass_kg": 8.5527e+36,
+        "width_m": 25403070000.0,
+        "width_basis": "schwarzschild_diameter",
+        "log10_mass_kg": 36.932103,
+        "log10_width_m": 10.404886,
+        "log10_density_proxy_kg_m3": 5.717,
+        "confidence": "high",
+        "representative": false,
+        "notes": "~4.3e6 solar masses."
+      },
+      "description": "The supermassive black hole at the centre of the Milky Way, imaged by the Event Horizon Telescope in 2022.",
+      "links": {},
+      "first_appeared": {
+        "seconds_after_big_bang": 3.156e+16,
+        "years_ago": null,
+        "log10_seconds": 16.499137,
+        "label": "1 billion years after the Big Bang",
+        "basis": "this_object",
+        "confidence": "low",
+        "note": "Thought to have grown with the young Milky Way; its exact age is unknown."
+      }
+    },
+    {
+      "id": "lb_1",
+      "name": "LB-1",
+      "printed_label": "LB1",
+      "category": "black_hole",
+      "subcategory": "stellar",
+      "hypothetical": false,
+      "labeled_on_chart": true,
+      "identification": "printed",
+      "image": {
+        "icon": {
+          "px": [
+            3975,
+            2510
+          ],
+          "norm": [
+            0.54452,
+            0.32858
+          ]
+        },
+        "all_icons_px": [
+          [
+            3975,
+            2510
+          ]
+        ],
+        "label": {
+          "px": [
+            4075,
+            2535
+          ],
+          "norm": [
+            0.55822,
+            0.33185
+          ]
+        }
+      },
+      "chart": {
+        "log10_width_m": 5.475,
+        "log10_mass_kg": 32.46,
+        "log10_energy_eV": 67.912,
+        "log10_density_proxy_kg_m3": 16.035,
+        "position_is_schematic": false
+      },
+      "reference": {
+        "mass_kg": 1.3923e+32,
+        "width_m": 413538.3,
+        "width_basis": "schwarzschild_diameter",
+        "log10_mass_kg": 32.143733,
+        "log10_width_m": 5.616516,
+        "log10_density_proxy_kg_m3": 15.294,
+        "confidence": "low",
+        "representative": false,
+        "notes": "The 2019 claim of a ~70 solar-mass black hole; later analyses favour a much smaller black hole or none."
+      },
+      "description": "A binary system announced in 2019 as hosting a surprisingly heavy stellar black hole; the claim has since been disputed.",
+      "links": {},
+      "first_appeared": {
+        "seconds_after_big_bang": 6312000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.800167,
+        "label": "200 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Stellar black holes first formed when the earliest massive stars collapsed, ~200 million years after the Big Bang."
+      }
+    },
+    {
+      "id": "v616_monocerotis",
+      "name": "V616 Monocerotis (A0620-00)",
+      "printed_label": "MONOCEROTIS",
+      "category": "black_hole",
+      "subcategory": "stellar",
+      "hypothetical": false,
+      "labeled_on_chart": true,
+      "identification": "probable",
+      "image": {
+        "icon": {
+          "px": [
+            3885,
+            2595
+          ],
+          "norm": [
+            0.53219,
+            0.3397
+          ]
+        },
+        "all_icons_px": [
+          [
+            3885,
+            2595
+          ]
+        ],
+        "label": {
+          "px": [
+            3873,
+            2683
+          ],
+          "norm": [
+            0.53055,
+            0.35122
+          ]
+        }
+      },
+      "chart": {
+        "log10_width_m": 3.527,
+        "log10_mass_kg": 30.62,
+        "log10_energy_eV": 66.071,
+        "log10_density_proxy_kg_m3": 20.038,
+        "position_is_schematic": false
+      },
+      "reference": {
+        "mass_kg": 1.31274e+31,
+        "width_m": 38990.76,
+        "width_basis": "schwarzschild_diameter",
+        "log10_mass_kg": 31.118179,
+        "log10_width_m": 4.590962,
+        "log10_density_proxy_kg_m3": 17.345,
+        "confidence": "medium",
+        "representative": false,
+        "notes": "Identification inferred from the label 'MONOCEROTIS'; ~6.6 solar masses."
+      },
+      "description": "Probably V616 Monocerotis, one of the nearest known stellar-mass black holes (~3,000 light-years away).",
+      "links": {},
+      "first_appeared": {
+        "seconds_after_big_bang": 6312000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.800167,
+        "label": "200 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Stellar black holes first formed when the earliest massive stars collapsed, ~200 million years after the Big Bang."
+      }
+    },
+    {
+      "id": "primordial_black_hole",
+      "name": "Primordial black hole",
+      "printed_label": null,
+      "category": "black_hole",
+      "subcategory": "primordial",
+      "hypothetical": true,
+      "labeled_on_chart": false,
+      "identification": "inferred",
+      "image": {
+        "icon": {
+          "px": [
+            3116,
+            3367
+          ],
+          "norm": [
+            0.42685,
+            0.44076
+          ]
+        },
+        "all_icons_px": [
+          [
+            3116,
+            3367
+          ]
+        ],
+        "label": null
+      },
+      "chart": {
+        "log10_width_m": -13.118,
+        "log10_mass_kg": 13.903,
+        "log10_energy_eV": 49.349,
+        "log10_density_proxy_kg_m3": 53.258,
+        "position_is_schematic": false
+      },
+      "reference": {
+        "mass_kg": 100000000000000.0,
+        "width_m": 2.970181e-13,
+        "width_basis": "schwarzschild_diameter",
+        "log10_mass_kg": 14.0,
+        "log10_width_m": -12.527217,
+        "log10_density_proxy_kg_m3": 51.582,
+        "confidence": "low",
+        "representative": true,
+        "notes": "Hypothetical. Mass chosen near where the poster draws it; a black hole's width follows from its mass (Schwarzschild diameter), so it sits exactly on the black-hole line. The poster draws it slightly inside the forbidden region."
+      },
+      "description": "Unlabelled icon on the Schwarzschild line inside the 'primordial black holes*' band: a hypothetical black hole formed in the early universe.",
+      "links": {},
+      "first_appeared": {
+        "seconds_after_big_bang": 2.47680215449183e-22,
+        "years_ago": null,
+        "log10_seconds": -21.606109,
+        "label": "10^-22 seconds after the Big Bang",
+        "basis": "physics",
+        "confidence": "low",
+        "note": "If primordial black holes exist, one forms when its mass fits inside the horizon: t ~ GM/c^3."
+      }
+    },
+    {
+      "id": "neutron_star",
+      "name": "Neutron star",
+      "printed_label": null,
+      "category": "stellar_remnant",
+      "subcategory": null,
+      "hypothetical": false,
+      "labeled_on_chart": false,
+      "identification": "tentative",
+      "image": {
+        "icon": {
+          "px": [
+            3960,
+            2626
+          ],
+          "norm": [
+            0.54247,
+            0.34376
+          ]
+        },
+        "all_icons_px": [
+          [
+            3960,
+            2626
+          ]
+        ],
+        "label": null
+      },
+      "chart": {
+        "log10_width_m": 5.151,
+        "log10_mass_kg": 29.949,
+        "log10_energy_eV": 65.399,
+        "log10_density_proxy_kg_m3": 14.497,
+        "position_is_schematic": false
+      },
+      "reference": {
+        "mass_kg": 2.7846e+30,
+        "width_m": 24000.0,
+        "width_basis": "diameter",
+        "log10_mass_kg": 30.444763,
+        "log10_width_m": 4.380211,
+        "log10_density_proxy_kg_m3": 17.304,
+        "confidence": "medium",
+        "representative": true,
+        "notes": ""
+      },
+      "description": "Unlabelled small dark sphere (tentative): a collapsed stellar core ~20 km across, denser than an atomic nucleus.",
+      "links": {},
+      "first_appeared": {
+        "seconds_after_big_bang": 6312000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.800167,
+        "label": "200 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "The first supernovae, ~200 million years after the Big Bang, left the first neutron stars."
+      }
+    },
+    {
+      "id": "white_dwarfs",
+      "name": "White dwarfs",
+      "printed_label": null,
+      "category": "stellar_remnant",
+      "subcategory": null,
+      "hypothetical": false,
+      "labeled_on_chart": false,
+      "identification": "tentative",
+      "image": {
+        "icon": {
+          "px": [
+            4220,
+            2540
+          ],
+          "norm": [
+            0.57808,
+            0.3325
+          ]
+        },
+        "all_icons_px": [
+          [
+            4220,
+            2540
+          ],
+          [
+            4235,
+            2520
+          ],
+          [
+            4205,
+            2560
+          ]
+        ],
+        "label": null
+      },
+      "chart": {
+        "log10_width_m": 10.778,
+        "log10_mass_kg": 31.811,
+        "log10_energy_eV": 67.262,
+        "log10_density_proxy_kg_m3": -0.524,
+        "position_is_schematic": true
+      },
+      "reference": {
+        "mass_kg": 1.1934e+30,
+        "width_m": 17000000.0,
+        "width_basis": "diameter",
+        "log10_mass_kg": 30.076786,
+        "log10_width_m": 7.230449,
+        "log10_density_proxy_kg_m3": 8.385,
+        "confidence": "medium",
+        "representative": true,
+        "notes": ""
+      },
+      "description": "Unlabelled white spheres (tentative): Earth-sized remnants of Sun-like stars, supported by electron degeneracy pressure.",
+      "links": {},
+      "first_appeared": {
+        "seconds_after_big_bang": 9468000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.976258,
+        "label": "300 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Stars of a few solar masses live tens to hundreds of millions of years before leaving white dwarfs."
+      }
+    },
+    {
+      "id": "sun",
+      "name": "Sun",
+      "printed_label": "SUN",
+      "category": "star",
+      "subcategory": null,
+      "hypothetical": false,
+      "labeled_on_chart": true,
+      "identification": "printed",
+      "image": {
+        "icon": {
+          "px": [
+            4150,
+            2605
+          ],
+          "norm": [
+            0.56849,
+            0.34101
+          ]
+        },
+        "all_icons_px": [
+          [
+            4150,
+            2605
+          ]
+        ],
+        "label": {
+          "px": [
+            4375,
+            2535
+          ],
+          "norm": [
+            0.59932,
+            0.33185
+          ]
+        }
+      },
+      "chart": {
+        "log10_width_m": 9.263,
+        "log10_mass_kg": 30.403,
+        "log10_energy_eV": 65.854,
+        "log10_density_proxy_kg_m3": 2.614,
+        "position_is_schematic": false
+      },
+      "reference": {
+        "mass_kg": 1.989e+30,
+        "width_m": 1392700000.0,
+        "width_basis": "diameter",
+        "log10_mass_kg": 30.298635,
+        "log10_width_m": 9.143858,
+        "log10_density_proxy_kg_m3": 2.867,
+        "confidence": "high",
+        "representative": false,
+        "notes": ""
+      },
+      "description": "Our star: a G-type main-sequence star holding 99.8% of the Solar System's mass.",
+      "links": {},
+      "first_appeared": {
+        "seconds_after_big_bang": 2.8978297277750957e+17,
+        "years_ago": 4603000000.0,
+        "log10_seconds": 17.462073,
+        "label": "4.6 billion years ago",
+        "basis": "this_object",
+        "confidence": "high",
+        "note": "Formed 4.6 billion years ago from a collapsing cloud of gas and dust."
+      }
+    },
+    {
+      "id": "red_dwarfs",
+      "name": "Red dwarfs",
+      "printed_label": null,
+      "category": "star",
+      "subcategory": null,
+      "hypothetical": false,
+      "labeled_on_chart": false,
+      "identification": "tentative",
+      "image": {
+        "icon": {
+          "px": [
+            4268,
+            2628
+          ],
+          "norm": [
+            0.58466,
+            0.34402
+          ]
+        },
+        "all_icons_px": [
+          [
+            4268,
+            2628
+          ],
+          [
+            4240,
+            2640
+          ],
+          [
+            4295,
+            2615
+          ]
+        ],
+        "label": null
+      },
+      "chart": {
+        "log10_width_m": 11.817,
+        "log10_mass_kg": 29.905,
+        "log10_energy_eV": 65.356,
+        "log10_density_proxy_kg_m3": -5.547,
+        "position_is_schematic": true
+      },
+      "reference": {
+        "mass_kg": 2.42658e+29,
+        "width_m": 214000000.0,
+        "width_basis": "diameter",
+        "log10_mass_kg": 29.384995,
+        "log10_width_m": 8.330414,
+        "log10_density_proxy_kg_m3": 4.394,
+        "confidence": "medium",
+        "representative": true,
+        "notes": "Values for Proxima Centauri."
+      },
+      "description": "Unlabelled red spheres (tentative): small cool stars, the most common kind in the galaxy. The 'STARS & PLANETS' arrow points here.",
+      "links": {},
+      "first_appeared": {
+        "seconds_after_big_bang": 2.477365277750957e+16,
+        "years_ago": 13000000000.0,
+        "log10_seconds": 16.39399,
+        "label": "785 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Small, long-lived stars; the oldest known are ~13 billion years old."
+      }
+    },
+    {
+      "id": "brown_dwarf",
+      "name": "Brown dwarf",
+      "printed_label": null,
+      "category": "substellar",
+      "subcategory": null,
+      "hypothetical": false,
+      "labeled_on_chart": false,
+      "identification": "tentative",
+      "image": {
+        "icon": {
+          "px": [
+            4122,
+            2678
+          ],
+          "norm": [
+            0.56466,
+            0.35057
+          ]
+        },
+        "all_icons_px": [
+          [
+            4122,
+            2678
+          ]
+        ],
+        "label": null
+      },
+      "chart": {
+        "log10_width_m": 8.657,
+        "log10_mass_kg": 28.823,
+        "log10_energy_eV": 64.273,
+        "log10_density_proxy_kg_m3": 2.851,
+        "position_is_schematic": false
+      },
+      "reference": {
+        "mass_kg": 7.956e+28,
+        "width_m": 140000000.0,
+        "width_basis": "diameter",
+        "log10_mass_kg": 28.900695,
+        "log10_width_m": 8.146128,
+        "log10_density_proxy_kg_m3": 4.462,
+        "confidence": "medium",
+        "representative": true,
+        "notes": ""
+      },
+      "description": "Unlabelled banded sphere (tentative): a 'failed star' of ~13-80 Jupiter masses, too light to fuse hydrogen.",
+      "links": {},
+      "first_appeared": {
+        "seconds_after_big_bang": 2.477365277750957e+16,
+        "years_ago": 13000000000.0,
+        "log10_seconds": 16.39399,
+        "label": "785 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Formed like stars, from the earliest generations of star formation."
+      }
+    },
+    {
+      "id": "jupiter",
+      "name": "Jupiter",
+      "printed_label": "JUPITER",
+      "category": "planet",
+      "subcategory": null,
+      "hypothetical": false,
+      "labeled_on_chart": true,
+      "identification": "printed",
+      "image": {
+        "icon": {
+          "px": [
+            4079,
+            2757
+          ],
+          "norm": [
+            0.55877,
+            0.36091
+          ]
+        },
+        "all_icons_px": [
+          [
+            4079,
+            2757
+          ]
+        ],
+        "label": {
+          "px": [
+            4316,
+            2799
+          ],
+          "norm": [
+            0.59123,
+            0.36641
+          ]
+        }
+      },
+      "chart": {
+        "log10_width_m": 7.726,
+        "log10_mass_kg": 27.112,
+        "log10_energy_eV": 62.562,
+        "log10_density_proxy_kg_m3": 3.933,
+        "position_is_schematic": false
+      },
+      "reference": {
+        "mass_kg": 1.898e+27,
+        "width_m": 139820000.0,
+        "width_basis": "diameter",
+        "log10_mass_kg": 27.278296,
+        "log10_width_m": 8.145569,
+        "log10_density_proxy_kg_m3": 2.842,
+        "confidence": "high",
+        "representative": false,
+        "notes": ""
+      },
+      "description": "The largest planet, more than twice as massive as all the other planets combined.",
+      "links": {},
+      "first_appeared": {
+        "seconds_after_big_bang": 2.8987765277750957e+17,
+        "years_ago": 4600000000.0,
+        "log10_seconds": 17.462215,
+        "label": "4.6 billion years ago",
+        "basis": "this_object",
+        "confidence": "high",
+        "note": "The first planet to form, within a few million years of the Sun."
+      }
+    },
+    {
+      "id": "saturn",
+      "name": "Saturn",
+      "printed_label": null,
+      "category": "planet",
+      "subcategory": null,
+      "hypothetical": false,
+      "labeled_on_chart": false,
+      "identification": "visual",
+      "image": {
+        "icon": {
+          "px": [
+            4085,
+            2820
+          ],
+          "norm": [
+            0.55959,
+            0.36916
+          ]
+        },
+        "all_icons_px": [
+          [
+            4085,
+            2820
+          ]
+        ],
+        "label": null
+      },
+      "chart": {
+        "log10_width_m": 7.856,
+        "log10_mass_kg": 25.748,
+        "log10_energy_eV": 61.197,
+        "log10_density_proxy_kg_m3": 2.179,
+        "position_is_schematic": false
+      },
+      "reference": {
+        "mass_kg": 5.683e+26,
+        "width_m": 116460000.0,
+        "width_basis": "diameter",
+        "log10_mass_kg": 26.754578,
+        "log10_width_m": 8.066177,
+        "log10_density_proxy_kg_m3": 2.556,
+        "confidence": "high",
+        "representative": false,
+        "notes": ""
+      },
+      "description": "Unlabelled ringed planet: the gas giant whose average density is lower than water's.",
+      "links": {},
+      "first_appeared": {
+        "seconds_after_big_bang": 2.9303365277750957e+17,
+        "years_ago": 4500000000.0,
+        "log10_seconds": 17.466917,
+        "label": "4.5 billion years ago",
+        "basis": "this_object",
+        "confidence": "high",
+        "note": ""
+      }
+    },
+    {
+      "id": "uranus",
+      "name": "Uranus",
+      "printed_label": null,
+      "category": "planet",
+      "subcategory": null,
+      "hypothetical": false,
+      "labeled_on_chart": false,
+      "identification": "visual",
+      "image": {
+        "icon": {
+          "px": [
+            4164,
+            2852
+          ],
+          "norm": [
+            0.57041,
+            0.37335
+          ]
+        },
+        "all_icons_px": [
+          [
+            4164,
+            2852
+          ]
+        ],
+        "label": null
+      },
+      "chart": {
+        "log10_width_m": 9.566,
+        "log10_mass_kg": 25.055,
+        "log10_energy_eV": 60.504,
+        "log10_density_proxy_kg_m3": -3.644,
+        "position_is_schematic": true
+      },
+      "reference": {
+        "mass_kg": 8.681e+25,
+        "width_m": 50724000.0,
+        "width_basis": "diameter",
+        "log10_mass_kg": 25.93857,
+        "log10_width_m": 7.705213,
+        "log10_density_proxy_kg_m3": 2.823,
+        "confidence": "high",
+        "representative": false,
+        "notes": ""
+      },
+      "description": "Unlabelled cyan planet: the ice giant that rotates on its side.",
+      "links": {},
+      "first_appeared": {
+        "seconds_after_big_bang": 2.9303365277750957e+17,
+        "years_ago": 4500000000.0,
+        "log10_seconds": 17.466917,
+        "label": "4.5 billion years ago",
+        "basis": "this_object",
+        "confidence": "high",
+        "note": ""
+      }
+    },
+    {
+      "id": "neptune",
+      "name": "Neptune",
+      "printed_label": null,
+      "category": "planet",
+      "subcategory": null,
+      "hypothetical": false,
+      "labeled_on_chart": false,
+      "identification": "visual",
+      "image": {
+        "icon": {
+          "px": [
+            4201,
+            2852
+          ],
+          "norm": [
+            0.57548,
+            0.37335
+          ]
+        },
+        "all_icons_px": [
+          [
+            4201,
+            2852
+          ]
+        ],
+        "label": null
+      },
+      "chart": {
+        "log10_width_m": 10.367,
+        "log10_mass_kg": 25.055,
+        "log10_energy_eV": 60.504,
+        "log10_density_proxy_kg_m3": -6.046,
+        "position_is_schematic": true
+      },
+      "reference": {
+        "mass_kg": 1.024e+26,
+        "width_m": 49244000.0,
+        "width_basis": "diameter",
+        "log10_mass_kg": 26.0103,
+        "log10_width_m": 7.692353,
+        "log10_density_proxy_kg_m3": 2.933,
+        "confidence": "high",
+        "representative": false,
+        "notes": ""
+      },
+      "description": "Unlabelled blue planet: the outermost ice giant.",
+      "links": {},
+      "first_appeared": {
+        "seconds_after_big_bang": 2.9303365277750957e+17,
+        "years_ago": 4500000000.0,
+        "log10_seconds": 17.466917,
+        "label": "4.5 billion years ago",
+        "basis": "this_object",
+        "confidence": "high",
+        "note": ""
+      }
+    },
+    {
+      "id": "earth",
+      "name": "Earth",
+      "printed_label": "EARTH",
+      "category": "planet",
+      "subcategory": null,
+      "hypothetical": false,
+      "labeled_on_chart": true,
+      "identification": "printed",
+      "image": {
+        "icon": {
+          "px": [
+            4033,
+            2902
+          ],
+          "norm": [
+            0.55247,
+            0.37989
+          ]
+        },
+        "all_icons_px": [
+          [
+            4033,
+            2902
+          ]
+        ],
+        "label": {
+          "px": [
+            4259,
+            2917
+          ],
+          "norm": [
+            0.58342,
+            0.38186
+          ]
+        }
+      },
+      "chart": {
+        "log10_width_m": 6.731,
+        "log10_mass_kg": 23.972,
+        "log10_energy_eV": 59.421,
+        "log10_density_proxy_kg_m3": 3.78,
+        "position_is_schematic": false
+      },
+      "reference": {
+        "mass_kg": 5.972e+24,
+        "width_m": 12742000.0,
+        "width_basis": "diameter",
+        "log10_mass_kg": 24.77612,
+        "log10_width_m": 7.105238,
+        "log10_density_proxy_kg_m3": 3.46,
+        "confidence": "high",
+        "representative": false,
+        "notes": ""
+      },
+      "description": "Our home planet - the densest planet in the Solar System.",
+      "links": {},
+      "first_appeared": {
+        "seconds_after_big_bang": 2.9177125277750957e+17,
+        "years_ago": 4540000000.0,
+        "log10_seconds": 17.465043,
+        "label": "4.54 billion years ago",
+        "basis": "this_object",
+        "confidence": "high",
+        "note": ""
+      }
+    },
+    {
+      "id": "venus",
+      "name": "Venus",
+      "printed_label": null,
+      "category": "planet",
+      "subcategory": null,
+      "hypothetical": false,
+      "labeled_on_chart": false,
+      "identification": "tentative",
+      "image": {
+        "icon": {
+          "px": [
+            3852,
+            2927
+          ],
+          "norm": [
+            0.52767,
+            0.38317
+          ]
+        },
+        "all_icons_px": [
+          [
+            3852,
+            2927
+          ]
+        ],
+        "label": null
+      },
+      "chart": {
+        "log10_width_m": 2.813,
+        "log10_mass_kg": 23.431,
+        "log10_energy_eV": 58.88,
+        "log10_density_proxy_kg_m3": 14.992,
+        "position_is_schematic": true
+      },
+      "reference": {
+        "mass_kg": 4.867e+24,
+        "width_m": 12104000.0,
+        "width_basis": "diameter",
+        "log10_mass_kg": 24.687261,
+        "log10_width_m": 7.082929,
+        "log10_density_proxy_kg_m3": 3.438,
+        "confidence": "high",
+        "representative": false,
+        "notes": ""
+      },
+      "description": "Unlabelled tan planet with an arrow pointing at Earth (tentative: Venus, Earth's near-twin in size).",
+      "links": {},
+      "first_appeared": {
+        "seconds_after_big_bang": 2.9303365277750957e+17,
+        "years_ago": 4500000000.0,
+        "log10_seconds": 17.466917,
+        "label": "4.5 billion years ago",
+        "basis": "this_object",
+        "confidence": "high",
+        "note": ""
+      }
+    },
+    {
+      "id": "mercury",
+      "name": "Mercury",
+      "printed_label": null,
+      "category": "planet",
+      "subcategory": null,
+      "hypothetical": false,
+      "labeled_on_chart": false,
+      "identification": "tentative",
+      "image": {
+        "icon": {
+          "px": [
+            4128,
+            2947
+          ],
+          "norm": [
+            0.56548,
+            0.38578
+          ]
+        },
+        "all_icons_px": [
+          [
+            4128,
+            2947
+          ]
+        ],
+        "label": null
+      },
+      "chart": {
+        "log10_width_m": 8.787,
+        "log10_mass_kg": 22.998,
+        "log10_energy_eV": 58.446,
+        "log10_density_proxy_kg_m3": -3.363,
+        "position_is_schematic": true
+      },
+      "reference": {
+        "mass_kg": 3.301e+23,
+        "width_m": 4879000.0,
+        "width_basis": "diameter",
+        "log10_mass_kg": 23.518646,
+        "log10_width_m": 6.688331,
+        "log10_density_proxy_kg_m3": 3.454,
+        "confidence": "high",
+        "representative": false,
+        "notes": ""
+      },
+      "description": "Unlabelled grey planet (tentative): the smallest planet.",
+      "links": {},
+      "first_appeared": {
+        "seconds_after_big_bang": 2.9303365277750957e+17,
+        "years_ago": 4500000000.0,
+        "log10_seconds": 17.466917,
+        "label": "4.5 billion years ago",
+        "basis": "this_object",
+        "confidence": "high",
+        "note": ""
+      }
+    },
+    {
+      "id": "mars",
+      "name": "Mars",
+      "printed_label": null,
+      "category": "planet",
+      "subcategory": null,
+      "hypothetical": false,
+      "labeled_on_chart": false,
+      "identification": "tentative",
+      "image": {
+        "icon": {
+          "px": [
+            4162,
+            2947
+          ],
+          "norm": [
+            0.57014,
+            0.38578
+          ]
+        },
+        "all_icons_px": [
+          [
+            4162,
+            2947
+          ]
+        ],
+        "label": null
+      },
+      "chart": {
+        "log10_width_m": 9.523,
+        "log10_mass_kg": 22.998,
+        "log10_energy_eV": 58.446,
+        "log10_density_proxy_kg_m3": -5.571,
+        "position_is_schematic": true
+      },
+      "reference": {
+        "mass_kg": 6.417e+23,
+        "width_m": 6779000.0,
+        "width_basis": "diameter",
+        "log10_mass_kg": 23.807332,
+        "log10_width_m": 6.831166,
+        "log10_density_proxy_kg_m3": 3.314,
+        "confidence": "high",
+        "representative": false,
+        "notes": ""
+      },
+      "description": "Unlabelled orange planet (tentative): about half Earth's diameter.",
+      "links": {},
+      "first_appeared": {
+        "seconds_after_big_bang": 2.9303365277750957e+17,
+        "years_ago": 4500000000.0,
+        "log10_seconds": 17.466917,
+        "label": "4.5 billion years ago",
+        "basis": "this_object",
+        "confidence": "high",
+        "note": ""
+      }
+    },
+    {
+      "id": "moon",
+      "name": "Moon",
+      "printed_label": "MOON",
+      "category": "moon",
+      "subcategory": null,
+      "hypothetical": false,
+      "labeled_on_chart": true,
+      "identification": "printed",
+      "image": {
+        "icon": {
+          "px": [
+            4002,
+            2994
+          ],
+          "norm": [
+            0.54822,
+            0.39194
+          ]
+        },
+        "all_icons_px": [
+          [
+            4002,
+            2994
+          ]
+        ],
+        "label": {
+          "px": [
+            4227,
+            3008
+          ],
+          "norm": [
+            0.57904,
+            0.39377
+          ]
+        }
+      },
+      "chart": {
+        "log10_width_m": 6.06,
+        "log10_mass_kg": 21.98,
+        "log10_energy_eV": 57.428,
+        "log10_density_proxy_kg_m3": 3.801,
+        "position_is_schematic": false
+      },
+      "reference": {
+        "mass_kg": 7.342e+22,
+        "width_m": 3474800.0,
+        "width_basis": "diameter",
+        "log10_mass_kg": 22.865814,
+        "log10_width_m": 6.54093,
+        "log10_density_proxy_kg_m3": 3.243,
+        "confidence": "high",
+        "representative": false,
+        "notes": ""
+      },
+      "description": "Earth's natural satellite, about a quarter of Earth's diameter.",
+      "links": {},
+      "first_appeared": {
+        "seconds_after_big_bang": 2.9271805277750957e+17,
+        "years_ago": 4510000000.0,
+        "log10_seconds": 17.46645,
+        "label": "4.51 billion years ago",
+        "basis": "this_object",
+        "confidence": "high",
+        "note": "Probably formed from the debris of a giant impact on the young Earth."
+      }
+    },
+    {
+      "id": "pluto",
+      "name": "Pluto",
+      "printed_label": null,
+      "category": "dwarf_planet",
+      "subcategory": null,
+      "hypothetical": false,
+      "labeled_on_chart": false,
+      "identification": "tentative",
+      "image": {
+        "icon": {
+          "px": [
+            3813,
+            2987
+          ],
+          "norm": [
+            0.52233,
+            0.39102
+          ]
+        },
+        "all_icons_px": [
+          [
+            3813,
+            2987
+          ]
+        ],
+        "label": null
+      },
+      "chart": {
+        "log10_width_m": 1.969,
+        "log10_mass_kg": 22.132,
+        "log10_energy_eV": 57.58,
+        "log10_density_proxy_kg_m3": 16.225,
+        "position_is_schematic": true
+      },
+      "reference": {
+        "mass_kg": 1.303e+22,
+        "width_m": 2377200.0,
+        "width_basis": "diameter",
+        "log10_mass_kg": 22.114944,
+        "log10_width_m": 6.376066,
+        "log10_density_proxy_kg_m3": 2.987,
+        "confidence": "high",
+        "representative": false,
+        "notes": ""
+      },
+      "description": "Unlabelled pale body with an arrow pointing at the Moon (tentative: Pluto).",
+      "links": {},
+      "first_appeared": {
+        "seconds_after_big_bang": 2.9303365277750957e+17,
+        "years_ago": 4500000000.0,
+        "log10_seconds": 17.466917,
+        "label": "4.5 billion years ago",
+        "basis": "this_object",
+        "confidence": "high",
+        "note": ""
+      }
+    },
+    {
+      "id": "ceres",
+      "name": "Ceres",
+      "printed_label": null,
+      "category": "dwarf_planet",
+      "subcategory": null,
+      "hypothetical": false,
+      "labeled_on_chart": false,
+      "identification": "tentative",
+      "image": {
+        "icon": {
+          "px": [
+            4092,
+            3078
+          ],
+          "norm": [
+            0.56055,
+            0.40293
+          ]
+        },
+        "all_icons_px": [
+          [
+            4092,
+            3078
+          ]
+        ],
+        "label": null
+      },
+      "chart": {
+        "log10_width_m": 8.008,
+        "log10_mass_kg": 20.161,
+        "log10_energy_eV": 55.609,
+        "log10_density_proxy_kg_m3": -3.862,
+        "position_is_schematic": true
+      },
+      "reference": {
+        "mass_kg": 9.38e+20,
+        "width_m": 939000.0,
+        "width_basis": "diameter",
+        "log10_mass_kg": 20.972203,
+        "log10_width_m": 5.972666,
+        "log10_density_proxy_kg_m3": 3.054,
+        "confidence": "high",
+        "representative": false,
+        "notes": ""
+      },
+      "description": "Unlabelled small grey body (tentative): the largest object in the asteroid belt.",
+      "links": {},
+      "first_appeared": {
+        "seconds_after_big_bang": 2.9303365277750957e+17,
+        "years_ago": 4500000000.0,
+        "log10_seconds": 17.466917,
+        "label": "4.5 billion years ago",
+        "basis": "this_object",
+        "confidence": "high",
+        "note": ""
+      }
+    },
+    {
+      "id": "enceladus",
+      "name": "Enceladus",
+      "printed_label": "ENCELADUS",
+      "category": "moon",
+      "subcategory": null,
+      "hypothetical": false,
+      "labeled_on_chart": true,
+      "identification": "printed",
+      "image": {
+        "icon": {
+          "px": [
+            3957,
+            3130
+          ],
+          "norm": [
+            0.54205,
+            0.40974
+          ]
+        },
+        "all_icons_px": [
+          [
+            3957,
+            3130
+          ]
+        ],
+        "label": {
+          "px": [
+            4256,
+            3131
+          ],
+          "norm": [
+            0.58301,
+            0.40987
+          ]
+        }
+      },
+      "chart": {
+        "log10_width_m": 5.086,
+        "log10_mass_kg": 19.035,
+        "log10_energy_eV": 54.483,
+        "log10_density_proxy_kg_m3": 3.778,
+        "position_is_schematic": false
+      },
+      "reference": {
+        "mass_kg": 1.08e+20,
+        "width_m": 504000.0,
+        "width_basis": "diameter",
+        "log10_mass_kg": 20.033424,
+        "log10_width_m": 5.702431,
+        "log10_density_proxy_kg_m3": 2.926,
+        "confidence": "high",
+        "representative": false,
+        "notes": ""
+      },
+      "description": "A small icy moon of Saturn that sprays water from a subsurface ocean.",
+      "links": {},
+      "first_appeared": {
+        "seconds_after_big_bang": 2.9303365277750957e+17,
+        "years_ago": 4500000000.0,
+        "log10_seconds": 17.466917,
+        "label": "4.5 billion years ago",
+        "basis": "this_object",
+        "confidence": "low",
+        "note": "Some studies suggest Saturn's inner moons could be as young as ~100 million years."
+      }
+    },
+    {
+      "id": "phobos",
+      "name": "Phobos",
+      "printed_label": "PHOBOS & DEIMOS",
+      "category": "moon",
+      "subcategory": null,
+      "hypothetical": false,
+      "labeled_on_chart": true,
+      "identification": "printed",
+      "image": {
+        "icon": {
+          "px": [
+            3965,
+            3287
+          ],
+          "norm": [
+            0.54315,
+            0.43029
+          ]
+        },
+        "all_icons_px": [
+          [
+            3965,
+            3287
+          ]
+        ],
+        "label": {
+          "px": [
+            4170,
+            3305
+          ],
+          "norm": [
+            0.57123,
+            0.43265
+          ]
+        }
+      },
+      "chart": {
+        "log10_width_m": 5.259,
+        "log10_mass_kg": 15.636,
+        "log10_energy_eV": 51.082,
+        "log10_density_proxy_kg_m3": -0.141,
+        "position_is_schematic": false
+      },
+      "reference": {
+        "mass_kg": 1.0659e+16,
+        "width_m": 22500.0,
+        "width_basis": "diameter",
+        "log10_mass_kg": 16.027716,
+        "log10_width_m": 4.352183,
+        "log10_density_proxy_kg_m3": 2.971,
+        "confidence": "high",
+        "representative": false,
+        "notes": "Mean diameter."
+      },
+      "description": "The larger of Mars's two small, lumpy moons.",
+      "links": {},
+      "first_appeared": {
+        "seconds_after_big_bang": 2.9934565277750957e+17,
+        "years_ago": 4300000000.0,
+        "log10_seconds": 17.476173,
+        "label": "4.3 billion years ago",
+        "basis": "this_object",
+        "confidence": "low",
+        "note": "Origin debated: captured asteroid or debris from an impact on Mars."
+      }
+    },
+    {
+      "id": "deimos",
+      "name": "Deimos",
+      "printed_label": "PHOBOS & DEIMOS",
+      "category": "moon",
+      "subcategory": null,
+      "hypothetical": false,
+      "labeled_on_chart": true,
+      "identification": "printed",
+      "image": {
+        "icon": {
+          "px": [
+            3928,
+            3358
+          ],
+          "norm": [
+            0.53808,
+            0.43959
+          ]
+        },
+        "all_icons_px": [
+          [
+            3928,
+            3358
+          ]
+        ],
+        "label": {
+          "px": [
+            4170,
+            3305
+          ],
+          "norm": [
+            0.57123,
+            0.43265
+          ]
+        }
+      },
+      "chart": {
+        "log10_width_m": 4.458,
+        "log10_mass_kg": 14.098,
+        "log10_energy_eV": 49.544,
+        "log10_density_proxy_kg_m3": 0.724,
+        "position_is_schematic": false
+      },
+      "reference": {
+        "mass_kg": 1476200000000000.0,
+        "width_m": 12400.0,
+        "width_basis": "diameter",
+        "log10_mass_kg": 15.169145,
+        "log10_width_m": 4.093422,
+        "log10_density_proxy_kg_m3": 2.889,
+        "confidence": "high",
+        "representative": false,
+        "notes": "Mean diameter."
+      },
+      "description": "The smaller, outer moon of Mars.",
+      "links": {},
+      "first_appeared": {
+        "seconds_after_big_bang": 2.9934565277750957e+17,
+        "years_ago": 4300000000.0,
+        "log10_seconds": 17.476173,
+        "label": "4.3 billion years ago",
+        "basis": "this_object",
+        "confidence": "low",
+        "note": "Origin debated: captured asteroid or debris from an impact on Mars."
+      }
+    },
+    {
+      "id": "itokawa",
+      "name": "25143 Itokawa",
+      "printed_label": "ITOKAWA",
+      "category": "asteroid",
+      "subcategory": null,
+      "hypothetical": false,
+      "labeled_on_chart": true,
+      "identification": "printed",
+      "image": {
+        "icon": {
+          "px": [
+            3834,
+            3453
+          ],
+          "norm": [
+            0.52521,
+            0.45202
+          ]
+        },
+        "all_icons_px": [
+          [
+            3834,
+            3453
+          ]
+        ],
+        "label": {
+          "px": [
+            4124,
+            3449
+          ],
+          "norm": [
+            0.56493,
+            0.4515
+          ]
+        }
+      },
+      "chart": {
+        "log10_width_m": 2.423,
+        "log10_mass_kg": 12.041,
+        "log10_energy_eV": 47.486,
+        "log10_density_proxy_kg_m3": 4.771,
+        "position_is_schematic": false
+      },
+      "reference": {
+        "mass_kg": 35100000000.0,
+        "width_m": 330.0,
+        "width_basis": "diameter",
+        "log10_mass_kg": 10.545307,
+        "log10_width_m": 2.518514,
+        "log10_density_proxy_kg_m3": 2.99,
+        "confidence": "high",
+        "representative": false,
+        "notes": "Mean diameter; 535 x 294 x 209 m."
+      },
+      "description": "A peanut-shaped rubble-pile asteroid sampled by Japan's Hayabusa probe in 2005.",
+      "links": {},
+      "first_appeared": {
+        "seconds_after_big_bang": 3.8771365277750957e+17,
+        "years_ago": 1500000000.0,
+        "log10_seconds": 17.588511,
+        "label": "1.5 billion years ago",
+        "basis": "this_object",
+        "confidence": "low",
+        "note": "A rubble pile that reassembled after its parent asteroid was shattered; estimates vary widely."
+      }
+    },
+    {
+      "id": "great_pyramid",
+      "name": "Great Pyramid of Giza",
+      "printed_label": "GREAT PYRAMID",
+      "category": "human_made",
+      "subcategory": null,
+      "hypothetical": false,
+      "labeled_on_chart": true,
+      "identification": "printed",
+      "image": {
+        "icon": {
+          "px": [
+            3820,
+            3541
+          ],
+          "norm": [
+            0.52329,
+            0.46354
+          ]
+        },
+        "all_icons_px": [
+          [
+            3820,
+            3541
+          ]
+        ],
+        "label": {
+          "px": [
+            4162,
+            3553
+          ],
+          "norm": [
+            0.57014,
+            0.46511
+          ]
+        }
+      },
+      "chart": {
+        "log10_width_m": 2.12,
+        "log10_mass_kg": 10.136,
+        "log10_energy_eV": 45.58,
+        "log10_density_proxy_kg_m3": 3.775,
+        "position_is_schematic": false
+      },
+      "reference": {
+        "mass_kg": 6000000000.0,
+        "width_m": 230.3,
+        "width_basis": "base_side",
+        "log10_mass_kg": 9.778151,
+        "log10_width_m": 2.362294,
+        "log10_density_proxy_kg_m3": 2.691,
+        "confidence": "medium",
+        "representative": false,
+        "notes": ""
+      },
+      "description": "The largest of the Giza pyramids, built around 2560 BCE.",
+      "links": {},
+      "first_appeared": {
+        "seconds_after_big_bang": 4.3505350804334957e+17,
+        "years_ago": 4586.0,
+        "log10_seconds": 17.638543,
+        "label": "4.59 thousand years ago",
+        "basis": "this_object",
+        "confidence": "high",
+        "note": "Built around 2560 BCE."
+      }
+    },
+    {
+      "id": "las_vegas_sphere",
+      "name": "Sphere (Las Vegas)",
+      "printed_label": "LAS VEGAS SPHERE",
+      "category": "human_made",
+      "subcategory": null,
+      "hypothetical": false,
+      "labeled_on_chart": true,
+      "identification": "printed",
+      "image": {
+        "icon": {
+          "px": [
+            3777,
+            3666
+          ],
+          "norm": [
+            0.5174,
+            0.47991
+          ]
+        },
+        "all_icons_px": [
+          [
+            3777,
+            3666
+          ]
+        ],
+        "label": {
+          "px": [
+            4151,
+            3675
+          ],
+          "norm": [
+            0.56863,
+            0.48108
+          ]
+        }
+      },
+      "chart": {
+        "log10_width_m": 1.189,
+        "log10_mass_kg": 7.429,
+        "log10_energy_eV": 42.873,
+        "log10_density_proxy_kg_m3": 3.86,
+        "position_is_schematic": false
+      },
+      "reference": {
+        "mass_kg": 10000000.0,
+        "width_m": 157.0,
+        "width_basis": "diameter",
+        "log10_mass_kg": 7.0,
+        "log10_width_m": 2.1959,
+        "log10_density_proxy_kg_m3": 0.412,
+        "confidence": "low",
+        "representative": false,
+        "notes": "Width (516 ft) is reliable; mass is an order-of-magnitude estimate."
+      },
+      "description": "A spherical entertainment venue opened in 2023, wrapped in LED panels - 157 m wide and 112 m tall.",
+      "links": {},
+      "first_appeared": {
+        "seconds_after_big_bang": 4.350536526828296e+17,
+        "years_ago": 3.0,
+        "log10_seconds": 17.638543,
+        "label": "3 years ago",
+        "basis": "this_object",
+        "confidence": "high",
+        "note": "Opened in September 2023."
+      }
+    },
+    {
+      "id": "giant_sequoia",
+      "name": "Tree",
+      "printed_label": null,
+      "category": "life",
+      "subcategory": null,
+      "hypothetical": false,
+      "labeled_on_chart": false,
+      "identification": "visual",
+      "image": {
+        "icon": {
+          "px": [
+            3771,
+            3732
+          ],
+          "norm": [
+            0.51658,
+            0.48855
+          ]
+        },
+        "all_icons_px": [
+          [
+            3771,
+            3732
+          ]
+        ],
+        "label": null
+      },
+      "chart": {
+        "log10_width_m": 1.06,
+        "log10_mass_kg": 6.0,
+        "log10_energy_eV": 41.443,
+        "log10_density_proxy_kg_m3": 2.821,
+        "position_is_schematic": false
+      },
+      "reference": {
+        "mass_kg": 1900000.0,
+        "width_m": 11.0,
+        "width_basis": "trunk_base_diameter",
+        "log10_mass_kg": 6.278754,
+        "log10_width_m": 1.041393,
+        "log10_density_proxy_kg_m3": 3.155,
+        "confidence": "low",
+        "representative": false,
+        "notes": "Values for General Sherman (height 84 m); the chart position (~1e6 kg, ~11 m) fits a giant sequoia."
+      },
+      "description": "Unlabelled tree icon between the Sphere and the whale; its position (~1e6 kg, ~11 m) matches a giant sequoia, the most massive tree species.",
+      "links": {},
+      "first_appeared": {
+        "seconds_after_big_bang": 4.2290305277750957e+17,
+        "years_ago": 385000000.0,
+        "log10_seconds": 17.626241,
+        "label": "385 million years ago",
+        "basis": "first_of_its_kind",
+        "confidence": "medium",
+        "note": "The first trees grew about 385 million years ago; General Sherman itself is ~2,200 years old."
+      }
+    },
+    {
+      "id": "blue_whale",
+      "name": "Blue whale",
+      "printed_label": "BLUE WHALE",
+      "category": "life",
+      "subcategory": null,
+      "hypothetical": false,
+      "labeled_on_chart": true,
+      "identification": "printed",
+      "image": {
+        "icon": {
+          "px": [
+            3820,
+            3802
+          ],
+          "norm": [
+            0.52329,
+            0.49771
+          ]
+        },
+        "all_icons_px": [
+          [
+            3820,
+            3802
+          ]
+        ],
+        "label": {
+          "px": [
+            4042,
+            3831
+          ],
+          "norm": [
+            0.5537,
+            0.50151
+          ]
+        }
+      },
+      "chart": {
+        "log10_width_m": 2.12,
+        "log10_mass_kg": 4.484,
+        "log10_energy_eV": 39.927,
+        "log10_density_proxy_kg_m3": -1.877,
+        "position_is_schematic": false
+      },
+      "reference": {
+        "mass_kg": 150000.0,
+        "width_m": 25.0,
+        "width_basis": "length",
+        "log10_mass_kg": 5.176091,
+        "log10_width_m": 1.39794,
+        "log10_density_proxy_kg_m3": 0.982,
+        "confidence": "medium",
+        "representative": false,
+        "notes": ""
+      },
+      "description": "The largest animal known to have ever lived, up to ~30 m long.",
+      "links": {},
+      "first_appeared": {
+        "seconds_after_big_bang": 4.3491163277750957e+17,
+        "years_ago": 4500000.0,
+        "log10_seconds": 17.638401,
+        "label": "4.5 million years ago",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Baleen whales became giants within roughly the last 4.5 million years."
+      }
+    },
+    {
+      "id": "hippopotamus",
+      "name": "Hippopotamus",
+      "printed_label": null,
+      "category": "life",
+      "subcategory": null,
+      "hypothetical": false,
+      "labeled_on_chart": false,
+      "identification": "visual",
+      "image": {
+        "icon": {
+          "px": [
+            3721,
+            3833
+          ],
+          "norm": [
+            0.50973,
+            0.50177
+          ]
+        },
+        "all_icons_px": [
+          [
+            3721,
+            3833
+          ]
+        ],
+        "label": null
+      },
+      "chart": {
+        "log10_width_m": -0.023,
+        "log10_mass_kg": 3.813,
+        "log10_energy_eV": 39.256,
+        "log10_density_proxy_kg_m3": 3.881,
+        "position_is_schematic": false
+      },
+      "reference": {
+        "mass_kg": 1500.0,
+        "width_m": 3.5,
+        "width_basis": "length",
+        "log10_mass_kg": 3.176091,
+        "log10_width_m": 0.544068,
+        "log10_density_proxy_kg_m3": 1.544,
+        "confidence": "medium",
+        "representative": false,
+        "notes": ""
+      },
+      "description": "Unlabelled hippopotamus beside the blue whale.",
+      "links": {},
+      "first_appeared": {
+        "seconds_after_big_bang": 4.3497475277750957e+17,
+        "years_ago": 2500000.0,
+        "log10_seconds": 17.638464,
+        "label": "2.5 million years ago",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "The modern hippo genus goes back a few million years."
+      }
+    },
+    {
+      "id": "humans",
+      "name": "Humans",
+      "printed_label": "HUMANS",
+      "category": "life",
+      "subcategory": null,
+      "hypothetical": false,
+      "labeled_on_chart": true,
+      "identification": "printed",
+      "image": {
+        "icon": {
+          "px": [
+            3732,
+            3932
+          ],
+          "norm": [
+            0.51123,
+            0.51473
+          ]
+        },
+        "all_icons_px": [
+          [
+            3732,
+            3932
+          ]
+        ],
+        "label": {
+          "px": [
+            3952,
+            3945
+          ],
+          "norm": [
+            0.54137,
+            0.51643
+          ]
+        }
+      },
+      "chart": {
+        "log10_width_m": 0.215,
+        "log10_mass_kg": 1.669,
+        "log10_energy_eV": 37.111,
+        "log10_density_proxy_kg_m3": 1.023,
+        "position_is_schematic": false
+      },
+      "reference": {
+        "mass_kg": 70.0,
+        "width_m": 1.7,
+        "width_basis": "height",
+        "log10_mass_kg": 1.845098,
+        "log10_width_m": 0.230449,
+        "log10_density_proxy_kg_m3": 1.154,
+        "confidence": "medium",
+        "representative": true,
+        "notes": ""
+      },
+      "description": "Homo sapiens - a typical adult is about 1.7 m tall and 70 kg.",
+      "links": {},
+      "first_appeared": {
+        "seconds_after_big_bang": 4.3504418477750957e+17,
+        "years_ago": 300000.0,
+        "log10_seconds": 17.638533,
+        "label": "300 thousand years ago",
+        "basis": "first_of_its_kind",
+        "confidence": "medium",
+        "note": "Homo sapiens appeared about 300,000 years ago."
+      }
+    },
+    {
+      "id": "soccer_ball",
+      "name": "Soccer ball",
+      "printed_label": null,
+      "category": "everyday_object",
+      "subcategory": null,
+      "hypothetical": false,
+      "labeled_on_chart": false,
+      "identification": "visual",
+      "image": {
+        "icon": {
+          "px": [
+            3711,
+            4035
+          ],
+          "norm": [
+            0.50836,
+            0.52821
+          ]
+        },
+        "all_icons_px": [
+          [
+            3711,
+            4035
+          ]
+        ],
+        "label": null
+      },
+      "chart": {
+        "log10_width_m": -0.239,
+        "log10_mass_kg": -0.561,
+        "log10_energy_eV": 34.88,
+        "log10_density_proxy_kg_m3": 0.156,
+        "position_is_schematic": false
+      },
+      "reference": {
+        "mass_kg": 0.43,
+        "width_m": 0.22,
+        "width_basis": "diameter",
+        "log10_mass_kg": -0.366532,
+        "log10_width_m": -0.657577,
+        "log10_density_proxy_kg_m3": 1.606,
+        "confidence": "high",
+        "representative": false,
+        "notes": ""
+      },
+      "description": "Unlabelled football (soccer ball); a regulation size-5 ball is ~22 cm across and ~430 g.",
+      "links": {},
+      "first_appeared": {
+        "seconds_after_big_bang": 4.350536476332296e+17,
+        "years_ago": 163.0,
+        "log10_seconds": 17.638543,
+        "label": "163 years ago",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Association football's rules were standardised in 1863."
+      }
+    },
+    {
+      "id": "hedgehog",
+      "name": "Hedgehog",
+      "printed_label": "HEDGEHOG",
+      "category": "life",
+      "subcategory": null,
+      "hypothetical": false,
+      "labeled_on_chart": true,
+      "identification": "printed",
+      "image": {
+        "icon": {
+          "px": [
+            3675,
+            4068
+          ],
+          "norm": [
+            0.50342,
+            0.53253
+          ]
+        },
+        "all_icons_px": [
+          [
+            3675,
+            4068
+          ]
+        ],
+        "label": {
+          "px": [
+            3934,
+            4084
+          ],
+          "norm": [
+            0.5389,
+            0.53462
+          ]
+        }
+      },
+      "chart": {
+        "log10_width_m": -1.018,
+        "log10_mass_kg": -1.276,
+        "log10_energy_eV": 34.165,
+        "log10_density_proxy_kg_m3": 1.779,
+        "position_is_schematic": false
+      },
+      "reference": {
+        "mass_kg": 0.8,
+        "width_m": 0.25,
+        "width_basis": "length",
+        "log10_mass_kg": -0.09691,
+        "log10_width_m": -0.60206,
+        "log10_density_proxy_kg_m3": 1.709,
+        "confidence": "medium",
+        "representative": false,
+        "notes": ""
+      },
+      "description": "A small spiny mammal, typically 15-30 cm long.",
+      "links": {},
+      "first_appeared": {
+        "seconds_after_big_bang": 4.3458025277750957e+17,
+        "years_ago": 15000000.0,
+        "log10_seconds": 17.63807,
+        "label": "15 million years ago",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Hedgehogs have looked much the same for ~15 million years."
+      }
+    },
+    {
+      "id": "penny",
+      "name": "US penny",
+      "printed_label": "PENNY",
+      "category": "everyday_object",
+      "subcategory": null,
+      "hypothetical": false,
+      "labeled_on_chart": true,
+      "identification": "printed",
+      "image": {
+        "icon": {
+          "px": [
+            3637,
+            4131
+          ],
+          "norm": [
+            0.49822,
+            0.54078
+          ]
+        },
+        "all_icons_px": [
+          [
+            3637,
+            4131
+          ]
+        ],
+        "label": {
+          "px": [
+            3856,
+            4152
+          ],
+          "norm": [
+            0.52822,
+            0.54353
+          ]
+        }
+      },
+      "chart": {
+        "log10_width_m": -1.841,
+        "log10_mass_kg": -2.64,
+        "log10_energy_eV": 32.801,
+        "log10_density_proxy_kg_m3": 2.883,
+        "position_is_schematic": false
+      },
+      "reference": {
+        "mass_kg": 0.0025,
+        "width_m": 0.01905,
+        "width_basis": "diameter",
+        "log10_mass_kg": -2.60206,
+        "log10_width_m": -1.720105,
+        "log10_density_proxy_kg_m3": 2.558,
+        "confidence": "high",
+        "representative": false,
+        "notes": ""
+      },
+      "description": "A US one-cent coin: 19.05 mm across, 2.5 g.",
+      "links": {},
+      "first_appeared": {
+        "seconds_after_big_bang": 4.350536454240296e+17,
+        "years_ago": 233.0,
+        "log10_seconds": 17.638543,
+        "label": "233 years ago",
+        "basis": "first_of_its_kind",
+        "confidence": "high",
+        "note": "The first US cent was struck in 1793; today's zinc version dates from 1982."
+      }
+    },
+    {
+      "id": "ladybug",
+      "name": "Ladybug",
+      "printed_label": "LADYBUGS",
+      "category": "life",
+      "subcategory": null,
+      "hypothetical": false,
+      "labeled_on_chart": true,
+      "identification": "printed",
+      "image": {
+        "icon": {
+          "px": [
+            3577,
+            4240
+          ],
+          "norm": [
+            0.49,
+            0.55505
+          ]
+        },
+        "all_icons_px": [
+          [
+            3577,
+            4240
+          ]
+        ],
+        "label": {
+          "px": [
+            3871,
+            4255
+          ],
+          "norm": [
+            0.53027,
+            0.55701
+          ]
+        }
+      },
+      "chart": {
+        "log10_width_m": -3.14,
+        "log10_mass_kg": -5.0,
+        "log10_energy_eV": 30.44,
+        "log10_density_proxy_kg_m3": 4.419,
+        "position_is_schematic": false
+      },
+      "reference": {
+        "mass_kg": 2e-05,
+        "width_m": 0.007,
+        "width_basis": "length",
+        "log10_mass_kg": -4.69897,
+        "log10_width_m": -2.154902,
+        "log10_density_proxy_kg_m3": 1.766,
+        "confidence": "medium",
+        "representative": false,
+        "notes": ""
+      },
+      "description": "A small beetle (family Coccinellidae), typically 5-8 mm long.",
+      "links": {},
+      "first_appeared": {
+        "seconds_after_big_bang": 4.3063525277750957e+17,
+        "years_ago": 140000000.0,
+        "log10_seconds": 17.63411,
+        "label": "140 million years ago",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Ladybird beetles are thought to date from the Cretaceous; their exact origin is uncertain."
+      }
+    },
+    {
+      "id": "grain_of_salt",
+      "name": "Grain of salt",
+      "printed_label": "GRAIN OF SALT",
+      "category": "everyday_object",
+      "subcategory": null,
+      "hypothetical": false,
+      "labeled_on_chart": true,
+      "identification": "printed",
+      "image": {
+        "icon": {
+          "px": [
+            3551,
+            4385
+          ],
+          "norm": [
+            0.48644,
+            0.57403
+          ]
+        },
+        "all_icons_px": [
+          [
+            3551,
+            4385
+          ]
+        ],
+        "label": {
+          "px": [
+            3877,
+            4394
+          ],
+          "norm": [
+            0.5311,
+            0.57521
+          ]
+        }
+      },
+      "chart": {
+        "log10_width_m": -3.702,
+        "log10_mass_kg": -8.14,
+        "log10_energy_eV": 27.299,
+        "log10_density_proxy_kg_m3": 2.967,
+        "position_is_schematic": false
+      },
+      "reference": {
+        "mass_kg": 6e-08,
+        "width_m": 0.0003,
+        "width_basis": "diameter",
+        "log10_mass_kg": -7.221849,
+        "log10_width_m": -3.522879,
+        "log10_density_proxy_kg_m3": 3.347,
+        "confidence": "medium",
+        "representative": false,
+        "notes": ""
+      },
+      "description": "A single crystal of table salt, about 0.3 mm on a side. It sits on the 1 Planck-mass line.",
+      "links": {},
+      "first_appeared": {
+        "seconds_after_big_bang": 3.2459365277750957e+17,
+        "years_ago": 3500000000.0,
+        "log10_seconds": 17.51134,
+        "label": "3.5 billion years ago",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Salt crystals form when seawater evaporates; Earth's oldest evaporite deposits are ~3.5 billion years old."
+      }
+    },
+    {
+      "id": "red_blood_cell",
+      "name": "Red blood cell",
+      "printed_label": "RED BLOOD CELL",
+      "category": "cell",
+      "subcategory": null,
+      "hypothetical": false,
+      "labeled_on_chart": true,
+      "identification": "printed",
+      "image": {
+        "icon": {
+          "px": [
+            3494,
+            4526
+          ],
+          "norm": [
+            0.47863,
+            0.59249
+          ]
+        },
+        "all_icons_px": [
+          [
+            3494,
+            4526
+          ]
+        ],
+        "label": {
+          "px": [
+            3856,
+            4540
+          ],
+          "norm": [
+            0.52822,
+            0.59432
+          ]
+        }
+      },
+      "chart": {
+        "log10_width_m": -4.936,
+        "log10_mass_kg": -11.193,
+        "log10_energy_eV": 24.245,
+        "log10_density_proxy_kg_m3": 3.615,
+        "position_is_schematic": false
+      },
+      "reference": {
+        "mass_kg": 1e-13,
+        "width_m": 7.5e-06,
+        "width_basis": "diameter",
+        "log10_mass_kg": -13.0,
+        "log10_width_m": -5.124939,
+        "log10_density_proxy_kg_m3": 2.375,
+        "confidence": "medium",
+        "representative": false,
+        "notes": ""
+      },
+      "description": "A disc-shaped cell ~7.5 µm across that carries oxygen around the body.",
+      "links": {},
+      "first_appeared": {
+        "seconds_after_big_bang": 4.1927365277750957e+17,
+        "years_ago": 500000000.0,
+        "log10_seconds": 17.622498,
+        "label": "500 million years ago",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Haemoglobin-filled red cells evolved in early vertebrates, roughly 500 million years ago."
+      }
+    },
+    {
+      "id": "bacterium",
+      "name": "Bacterium",
+      "printed_label": "BACTERIUM",
+      "category": "microbe",
+      "subcategory": null,
+      "hypothetical": false,
+      "labeled_on_chart": true,
+      "identification": "printed",
+      "image": {
+        "icon": {
+          "px": [
+            3458,
+            4718
+          ],
+          "norm": [
+            0.4737,
+            0.61762
+          ]
+        },
+        "all_icons_px": [
+          [
+            3458,
+            4718
+          ]
+        ],
+        "label": {
+          "px": [
+            3719,
+            4751
+          ],
+          "norm": [
+            0.50945,
+            0.62194
+          ]
+        }
+      },
+      "chart": {
+        "log10_width_m": -5.715,
+        "log10_mass_kg": -15.351,
+        "log10_energy_eV": 20.086,
+        "log10_density_proxy_kg_m3": 1.796,
+        "position_is_schematic": false
+      },
+      "reference": {
+        "mass_kg": 1e-15,
+        "width_m": 2e-06,
+        "width_basis": "length",
+        "log10_mass_kg": -15.0,
+        "log10_width_m": -5.69897,
+        "log10_density_proxy_kg_m3": 2.097,
+        "confidence": "medium",
+        "representative": false,
+        "notes": "E. coli."
+      },
+      "description": "A single-celled microbe; E. coli is about 2 µm long and weighs about a picogram.",
+      "links": {},
+      "first_appeared": {
+        "seconds_after_big_bang": 3.1512565277750957e+17,
+        "years_ago": 3800000000.0,
+        "log10_seconds": 17.498484,
+        "label": "3.8 billion years ago",
+        "basis": "first_of_its_kind",
+        "confidence": "medium",
+        "note": "Life on Earth is at least ~3.5-3.8 billion years old."
+      }
+    },
+    {
+      "id": "virus",
+      "name": "Virus",
+      "printed_label": "VIRUS",
+      "category": "microbe",
+      "subcategory": null,
+      "hypothetical": false,
+      "labeled_on_chart": true,
+      "identification": "printed",
+      "image": {
+        "icon": {
+          "px": [
+            3370,
+            4842
+          ],
+          "norm": [
+            0.46164,
+            0.63385
+          ]
+        },
+        "all_icons_px": [
+          [
+            3370,
+            4842
+          ]
+        ],
+        "label": {
+          "px": [
+            3618,
+            4886
+          ],
+          "norm": [
+            0.49562,
+            0.63961
+          ]
+        }
+      },
+      "chart": {
+        "log10_width_m": -7.62,
+        "log10_mass_kg": -18.036,
+        "log10_energy_eV": 17.401,
+        "log10_density_proxy_kg_m3": 4.825,
+        "position_is_schematic": false
+      },
+      "reference": {
+        "mass_kg": 1e-18,
+        "width_m": 1e-07,
+        "width_basis": "diameter",
+        "log10_mass_kg": -18.0,
+        "log10_width_m": -7.0,
+        "log10_density_proxy_kg_m3": 3.0,
+        "confidence": "medium",
+        "representative": false,
+        "notes": "SARS-CoV-2 (the icon is a coronavirus)."
+      },
+      "description": "A virus particle - SARS-CoV-2, for example, is about 100 nm across and weighs about a femtogram.",
+      "links": {},
+      "first_appeared": {
+        "seconds_after_big_bang": 3.2459365277750957e+17,
+        "years_ago": 3500000000.0,
+        "log10_seconds": 17.51134,
+        "label": "3.5 billion years ago",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Viruses leave no fossils; they are probably nearly as old as cellular life."
+      }
+    },
+    {
+      "id": "rna_strand",
+      "name": "RNA strand",
+      "printed_label": "RNA STRAND",
+      "category": "molecule",
+      "subcategory": null,
+      "hypothetical": false,
+      "labeled_on_chart": true,
+      "identification": "printed",
+      "image": {
+        "icon": {
+          "px": [
+            3376,
+            5010
+          ],
+          "norm": [
+            0.46247,
+            0.65585
+          ]
+        },
+        "all_icons_px": [
+          [
+            3376,
+            5010
+          ]
+        ],
+        "label": {
+          "px": [
+            3636,
+            5028
+          ],
+          "norm": [
+            0.49808,
+            0.6582
+          ]
+        }
+      },
+      "chart": {
+        "log10_width_m": -7.49,
+        "log10_mass_kg": -21.673,
+        "log10_energy_eV": 13.762,
+        "log10_density_proxy_kg_m3": 0.798,
+        "position_is_schematic": false
+      },
+      "reference": {
+        "mass_kg": 5.5e-22,
+        "width_m": 3e-08,
+        "width_basis": "extent",
+        "log10_mass_kg": -21.259637,
+        "log10_width_m": -7.522879,
+        "log10_density_proxy_kg_m3": 1.309,
+        "confidence": "low",
+        "representative": true,
+        "notes": "Representative ~1,000-nucleotide RNA (~330 kDa); real RNAs span orders of magnitude."
+      },
+      "description": "A strand of ribonucleic acid; its size depends entirely on its length, so values are representative.",
+      "links": {},
+      "first_appeared": {
+        "seconds_after_big_bang": 3.0881365277750957e+17,
+        "years_ago": 4000000000.0,
+        "log10_seconds": 17.489696,
+        "label": "4 billion years ago",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "RNA may predate DNA and proteins (the 'RNA world'), ~4 billion years ago."
+      }
+    },
+    {
+      "id": "oxygen_atom",
+      "name": "Oxygen atom",
+      "printed_label": "OXYGEN ATOM",
+      "category": "atom",
+      "subcategory": null,
+      "hypothetical": false,
+      "labeled_on_chart": true,
+      "identification": "printed",
+      "image": {
+        "icon": {
+          "px": [
+            3366,
+            5150
+          ],
+          "norm": [
+            0.4611,
+            0.67417
+          ]
+        },
+        "all_icons_px": [
+          [
+            3366,
+            5150
+          ]
+        ],
+        "label": {
+          "px": [
+            3621,
+            5157
+          ],
+          "norm": [
+            0.49603,
+            0.67509
+          ]
+        }
+      },
+      "chart": {
+        "log10_width_m": -7.707,
+        "log10_mass_kg": -24.705,
+        "log10_energy_eV": 10.729,
+        "log10_density_proxy_kg_m3": -1.585,
+        "position_is_schematic": false
+      },
+      "reference": {
+        "mass_kg": 2.6568e-26,
+        "width_m": 3.04e-10,
+        "width_basis": "van_der_waals_diameter",
+        "log10_mass_kg": -25.575641,
+        "log10_width_m": -9.517126,
+        "log10_density_proxy_kg_m3": 2.976,
+        "confidence": "high",
+        "representative": false,
+        "notes": ""
+      },
+      "description": "Element 8, the third most abundant element in the universe.",
+      "links": {},
+      "first_appeared": {
+        "seconds_after_big_bang": 6312000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.800167,
+        "label": "200 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "medium",
+        "note": "Oxygen is forged in stars; the first supernovae spread it ~200 million years after the Big Bang."
+      }
+    },
+    {
+      "id": "helium_atom",
+      "name": "Helium atom",
+      "printed_label": "HELIUM ATOM",
+      "category": "atom",
+      "subcategory": null,
+      "hypothetical": false,
+      "labeled_on_chart": true,
+      "identification": "printed",
+      "image": {
+        "icon": {
+          "px": [
+            3366,
+            5265
+          ],
+          "norm": [
+            0.4611,
+            0.68923
+          ]
+        },
+        "all_icons_px": [
+          [
+            3366,
+            5265
+          ]
+        ],
+        "label": {
+          "px": [
+            3576,
+            5260
+          ],
+          "norm": [
+            0.48986,
+            0.68857
+          ]
+        }
+      },
+      "chart": {
+        "log10_width_m": -7.707,
+        "log10_mass_kg": -27.195,
+        "log10_energy_eV": 8.238,
+        "log10_density_proxy_kg_m3": -4.075,
+        "position_is_schematic": false
+      },
+      "reference": {
+        "mass_kg": 6.646317e-27,
+        "width_m": 2.8e-10,
+        "width_basis": "van_der_waals_diameter",
+        "log10_mass_kg": -26.177419,
+        "log10_width_m": -9.552842,
+        "log10_density_proxy_kg_m3": 2.481,
+        "confidence": "high",
+        "representative": false,
+        "notes": ""
+      },
+      "description": "Element 2, mostly forged in the first minutes after the Big Bang.",
+      "links": {},
+      "first_appeared": {
+        "seconds_after_big_bang": 3156000000000.0,
+        "years_ago": null,
+        "log10_seconds": 12.499137,
+        "label": "100 thousand years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "medium",
+        "note": "Helium nuclei formed in the first minutes; neutral helium atoms ~100,000 years later, before hydrogen atoms."
+      }
+    },
+    {
+      "id": "fundamental_particles",
+      "name": "Fundamental particles",
+      "printed_label": "FUNDAMENTAL PARTICLES",
+      "category": "particle",
+      "subcategory": null,
+      "hypothetical": false,
+      "labeled_on_chart": true,
+      "identification": "printed",
+      "image": {
+        "icon": {
+          "px": [
+            3190,
+            5445
+          ],
+          "norm": [
+            0.43699,
+            0.71279
+          ]
+        },
+        "all_icons_px": [
+          [
+            3190,
+            5445
+          ]
+        ],
+        "label": {
+          "px": [
+            3586,
+            5458
+          ],
+          "norm": [
+            0.49123,
+            0.71449
+          ]
+        }
+      },
+      "chart": {
+        "log10_width_m": -11.516,
+        "log10_mass_kg": -31.093,
+        "log10_energy_eV": 4.34,
+        "log10_density_proxy_kg_m3": 3.456,
+        "position_is_schematic": false
+      },
+      "reference": {
+        "mass_kg": 9.109e-31,
+        "width_m": 3.861761e-13,
+        "width_basis": "reduced_compton_wavelength",
+        "log10_mass_kg": -30.040529,
+        "log10_width_m": -12.413215,
+        "log10_density_proxy_kg_m3": 7.199,
+        "confidence": "high",
+        "representative": true,
+        "notes": "Electron used as the representative particle."
+      },
+      "description": "Quarks, leptons and bosons - this corner of the triangle is expanded in the 'Fundamental Particles' inset.",
+      "links": {
+        "inset": "fundamental_particles"
+      },
+      "first_appeared": {
+        "seconds_after_big_bang": 1e-12,
+        "years_ago": null,
+        "log10_seconds": -12.0,
+        "label": "10^-12 seconds after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "medium",
+        "note": "Quarks, leptons and the W and Z gained their masses when the Higgs field switched on, ~10^-12 s after the Big Bang."
+      }
+    },
+    {
+      "id": "x_y_bosons",
+      "name": "X and Y bosons",
+      "printed_label": "X & Y BOSON*",
+      "category": "particle",
+      "subcategory": null,
+      "hypothetical": true,
+      "labeled_on_chart": true,
+      "identification": "printed",
+      "image": {
+        "icon": {
+          "px": [
+            2260,
+            4520
+          ],
+          "norm": [
+            0.30959,
+            0.5917
+          ]
+        },
+        "all_icons_px": [
+          [
+            2260,
+            4520
+          ]
+        ],
+        "label": {
+          "px": [
+            2456,
+            4528
+          ],
+          "norm": [
+            0.33644,
+            0.59275
+          ]
+        }
+      },
+      "chart": {
+        "log10_width_m": -31.647,
+        "log10_mass_kg": -11.063,
+        "log10_energy_eV": 24.375,
+        "log10_density_proxy_kg_m3": 83.876,
+        "position_is_schematic": false
+      },
+      "reference": {
+        "mass_kg": 1.78266e-12,
+        "width_m": 1.973275e-31,
+        "width_basis": "reduced_compton_wavelength",
+        "log10_mass_kg": -11.748931,
+        "log10_width_m": -30.704812,
+        "log10_density_proxy_kg_m3": 80.366,
+        "confidence": "low",
+        "representative": false,
+        "notes": "Grand-unified-theory scale, ~1e15 GeV/c^2. Never observed."
+      },
+      "description": "Hypothetical bosons of grand unified theories, near 10^24 eV on the energy axis; never observed.",
+      "links": {},
+      "first_appeared": {
+        "seconds_after_big_bang": 1e-36,
+        "years_ago": null,
+        "log10_seconds": -36.0,
+        "label": "10^-36 seconds after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Hypothetical: would belong to the grand-unification era, before ~10^-36 s."
+      }
+    },
+    {
+      "id": "dark_exoplanets",
+      "name": "Dark exoplanets",
+      "printed_label": "DARK EXOPLANETS*",
+      "category": "hypothetical",
+      "subcategory": null,
+      "hypothetical": true,
+      "labeled_on_chart": true,
+      "identification": "printed",
+      "image": {
+        "icon": {
+          "px": [
+            4535,
+            2740
+          ],
+          "norm": [
+            0.62123,
+            0.35869
+          ]
+        },
+        "all_icons_px": [
+          [
+            4535,
+            2740
+          ]
+        ],
+        "label": {
+          "px": [
+            4663,
+            2828
+          ],
+          "norm": [
+            0.63877,
+            0.37021
+          ]
+        }
+      },
+      "chart": {
+        "log10_width_m": 17.597,
+        "log10_mass_kg": 27.48,
+        "log10_energy_eV": 62.93,
+        "log10_density_proxy_kg_m3": -25.31,
+        "position_is_schematic": true
+      },
+      "reference": null,
+      "description": "Marked hypothetical on the chart and drawn as a question-mark icon; no position is physically implied.",
+      "links": {},
+      "first_appeared": null
+    }
+  ]
+}

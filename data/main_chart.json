@@ -1,0 +1,2881 @@
+{
+  "source": {
+    "file": "Triangle_of_Everything.png",
+    "width": 7300,
+    "height": 7639,
+    "title": "The Triangle of Everything",
+    "note": "Illustrated poster built on the Lineweaver & Patel 'All objects' mass-size diagram."
+  },
+  "physics": {
+    "conventions": "W = full width (diameter) in metres, M = mass in kg, both log10. Density lines treat an object as a sphere of diameter W: M = rho (pi/6) W^3.",
+    "constants_si": {
+      "G": 6.674e-11,
+      "c": 299800000.0,
+      "hbar": 1.0546e-34,
+      "h": 6.626247224951592e-34,
+      "k_B": 1.380649e-23,
+      "M_sun": 1.989e+30,
+      "eV_per_c2_kg": 1.78266e-36,
+      "T_cmb_K": 2.7255
+    },
+    "cosmology": {
+      "model": "flat LambdaCDM, Planck 2018",
+      "H0_km_s_Mpc": 67.66,
+      "H0_per_s": 2.192695336552484e-18,
+      "Omega_m": 0.3111,
+      "Omega_r": 9.15e-05,
+      "Omega_Lambda": 0.688809,
+      "critical_density_kg_m3": 8.599075827151612e-27,
+      "age_s": 4.3505365277750957e+17
+    },
+    "lines": {
+      "schwarzschild_offset": 26.527217,
+      "compton_offset": -42.453744,
+      "photon_offset": -41.655564,
+      "sphere_volume_log10": -0.281001,
+      "hubble_diameter_log10_m": 26.436883,
+      "particle_horizon_diameter_log10_m": 26.941474,
+      "energy_log10_eV_per_kg": 35.748931
+    },
+    "horizons": [
+      {
+        "id": "hubble_radius",
+        "name": "Hubble radius",
+        "style": "solid",
+        "log10_diameter_m": 26.436883,
+        "radius_gly": 14.45,
+        "definition": "c / H0: the distance at which cosmic expansion carries galaxies away from us at exactly the speed of light today.",
+        "description": "A sphere this size, filled at the universe's average density, is exactly its own Schwarzschild size - which is why it sits at the triangle's top corner. It grows over time and will level off at about 1.2x today's size as dark energy takes over."
+      },
+      {
+        "id": "particle_horizon",
+        "name": "Edge of the observable universe (particle horizon)",
+        "style": "dashed",
+        "log10_diameter_m": 26.941474,
+        "radius_gly": 46.19,
+        "definition": "The farthest distance from which light emitted since the Big Bang has had time to reach us, measured as where that source is today (comoving distance).",
+        "description": "It is about 3x the Hubble radius. Light that set out from just beyond the Hubble sphere still reached us, because the Hubble sphere grew and overtook it, and space kept stretching while the light travelled. So galaxies between the two lines are visible even though they recede faster than light today. Nothing beyond this line has ever been able to send us a signal."
+      }
+    ],
+    "densities": [
+      {
+        "id": "planck",
+        "name": "Planck density",
+        "kg_m3": 5.155822660122509e+96,
+        "log10_kg_m3": 96.712298,
+        "source": "c^5 / (hbar G^2)"
+      },
+      {
+        "id": "nuclear",
+        "name": "Nuclear density",
+        "kg_m3": 3.6e+17,
+        "log10_kg_m3": 17.556303,
+        "source": "Jacobs, Starkman & Lynn (2015) characteristic value"
+      },
+      {
+        "id": "water",
+        "name": "Water",
+        "kg_m3": 1000.0,
+        "log10_kg_m3": 3.0,
+        "source": ""
+      },
+      {
+        "id": "air",
+        "name": "Air",
+        "kg_m3": 1.225,
+        "log10_kg_m3": 0.088136,
+        "source": "sea level, 15 C"
+      },
+      {
+        "id": "cosmic_today",
+        "name": "Cosmic average today",
+        "kg_m3": 8.599075827151612e-27,
+        "log10_kg_m3": -26.065548,
+        "source": "critical density 3H0^2/(8 pi G)"
+      }
+    ],
+    "macro_dark_matter": {
+      "density_kg_m3": 3.6e+17,
+      "windows_kg": [
+        [
+          0.055,
+          100000000000000.0
+        ],
+        [
+          2e+17,
+          4e+21
+        ]
+      ],
+      "hypothetical": true,
+      "source": "Jacobs, Starkman & Lynn (2015), 'Macro Dark Matter', MNRAS 450, 3418 (arXiv:1410.2236): unconstrained for nuclear-dense objects of 55 g-1e17 g and 2e20 g-4e24 g (the lower window closes if macros destabilise ordinary matter)."
+    }
+  },
+  "coordinate_systems": {
+    "px": "Full-resolution source pixels, origin top-left.",
+    "norm": "px divided by image width/height (0-1) - use for responsive overlays.",
+    "chart": "Values implied by where something is drawn (from the axis calibrations).",
+    "reference": "Standard real-world values compiled for this dataset (not read from the image).",
+    "log10_density_proxy_kg_m3": "log10(mass) - 3*log10(width), the quantity the diagonal density grid tracks.",
+    "position_is_schematic": "True for icons arranged beside the main sequence for legibility; their x position is not a width."
+  },
+  "axes": {
+    "width": {
+      "quantity": "log10 width",
+      "unit": "m",
+      "pixel_axis": "x",
+      "formula": "value = (x - 3722.05) / 46.1992",
+      "px_at_zero": 3722.05,
+      "px_per_decade": 46.1992,
+      "max_tick_residual_decades": 0.01,
+      "calibration_ticks": [
+        {
+          "value": -33,
+          "px": 2197.5
+        },
+        {
+          "value": -30,
+          "px": 2336.0
+        },
+        {
+          "value": -27,
+          "px": 2474.5
+        },
+        {
+          "value": -24,
+          "px": 2613.5
+        },
+        {
+          "value": -21,
+          "px": 2752.0
+        },
+        {
+          "value": -18,
+          "px": 2890.5
+        },
+        {
+          "value": -15,
+          "px": 3029.0
+        },
+        {
+          "value": -12,
+          "px": 3167.5
+        },
+        {
+          "value": -9,
+          "px": 3306.5
+        },
+        {
+          "value": -6,
+          "px": 3444.5
+        },
+        {
+          "value": -3,
+          "px": 3583.5
+        },
+        {
+          "value": 0,
+          "px": 3722.0
+        },
+        {
+          "value": 3,
+          "px": 3860.5
+        },
+        {
+          "value": 6,
+          "px": 3999.5
+        },
+        {
+          "value": 9,
+          "px": 4137.5
+        },
+        {
+          "value": 12,
+          "px": 4276.5
+        },
+        {
+          "value": 15,
+          "px": 4415.5
+        },
+        {
+          "value": 18,
+          "px": 4553.5
+        },
+        {
+          "value": 21,
+          "px": 4692.5
+        },
+        {
+          "value": 24,
+          "px": 4830.5
+        }
+      ],
+      "note": "Bottom axis 'WIDTH 10^n m'. Printed labels -33..24 sit on these ticks and are correct."
+    },
+    "mass": {
+      "quantity": "log10 mass",
+      "unit": "kg",
+      "pixel_axis": "y",
+      "formula": "value = (y - 4009.08) / -46.1819",
+      "px_at_zero": 4009.08,
+      "px_per_decade": -46.1819,
+      "max_tick_residual_decades": 0.068,
+      "calibration_ticks": [
+        {
+          "value": 48,
+          "px": 1793.0
+        },
+        {
+          "value": 45,
+          "px": 1931.5
+        },
+        {
+          "value": 42,
+          "px": 2070.0
+        },
+        {
+          "value": 39,
+          "px": 2208.5
+        },
+        {
+          "value": 36,
+          "px": 2347.0
+        },
+        {
+          "value": 33,
+          "px": 2485.5
+        },
+        {
+          "value": 30,
+          "px": 2623.5
+        },
+        {
+          "value": 27,
+          "px": 2762.5
+        },
+        {
+          "value": 24,
+          "px": 2900.5
+        },
+        {
+          "value": 21,
+          "px": 3039.5
+        },
+        {
+          "value": 18,
+          "px": 3177.5
+        },
+        {
+          "value": 15,
+          "px": 3316.5
+        },
+        {
+          "value": 12,
+          "px": 3454.5
+        },
+        {
+          "value": 9,
+          "px": 3593.5
+        },
+        {
+          "value": 6,
+          "px": 3731.5
+        },
+        {
+          "value": 3,
+          "px": 3870.5
+        },
+        {
+          "value": 0,
+          "px": 4008.5
+        },
+        {
+          "value": -3,
+          "px": 4147.5
+        },
+        {
+          "value": -6,
+          "px": 4285.5
+        },
+        {
+          "value": -9,
+          "px": 4424.5
+        },
+        {
+          "value": -12,
+          "px": 4562.5
+        },
+        {
+          "value": -15,
+          "px": 4701.5
+        },
+        {
+          "value": -18,
+          "px": 4839.5
+        },
+        {
+          "value": -21,
+          "px": 4978.5
+        },
+        {
+          "value": -24,
+          "px": 5116.5
+        },
+        {
+          "value": -27,
+          "px": 5255.5
+        },
+        {
+          "value": -30,
+          "px": 5393.5
+        },
+        {
+          "value": -33,
+          "px": 5532.5
+        },
+        {
+          "value": -36,
+          "px": 5670.5
+        },
+        {
+          "value": -39,
+          "px": 5810.5
+        },
+        {
+          "value": -42,
+          "px": 5948.5
+        },
+        {
+          "value": -45,
+          "px": 6087.5
+        },
+        {
+          "value": -48,
+          "px": 6225.5
+        },
+        {
+          "value": -51,
+          "px": 6367.5
+        },
+        {
+          "value": -54,
+          "px": 6505.5
+        }
+      ],
+      "note": "Right axis 'MASS 10^n kg'. Tick values verified by the solar-mass, tonne and kg reference lines; several printed labels above 0 are wrong (see errata).",
+      "ticks": [
+        {
+          "value": 48,
+          "y_px": 1793.0,
+          "printed_label": "42",
+          "printed_label_correct": false
+        },
+        {
+          "value": 45,
+          "y_px": 1931.5,
+          "printed_label": "39",
+          "printed_label_correct": false
+        },
+        {
+          "value": 42,
+          "y_px": 2070.0,
+          "printed_label": "36",
+          "printed_label_correct": false
+        },
+        {
+          "value": 39,
+          "y_px": 2208.5,
+          "printed_label": "33",
+          "printed_label_correct": false
+        },
+        {
+          "value": 36,
+          "y_px": 2347.0,
+          "printed_label": "30",
+          "printed_label_correct": false
+        },
+        {
+          "value": 33,
+          "y_px": 2485.5,
+          "printed_label": "27",
+          "printed_label_correct": false
+        },
+        {
+          "value": 30,
+          "y_px": 2623.5,
+          "printed_label": "24",
+          "printed_label_correct": false
+        },
+        {
+          "value": 27,
+          "y_px": 2762.5,
+          "printed_label": "21",
+          "printed_label_correct": false
+        },
+        {
+          "value": 24,
+          "y_px": 2900.5,
+          "printed_label": "18",
+          "printed_label_correct": false
+        },
+        {
+          "value": 21,
+          "y_px": 3039.5,
+          "printed_label": "15",
+          "printed_label_correct": false
+        },
+        {
+          "value": 18,
+          "y_px": 3177.5,
+          "printed_label": "12",
+          "printed_label_correct": false
+        },
+        {
+          "value": 15,
+          "y_px": 3316.5,
+          "printed_label": "15",
+          "printed_label_correct": true
+        },
+        {
+          "value": 12,
+          "y_px": 3454.5,
+          "printed_label": "15",
+          "printed_label_correct": false
+        },
+        {
+          "value": 9,
+          "y_px": 3593.5,
+          "printed_label": "12",
+          "printed_label_correct": false
+        },
+        {
+          "value": 6,
+          "y_px": 3731.5,
+          "printed_label": "9",
+          "printed_label_correct": false
+        },
+        {
+          "value": 3,
+          "y_px": 3870.5,
+          "printed_label": "3",
+          "printed_label_correct": true
+        },
+        {
+          "value": 0,
+          "y_px": 4008.5,
+          "printed_label": "0",
+          "printed_label_correct": true
+        },
+        {
+          "value": -3,
+          "y_px": 4147.5,
+          "printed_label": "-3",
+          "printed_label_correct": true
+        },
+        {
+          "value": -6,
+          "y_px": 4285.5,
+          "printed_label": "-6",
+          "printed_label_correct": true
+        },
+        {
+          "value": -9,
+          "y_px": 4424.5,
+          "printed_label": "-9",
+          "printed_label_correct": true
+        },
+        {
+          "value": -12,
+          "y_px": 4562.5,
+          "printed_label": "-12",
+          "printed_label_correct": true
+        },
+        {
+          "value": -15,
+          "y_px": 4701.5,
+          "printed_label": "-15",
+          "printed_label_correct": true
+        },
+        {
+          "value": -18,
+          "y_px": 4839.5,
+          "printed_label": "-18",
+          "printed_label_correct": true
+        },
+        {
+          "value": -21,
+          "y_px": 4978.5,
+          "printed_label": "-21",
+          "printed_label_correct": true
+        },
+        {
+          "value": -24,
+          "y_px": 5116.5,
+          "printed_label": "-24",
+          "printed_label_correct": true
+        },
+        {
+          "value": -27,
+          "y_px": 5255.5,
+          "printed_label": "-27",
+          "printed_label_correct": true
+        },
+        {
+          "value": -30,
+          "y_px": 5393.5,
+          "printed_label": "-30",
+          "printed_label_correct": true
+        },
+        {
+          "value": -33,
+          "y_px": 5532.5,
+          "printed_label": "-33",
+          "printed_label_correct": true
+        },
+        {
+          "value": -36,
+          "y_px": 5670.5,
+          "printed_label": "-36",
+          "printed_label_correct": true
+        },
+        {
+          "value": -39,
+          "y_px": 5810.5,
+          "printed_label": "-39",
+          "printed_label_correct": true
+        },
+        {
+          "value": -42,
+          "y_px": 5948.5,
+          "printed_label": "-42",
+          "printed_label_correct": true
+        },
+        {
+          "value": -45,
+          "y_px": 6087.5,
+          "printed_label": "-45",
+          "printed_label_correct": true
+        },
+        {
+          "value": -48,
+          "y_px": 6225.5,
+          "printed_label": "-48",
+          "printed_label_correct": true
+        },
+        {
+          "value": -51,
+          "y_px": 6367.5,
+          "printed_label": null,
+          "printed_label_correct": true
+        },
+        {
+          "value": -54,
+          "y_px": 6505.5,
+          "printed_label": null,
+          "printed_label_correct": true
+        }
+      ]
+    },
+    "energy": {
+      "quantity": "log10 energy",
+      "unit": "eV",
+      "pixel_axis": "y",
+      "formula": "value = (y - 5645.35) / -46.1679",
+      "px_at_zero": 5645.35,
+      "px_per_decade": -46.1679,
+      "max_tick_residual_decades": 0.008,
+      "calibration_ticks": [
+        {
+          "value": 27,
+          "px": 4399.0
+        },
+        {
+          "value": 24,
+          "px": 4537.5
+        },
+        {
+          "value": 21,
+          "px": 4676.0
+        },
+        {
+          "value": 18,
+          "px": 4814.0
+        },
+        {
+          "value": 15,
+          "px": 4953.0
+        },
+        {
+          "value": 12,
+          "px": 5091.0
+        },
+        {
+          "value": 9,
+          "px": 5230.0
+        },
+        {
+          "value": 6,
+          "px": 5368.0
+        },
+        {
+          "value": 3,
+          "px": 5507.0
+        },
+        {
+          "value": 0,
+          "px": 5645.0
+        },
+        {
+          "value": -3,
+          "px": 5784.0
+        },
+        {
+          "value": -6,
+          "px": 5922.5
+        },
+        {
+          "value": -9,
+          "px": 6061.0
+        },
+        {
+          "value": -12,
+          "px": 6199.0
+        },
+        {
+          "value": -15,
+          "px": 6338.0
+        },
+        {
+          "value": -18,
+          "px": 6476.0
+        },
+        {
+          "value": -21,
+          "px": 6615.0
+        },
+        {
+          "value": -24,
+          "px": 6753.5
+        },
+        {
+          "value": -27,
+          "px": 6892.0
+        },
+        {
+          "value": -30,
+          "px": 7030.5
+        }
+      ],
+      "note": "Left axis 'ENERGY 10^n eV' (also used as temperature). It is the mass axis shifted by ~35.4 decades (E = mc^2; the exact shift is 35.75).",
+      "ticks": [
+        {
+          "value": 27,
+          "y_px": 4399.0,
+          "printed_label": null
+        },
+        {
+          "value": 24,
+          "y_px": 4537.5,
+          "printed_label": "24"
+        },
+        {
+          "value": 21,
+          "y_px": 4676.0,
+          "printed_label": "21"
+        },
+        {
+          "value": 18,
+          "y_px": 4814.0,
+          "printed_label": "18"
+        },
+        {
+          "value": 15,
+          "y_px": 4953.0,
+          "printed_label": "15"
+        },
+        {
+          "value": 12,
+          "y_px": 5091.0,
+          "printed_label": "12"
+        },
+        {
+          "value": 9,
+          "y_px": 5230.0,
+          "printed_label": "9 (1 GeV)"
+        },
+        {
+          "value": 6,
+          "y_px": 5368.0,
+          "printed_label": "6 (1 MeV)"
+        },
+        {
+          "value": 3,
+          "y_px": 5507.0,
+          "printed_label": "3 (1 KeV)"
+        },
+        {
+          "value": 0,
+          "y_px": 5645.0,
+          "printed_label": "0 (1 eV)"
+        },
+        {
+          "value": -3,
+          "y_px": 5784.0,
+          "printed_label": "-3 (1 meV)"
+        },
+        {
+          "value": -6,
+          "y_px": 5922.5,
+          "printed_label": "-6"
+        },
+        {
+          "value": -9,
+          "y_px": 6061.0,
+          "printed_label": "-9"
+        },
+        {
+          "value": -12,
+          "y_px": 6199.0,
+          "printed_label": "-12"
+        },
+        {
+          "value": -15,
+          "y_px": 6338.0,
+          "printed_label": null
+        },
+        {
+          "value": -18,
+          "y_px": 6476.0,
+          "printed_label": null
+        },
+        {
+          "value": -21,
+          "y_px": 6615.0,
+          "printed_label": null
+        },
+        {
+          "value": -24,
+          "y_px": 6753.5,
+          "printed_label": null
+        },
+        {
+          "value": -27,
+          "y_px": 6892.0,
+          "printed_label": null
+        },
+        {
+          "value": -30,
+          "y_px": 7030.5,
+          "printed_label": null
+        }
+      ]
+    },
+    "density": "See cosmic_timeline.json -> density_ruler (density lines are diagonals of slope 3)."
+  },
+  "triangle": {
+    "big_bang_apex": {
+      "px": [
+        2125,
+        4375
+      ],
+      "norm": [
+        0.2911,
+        0.57272
+      ]
+    },
+    "top_vertex": {
+      "px": [
+        4922,
+        1585
+      ],
+      "norm": [
+        0.67425,
+        0.20749
+      ]
+    },
+    "bottom_vertex": {
+      "px": [
+        4920,
+        7155
+      ],
+      "norm": [
+        0.67397,
+        0.93664
+      ]
+    }
+  },
+  "boundaries": [
+    {
+      "id": "schwarzschild_radius",
+      "printed_label": "SCHWARZSCHILD RADIUS",
+      "meaning": "Objects cannot be smaller than their own black-hole size; the upper-left edge of the triangle.",
+      "equation": "log10 M[kg] = log10 W[m] + 26.527217  (W = Schwarzschild diameter 4GM/c^2)",
+      "chart_fit": "log10 M = log10 W + 26.6 (apex to observable universe)",
+      "polyline": [
+        {
+          "px": [
+            2125,
+            4375
+          ],
+          "norm": [
+            0.2911,
+            0.57272
+          ]
+        },
+        {
+          "px": [
+            4922,
+            1585
+          ],
+          "norm": [
+            0.67425,
+            0.20749
+          ]
+        }
+      ],
+      "extends_beyond": "Continues up-right past the observable universe as the edge of the lighter 'future' band."
+    },
+    {
+      "id": "compton_limit",
+      "printed_label": "COMPTON LIMIT",
+      "meaning": "Quantum uncertainty forbids localising a mass in less than its Compton wavelength; lower-left edge.",
+      "equation": "log10 M[kg] = -log10 W[m] -42.453744  (W = reduced Compton wavelength hbar/Mc)",
+      "chart_fit": "log10 M = -log10 W - 42.5",
+      "polyline": [
+        {
+          "px": [
+            2125,
+            4375
+          ],
+          "norm": [
+            0.2911,
+            0.57272
+          ]
+        },
+        {
+          "px": [
+            4920,
+            7155
+          ],
+          "norm": [
+            0.67397,
+            0.93664
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hubble_radius",
+      "printed_label": "HUBBLE RADIUS",
+      "meaning": "Nothing larger than the observable universe can be seen; the vertical right edge.",
+      "equation": "log10 W[m] = 26.436883 (diameter of today's Hubble sphere, 2c/H0). The poster draws it at ~25.97.",
+      "polyline": [
+        {
+          "px": [
+            4922,
+            1585
+          ],
+          "norm": [
+            0.67425,
+            0.20749
+          ]
+        },
+        {
+          "px": [
+            4920,
+            7155
+          ],
+          "norm": [
+            0.67397,
+            0.93664
+          ]
+        }
+      ]
+    },
+    {
+      "id": "planck_mass_line",
+      "printed_label": "1 PLANCK MASS",
+      "meaning": "Horizontal red dotted line through the apex and the grain of salt.",
+      "equation": "log10 M[kg] = -7.66",
+      "polyline": [
+        {
+          "px": [
+            2125,
+            4377
+          ],
+          "norm": [
+            0.2911,
+            0.57298
+          ]
+        },
+        {
+          "px": [
+            5650,
+            4377
+          ],
+          "norm": [
+            0.77397,
+            0.57298
+          ]
+        }
+      ]
+    },
+    {
+      "id": "planck_length_line",
+      "printed_label": "1 PLANCK LENGTH",
+      "meaning": "Vertical red dotted line through the apex.",
+      "equation": "log10 W[m] = -34.79",
+      "polyline": [
+        {
+          "px": [
+            2116,
+            4380
+          ],
+          "norm": [
+            0.28986,
+            0.57337
+          ]
+        },
+        {
+          "px": [
+            2116,
+            7150
+          ],
+          "norm": [
+            0.28986,
+            0.93599
+          ]
+        }
+      ]
+    },
+    {
+      "id": "planck_energy_line",
+      "printed_label": "1 PLANCK ENERGY",
+      "meaning": "Horizontal dotted line on the energy axis meeting the apex.",
+      "equation": "log10 E[eV] = 28.09",
+      "polyline": [
+        {
+          "px": [
+            1780,
+            4375
+          ],
+          "norm": [
+            0.24384,
+            0.57272
+          ]
+        },
+        {
+          "px": [
+            2125,
+            4375
+          ],
+          "norm": [
+            0.2911,
+            0.57272
+          ]
+        }
+      ]
+    },
+    {
+      "id": "atomic_density_line",
+      "printed_label": "ATOMIC DENSITY LINE / WATER DENSITY",
+      "meaning": "Blue dotted line of constant (~water/atomic) density that the everyday objects, planets and stars follow.",
+      "equation": "log10 M[kg] ~= 3 log10 W[m] + 3.7 (chart); water: 3 log10 W + 3.0 (cube) or + 2.72 (sphere)",
+      "polyline": [
+        {
+          "px": [
+            3494,
+            4526
+          ],
+          "norm": [
+            0.47863,
+            0.59249
+          ]
+        },
+        {
+          "px": [
+            4480,
+            1560
+          ],
+          "norm": [
+            0.6137,
+            0.20422
+          ]
+        }
+      ]
+    },
+    {
+      "id": "true_vacuum_heat_death_line",
+      "printed_label": "TRUE VACUUM / 1 googol seconds",
+      "meaning": "Red dotted density line from the top ruler to the bottom corner labelled HEAT DEATH OF THE UNIVERSE.",
+      "polyline": [
+        {
+          "px": [
+            6962,
+            800
+          ],
+          "norm": [
+            0.9537,
+            0.10473
+          ]
+        },
+        {
+          "px": [
+            4918,
+            7155
+          ],
+          "norm": [
+            0.6737,
+            0.93664
+          ]
+        }
+      ]
+    },
+    {
+      "id": "big_bang_apex",
+      "printed_label": "BIG BANG",
+      "meaning": "Where the Schwarzschild and Compton limits meet: the Planck mass at the Planck length.",
+      "point": {
+        "px": [
+          2125,
+          4375
+        ],
+        "norm": [
+          0.2911,
+          0.57272
+        ]
+      },
+      "chart": {
+        "log10_width_m": -34.569,
+        "log10_mass_kg": -7.923,
+        "log10_energy_eV": 27.516,
+        "log10_density_proxy_kg_m3": 95.783
+      },
+      "reference": {
+        "log10_mass_kg": -7.963263,
+        "log10_width_m": -34.49048,
+        "note": "Exact crossing of the two walls: half the Planck mass at twice the Planck length (with W = 4GM/c^2 and W = hbar/Mc)."
+      }
+    }
+  ],
+  "regions": [
+    {
+      "id": "black_holes_primordial",
+      "printed_label": "PRIMORDIAL BLACK HOLES*",
+      "kind": "bracket_along_schwarzschild_line",
+      "hypothetical": true,
+      "bracket": [
+        {
+          "px": [
+            3064,
+            3120
+          ],
+          "norm": [
+            0.41973,
+            0.40843
+          ]
+        },
+        {
+          "px": [
+            3472,
+            2718
+          ],
+          "norm": [
+            0.47562,
+            0.35581
+          ]
+        }
+      ],
+      "text": {
+        "px": [
+          3204,
+          2864
+        ],
+        "norm": [
+          0.4389,
+          0.37492
+        ]
+      },
+      "chart_log10_mass_kg_range": [
+        15.804,
+        24.572
+      ],
+      "reference_log10_mass_kg_range": [
+        11.69897,
+        30.775756
+      ],
+      "first_appeared": {
+        "seconds_after_big_bang": 1.2384010772459151e-24,
+        "years_ago": null,
+        "log10_seconds": -23.907139,
+        "label": "10^-24 seconds after the Big Bang",
+        "basis": "physics",
+        "confidence": "low",
+        "note": "Hypothetical. A primordial black hole forms with about the mass inside the horizon, M ~ c^3 t / G, so the band grows along the wall as time passes."
+      },
+      "note": "Hypothetical; formed in the early universe. Lighter than ~5e11 kg they would have evaporated by now; the range shown stops where stellar black holes begin. Chart range = bracket ends projected onto the Schwarzschild line."
+    },
+    {
+      "id": "black_holes_stellar_mass",
+      "printed_label": "STELLAR MASS BLACK HOLES",
+      "kind": "bracket_along_schwarzschild_line",
+      "hypothetical": false,
+      "bracket": [
+        {
+          "px": [
+            3485,
+            2693
+          ],
+          "norm": [
+            0.4774,
+            0.35253
+          ]
+        },
+        {
+          "px": [
+            3899,
+            2303
+          ],
+          "norm": [
+            0.53411,
+            0.30148
+          ]
+        }
+      ],
+      "text": {
+        "px": [
+          3600,
+          2449
+        ],
+        "norm": [
+          0.49315,
+          0.32059
+        ]
+      },
+      "chart_log10_mass_kg_range": [
+        24.983,
+        33.686
+      ],
+      "reference_log10_mass_kg_range": [
+        30.775756,
+        32.474726
+      ],
+      "first_appeared": {
+        "seconds_after_big_bang": 6312000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.800167,
+        "label": "200 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "The earliest massive stars collapsed ~200 million years after the Big Bang."
+      },
+      "note": "Formed by collapse of massive stars (~3 to ~150 solar masses). Chart range = bracket ends projected onto the Schwarzschild line."
+    },
+    {
+      "id": "black_holes_supermassive",
+      "printed_label": "SUPER MASSIVE BLACK HOLES",
+      "kind": "bracket_along_schwarzschild_line",
+      "hypothetical": false,
+      "bracket": [
+        {
+          "px": [
+            3905,
+            2278
+          ],
+          "norm": [
+            0.53493,
+            0.29821
+          ]
+        },
+        {
+          "px": [
+            4314,
+            1882
+          ],
+          "norm": [
+            0.59096,
+            0.24637
+          ]
+        }
+      ],
+      "text": {
+        "px": [
+          4021,
+          2034
+        ],
+        "norm": [
+          0.55082,
+          0.26627
+        ]
+      },
+      "chart_log10_mass_kg_range": [
+        34.022,
+        42.736
+      ],
+      "reference_log10_mass_kg_range": [
+        35.298635,
+        41.298635
+      ],
+      "first_appeared": {
+        "seconds_after_big_bang": 2.2092e+16,
+        "years_ago": null,
+        "log10_seconds": 16.344235,
+        "label": "700 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Quasars powered by billion-solar-mass black holes existed by ~700 million years."
+      },
+      "note": "Found at galaxy centres (~1e5 to ~1e11 solar masses). Chart range = bracket ends projected onto the Schwarzschild line."
+    },
+    {
+      "id": "dark_matter_upper",
+      "printed_label": "DARK MATTER* (areas not yet excluded)",
+      "kind": "dashed_polygon",
+      "hypothetical": true,
+      "polygon": [
+        {
+          "px": [
+            3470,
+            3022
+          ],
+          "norm": [
+            0.47534,
+            0.3956
+          ]
+        },
+        {
+          "px": [
+            3960,
+            3022
+          ],
+          "norm": [
+            0.54247,
+            0.3956
+          ]
+        },
+        {
+          "px": [
+            3905,
+            3216
+          ],
+          "norm": [
+            0.53493,
+            0.421
+          ]
+        },
+        {
+          "px": [
+            3279,
+            3216
+          ],
+          "norm": [
+            0.44918,
+            0.421
+          ]
+        }
+      ],
+      "text": {
+        "px": [
+          3110,
+          3727
+        ],
+        "norm": [
+          0.42603,
+          0.48789
+        ]
+      },
+      "chart_log10_mass_kg_range": [
+        17.173,
+        21.374
+      ],
+      "note": "Speckled area with dashed borders; the gap between the two boxes is drawn as excluded."
+    },
+    {
+      "id": "dark_matter_lower",
+      "printed_label": "DARK MATTER* (areas not yet excluded)",
+      "kind": "dashed_polygon",
+      "hypothetical": true,
+      "polygon": [
+        {
+          "px": [
+            3189,
+            3373
+          ],
+          "norm": [
+            0.43685,
+            0.44155
+          ]
+        },
+        {
+          "px": [
+            3830,
+            3373
+          ],
+          "norm": [
+            0.52466,
+            0.44155
+          ]
+        },
+        {
+          "px": [
+            3459,
+            4149
+          ],
+          "norm": [
+            0.47384,
+            0.54313
+          ]
+        },
+        {
+          "px": [
+            2345,
+            4149
+          ],
+          "norm": [
+            0.32123,
+            0.54313
+          ]
+        }
+      ],
+      "text": {
+        "px": [
+          3110,
+          3727
+        ],
+        "norm": [
+          0.42603,
+          0.48789
+        ]
+      },
+      "chart_log10_mass_kg_range": [
+        -3.03,
+        13.773
+      ],
+      "note": "Speckled area with dashed borders; the gap between the two boxes is drawn as excluded."
+    },
+    {
+      "id": "quark_gluon_plasma",
+      "printed_label": "QUARK-GLUON PLASMA",
+      "kind": "colour_gradient",
+      "text": {
+        "px": [
+          2868,
+          4270
+        ],
+        "norm": [
+          0.39288,
+          0.55897
+        ]
+      },
+      "approx_ellipse": {
+        "center": {
+          "px": [
+            2850,
+            4300
+          ],
+          "norm": [
+            0.39041,
+            0.5629
+          ]
+        },
+        "radius_px": [
+          500,
+          450
+        ]
+      },
+      "note": "Warm-coloured glow next to the Big Bang apex; the image gives no hard edge. Physically: matter hotter than ~150 MeV (first ~10 µs after the Big Bang)."
+    },
+    {
+      "id": "domain_biology",
+      "printed_label": "BIOLOGY",
+      "kind": "domain_label",
+      "text": {
+        "px": [
+          4208,
+          4231
+        ],
+        "norm": [
+          0.57644,
+          0.55387
+        ]
+      },
+      "member_object_ids": [
+        "virus",
+        "bacterium",
+        "red_blood_cell",
+        "ladybug",
+        "hedgehog",
+        "humans",
+        "hippopotamus",
+        "blue_whale",
+        "giant_sequoia"
+      ],
+      "chart_log10_mass_kg_range": [
+        -18.036,
+        6.0
+      ]
+    },
+    {
+      "id": "domain_chemistry",
+      "printed_label": "CHEMISTRY",
+      "kind": "domain_label",
+      "text": {
+        "px": [
+          3886,
+          5200
+        ],
+        "norm": [
+          0.53233,
+          0.68072
+        ]
+      },
+      "member_object_ids": [
+        "helium_atom",
+        "oxygen_atom",
+        "rna_strand"
+      ],
+      "chart_log10_mass_kg_range": [
+        -27.195,
+        -21.673
+      ]
+    },
+    {
+      "id": "domain_astrophysics",
+      "printed_label": "ASTROPHYSICS",
+      "kind": "domain_label",
+      "text": {
+        "px": [
+          4552,
+          3179
+        ],
+        "norm": [
+          0.62356,
+          0.41615
+        ]
+      },
+      "member_object_ids": [
+        "itokawa",
+        "deimos",
+        "phobos",
+        "enceladus",
+        "moon",
+        "earth",
+        "jupiter",
+        "sun",
+        "globular_clusters",
+        "milky_way",
+        "observable_universe"
+      ],
+      "chart_log10_mass_kg_range": [
+        12.041,
+        52.057
+      ]
+    },
+    {
+      "id": "energy_states_of_photon",
+      "printed_label": "ENERGY STATES OF PHOTON",
+      "kind": "bracketed_label_list",
+      "text": {
+        "px": [
+          3166,
+          5995
+        ],
+        "norm": [
+          0.4337,
+          0.78479
+        ]
+      },
+      "bracket": [
+        {
+          "px": [
+            2916,
+            5655
+          ],
+          "norm": [
+            0.39945,
+            0.74028
+          ]
+        },
+        {
+          "px": [
+            3491,
+            6245
+          ],
+          "norm": [
+            0.47822,
+            0.81752
+          ]
+        }
+      ],
+      "note": "Labels run along the Compton limit below the particles; they are spaced for legibility, not at their true wavelengths. A rainbow ribbon runs from the particles toward the radio end.",
+      "first_appeared": {
+        "seconds_after_big_bang": 1e-12,
+        "years_ago": null,
+        "log10_seconds": -12.0,
+        "label": "10^-12 seconds after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "medium",
+        "note": "Light as we know it separated from the weak force at the electroweak transition."
+      },
+      "bands": [
+        {
+          "id": "gamma_ray",
+          "printed_label": "GAMMA RAY",
+          "text": {
+            "px": [
+              3056,
+              5575
+            ],
+            "norm": [
+              0.41863,
+              0.72981
+            ]
+          },
+          "reference_wavelength_m": [
+            null,
+            1e-11
+          ],
+          "reference_photon_energy_eV": [
+            100000.0,
+            null
+          ]
+        },
+        {
+          "id": "x_ray",
+          "printed_label": "X-RAY",
+          "text": {
+            "px": [
+              3196,
+              5605
+            ],
+            "norm": [
+              0.43781,
+              0.73373
+            ]
+          },
+          "reference_wavelength_m": [
+            1e-11,
+            1e-08
+          ],
+          "reference_photon_energy_eV": [
+            100.0,
+            100000.0
+          ]
+        },
+        {
+          "id": "ultraviolet",
+          "printed_label": "ULTRAVIOLET",
+          "text": {
+            "px": [
+              3236,
+              5735
+            ],
+            "norm": [
+              0.44329,
+              0.75075
+            ]
+          },
+          "reference_wavelength_m": [
+            1e-08,
+            4e-07
+          ],
+          "reference_photon_energy_eV": [
+            3.1,
+            124.0
+          ]
+        },
+        {
+          "id": "visible_light",
+          "printed_label": "VISIBLE LIGHT",
+          "text": {
+            "px": [
+              3261,
+              5770
+            ],
+            "norm": [
+              0.44671,
+              0.75533
+            ]
+          },
+          "reference_wavelength_m": [
+            3.8e-07,
+            7.5e-07
+          ],
+          "reference_photon_energy_eV": [
+            1.65,
+            3.26
+          ]
+        },
+        {
+          "id": "infrared",
+          "printed_label": "INFRARED",
+          "text": {
+            "px": [
+              3316,
+              5785
+            ],
+            "norm": [
+              0.45425,
+              0.7573
+            ]
+          },
+          "reference_wavelength_m": [
+            7.5e-07,
+            0.001
+          ],
+          "reference_photon_energy_eV": [
+            0.00124,
+            1.65
+          ]
+        },
+        {
+          "id": "microwaves",
+          "printed_label": "MICROWAVES",
+          "text": {
+            "px": [
+              3491,
+              6005
+            ],
+            "norm": [
+              0.47822,
+              0.7861
+            ]
+          },
+          "reference_wavelength_m": [
+            0.001,
+            1.0
+          ],
+          "reference_photon_energy_eV": [
+            1.24e-06,
+            0.00124
+          ]
+        },
+        {
+          "id": "radio_waves",
+          "printed_label": "RADIO WAVES",
+          "text": {
+            "px": [
+              3591,
+              6105
+            ],
+            "norm": [
+              0.49192,
+              0.79919
+            ]
+          },
+          "reference_wavelength_m": [
+            1.0,
+            null
+          ],
+          "reference_photon_energy_eV": [
+            null,
+            1.24e-06
+          ]
+        }
+      ]
+    }
+  ],
+  "zoom_boxes": [
+    {
+      "id": "stellar_evolution_zoom",
+      "inset": "stellar_evolution",
+      "main_box": [
+        {
+          "px": [
+            3896,
+            2485
+          ],
+          "norm": [
+            0.5337,
+            0.3253
+          ]
+        },
+        {
+          "px": [
+            4321,
+            2900
+          ],
+          "norm": [
+            0.59192,
+            0.37963
+          ]
+        }
+      ],
+      "main_box_chart_range": {
+        "log10_width_m": [
+          3.765,
+          12.965
+        ],
+        "log10_mass_kg": [
+          24.016,
+          33.002
+        ]
+      },
+      "inset_frame": [
+        {
+          "px": [
+            605.5,
+            625.5
+          ],
+          "norm": [
+            0.08295,
+            0.08188
+          ]
+        },
+        {
+          "px": [
+            1855.5,
+            1875.0
+          ],
+          "norm": [
+            0.25418,
+            0.24545
+          ]
+        }
+      ],
+      "note": "Red box around the stars and planets; red connector lines lead to the STELLAR EVOLUTION inset."
+    },
+    {
+      "id": "fundamental_particles_zoom",
+      "inset": "fundamental_particles",
+      "main_box": [
+        {
+          "px": [
+            2828,
+            5112
+          ],
+          "norm": [
+            0.3874,
+            0.6692
+          ]
+        },
+        {
+          "px": [
+            3256,
+            5525
+          ],
+          "norm": [
+            0.44603,
+            0.72326
+          ]
+        }
+      ],
+      "main_box_chart_range": {
+        "log10_width_m": [
+          -19.352,
+          -10.088
+        ],
+        "log10_mass_kg": [
+          -32.825,
+          -23.882
+        ]
+      },
+      "inset_frame": [
+        {
+          "px": [
+            601.0,
+            2678.5
+          ],
+          "norm": [
+            0.08233,
+            0.35063
+          ]
+        },
+        {
+          "px": [
+            1850.5,
+            3928.5
+          ],
+          "norm": [
+            0.25349,
+            0.51427
+          ]
+        }
+      ],
+      "note": "Red box at the bottom of the Compton limit; leads to the FUNDAMENTAL PARTICLES inset.",
+      "decorative_icons": [
+        {
+          "px": [
+            2885,
+            5155
+          ],
+          "norm": [
+            0.39521,
+            0.67483
+          ]
+        },
+        {
+          "px": [
+            2995,
+            5245
+          ],
+          "norm": [
+            0.41027,
+            0.68661
+          ]
+        },
+        {
+          "px": [
+            3030,
+            5285
+          ],
+          "norm": [
+            0.41507,
+            0.69184
+          ]
+        },
+        {
+          "px": [
+            3190,
+            5445
+          ],
+          "norm": [
+            0.43699,
+            0.71279
+          ]
+        }
+      ]
+    }
+  ],
+  "reference_lines": {
+    "mass": [
+      {
+        "label": "1 T Solar Masses",
+        "kind": "dotted",
+        "y_px": 2055.5,
+        "y_norm": 0.26908,
+        "true_value_kg": 1.989e+42,
+        "true_log10_kg": 42.298635,
+        "chart_log10_kg": 42.302,
+        "offset_decades": 0.003
+      },
+      {
+        "label": "1 B Solar Masses",
+        "kind": "dotted",
+        "y_px": 2193.5,
+        "y_norm": 0.28714,
+        "true_value_kg": 1.989e+39,
+        "true_log10_kg": 39.298635,
+        "chart_log10_kg": 39.314,
+        "offset_decades": 0.015
+      },
+      {
+        "label": "1 M Solar Masses",
+        "kind": "dotted",
+        "y_px": 2332.0,
+        "y_norm": 0.30528,
+        "true_value_kg": 1.989e+36,
+        "true_log10_kg": 36.298635,
+        "chart_log10_kg": 36.315,
+        "offset_decades": 0.016
+      },
+      {
+        "label": "1000 Solar Masses",
+        "kind": "dotted",
+        "y_px": 2470.0,
+        "y_norm": 0.32334,
+        "true_value_kg": 1.989e+33,
+        "true_log10_kg": 33.298635,
+        "chart_log10_kg": 33.327,
+        "offset_decades": 0.028
+      },
+      {
+        "label": "1 Solar mass = 2*10^30 Kg",
+        "kind": "dotted",
+        "y_px": 2608.5,
+        "y_norm": 0.34147,
+        "true_value_kg": 1.989e+30,
+        "true_log10_kg": 30.298635,
+        "chart_log10_kg": 30.328,
+        "offset_decades": 0.029
+      },
+      {
+        "label": "1 gigatonne",
+        "kind": "tick",
+        "y_px": 3454.5,
+        "y_norm": 0.45222,
+        "true_value_kg": 1000000000000.0,
+        "true_log10_kg": 12.0,
+        "chart_log10_kg": 12.009,
+        "offset_decades": 0.009
+      },
+      {
+        "label": "1 megatonne",
+        "kind": "tick",
+        "y_px": 3593.5,
+        "y_norm": 0.47041,
+        "true_value_kg": 1000000000.0,
+        "true_log10_kg": 9.0,
+        "chart_log10_kg": 8.999,
+        "offset_decades": -0.001
+      },
+      {
+        "label": "1 kilotonne",
+        "kind": "tick",
+        "y_px": 3731.5,
+        "y_norm": 0.48848,
+        "true_value_kg": 1000000.0,
+        "true_log10_kg": 6.0,
+        "chart_log10_kg": 6.011,
+        "offset_decades": 0.011
+      },
+      {
+        "label": "1 tonne",
+        "kind": "tick",
+        "y_px": 3870.5,
+        "y_norm": 0.50668,
+        "true_value_kg": 1000.0,
+        "true_log10_kg": 3.0,
+        "chart_log10_kg": 3.001,
+        "offset_decades": 0.001
+      },
+      {
+        "label": "1 kg",
+        "kind": "tick",
+        "y_px": 4008.5,
+        "y_norm": 0.52474,
+        "true_value_kg": 1.0,
+        "true_log10_kg": 0.0,
+        "chart_log10_kg": 0.013,
+        "offset_decades": 0.013
+      },
+      {
+        "label": "1 lb",
+        "kind": "dotted",
+        "y_px": 4026.0,
+        "y_norm": 0.52703,
+        "true_value_kg": 0.4536,
+        "true_log10_kg": -0.343337,
+        "chart_log10_kg": -0.366,
+        "offset_decades": -0.023
+      },
+      {
+        "label": "1 oz",
+        "kind": "dotted",
+        "y_px": 4080.0,
+        "y_norm": 0.5341,
+        "true_value_kg": 0.02835,
+        "true_log10_kg": -1.547447,
+        "chart_log10_kg": -1.536,
+        "offset_decades": 0.012
+      },
+      {
+        "label": "1 gram",
+        "kind": "tick",
+        "y_px": 4147.5,
+        "y_norm": 0.54294,
+        "true_value_kg": 0.001,
+        "true_log10_kg": -3.0,
+        "chart_log10_kg": -2.997,
+        "offset_decades": 0.003
+      },
+      {
+        "label": "1 mg",
+        "kind": "tick",
+        "y_px": 4285.5,
+        "y_norm": 0.561,
+        "true_value_kg": 1e-06,
+        "true_log10_kg": -6.0,
+        "chart_log10_kg": -5.985,
+        "offset_decades": 0.015
+      },
+      {
+        "label": "1 PLANCK MASS",
+        "kind": "dotted (extends across the chart)",
+        "y_px": 4377.0,
+        "y_norm": 0.57298,
+        "true_value_kg": 2.176e-08,
+        "true_log10_kg": -7.662341,
+        "chart_log10_kg": -7.967,
+        "offset_decades": -0.304
+      },
+      {
+        "label": "1 µg",
+        "kind": "tick",
+        "y_px": 4424.5,
+        "y_norm": 0.5792,
+        "true_value_kg": 1e-09,
+        "true_log10_kg": -9.0,
+        "chart_log10_kg": -8.995,
+        "offset_decades": 0.005
+      },
+      {
+        "label": "1 ng",
+        "kind": "tick",
+        "y_px": 4562.5,
+        "y_norm": 0.59726,
+        "true_value_kg": 1e-12,
+        "true_log10_kg": -12.0,
+        "chart_log10_kg": -11.983,
+        "offset_decades": 0.017
+      },
+      {
+        "label": "1 pg",
+        "kind": "tick",
+        "y_px": 4701.5,
+        "y_norm": 0.61546,
+        "true_value_kg": 1e-15,
+        "true_log10_kg": -15.0,
+        "chart_log10_kg": -14.993,
+        "offset_decades": 0.007
+      },
+      {
+        "label": "1 TeV/c^2 (1.8*10^-21 g)",
+        "kind": "dotted",
+        "y_px": 5091.5,
+        "y_norm": 0.66651,
+        "true_value_kg": 1.783e-24,
+        "true_log10_kg": -23.748931,
+        "chart_log10_kg": -23.438,
+        "offset_decades": 0.311
+      },
+      {
+        "label": "1 GeV/c^2",
+        "kind": "dotted",
+        "y_px": 5230.0,
+        "y_norm": 0.68464,
+        "true_value_kg": 1.783e-27,
+        "true_log10_kg": -26.748931,
+        "chart_log10_kg": -26.437,
+        "offset_decades": 0.312
+      },
+      {
+        "label": "1 MeV/c^2",
+        "kind": "dotted",
+        "y_px": 5368.0,
+        "y_norm": 0.70271,
+        "true_value_kg": 1.783e-30,
+        "true_log10_kg": -29.748931,
+        "chart_log10_kg": -29.425,
+        "offset_decades": 0.324
+      },
+      {
+        "label": "1 KeV/c^2",
+        "kind": "dotted",
+        "y_px": 5506.5,
+        "y_norm": 0.72084,
+        "true_value_kg": 1.783e-33,
+        "true_log10_kg": -32.748931,
+        "chart_log10_kg": -32.424,
+        "offset_decades": 0.325
+      },
+      {
+        "label": "1 eV/c^2",
+        "kind": "dotted",
+        "y_px": 5645.0,
+        "y_norm": 0.73897,
+        "true_value_kg": 1.783e-36,
+        "true_log10_kg": -35.748931,
+        "chart_log10_kg": -35.423,
+        "offset_decades": 0.326
+      }
+    ],
+    "width": [
+      {
+        "label": "1 PLANCK LENGTH",
+        "kind": "dotted vertical line",
+        "x_px": 2116.0,
+        "x_norm": 0.28986,
+        "true_value_m": 1.616e-35,
+        "true_log10_m": -34.791559,
+        "chart_log10_m": -34.763,
+        "offset_decades": 0.028
+      },
+      {
+        "label": "10 pm",
+        "kind": "label at tick",
+        "x_px": 3167.5,
+        "x_norm": 0.4339,
+        "true_value_m": 1e-11,
+        "true_log10_m": -11.0,
+        "chart_log10_m": -12.003,
+        "offset_decades": -1.003
+      },
+      {
+        "label": "1 nm",
+        "kind": "label at tick",
+        "x_px": 3306.5,
+        "x_norm": 0.45295,
+        "true_value_m": 1e-09,
+        "true_log10_m": -9.0,
+        "chart_log10_m": -8.995,
+        "offset_decades": 0.005
+      },
+      {
+        "label": "1 µm",
+        "kind": "label at tick",
+        "x_px": 3444.5,
+        "x_norm": 0.47185,
+        "true_value_m": 1e-06,
+        "true_log10_m": -6.0,
+        "chart_log10_m": -6.008,
+        "offset_decades": -0.008
+      },
+      {
+        "label": "1 mm",
+        "kind": "label at tick",
+        "x_px": 3583.5,
+        "x_norm": 0.49089,
+        "true_value_m": 0.001,
+        "true_log10_m": -3.0,
+        "chart_log10_m": -2.999,
+        "offset_decades": 0.001
+      },
+      {
+        "label": "1 inch",
+        "kind": "dotted",
+        "x_px": 3684.5,
+        "x_norm": 0.50473,
+        "true_value_m": 0.0254,
+        "true_log10_m": -1.595166,
+        "chart_log10_m": -0.813,
+        "offset_decades": 0.782
+      },
+      {
+        "label": "1 meter",
+        "kind": "label at tick",
+        "x_px": 3722.0,
+        "x_norm": 0.50986,
+        "true_value_m": 1.0,
+        "true_log10_m": 0.0,
+        "chart_log10_m": -0.001,
+        "offset_decades": -0.001
+      },
+      {
+        "label": "1 km",
+        "kind": "label at tick",
+        "x_px": 3860.5,
+        "x_norm": 0.52884,
+        "true_value_m": 1000.0,
+        "true_log10_m": 3.0,
+        "chart_log10_m": 2.997,
+        "offset_decades": -0.003
+      },
+      {
+        "label": "1 mile",
+        "kind": "dotted",
+        "x_px": 3877.0,
+        "x_norm": 0.5311,
+        "true_value_m": 1609.0,
+        "true_log10_m": 3.206648,
+        "chart_log10_m": 3.354,
+        "offset_decades": 0.147
+      },
+      {
+        "label": "1000 km",
+        "kind": "label at tick",
+        "x_px": 3999.5,
+        "x_norm": 0.54788,
+        "true_value_m": 1000000.0,
+        "true_log10_m": 6.0,
+        "chart_log10_m": 6.006,
+        "offset_decades": 0.006
+      },
+      {
+        "label": "1M km",
+        "kind": "label at tick",
+        "x_px": 4137.5,
+        "x_norm": 0.56678,
+        "true_value_m": 1000000000.0,
+        "true_log10_m": 9.0,
+        "chart_log10_m": 8.993,
+        "offset_decades": -0.007
+      },
+      {
+        "label": "1light-second",
+        "kind": "dotted",
+        "x_px": 4153.0,
+        "x_norm": 0.5689,
+        "true_value_m": 299800000.0,
+        "true_log10_m": 8.476832,
+        "chart_log10_m": 9.328,
+        "offset_decades": 0.851
+      },
+      {
+        "label": "1 AU",
+        "kind": "dotted",
+        "x_px": 4227.5,
+        "x_norm": 0.57911,
+        "true_value_m": 149600000000.0,
+        "true_log10_m": 11.174932,
+        "chart_log10_m": 10.941,
+        "offset_decades": -0.234
+      },
+      {
+        "label": "1light-year",
+        "kind": "dotted",
+        "x_px": 4451.0,
+        "x_norm": 0.60973,
+        "true_value_m": 9461000000000000.0,
+        "true_log10_m": 15.975923,
+        "chart_log10_m": 15.778,
+        "offset_decades": -0.197
+      },
+      {
+        "label": "1 parsec",
+        "kind": "dotted",
+        "x_px": 4473.0,
+        "x_norm": 0.61274,
+        "true_value_m": 3.086e+16,
+        "true_log10_m": 16.489354,
+        "chart_log10_m": 16.255,
+        "offset_decades": -0.235
+      },
+      {
+        "label": "1,000 ly",
+        "kind": "dotted",
+        "x_px": 4589.0,
+        "x_norm": 0.62863,
+        "true_value_m": 9.461e+18,
+        "true_log10_m": 18.975923,
+        "chart_log10_m": 18.766,
+        "offset_decades": -0.21
+      },
+      {
+        "label": "1 kpc",
+        "kind": "dotted",
+        "x_px": 4610.5,
+        "x_norm": 0.63158,
+        "true_value_m": 3.086e+19,
+        "true_log10_m": 19.489354,
+        "chart_log10_m": 19.231,
+        "offset_decades": -0.258
+      },
+      {
+        "label": "1M ly",
+        "kind": "dotted",
+        "x_px": 4727.0,
+        "x_norm": 0.64753,
+        "true_value_m": 9.461e+21,
+        "true_log10_m": 21.975923,
+        "chart_log10_m": 21.753,
+        "offset_decades": -0.223
+      },
+      {
+        "label": "1 Mpc",
+        "kind": "dotted",
+        "x_px": 4748.0,
+        "x_norm": 0.65041,
+        "true_value_m": 3.086e+22,
+        "true_log10_m": 22.489354,
+        "chart_log10_m": 22.207,
+        "offset_decades": -0.282
+      },
+      {
+        "label": "1B ly",
+        "kind": "dotted",
+        "x_px": 4865.0,
+        "x_norm": 0.66644,
+        "true_value_m": 9.461e+24,
+        "true_log10_m": 24.975923,
+        "chart_log10_m": 24.74,
+        "offset_decades": -0.236
+      },
+      {
+        "label": "1 Gpc",
+        "kind": "dotted",
+        "x_px": 4885.5,
+        "x_norm": 0.66925,
+        "true_value_m": 3.086e+25,
+        "true_log10_m": 25.489354,
+        "chart_log10_m": 25.183,
+        "offset_decades": -0.306
+      }
+    ],
+    "energy": [
+      {
+        "label": "1 PLANCK ENERGY",
+        "kind": "dotted",
+        "y_px": 4375.0,
+        "chart_log10_eV": 27.516,
+        "true_log10_eV": 28.08636,
+        "text": {
+          "px": [
+            1493,
+            4384
+          ],
+          "norm": [
+            0.20452,
+            0.5739
+          ]
+        },
+        "note": "Planck energy 1.22e19 GeV."
+      },
+      {
+        "label": "GRAND UNIFICATION THEORY*",
+        "kind": "bracket",
+        "y_px": [
+          4400,
+          4486
+        ],
+        "chart_log10_eV": [
+          26.974,
+          25.112
+        ],
+        "true_log10_eV": [
+          24.0,
+          25.0
+        ],
+        "text": {
+          "px": [
+            1465,
+            4449
+          ],
+          "norm": [
+            0.20068,
+            0.58241
+          ]
+        },
+        "note": "Hypothetical; GUT scale ~1e15-1e16 GeV."
+      },
+      {
+        "label": "ELECTROWEAK",
+        "kind": "bracket",
+        "y_px": [
+          4495,
+          5131
+        ],
+        "chart_log10_eV": [
+          24.917,
+          11.141
+        ],
+        "true_log10_eV": [
+          11.0,
+          24.0
+        ],
+        "text": {
+          "px": [
+            1623,
+            4810
+          ],
+          "norm": [
+            0.22233,
+            0.62966
+          ]
+        },
+        "note": "Span between the GUT scale and electroweak symmetry breaking (~100 GeV)."
+      },
+      {
+        "label": "LARGE HADRON COLLIDER (MAXIMUM ENERGY)",
+        "kind": "arrow",
+        "y_px": 5069.0,
+        "chart_log10_eV": 12.484,
+        "true_log10_eV": 13.133539,
+        "text": {
+          "px": [
+            1416,
+            5065
+          ],
+          "norm": [
+            0.19397,
+            0.66304
+          ]
+        },
+        "note": "13.6 TeV collision energy."
+      },
+      {
+        "label": "FUNDAMENTAL PARTICLES",
+        "kind": "bracket",
+        "y_px": [
+          5145,
+          5443
+        ],
+        "chart_log10_eV": [
+          10.838,
+          4.383
+        ],
+        "true_log10_eV": [
+          5.708421,
+          11.238046
+        ],
+        "text": {
+          "px": [
+            1503,
+            5302
+          ],
+          "norm": [
+            0.20589,
+            0.69407
+          ]
+        },
+        "note": "Electron (0.511 MeV) to top quark (173 GeV); neutrinos are lighter."
+      },
+      {
+        "label": "1 B K",
+        "kind": "dotted",
+        "y_px": 5414.5,
+        "chart_log10_eV": 5.0,
+        "true_log10_eV": 4.935356,
+        "text": {
+          "px": [
+            1645,
+            5413
+          ],
+          "norm": [
+            0.22534,
+            0.7086
+          ]
+        },
+        "note": "Temperature expressed as kT."
+      },
+      {
+        "label": "1 M °C ≈ 1 M K",
+        "kind": "dotted",
+        "y_px": 5553.5,
+        "chart_log10_eV": 1.989,
+        "true_log10_eV": 1.935356,
+        "text": {
+          "px": [
+            1563,
+            5554
+          ],
+          "norm": [
+            0.21411,
+            0.72706
+          ]
+        },
+        "note": "Temperature expressed as kT."
+      },
+      {
+        "label": "100 °C",
+        "kind": "dotted",
+        "y_px": 5685.0,
+        "chart_log10_eV": -0.859,
+        "true_log10_eV": -1.49276,
+        "text": {
+          "px": [
+            1645,
+            5671
+          ],
+          "norm": [
+            0.22534,
+            0.74237
+          ]
+        },
+        "note": "Drawn ~0.6 decade higher than kT for 373 K so the bracket is legible."
+      },
+      {
+        "label": "LIQUID WATER RANGE",
+        "kind": "bracket",
+        "y_px": [
+          5694,
+          5729
+        ],
+        "chart_log10_eV": [
+          -1.054,
+          -1.812
+        ],
+        "true_log10_eV": [
+          -1.628243,
+          -1.49276
+        ],
+        "text": {
+          "px": [
+            1552,
+            5712
+          ],
+          "norm": [
+            0.2126,
+            0.74774
+          ]
+        },
+        "note": ""
+      },
+      {
+        "label": "0 °C",
+        "kind": "dotted",
+        "y_px": 5738.0,
+        "chart_log10_eV": -2.007,
+        "true_log10_eV": -1.628243,
+        "text": {
+          "px": [
+            1666,
+            5756
+          ],
+          "norm": [
+            0.22822,
+            0.7535
+          ]
+        },
+        "note": "Drawn ~0.4 decade low."
+      },
+      {
+        "label": "SUPERCONDUCTIVITY",
+        "kind": "bracket",
+        "y_px": [
+          5763,
+          5816
+        ],
+        "chart_log10_eV": [
+          -2.548,
+          -3.696
+        ],
+        "true_log10_eV": [
+          -4.064644,
+          -1.888553
+        ],
+        "text": {
+          "px": [
+            1552,
+            5806
+          ],
+          "norm": [
+            0.2126,
+            0.76005
+          ]
+        },
+        "note": "Known superconductors: critical temperatures ~1-150 K."
+      },
+      {
+        "label": "1 Kelvin (-272 °C)",
+        "kind": "dotted",
+        "y_px": 5829.5,
+        "chart_log10_eV": -3.989,
+        "true_log10_eV": -4.064644,
+        "text": {
+          "px": [
+            1628,
+            5852
+          ],
+          "norm": [
+            0.22301,
+            0.76607
+          ]
+        },
+        "note": ""
+      },
+      {
+        "label": "BOSE-EINSTEIN CONDENSATE",
+        "kind": "bracket",
+        "y_px": [
+          6214,
+          6317
+        ],
+        "chart_log10_eV": [
+          -12.317,
+          -14.548
+        ],
+        "true_log10_eV": [
+          -11.064644,
+          -10.064644
+        ],
+        "text": {
+          "px": [
+            1617,
+            6260
+          ],
+          "norm": [
+            0.22151,
+            0.81948
+          ]
+        },
+        "note": "Lab BECs form at ~100 nK-1 µK; drawn ~2 decades lower."
+      },
+      {
+        "label": "QUANTUM TUNNELING*",
+        "kind": "bracket",
+        "y_px": [
+          6395,
+          6500
+        ],
+        "chart_log10_eV": [
+          -16.238,
+          -18.512
+        ],
+        "true_log10_eV": null,
+        "text": {
+          "px": [
+            1648,
+            6421
+          ],
+          "norm": [
+            0.22575,
+            0.84056
+          ]
+        },
+        "note": "Asterisk = hypothetical per the chart's legend; no specific energy implied."
+      },
+      {
+        "label": "ZERO-POINT ENERGY",
+        "kind": "arrow",
+        "y_px": 7145.0,
+        "chart_log10_eV": -32.483,
+        "true_log10_eV": null,
+        "text": {
+          "px": [
+            1473,
+            7145
+          ],
+          "norm": [
+            0.20178,
+            0.93533
+          ]
+        },
+        "note": "Points at the bottom of the axis."
+      }
+    ]
+  },
+  "texts": [
+    {
+      "text": "TIME",
+      "role": "axis_title",
+      "px": [
+        3416,
+        348
+      ],
+      "norm": [
+        0.46795,
+        0.04556
+      ]
+    },
+    {
+      "text": "10^n s since Big Bang",
+      "role": "axis_unit",
+      "px": [
+        3862,
+        488
+      ],
+      "norm": [
+        0.52904,
+        0.06388
+      ]
+    },
+    {
+      "text": "DENSITY",
+      "role": "axis_title",
+      "px": [
+        3535,
+        1519
+      ],
+      "norm": [
+        0.48425,
+        0.19885
+      ]
+    },
+    {
+      "text": "10^n g/L",
+      "role": "axis_unit",
+      "px": [
+        3540,
+        1660
+      ],
+      "norm": [
+        0.48493,
+        0.21731
+      ]
+    },
+    {
+      "text": "WIDTH",
+      "role": "axis_title",
+      "px": [
+        2419,
+        6654
+      ],
+      "norm": [
+        0.33137,
+        0.87106
+      ]
+    },
+    {
+      "text": "10^n m",
+      "role": "axis_unit",
+      "px": [
+        2380,
+        6800
+      ],
+      "norm": [
+        0.32603,
+        0.89017
+      ]
+    },
+    {
+      "text": "MASS",
+      "role": "axis_title",
+      "px": [
+        5432,
+        6654
+      ],
+      "norm": [
+        0.74411,
+        0.87106
+      ]
+    },
+    {
+      "text": "10^n kg",
+      "role": "axis_unit",
+      "px": [
+        5420,
+        6800
+      ],
+      "norm": [
+        0.74247,
+        0.89017
+      ]
+    },
+    {
+      "text": "ENERGY",
+      "role": "axis_title",
+      "px": [
+        904,
+        6654
+      ],
+      "norm": [
+        0.12384,
+        0.87106
+      ]
+    },
+    {
+      "text": "10^n eV",
+      "role": "axis_unit",
+      "px": [
+        860,
+        6800
+      ],
+      "norm": [
+        0.11781,
+        0.89017
+      ]
+    },
+    {
+      "text": "SCHWARZSCHILD RADIUS",
+      "role": "boundary_title",
+      "px": [
+        2822,
+        3544
+      ],
+      "norm": [
+        0.38658,
+        0.46394
+      ]
+    },
+    {
+      "text": "COMPTON LIMIT",
+      "role": "boundary_title",
+      "px": [
+        2674,
+        4902
+      ],
+      "norm": [
+        0.3663,
+        0.64171
+      ]
+    },
+    {
+      "text": "HUBBLE RADIUS",
+      "role": "boundary_title",
+      "px": [
+        5021,
+        4987
+      ],
+      "norm": [
+        0.68781,
+        0.65283
+      ]
+    },
+    {
+      "text": "OBSERVABLE UNIVERSE",
+      "role": "title",
+      "px": [
+        5254,
+        1591
+      ],
+      "norm": [
+        0.71973,
+        0.20827
+      ]
+    },
+    {
+      "text": "BIG BANG",
+      "role": "title",
+      "px": [
+        1889,
+        4295
+      ],
+      "norm": [
+        0.25877,
+        0.56225
+      ]
+    },
+    {
+      "text": "HEAT DEATH OF THE UNIVERSE",
+      "role": "title",
+      "px": [
+        5305,
+        7215
+      ],
+      "norm": [
+        0.72671,
+        0.9445
+      ]
+    },
+    {
+      "text": "STELLAR EVOLUTION",
+      "role": "inset_title",
+      "px": [
+        997,
+        2080
+      ],
+      "norm": [
+        0.13658,
+        0.27229
+      ]
+    },
+    {
+      "text": "FUNDAMENTAL PARTICLES",
+      "role": "inset_title",
+      "px": [
+        1116,
+        4146
+      ],
+      "norm": [
+        0.15288,
+        0.54274
+      ]
+    },
+    {
+      "text": "*Asterisk means still hypothetical",
+      "role": "legend",
+      "px": [
+        775,
+        4413
+      ],
+      "norm": [
+        0.10616,
+        0.57769
+      ]
+    },
+    {
+      "text": "STARS & PLANETS",
+      "role": "group_label",
+      "px": [
+        4640,
+        2550
+      ],
+      "norm": [
+        0.63562,
+        0.33381
+      ]
+    }
+  ],
+  "categories": {
+    "cosmic_structure": "Universe-scale structures (voids, superclusters, clusters)",
+    "galaxy": "Galaxies",
+    "star_cluster": "Star clusters",
+    "black_hole": "Black holes (supermassive, stellar, primordial)",
+    "stellar_remnant": "Neutron stars and white dwarfs",
+    "star": "Stars",
+    "substellar": "Brown dwarfs",
+    "planet": "Planets",
+    "dwarf_planet": "Dwarf planets",
+    "moon": "Moons",
+    "asteroid": "Asteroids",
+    "human_made": "Human-made structures",
+    "life": "Living things",
+    "everyday_object": "Everyday objects",
+    "cell": "Cells",
+    "microbe": "Microbes and viruses",
+    "molecule": "Molecules",
+    "atom": "Atoms",
+    "particle": "Particles",
+    "hypothetical": "Hypothetical objects"
+  }
+}

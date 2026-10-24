@@ -1,0 +1,1533 @@
+{
+  "title": "FUNDAMENTAL PARTICLES",
+  "description": "Zoom of the bottom of the Compton limit: particles placed by mass along their Compton wavelength, with arrows showing heavier particles decaying into lighter ones and quarks combining into hadrons.",
+  "frame": [
+    {
+      "px": [
+        601.0,
+        2678.5
+      ],
+      "norm": [
+        0.08233,
+        0.35063
+      ]
+    },
+    {
+      "px": [
+        1850.5,
+        3928.5
+      ],
+      "norm": [
+        0.25349,
+        0.51427
+      ]
+    }
+  ],
+  "axes": {
+    "x": {
+      "quantity": "log10 wavelength",
+      "unit": "m",
+      "pixel_axis": "x",
+      "formula": "value = (x - 3221.40) / 137.7262",
+      "px_at_zero": 3221.4,
+      "px_per_decade": 137.7262,
+      "max_tick_residual_decades": 0.002,
+      "calibration_ticks": [
+        {
+          "value": -18,
+          "px": 742.5
+        },
+        {
+          "value": -17,
+          "px": 880.0
+        },
+        {
+          "value": -16,
+          "px": 1017.5
+        },
+        {
+          "value": -15,
+          "px": 1155.5
+        },
+        {
+          "value": -14,
+          "px": 1293.5
+        },
+        {
+          "value": -13,
+          "px": 1431.0
+        },
+        {
+          "value": -12,
+          "px": 1568.5
+        },
+        {
+          "value": -11,
+          "px": 1706.5
+        }
+      ],
+      "note": "Top axis 'WAVELENGTH 10^n m' (frame spans -19..-10). Particles sit near their reduced Compton wavelength."
+    },
+    "y": {
+      "quantity": "log10 mass",
+      "unit": "eV",
+      "pixel_axis": "y",
+      "formula": "value = (y - 4340.50) / -138.3333",
+      "px_at_zero": 4340.5,
+      "px_per_decade": -138.3333,
+      "max_tick_residual_decades": 0.002,
+      "calibration_ticks": [
+        {
+          "value": 11,
+          "px": 2819.0
+        },
+        {
+          "value": 10,
+          "px": 2957.0
+        },
+        {
+          "value": 9,
+          "px": 3095.5
+        },
+        {
+          "value": 8,
+          "px": 3234.0
+        },
+        {
+          "value": 7,
+          "px": 3372.0
+        },
+        {
+          "value": 6,
+          "px": 3510.5
+        },
+        {
+          "value": 5,
+          "px": 3648.5
+        },
+        {
+          "value": 4,
+          "px": 3787.5
+        }
+      ],
+      "note": "Left axis 'MASS 10^n eV' (frame spans 3..12)."
+    }
+  },
+  "legend": [
+    {
+      "colour": "green",
+      "printed": "LEPTON",
+      "hex": "#70ff00",
+      "used_for": [
+        "proton",
+        "neutron",
+        "meson"
+      ],
+      "actual_class": "hadron",
+      "legend_position": {
+        "px": [
+          1911,
+          3204
+        ],
+        "norm": [
+          0.26178,
+          0.41943
+        ]
+      }
+    },
+    {
+      "colour": "orange",
+      "printed": "BOSON",
+      "hex": "#ff712e",
+      "used_for": [
+        "higgs",
+        "z_boson",
+        "w_boson",
+        "photon"
+      ],
+      "actual_class": "boson",
+      "legend_position": {
+        "px": [
+          1911,
+          3316
+        ],
+        "norm": [
+          0.26178,
+          0.43409
+        ]
+      }
+    },
+    {
+      "colour": "blue",
+      "printed": "HADRONS",
+      "hex": "#4abdff",
+      "used_for": [
+        "tau",
+        "muon",
+        "electron",
+        "tau_neutrino",
+        "muon_neutrino",
+        "electron_neutrino"
+      ],
+      "actual_class": "lepton",
+      "legend_position": {
+        "px": [
+          1911,
+          3423
+        ],
+        "norm": [
+          0.26178,
+          0.4481
+        ]
+      }
+    },
+    {
+      "colour": "yellow",
+      "printed": "QUARKS",
+      "hex": "#ffc800",
+      "used_for": [
+        "top",
+        "bottom",
+        "charm",
+        "strange",
+        "down",
+        "up"
+      ],
+      "actual_class": "quark",
+      "legend_position": {
+        "px": [
+          1911,
+          3541
+        ],
+        "norm": [
+          0.26178,
+          0.46354
+        ]
+      }
+    }
+  ],
+  "legend_note": "The printed legend swaps two labels: green dots are hadrons (proton, neutron, meson) and blue dots are leptons (electron, muon, tau, neutrinos). 'actual_class' gives the correct class.",
+  "particles": [
+    {
+      "id": "top",
+      "name": "Top quark",
+      "printed_label": "TOP",
+      "class": "quark",
+      "chart_colour": "yellow",
+      "legend_says": "QUARKS",
+      "image": {
+        "icon": {
+          "px": [
+            705,
+            2785
+          ],
+          "norm": [
+            0.09658,
+            0.36458
+          ]
+        },
+        "label": {
+          "px": [
+            754,
+            2725
+          ],
+          "norm": [
+            0.10329,
+            0.35672
+          ]
+        }
+      },
+      "chart": {
+        "log10_wavelength_m": -18.271,
+        "log10_mass_eV": 11.245
+      },
+      "reference": {
+        "mass_eV": 172570000000.0,
+        "log10_mass_eV": 11.236965,
+        "mass_kg": 3.076e-25,
+        "reduced_compton_wavelength_m": 1.143e-18,
+        "mass_upper_limit_eV": null,
+        "electric_charge": "+2/3",
+        "spin": "1/2",
+        "generation": 3,
+        "notes": ""
+      },
+      "description": "The heaviest known elementary particle; decays before it can form hadrons.",
+      "first_appeared": {
+        "seconds_after_big_bang": 1e-12,
+        "years_ago": null,
+        "log10_seconds": -12.0,
+        "label": "10^-12 seconds after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "medium",
+        "note": "Elementary particles took their present form when the Higgs field switched on, ~10^-12 s after the Big Bang."
+      }
+    },
+    {
+      "id": "higgs",
+      "name": "Higgs boson",
+      "printed_label": "HIGGS",
+      "class": "boson",
+      "chart_colour": "orange",
+      "legend_says": "BOSON",
+      "image": {
+        "icon": {
+          "px": [
+            735,
+            2812
+          ],
+          "norm": [
+            0.10068,
+            0.36811
+          ]
+        },
+        "label": {
+          "px": [
+            799,
+            2737
+          ],
+          "norm": [
+            0.10945,
+            0.35829
+          ]
+        }
+      },
+      "chart": {
+        "log10_wavelength_m": -18.053,
+        "log10_mass_eV": 11.049
+      },
+      "reference": {
+        "mass_eV": 125200000000.0,
+        "log10_mass_eV": 11.097604,
+        "mass_kg": 2.232e-25,
+        "reduced_compton_wavelength_m": 1.576e-18,
+        "mass_upper_limit_eV": null,
+        "electric_charge": "0",
+        "spin": "0",
+        "generation": null,
+        "notes": ""
+      },
+      "description": "Excitation of the Higgs field, which gives other particles mass; discovered at CERN in 2012.",
+      "first_appeared": {
+        "seconds_after_big_bang": 1e-12,
+        "years_ago": null,
+        "log10_seconds": -12.0,
+        "label": "10^-12 seconds after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "medium",
+        "note": "Elementary particles took their present form when the Higgs field switched on, ~10^-12 s after the Big Bang."
+      }
+    },
+    {
+      "id": "z_boson",
+      "name": "Z boson",
+      "printed_label": "Z",
+      "class": "boson",
+      "chart_colour": "orange",
+      "legend_says": "BOSON",
+      "image": {
+        "icon": {
+          "px": [
+            750,
+            2830
+          ],
+          "norm": [
+            0.10274,
+            0.37047
+          ]
+        },
+        "label": {
+          "px": [
+            808,
+            2795
+          ],
+          "norm": [
+            0.11068,
+            0.36589
+          ]
+        }
+      },
+      "chart": {
+        "log10_wavelength_m": -17.944,
+        "log10_mass_eV": 10.919
+      },
+      "reference": {
+        "mass_eV": 91188000000.0,
+        "log10_mass_eV": 10.959938,
+        "mass_kg": 1.626e-25,
+        "reduced_compton_wavelength_m": 2.164e-18,
+        "mass_upper_limit_eV": null,
+        "electric_charge": "0",
+        "spin": "1",
+        "generation": null,
+        "notes": ""
+      },
+      "description": "Neutral carrier of the weak force.",
+      "first_appeared": {
+        "seconds_after_big_bang": 1e-12,
+        "years_ago": null,
+        "log10_seconds": -12.0,
+        "label": "10^-12 seconds after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "medium",
+        "note": "Elementary particles took their present form when the Higgs field switched on, ~10^-12 s after the Big Bang."
+      }
+    },
+    {
+      "id": "w_boson",
+      "name": "W boson",
+      "printed_label": "W",
+      "class": "boson",
+      "chart_colour": "orange",
+      "legend_says": "BOSON",
+      "image": {
+        "icon": {
+          "px": [
+            771,
+            2845
+          ],
+          "norm": [
+            0.10562,
+            0.37243
+          ]
+        },
+        "label": {
+          "px": [
+            825,
+            2815
+          ],
+          "norm": [
+            0.11301,
+            0.3685
+          ]
+        }
+      },
+      "chart": {
+        "log10_wavelength_m": -17.792,
+        "log10_mass_eV": 10.811
+      },
+      "reference": {
+        "mass_eV": 80369000000.0,
+        "log10_mass_eV": 10.905089,
+        "mass_kg": 1.433e-25,
+        "reduced_compton_wavelength_m": 2.455e-18,
+        "mass_upper_limit_eV": null,
+        "electric_charge": "±1",
+        "spin": "1",
+        "generation": null,
+        "notes": ""
+      },
+      "description": "Charged carrier of the weak force; drives radioactive beta decay.",
+      "first_appeared": {
+        "seconds_after_big_bang": 1e-12,
+        "years_ago": null,
+        "log10_seconds": -12.0,
+        "label": "10^-12 seconds after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "medium",
+        "note": "Elementary particles took their present form when the Higgs field switched on, ~10^-12 s after the Big Bang."
+      }
+    },
+    {
+      "id": "bottom",
+      "name": "Bottom quark",
+      "printed_label": "BOTTOM",
+      "class": "quark",
+      "chart_colour": "yellow",
+      "legend_says": "QUARKS",
+      "image": {
+        "icon": {
+          "px": [
+            938,
+            3019
+          ],
+          "norm": [
+            0.12849,
+            0.39521
+          ]
+        },
+        "label": {
+          "px": [
+            1030,
+            2924
+          ],
+          "norm": [
+            0.1411,
+            0.38277
+          ]
+        }
+      },
+      "chart": {
+        "log10_wavelength_m": -16.579,
+        "log10_mass_eV": 9.553
+      },
+      "reference": {
+        "mass_eV": 4180000000.0,
+        "log10_mass_eV": 9.621176,
+        "mass_kg": 7.452e-27,
+        "reduced_compton_wavelength_m": 4.721e-17,
+        "mass_upper_limit_eV": null,
+        "electric_charge": "-1/3",
+        "spin": "1/2",
+        "generation": 3,
+        "notes": ""
+      },
+      "description": "Third-generation down-type quark.",
+      "first_appeared": {
+        "seconds_after_big_bang": 1e-12,
+        "years_ago": null,
+        "log10_seconds": -12.0,
+        "label": "10^-12 seconds after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "medium",
+        "note": "Elementary particles took their present form when the Higgs field switched on, ~10^-12 s after the Big Bang."
+      }
+    },
+    {
+      "id": "tau",
+      "name": "Tau lepton",
+      "printed_label": "TAU",
+      "class": "lepton",
+      "chart_colour": "blue",
+      "legend_says": "HADRONS",
+      "image": {
+        "icon": {
+          "px": [
+            988,
+            3059
+          ],
+          "norm": [
+            0.13534,
+            0.40045
+          ]
+        },
+        "label": {
+          "px": [
+            1017,
+            3001
+          ],
+          "norm": [
+            0.13932,
+            0.39285
+          ]
+        }
+      },
+      "chart": {
+        "log10_wavelength_m": -16.216,
+        "log10_mass_eV": 9.264
+      },
+      "reference": {
+        "mass_eV": 1776930000.0,
+        "log10_mass_eV": 9.24967,
+        "mass_kg": 3.168e-27,
+        "reduced_compton_wavelength_m": 1.11e-16,
+        "mass_upper_limit_eV": null,
+        "electric_charge": "-1",
+        "spin": "1/2",
+        "generation": 3,
+        "notes": ""
+      },
+      "description": "The heaviest charged lepton, ~3,500 times the electron's mass.",
+      "first_appeared": {
+        "seconds_after_big_bang": 1e-12,
+        "years_ago": null,
+        "log10_seconds": -12.0,
+        "label": "10^-12 seconds after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "medium",
+        "note": "Elementary particles took their present form when the Higgs field switched on, ~10^-12 s after the Big Bang."
+      }
+    },
+    {
+      "id": "charm",
+      "name": "Charm quark",
+      "printed_label": "CHARM",
+      "class": "quark",
+      "chart_colour": "yellow",
+      "legend_says": "QUARKS",
+      "image": {
+        "icon": {
+          "px": [
+            1008,
+            3088
+          ],
+          "norm": [
+            0.13808,
+            0.40424
+          ]
+        },
+        "label": {
+          "px": [
+            1092,
+            2995
+          ],
+          "norm": [
+            0.14959,
+            0.39207
+          ]
+        }
+      },
+      "chart": {
+        "log10_wavelength_m": -16.071,
+        "log10_mass_eV": 9.054
+      },
+      "reference": {
+        "mass_eV": 1273000000.0,
+        "log10_mass_eV": 9.104828,
+        "mass_kg": 2.269e-27,
+        "reduced_compton_wavelength_m": 1.55e-16,
+        "mass_upper_limit_eV": null,
+        "electric_charge": "+2/3",
+        "spin": "1/2",
+        "generation": 2,
+        "notes": ""
+      },
+      "description": "Second-generation up-type quark.",
+      "first_appeared": {
+        "seconds_after_big_bang": 1e-12,
+        "years_ago": null,
+        "log10_seconds": -12.0,
+        "label": "10^-12 seconds after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "medium",
+        "note": "Elementary particles took their present form when the Higgs field switched on, ~10^-12 s after the Big Bang."
+      }
+    },
+    {
+      "id": "proton",
+      "name": "Proton",
+      "printed_label": "PROTON",
+      "class": "hadron",
+      "chart_colour": "green",
+      "legend_says": "LEPTON",
+      "image": {
+        "icon": {
+          "px": [
+            1039,
+            3133
+          ],
+          "norm": [
+            0.14233,
+            0.41013
+          ]
+        },
+        "label": {
+          "px": [
+            1120,
+            3033
+          ],
+          "norm": [
+            0.15342,
+            0.39704
+          ]
+        }
+      },
+      "chart": {
+        "log10_wavelength_m": -15.846,
+        "log10_mass_eV": 8.729
+      },
+      "reference": {
+        "mass_eV": 938272000.0,
+        "log10_mass_eV": 8.972329,
+        "mass_kg": 1.673e-27,
+        "reduced_compton_wavelength_m": 2.103e-16,
+        "mass_upper_limit_eV": null,
+        "electric_charge": "+1",
+        "spin": "1/2",
+        "generation": null,
+        "notes": ""
+      },
+      "description": "Composite particle (two up quarks + one down) at the heart of every atom.",
+      "first_appeared": {
+        "seconds_after_big_bang": 1e-06,
+        "years_ago": null,
+        "log10_seconds": -6.0,
+        "label": "10^-6 seconds after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "medium",
+        "note": "Quarks bound into protons, neutrons and mesons about a microsecond after the Big Bang."
+      }
+    },
+    {
+      "id": "neutron",
+      "name": "Neutron",
+      "printed_label": "NEUTRON",
+      "class": "hadron",
+      "chart_colour": "green",
+      "legend_says": "LEPTON",
+      "image": {
+        "icon": {
+          "px": [
+            1075,
+            3166
+          ],
+          "norm": [
+            0.14726,
+            0.41445
+          ]
+        },
+        "label": {
+          "px": [
+            1178,
+            3052
+          ],
+          "norm": [
+            0.16137,
+            0.39953
+          ]
+        }
+      },
+      "chart": {
+        "log10_wavelength_m": -15.585,
+        "log10_mass_eV": 8.49
+      },
+      "reference": {
+        "mass_eV": 939565000.0,
+        "log10_mass_eV": 8.972927,
+        "mass_kg": 1.675e-27,
+        "reduced_compton_wavelength_m": 2.1e-16,
+        "mass_upper_limit_eV": null,
+        "electric_charge": "0",
+        "spin": "1/2",
+        "generation": null,
+        "notes": ""
+      },
+      "description": "Composite particle (one up + two down quarks); free neutrons decay in ~15 minutes.",
+      "first_appeared": {
+        "seconds_after_big_bang": 1e-06,
+        "years_ago": null,
+        "log10_seconds": -6.0,
+        "label": "10^-6 seconds after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "medium",
+        "note": "Quarks bound into protons, neutrons and mesons about a microsecond after the Big Bang."
+      }
+    },
+    {
+      "id": "meson",
+      "name": "Meson (pion)",
+      "printed_label": "MESON",
+      "class": "hadron",
+      "chart_colour": "green",
+      "legend_says": "LEPTON",
+      "image": {
+        "icon": {
+          "px": [
+            1120,
+            3200
+          ],
+          "norm": [
+            0.15342,
+            0.4189
+          ]
+        },
+        "label": {
+          "px": [
+            1197,
+            3104
+          ],
+          "norm": [
+            0.16397,
+            0.40634
+          ]
+        }
+      },
+      "chart": {
+        "log10_wavelength_m": -15.258,
+        "log10_mass_eV": 8.245
+      },
+      "reference": {
+        "mass_eV": 139570000.0,
+        "log10_mass_eV": 8.144792,
+        "mass_kg": 2.488e-28,
+        "reduced_compton_wavelength_m": 1.414e-15,
+        "mass_upper_limit_eV": null,
+        "electric_charge": "±1",
+        "spin": "0",
+        "generation": null,
+        "notes": "Charged pion used as the representative meson."
+      },
+      "description": "Quark-antiquark pairs; pions are the lightest.",
+      "first_appeared": {
+        "seconds_after_big_bang": 1e-06,
+        "years_ago": null,
+        "log10_seconds": -6.0,
+        "label": "10^-6 seconds after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "medium",
+        "note": "Quarks bound into protons, neutrons and mesons about a microsecond after the Big Bang."
+      }
+    },
+    {
+      "id": "muon",
+      "name": "Muon",
+      "printed_label": "MUON",
+      "class": "lepton",
+      "chart_colour": "blue",
+      "legend_says": "HADRONS",
+      "image": {
+        "icon": {
+          "px": [
+            1156,
+            3236
+          ],
+          "norm": [
+            0.15836,
+            0.42362
+          ]
+        },
+        "label": {
+          "px": [
+            1217,
+            3149
+          ],
+          "norm": [
+            0.16671,
+            0.41223
+          ]
+        }
+      },
+      "chart": {
+        "log10_wavelength_m": -14.996,
+        "log10_mass_eV": 7.984
+      },
+      "reference": {
+        "mass_eV": 105658000.0,
+        "log10_mass_eV": 8.023902,
+        "mass_kg": 1.884e-28,
+        "reduced_compton_wavelength_m": 1.868e-15,
+        "mass_upper_limit_eV": null,
+        "electric_charge": "-1",
+        "spin": "1/2",
+        "generation": 2,
+        "notes": ""
+      },
+      "description": "A heavy cousin of the electron that lives ~2.2 µs.",
+      "first_appeared": {
+        "seconds_after_big_bang": 1e-12,
+        "years_ago": null,
+        "log10_seconds": -12.0,
+        "label": "10^-12 seconds after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "medium",
+        "note": "Elementary particles took their present form when the Higgs field switched on, ~10^-12 s after the Big Bang."
+      }
+    },
+    {
+      "id": "strange",
+      "name": "Strange quark",
+      "printed_label": "STRANGE",
+      "class": "quark",
+      "chart_colour": "yellow",
+      "legend_says": "QUARKS",
+      "image": {
+        "icon": {
+          "px": [
+            1181,
+            3252
+          ],
+          "norm": [
+            0.16178,
+            0.42571
+          ]
+        },
+        "label": {
+          "px": [
+            1275,
+            3149
+          ],
+          "norm": [
+            0.17466,
+            0.41223
+          ]
+        }
+      },
+      "chart": {
+        "log10_wavelength_m": -14.815,
+        "log10_mass_eV": 7.869
+      },
+      "reference": {
+        "mass_eV": 93500000.0,
+        "log10_mass_eV": 7.970812,
+        "mass_kg": 1.667e-28,
+        "reduced_compton_wavelength_m": 2.11e-15,
+        "mass_upper_limit_eV": null,
+        "electric_charge": "-1/3",
+        "spin": "1/2",
+        "generation": 2,
+        "notes": ""
+      },
+      "description": "Second-generation down-type quark.",
+      "first_appeared": {
+        "seconds_after_big_bang": 1e-12,
+        "years_ago": null,
+        "log10_seconds": -12.0,
+        "label": "10^-12 seconds after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "medium",
+        "note": "Elementary particles took their present form when the Higgs field switched on, ~10^-12 s after the Big Bang."
+      }
+    },
+    {
+      "id": "tau_neutrino",
+      "name": "Tau neutrino",
+      "printed_label": "NEUTRINO (TAU)",
+      "class": "lepton",
+      "chart_colour": "blue",
+      "legend_says": "HADRONS",
+      "image": {
+        "icon": {
+          "px": [
+            1225,
+            3310
+          ],
+          "norm": [
+            0.16781,
+            0.4333
+          ]
+        },
+        "label": {
+          "px": [
+            1371,
+            3187
+          ],
+          "norm": [
+            0.18781,
+            0.4172
+          ]
+        }
+      },
+      "chart": {
+        "log10_wavelength_m": -14.495,
+        "log10_mass_eV": 7.449
+      },
+      "reference": {
+        "mass_eV": null,
+        "log10_mass_eV": null,
+        "mass_kg": null,
+        "reduced_compton_wavelength_m": null,
+        "mass_upper_limit_eV": 18200000.0,
+        "electric_charge": "0",
+        "spin": "1/2",
+        "generation": 3,
+        "notes": "Chart position matches the old direct upper limit (<18.2 MeV); oscillation data imply < ~1 eV."
+      },
+      "description": "The neutrino partner of the tau.",
+      "first_appeared": {
+        "seconds_after_big_bang": 1e-12,
+        "years_ago": null,
+        "log10_seconds": -12.0,
+        "label": "10^-12 seconds after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "medium",
+        "note": "Elementary particles took their present form when the Higgs field switched on, ~10^-12 s after the Big Bang."
+      }
+    },
+    {
+      "id": "down",
+      "name": "Down quark",
+      "printed_label": "DOWN",
+      "class": "quark",
+      "chart_colour": "yellow",
+      "legend_says": "QUARKS",
+      "image": {
+        "icon": {
+          "px": [
+            1324,
+            3414
+          ],
+          "norm": [
+            0.18137,
+            0.44692
+          ]
+        },
+        "label": {
+          "px": [
+            1403,
+            3335
+          ],
+          "norm": [
+            0.19219,
+            0.43658
+          ]
+        }
+      },
+      "chart": {
+        "log10_wavelength_m": -13.777,
+        "log10_mass_eV": 6.698
+      },
+      "reference": {
+        "mass_eV": 4700000.0,
+        "log10_mass_eV": 6.672098,
+        "mass_kg": 8.379e-30,
+        "reduced_compton_wavelength_m": 4.198e-14,
+        "mass_upper_limit_eV": null,
+        "electric_charge": "-1/3",
+        "spin": "1/2",
+        "generation": 1,
+        "notes": ""
+      },
+      "description": "Light quark; two of them are in every neutron.",
+      "first_appeared": {
+        "seconds_after_big_bang": 1e-12,
+        "years_ago": null,
+        "log10_seconds": -12.0,
+        "label": "10^-12 seconds after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "medium",
+        "note": "Elementary particles took their present form when the Higgs field switched on, ~10^-12 s after the Big Bang."
+      }
+    },
+    {
+      "id": "up",
+      "name": "Up quark",
+      "printed_label": "UP",
+      "class": "quark",
+      "chart_colour": "yellow",
+      "legend_says": "QUARKS",
+      "image": {
+        "icon": {
+          "px": [
+            1376,
+            3451
+          ],
+          "norm": [
+            0.18849,
+            0.45176
+          ]
+        },
+        "label": {
+          "px": [
+            1416,
+            3393
+          ],
+          "norm": [
+            0.19397,
+            0.44417
+          ]
+        }
+      },
+      "chart": {
+        "log10_wavelength_m": -13.399,
+        "log10_mass_eV": 6.43
+      },
+      "reference": {
+        "mass_eV": 2160000.0,
+        "log10_mass_eV": 6.334454,
+        "mass_kg": 3.851e-30,
+        "reduced_compton_wavelength_m": 9.136e-14,
+        "mass_upper_limit_eV": null,
+        "electric_charge": "+2/3",
+        "spin": "1/2",
+        "generation": 1,
+        "notes": ""
+      },
+      "description": "The lightest quark; two of them are in every proton.",
+      "first_appeared": {
+        "seconds_after_big_bang": 1e-12,
+        "years_ago": null,
+        "log10_seconds": -12.0,
+        "label": "10^-12 seconds after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "medium",
+        "note": "Elementary particles took their present form when the Higgs field switched on, ~10^-12 s after the Big Bang."
+      }
+    },
+    {
+      "id": "electron",
+      "name": "Electron",
+      "printed_label": "ELECTRON",
+      "class": "lepton",
+      "chart_colour": "blue",
+      "legend_says": "HADRONS",
+      "image": {
+        "icon": {
+          "px": [
+            1470,
+            3554
+          ],
+          "norm": [
+            0.20137,
+            0.46524
+          ]
+        },
+        "label": {
+          "px": [
+            1577,
+            3445
+          ],
+          "norm": [
+            0.21603,
+            0.45098
+          ]
+        }
+      },
+      "chart": {
+        "log10_wavelength_m": -12.717,
+        "log10_mass_eV": 5.686
+      },
+      "reference": {
+        "mass_eV": 510999.0,
+        "log10_mass_eV": 5.70842,
+        "mass_kg": 9.109e-31,
+        "reduced_compton_wavelength_m": 3.862e-13,
+        "mass_upper_limit_eV": null,
+        "electric_charge": "-1",
+        "spin": "1/2",
+        "generation": 1,
+        "notes": ""
+      },
+      "description": "The lightest charged particle; fills the shells of every atom.",
+      "first_appeared": {
+        "seconds_after_big_bang": 1e-12,
+        "years_ago": null,
+        "log10_seconds": -12.0,
+        "label": "10^-12 seconds after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "medium",
+        "note": "Elementary particles took their present form when the Higgs field switched on, ~10^-12 s after the Big Bang."
+      }
+    },
+    {
+      "id": "muon_neutrino",
+      "name": "Muon neutrino",
+      "printed_label": "NEUTRINO (MUON)",
+      "class": "lepton",
+      "chart_colour": "blue",
+      "legend_says": "HADRONS",
+      "image": {
+        "icon": {
+          "px": [
+            1513,
+            3593
+          ],
+          "norm": [
+            0.20726,
+            0.47035
+          ]
+        },
+        "label": {
+          "px": [
+            1673,
+            3419
+          ],
+          "norm": [
+            0.22918,
+            0.44757
+          ]
+        }
+      },
+      "chart": {
+        "log10_wavelength_m": -12.404,
+        "log10_mass_eV": 5.404
+      },
+      "reference": {
+        "mass_eV": null,
+        "log10_mass_eV": null,
+        "mass_kg": null,
+        "reduced_compton_wavelength_m": null,
+        "mass_upper_limit_eV": 190000.0,
+        "electric_charge": "0",
+        "spin": "1/2",
+        "generation": 2,
+        "notes": "Chart position matches the old direct upper limit (<0.19 MeV)."
+      },
+      "description": "The neutrino partner of the muon.",
+      "first_appeared": {
+        "seconds_after_big_bang": 1e-12,
+        "years_ago": null,
+        "log10_seconds": -12.0,
+        "label": "10^-12 seconds after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "medium",
+        "note": "Elementary particles took their present form when the Higgs field switched on, ~10^-12 s after the Big Bang."
+      }
+    },
+    {
+      "id": "photon",
+      "name": "Photon (gamma ray)",
+      "printed_label": "PHOTON (GAMMA RAY)",
+      "class": "boson",
+      "chart_colour": "orange",
+      "legend_says": "BOSON",
+      "image": {
+        "icon": {
+          "px": [
+            1573,
+            3666
+          ],
+          "norm": [
+            0.21548,
+            0.47991
+          ]
+        },
+        "label": {
+          "px": [
+            1718,
+            3567
+          ],
+          "norm": [
+            0.23534,
+            0.46695
+          ]
+        }
+      },
+      "chart": {
+        "log10_wavelength_m": -11.969,
+        "log10_mass_eV": 4.876
+      },
+      "reference": {
+        "mass_eV": 0.0,
+        "log10_mass_eV": null,
+        "mass_kg": null,
+        "reduced_compton_wavelength_m": null,
+        "mass_upper_limit_eV": null,
+        "electric_charge": "0",
+        "spin": "1",
+        "generation": null,
+        "notes": "Massless; plotted at a gamma-ray energy (~10^5 eV)."
+      },
+      "description": "The particle of light and carrier of electromagnetism.",
+      "first_appeared": {
+        "seconds_after_big_bang": 1e-12,
+        "years_ago": null,
+        "log10_seconds": -12.0,
+        "label": "10^-12 seconds after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "medium",
+        "note": "Elementary particles took their present form when the Higgs field switched on, ~10^-12 s after the Big Bang."
+      }
+    },
+    {
+      "id": "electron_neutrino",
+      "name": "Electron neutrino",
+      "printed_label": "NEUTRINO (ELECTRON)",
+      "class": "lepton",
+      "chart_colour": "blue",
+      "legend_says": "HADRONS",
+      "image": {
+        "icon": {
+          "px": [
+            1834,
+            3912
+          ],
+          "norm": [
+            0.25123,
+            0.51211
+          ]
+        },
+        "label": {
+          "px": [
+            1956,
+            3818
+          ],
+          "norm": [
+            0.26795,
+            0.4998
+          ]
+        }
+      },
+      "chart": {
+        "log10_wavelength_m": -10.074,
+        "log10_mass_eV": 3.098
+      },
+      "reference": {
+        "mass_eV": null,
+        "log10_mass_eV": null,
+        "mass_kg": null,
+        "reduced_compton_wavelength_m": null,
+        "mass_upper_limit_eV": 0.45,
+        "electric_charge": "0",
+        "spin": "1/2",
+        "generation": 1,
+        "notes": "Upper limit < 0.45 eV (KATRIN); the chart places it near 10^3 eV."
+      },
+      "description": "The lightest known massive particle; trillions pass through you every second.",
+      "first_appeared": {
+        "seconds_after_big_bang": 1e-12,
+        "years_ago": null,
+        "log10_seconds": -12.0,
+        "label": "10^-12 seconds after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "medium",
+        "note": "Elementary particles took their present form when the Higgs field switched on, ~10^-12 s after the Big Bang."
+      }
+    }
+  ],
+  "relations": [
+    {
+      "type": "decays_into",
+      "from": "top",
+      "to": [
+        "w_boson",
+        "bottom"
+      ],
+      "note": "~100% of top decays.",
+      "source": "standard physics; the chart draws these as unlabelled arrows"
+    },
+    {
+      "type": "decays_into",
+      "from": "higgs",
+      "to": [
+        "bottom",
+        "w_boson",
+        "tau",
+        "z_boson",
+        "photon"
+      ],
+      "note": "Main channels: bb (~58%), WW* (~21%), tau tau (~6%), ZZ* (~3%), gamma gamma (~0.2%).",
+      "source": "standard physics; the chart draws these as unlabelled arrows"
+    },
+    {
+      "type": "decays_into",
+      "from": "z_boson",
+      "to": [
+        "electron",
+        "muon",
+        "tau",
+        "up",
+        "down",
+        "charm",
+        "strange",
+        "bottom"
+      ],
+      "note": "Fermion-antifermion pairs (and neutrino pairs).",
+      "source": "standard physics; the chart draws these as unlabelled arrows"
+    },
+    {
+      "type": "decays_into",
+      "from": "w_boson",
+      "to": [
+        "electron",
+        "electron_neutrino",
+        "muon",
+        "muon_neutrino",
+        "tau",
+        "tau_neutrino",
+        "up",
+        "down",
+        "charm",
+        "strange"
+      ],
+      "note": "Lepton + neutrino (~33%) or quark pairs (~67%).",
+      "source": "standard physics; the chart draws these as unlabelled arrows"
+    },
+    {
+      "type": "decays_into",
+      "from": "bottom",
+      "to": [
+        "charm",
+        "w_boson"
+      ],
+      "note": "Via a virtual W.",
+      "source": "standard physics; the chart draws these as unlabelled arrows"
+    },
+    {
+      "type": "decays_into",
+      "from": "tau",
+      "to": [
+        "tau_neutrino",
+        "w_boson"
+      ],
+      "note": "Via a virtual W, giving hadrons or a lighter lepton + neutrinos.",
+      "source": "standard physics; the chart draws these as unlabelled arrows"
+    },
+    {
+      "type": "decays_into",
+      "from": "charm",
+      "to": [
+        "strange",
+        "w_boson"
+      ],
+      "note": "Via a virtual W.",
+      "source": "standard physics; the chart draws these as unlabelled arrows"
+    },
+    {
+      "type": "decays_into",
+      "from": "muon",
+      "to": [
+        "electron",
+        "muon_neutrino",
+        "electron_neutrino"
+      ],
+      "note": "Lifetime ~2.2 µs.",
+      "source": "standard physics; the chart draws these as unlabelled arrows"
+    },
+    {
+      "type": "decays_into",
+      "from": "strange",
+      "to": [
+        "up",
+        "w_boson"
+      ],
+      "note": "Via a virtual W.",
+      "source": "standard physics; the chart draws these as unlabelled arrows"
+    },
+    {
+      "type": "decays_into",
+      "from": "neutron",
+      "to": [
+        "proton",
+        "electron",
+        "electron_neutrino"
+      ],
+      "note": "Free neutron beta decay, ~15 min.",
+      "source": "standard physics; the chart draws these as unlabelled arrows"
+    },
+    {
+      "type": "decays_into",
+      "from": "meson",
+      "to": [
+        "muon",
+        "muon_neutrino"
+      ],
+      "note": "Charged pion decay.",
+      "source": "standard physics; the chart draws these as unlabelled arrows"
+    },
+    {
+      "type": "combines_into",
+      "from": "up",
+      "to": [
+        "proton",
+        "neutron",
+        "meson"
+      ],
+      "note": "Proton = uud, neutron = udd.",
+      "source": "standard physics; the chart draws these as unlabelled arrows"
+    },
+    {
+      "type": "combines_into",
+      "from": "down",
+      "to": [
+        "proton",
+        "neutron",
+        "meson"
+      ],
+      "note": "Proton = uud, neutron = udd.",
+      "source": "standard physics; the chart draws these as unlabelled arrows"
+    }
+  ],
+  "chart_arrow_labels": [
+    {
+      "printed_label": "DECAYS INTO..",
+      "text": {
+        "px": [
+          1043,
+          3618
+        ],
+        "norm": [
+          0.14288,
+          0.47362
+        ]
+      },
+      "description": "Gold arrows from the top/Higgs/Z/W cluster sweeping down to lighter particles."
+    },
+    {
+      "printed_label": "COMBINES INTO...",
+      "text": {
+        "px": [
+          1506,
+          2892
+        ],
+        "norm": [
+          0.2063,
+          0.37858
+        ]
+      },
+      "description": "Purple arrows from the up/down quarks curving back up to proton, neutron and meson."
+    }
+  ],
+  "regions": [
+    {
+      "id": "wimp_dark_matter",
+      "printed_label": "WIMP DARK MATTER*",
+      "hypothetical": true,
+      "polygon": [
+        {
+          "px": [
+            895,
+            2680
+          ],
+          "norm": [
+            0.1226,
+            0.35083
+          ]
+        },
+        {
+          "px": [
+            1159,
+            2680
+          ],
+          "norm": [
+            0.15877,
+            0.35083
+          ]
+        },
+        {
+          "px": [
+            1017,
+            3033
+          ],
+          "norm": [
+            0.13932,
+            0.39704
+          ]
+        },
+        {
+          "px": [
+            818,
+            2892
+          ],
+          "norm": [
+            0.11205,
+            0.37858
+          ]
+        }
+      ],
+      "text": {
+        "px": [
+          1008,
+          2770
+        ],
+        "norm": [
+          0.13808,
+          0.36261
+        ]
+      },
+      "chart_log10_mass_eV_range": [
+        9.452,
+        12.004
+      ],
+      "note": "Speckled band between two dashed lines (~3 GeV to ~1 TeV)."
+    }
+  ],
+  "lines": [
+    {
+      "id": "atomic_density_line",
+      "printed_label": "ATOMIC DENSITY LINE",
+      "style": "blue dotted",
+      "polyline": [
+        {
+          "px": [
+            1841,
+            2680
+          ],
+          "norm": [
+            0.25219,
+            0.35083
+          ]
+        },
+        {
+          "px": [
+            1410,
+            3927
+          ],
+          "norm": [
+            0.19315,
+            0.51407
+          ]
+        }
+      ]
+    }
+  ]
+}

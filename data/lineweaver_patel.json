@@ -1,0 +1,2429 @@
+{
+  "source": {
+    "file": "b6y2fthj95ie1.png",
+    "width": 2121,
+    "height": 3000,
+    "title": "All objects",
+    "authors": "Charles H. Lineweaver; Vihan M. Patel",
+    "citation": "Lineweaver, C. H. & Patel, V. M. (2023). All objects and some questions. American Journal of Physics 91(10), 819.",
+    "url": "https://pubs.aip.org/aapt/ajp/article/91/10/819/2911822/All-objects-and-some-questions"
+  },
+  "axes": {
+    "x": {
+      "quantity": "log10 radius",
+      "unit": "cm",
+      "pixel_axis": "x",
+      "formula": "value = (x - 1037.81) / 15.1468",
+      "px_at_zero": 1037.81,
+      "px_per_decade": 15.1468,
+      "max_tick_residual_decades": 0.022,
+      "calibration_ticks": [
+        {
+          "value": -40,
+          "px": 432
+        },
+        {
+          "value": -20,
+          "px": 735
+        },
+        {
+          "value": -10,
+          "px": 886
+        },
+        {
+          "value": 0,
+          "px": 1038
+        },
+        {
+          "value": 10,
+          "px": 1189
+        },
+        {
+          "value": 20,
+          "px": 1341
+        },
+        {
+          "value": 30,
+          "px": 1492
+        },
+        {
+          "value": 40,
+          "px": 1644
+        },
+        {
+          "value": 50,
+          "px": 1795
+        }
+      ],
+      "note": "Bottom axis 'log(physical radius) [cm]'. Top axis is the same in Mpc (offset 24.49)."
+    },
+    "y": {
+      "quantity": "log10 mass",
+      "unit": "g",
+      "pixel_axis": "y",
+      "formula": "value = (y - 1426.88) / -15.6255",
+      "px_at_zero": 1426.88,
+      "px_per_decade": -15.6255,
+      "max_tick_residual_decades": 0.2,
+      "calibration_ticks": [
+        {
+          "value": 60,
+          "px": 490
+        },
+        {
+          "value": 50,
+          "px": 645
+        },
+        {
+          "value": 40,
+          "px": 802
+        },
+        {
+          "value": 30,
+          "px": 958
+        },
+        {
+          "value": 20,
+          "px": 1113
+        },
+        {
+          "value": 10,
+          "px": 1270
+        },
+        {
+          "value": 0,
+          "px": 1430
+        },
+        {
+          "value": -10,
+          "px": 1582
+        },
+        {
+          "value": -20,
+          "px": 1740
+        },
+        {
+          "value": -30,
+          "px": 1895
+        },
+        {
+          "value": -40,
+          "px": 2052
+        },
+        {
+          "value": -50,
+          "px": 2208
+        }
+      ],
+      "note": "Inner left axis 'log(mass) [g]'. Outer left = log(M/M_sun) (offset -33.30); right = log(mass) [GeV] (offset +23.75)."
+    },
+    "secondary": [
+      {
+        "quantity": "log10 radius",
+        "unit": "Mpc",
+        "position": "top",
+        "offset_from_cm": -24.489
+      },
+      {
+        "quantity": "log10 mass",
+        "unit": "solar masses",
+        "position": "outer left",
+        "offset_from_g": -33.299
+      },
+      {
+        "quantity": "log10 mass",
+        "unit": "GeV",
+        "position": "right",
+        "offset_from_g": 23.749
+      }
+    ]
+  },
+  "objects": [
+    {
+      "id": "hubble_radius",
+      "name": "Hubble sphere today",
+      "printed_label": "Hubble radius",
+      "marker": "dot",
+      "image": {
+        "icon": {
+          "px": [
+            1468,
+            543
+          ],
+          "norm": [
+            0.69213,
+            0.181
+          ]
+        },
+        "label": {
+          "px": [
+            1620,
+            547
+          ],
+          "norm": [
+            0.76379,
+            0.18233
+          ]
+        }
+      },
+      "chart": {
+        "log10_radius_cm": 28.402,
+        "log10_mass_g": 56.566,
+        "log10_mass_msun": 23.267,
+        "log10_mass_GeV": 80.315,
+        "log10_width_m": 26.703,
+        "log10_mass_kg": 53.566
+      },
+      "plotted": {
+        "log10_width_m": 26.436883,
+        "log10_mass_kg": 52.9641,
+        "basis": "hubble_sphere_today"
+      },
+      "main_chart_object_id": "observable_universe",
+      "same_as": {
+        "dataset": "main_chart.physics.horizons",
+        "id": "hubble_radius"
+      },
+      "first_appeared": {
+        "seconds_after_big_bang": 4.3505365277750957e+17,
+        "years_ago": 0.0,
+        "log10_seconds": 17.638543,
+        "label": "today",
+        "basis": "this_object",
+        "confidence": "high",
+        "note": "Today's Hubble sphere."
+      }
+    },
+    {
+      "id": "voids",
+      "name": "Cosmic voids",
+      "printed_label": "voids",
+      "marker": "ellipse",
+      "image": {
+        "icon": {
+          "px": [
+            1440,
+            633
+          ],
+          "norm": [
+            0.67893,
+            0.211
+          ]
+        },
+        "label": {
+          "px": [
+            1583,
+            603
+          ],
+          "norm": [
+            0.74635,
+            0.201
+          ]
+        }
+      },
+      "chart": {
+        "log10_radius_cm": 26.553,
+        "log10_mass_g": 50.806,
+        "log10_mass_msun": 17.507,
+        "log10_mass_GeV": 74.555,
+        "log10_width_m": 24.854,
+        "log10_mass_kg": 47.806
+      },
+      "plotted": {
+        "log10_width_m": 24.854,
+        "log10_mass_kg": 47.806,
+        "basis": "read_from_chart"
+      },
+      "main_chart_object_id": "bootes_void",
+      "same_as": {
+        "dataset": "objects",
+        "id": "bootes_void"
+      },
+      "first_appeared": {
+        "seconds_after_big_bang": 9.468e+16,
+        "years_ago": null,
+        "log10_seconds": 16.976258,
+        "label": "3 billion years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Voids deepen as matter drains into the cosmic web; big ones emerge over the first few billion years."
+      }
+    },
+    {
+      "id": "superclusters",
+      "name": "Superclusters",
+      "printed_label": "superclusters",
+      "marker": "ellipse",
+      "image": {
+        "icon": {
+          "px": [
+            1433,
+            640
+          ],
+          "norm": [
+            0.67562,
+            0.21333
+          ]
+        },
+        "label": {
+          "px": [
+            1635,
+            653
+          ],
+          "norm": [
+            0.77086,
+            0.21767
+          ]
+        }
+      },
+      "chart": {
+        "log10_radius_cm": 26.091,
+        "log10_mass_g": 50.358,
+        "log10_mass_msun": 17.059,
+        "log10_mass_GeV": 74.107,
+        "log10_width_m": 24.392,
+        "log10_mass_kg": 47.358
+      },
+      "plotted": {
+        "log10_width_m": 24.392,
+        "log10_mass_kg": 47.358,
+        "basis": "read_from_chart"
+      },
+      "main_chart_object_id": "laniakea_supercluster",
+      "same_as": {
+        "dataset": "objects",
+        "id": "laniakea_supercluster"
+      },
+      "first_appeared": {
+        "seconds_after_big_bang": 1.578e+17,
+        "years_ago": null,
+        "log10_seconds": 17.198107,
+        "label": "5 billion years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Superclusters are still assembling; their outlines emerge over billions of years."
+      }
+    },
+    {
+      "id": "galaxy_clusters",
+      "name": "Galaxy clusters",
+      "printed_label": "galaxy clusters",
+      "marker": "ellipse",
+      "image": {
+        "icon": {
+          "px": [
+            1400,
+            680
+          ],
+          "norm": [
+            0.66007,
+            0.22667
+          ]
+        },
+        "label": {
+          "px": [
+            1632,
+            705
+          ],
+          "norm": [
+            0.76945,
+            0.235
+          ]
+        }
+      },
+      "chart": {
+        "log10_radius_cm": 23.912,
+        "log10_mass_g": 47.799,
+        "log10_mass_msun": 14.5,
+        "log10_mass_GeV": 71.548,
+        "log10_width_m": 22.213,
+        "log10_mass_kg": 44.799
+      },
+      "plotted": {
+        "log10_width_m": 22.213,
+        "log10_mass_kg": 44.799,
+        "basis": "read_from_chart"
+      },
+      "main_chart_object_id": "el_gordo",
+      "same_as": {
+        "dataset": "objects",
+        "id": "el_gordo"
+      },
+      "first_appeared": {
+        "seconds_after_big_bang": 2.0466565277750957e+17,
+        "years_ago": 7300000000.0,
+        "log10_seconds": 17.311045,
+        "label": "6.48 billion years after the Big Bang",
+        "basis": "this_object",
+        "confidence": "medium",
+        "note": "Seen as it was 7.3 billion years ago (redshift 0.87), already assembled."
+      }
+    },
+    {
+      "id": "milky_way",
+      "name": "Milky Way",
+      "printed_label": "Milky Way",
+      "marker": "dot",
+      "image": {
+        "icon": {
+          "px": [
+            1385,
+            720
+          ],
+          "norm": [
+            0.65299,
+            0.24
+          ]
+        },
+        "label": {
+          "px": [
+            1583,
+            757
+          ],
+          "norm": [
+            0.74635,
+            0.25233
+          ]
+        }
+      },
+      "chart": {
+        "log10_radius_cm": 22.922,
+        "log10_mass_g": 45.239,
+        "log10_mass_msun": 11.94,
+        "log10_mass_GeV": 68.988,
+        "log10_width_m": 21.223,
+        "log10_mass_kg": 42.239
+      },
+      "plotted": {
+        "log10_width_m": 21.223,
+        "log10_mass_kg": 42.239,
+        "basis": "read_from_chart"
+      },
+      "main_chart_object_id": "milky_way",
+      "same_as": {
+        "dataset": "objects",
+        "id": "milky_way"
+      },
+      "first_appeared": {
+        "seconds_after_big_bang": 1.5305652777509568e+16,
+        "years_ago": 13300000000.0,
+        "log10_seconds": 16.184852,
+        "label": "485 million years after the Big Bang",
+        "basis": "this_object",
+        "confidence": "medium",
+        "note": "Its oldest stars are ~13 billion years old; the disc built up over the following billions of years."
+      }
+    },
+    {
+      "id": "galaxies",
+      "name": "Galaxies",
+      "printed_label": "galaxies",
+      "marker": "ellipse",
+      "image": {
+        "icon": {
+          "px": [
+            1370,
+            750
+          ],
+          "norm": [
+            0.64592,
+            0.25
+          ]
+        },
+        "label": {
+          "px": [
+            1535,
+            808
+          ],
+          "norm": [
+            0.72372,
+            0.26933
+          ]
+        }
+      },
+      "chart": {
+        "log10_radius_cm": 21.932,
+        "log10_mass_g": 43.319,
+        "log10_mass_msun": 10.02,
+        "log10_mass_GeV": 67.068,
+        "log10_width_m": 20.233,
+        "log10_mass_kg": 40.319
+      },
+      "plotted": {
+        "log10_width_m": 20.233,
+        "log10_mass_kg": 40.319,
+        "basis": "read_from_chart"
+      },
+      "main_chart_object_id": "smc_galaxy",
+      "same_as": {
+        "dataset": "objects",
+        "id": "smc_galaxy"
+      },
+      "first_appeared": {
+        "seconds_after_big_bang": 5.633365277750957e+16,
+        "years_ago": 12000000000.0,
+        "log10_seconds": 16.750768,
+        "label": "1.78 billion years after the Big Bang",
+        "basis": "this_object",
+        "confidence": "low",
+        "note": "Its oldest stars are roughly 10-12 billion years old."
+      }
+    },
+    {
+      "id": "globular_clusters",
+      "name": "Globular clusters",
+      "printed_label": "globular clusters",
+      "marker": "ellipse",
+      "image": {
+        "icon": {
+          "px": [
+            1325,
+            833
+          ],
+          "norm": [
+            0.62471,
+            0.27767
+          ]
+        },
+        "label": {
+          "px": [
+            1595,
+            860
+          ],
+          "norm": [
+            0.752,
+            0.28667
+          ]
+        }
+      },
+      "chart": {
+        "log10_radius_cm": 18.961,
+        "log10_mass_g": 38.007,
+        "log10_mass_msun": 4.708,
+        "log10_mass_GeV": 61.756,
+        "log10_width_m": 17.262,
+        "log10_mass_kg": 35.007
+      },
+      "plotted": {
+        "log10_width_m": 17.262,
+        "log10_mass_kg": 35.007,
+        "basis": "read_from_chart"
+      },
+      "main_chart_object_id": "globular_clusters",
+      "same_as": {
+        "dataset": "objects",
+        "id": "globular_clusters"
+      },
+      "first_appeared": {
+        "seconds_after_big_bang": 3.108565277750957e+16,
+        "years_ago": 12800000000.0,
+        "log10_seconds": 16.49256,
+        "label": "985 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "medium",
+        "note": "The oldest Milky Way globular clusters are about 12.5-13 billion years old."
+      }
+    },
+    {
+      "id": "main_sequence_stars",
+      "name": "Main-sequence stars",
+      "printed_label": "main sequence stars",
+      "marker": "ellipse",
+      "image": {
+        "icon": {
+          "px": [
+            1202,
+            898
+          ],
+          "norm": [
+            0.56671,
+            0.29933
+          ]
+        },
+        "label": {
+          "px": [
+            1615,
+            912
+          ],
+          "norm": [
+            0.76143,
+            0.304
+          ]
+        }
+      },
+      "chart": {
+        "log10_radius_cm": 10.84,
+        "log10_mass_g": 33.847,
+        "log10_mass_msun": 0.548,
+        "log10_mass_GeV": 57.596,
+        "log10_width_m": 9.141,
+        "log10_mass_kg": 30.847
+      },
+      "plotted": {
+        "log10_width_m": 9.141,
+        "log10_mass_kg": 30.847,
+        "basis": "read_from_chart"
+      },
+      "main_chart_object_id": null,
+      "same_as": {
+        "dataset": "stellar_evolution",
+        "id": "main_sequence"
+      },
+      "first_appeared": {
+        "seconds_after_big_bang": 3156000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.499137,
+        "label": "100 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "The first stars lit up ~100-200 million years after the Big Bang."
+      }
+    },
+    {
+      "id": "red_giants",
+      "name": "Red giants",
+      "printed_label": "red giants",
+      "marker": "ellipse",
+      "image": {
+        "icon": {
+          "px": [
+            1230,
+            902
+          ],
+          "norm": [
+            0.57992,
+            0.30067
+          ]
+        },
+        "label": {
+          "px": [
+            1505,
+            963
+          ],
+          "norm": [
+            0.70957,
+            0.321
+          ]
+        }
+      },
+      "chart": {
+        "log10_radius_cm": 12.689,
+        "log10_mass_g": 33.591,
+        "log10_mass_msun": 0.292,
+        "log10_mass_GeV": 57.34,
+        "log10_width_m": 10.99,
+        "log10_mass_kg": 30.591
+      },
+      "plotted": {
+        "log10_width_m": 10.99,
+        "log10_mass_kg": 30.591,
+        "basis": "read_from_chart"
+      },
+      "main_chart_object_id": null,
+      "same_as": {
+        "dataset": "stellar_evolution",
+        "id": "red_giants"
+      },
+      "first_appeared": {
+        "seconds_after_big_bang": 9468000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.976258,
+        "label": "300 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Stars swell into red giants as they run out of core hydrogen."
+      }
+    },
+    {
+      "id": "sun",
+      "name": "Sun",
+      "printed_label": "Sun",
+      "marker": "dot",
+      "image": {
+        "icon": {
+          "px": [
+            1202,
+            905
+          ],
+          "norm": [
+            0.56671,
+            0.30167
+          ]
+        },
+        "label": {
+          "px": [
+            1255,
+            930
+          ],
+          "norm": [
+            0.5917,
+            0.31
+          ]
+        }
+      },
+      "chart": {
+        "log10_radius_cm": 10.84,
+        "log10_mass_g": 33.399,
+        "log10_mass_msun": 0.1,
+        "log10_mass_GeV": 57.148,
+        "log10_width_m": 9.141,
+        "log10_mass_kg": 30.399
+      },
+      "plotted": {
+        "log10_width_m": 9.141,
+        "log10_mass_kg": 30.399,
+        "basis": "read_from_chart"
+      },
+      "main_chart_object_id": "sun",
+      "same_as": {
+        "dataset": "objects",
+        "id": "sun"
+      },
+      "first_appeared": {
+        "seconds_after_big_bang": 2.8978297277750957e+17,
+        "years_ago": 4603000000.0,
+        "log10_seconds": 17.462073,
+        "label": "4.6 billion years ago",
+        "basis": "this_object",
+        "confidence": "high",
+        "note": "Formed 4.6 billion years ago from a collapsing cloud of gas and dust."
+      }
+    },
+    {
+      "id": "brown_dwarfs",
+      "name": "Brown dwarfs",
+      "printed_label": "BD",
+      "marker": "ellipse",
+      "image": {
+        "icon": {
+          "px": [
+            1188,
+            928
+          ],
+          "norm": [
+            0.56011,
+            0.30933
+          ]
+        },
+        "label": {
+          "px": [
+            1240,
+            965
+          ],
+          "norm": [
+            0.58463,
+            0.32167
+          ]
+        }
+      },
+      "chart": {
+        "log10_radius_cm": 9.916,
+        "log10_mass_g": 31.927,
+        "log10_mass_msun": -1.372,
+        "log10_mass_GeV": 55.676,
+        "log10_width_m": 8.217,
+        "log10_mass_kg": 28.927
+      },
+      "plotted": {
+        "log10_width_m": 8.217,
+        "log10_mass_kg": 28.927,
+        "basis": "read_from_chart"
+      },
+      "main_chart_object_id": "brown_dwarf",
+      "same_as": {
+        "dataset": "objects",
+        "id": "brown_dwarf"
+      },
+      "first_appeared": {
+        "seconds_after_big_bang": 2.477365277750957e+16,
+        "years_ago": 13000000000.0,
+        "log10_seconds": 16.39399,
+        "label": "785 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Formed like stars, from the earliest generations of star formation."
+      }
+    },
+    {
+      "id": "white_dwarfs",
+      "name": "White dwarfs",
+      "printed_label": "WD",
+      "marker": "ellipse",
+      "image": {
+        "icon": {
+          "px": [
+            1170,
+            907
+          ],
+          "norm": [
+            0.55163,
+            0.30233
+          ]
+        },
+        "label": {
+          "px": [
+            1142,
+            968
+          ],
+          "norm": [
+            0.53843,
+            0.32267
+          ]
+        }
+      },
+      "chart": {
+        "log10_radius_cm": 8.728,
+        "log10_mass_g": 33.271,
+        "log10_mass_msun": -0.028,
+        "log10_mass_GeV": 57.02,
+        "log10_width_m": 7.029,
+        "log10_mass_kg": 30.271
+      },
+      "plotted": {
+        "log10_width_m": 7.029,
+        "log10_mass_kg": 30.271,
+        "basis": "read_from_chart"
+      },
+      "main_chart_object_id": "white_dwarfs",
+      "same_as": {
+        "dataset": "objects",
+        "id": "white_dwarfs"
+      },
+      "first_appeared": {
+        "seconds_after_big_bang": 9468000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.976258,
+        "label": "300 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Stars of a few solar masses live tens to hundreds of millions of years before leaving white dwarfs."
+      }
+    },
+    {
+      "id": "neutron_stars",
+      "name": "Neutron stars",
+      "printed_label": "NS",
+      "marker": "dot",
+      "image": {
+        "icon": {
+          "px": [
+            1130,
+            897
+          ],
+          "norm": [
+            0.53277,
+            0.299
+          ]
+        },
+        "label": {
+          "px": [
+            1083,
+            985
+          ],
+          "norm": [
+            0.51061,
+            0.32833
+          ]
+        }
+      },
+      "chart": {
+        "log10_radius_cm": 6.087,
+        "log10_mass_g": 33.911,
+        "log10_mass_msun": 0.612,
+        "log10_mass_GeV": 57.66,
+        "log10_width_m": 4.388,
+        "log10_mass_kg": 30.911
+      },
+      "plotted": {
+        "log10_width_m": 4.388,
+        "log10_mass_kg": 30.911,
+        "basis": "read_from_chart"
+      },
+      "main_chart_object_id": "neutron_star",
+      "same_as": {
+        "dataset": "objects",
+        "id": "neutron_star"
+      },
+      "first_appeared": {
+        "seconds_after_big_bang": 6312000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.800167,
+        "label": "200 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "The first supernovae, ~200 million years after the Big Bang, left the first neutron stars."
+      }
+    },
+    {
+      "id": "planets",
+      "name": "Planets",
+      "printed_label": "planets",
+      "marker": "ellipse",
+      "image": {
+        "icon": {
+          "px": [
+            1177,
+            970
+          ],
+          "norm": [
+            0.55493,
+            0.32333
+          ]
+        },
+        "label": {
+          "px": [
+            1460,
+            1015
+          ],
+          "norm": [
+            0.68835,
+            0.33833
+          ]
+        }
+      },
+      "chart": {
+        "log10_radius_cm": 9.19,
+        "log10_mass_g": 29.239,
+        "log10_mass_msun": -4.06,
+        "log10_mass_GeV": 52.988,
+        "log10_width_m": 7.491,
+        "log10_mass_kg": 26.239
+      },
+      "plotted": {
+        "log10_width_m": 7.491,
+        "log10_mass_kg": 26.239,
+        "basis": "read_from_chart"
+      },
+      "main_chart_object_id": "jupiter",
+      "same_as": {
+        "dataset": "objects",
+        "id": "jupiter"
+      },
+      "first_appeared": {
+        "seconds_after_big_bang": 2.8987765277750957e+17,
+        "years_ago": 4600000000.0,
+        "log10_seconds": 17.462215,
+        "label": "4.6 billion years ago",
+        "basis": "this_object",
+        "confidence": "high",
+        "note": "The first planet to form, within a few million years of the Sun."
+      }
+    },
+    {
+      "id": "earth",
+      "name": "Earth",
+      "printed_label": "Earth",
+      "marker": "dot",
+      "image": {
+        "icon": {
+          "px": [
+            1171,
+            992
+          ],
+          "norm": [
+            0.5521,
+            0.33067
+          ]
+        },
+        "label": {
+          "px": [
+            1228,
+            1018
+          ],
+          "norm": [
+            0.57897,
+            0.33933
+          ]
+        }
+      },
+      "chart": {
+        "log10_radius_cm": 8.794,
+        "log10_mass_g": 27.831,
+        "log10_mass_msun": -5.468,
+        "log10_mass_GeV": 51.58,
+        "log10_width_m": 7.095,
+        "log10_mass_kg": 24.831
+      },
+      "plotted": {
+        "log10_width_m": 7.095,
+        "log10_mass_kg": 24.831,
+        "basis": "read_from_chart"
+      },
+      "main_chart_object_id": "earth",
+      "same_as": {
+        "dataset": "objects",
+        "id": "earth"
+      },
+      "first_appeared": {
+        "seconds_after_big_bang": 2.9177125277750957e+17,
+        "years_ago": 4540000000.0,
+        "log10_seconds": 17.465043,
+        "label": "4.54 billion years ago",
+        "basis": "this_object",
+        "confidence": "high",
+        "note": ""
+      }
+    },
+    {
+      "id": "moons_and_dwarf_planets",
+      "name": "Moons and dwarf planets",
+      "printed_label": "moons and dwarf planets",
+      "marker": "ellipse",
+      "image": {
+        "icon": {
+          "px": [
+            1130,
+            1140
+          ],
+          "norm": [
+            0.53277,
+            0.38
+          ]
+        },
+        "label": {
+          "px": [
+            1612,
+            1066
+          ],
+          "norm": [
+            0.76002,
+            0.35533
+          ]
+        }
+      },
+      "chart": {
+        "log10_radius_cm": 6.087,
+        "log10_mass_g": 18.36,
+        "log10_mass_msun": -14.939,
+        "log10_mass_GeV": 42.109,
+        "log10_width_m": 4.388,
+        "log10_mass_kg": 15.36
+      },
+      "plotted": {
+        "log10_width_m": 4.388,
+        "log10_mass_kg": 15.36,
+        "basis": "read_from_chart"
+      },
+      "main_chart_object_id": "moon",
+      "same_as": {
+        "dataset": "objects",
+        "id": "moon"
+      },
+      "first_appeared": {
+        "seconds_after_big_bang": 2.9271805277750957e+17,
+        "years_ago": 4510000000.0,
+        "log10_seconds": 17.46645,
+        "label": "4.51 billion years ago",
+        "basis": "this_object",
+        "confidence": "high",
+        "note": "Probably formed from the debris of a giant impact on the young Earth."
+      }
+    },
+    {
+      "id": "whale",
+      "name": "Whale",
+      "printed_label": "whale",
+      "marker": "dot",
+      "image": {
+        "icon": {
+          "px": [
+            1080,
+            1295
+          ],
+          "norm": [
+            0.50919,
+            0.43167
+          ]
+        },
+        "label": {
+          "px": [
+            1147,
+            1297
+          ],
+          "norm": [
+            0.54078,
+            0.43233
+          ]
+        }
+      },
+      "chart": {
+        "log10_radius_cm": 2.786,
+        "log10_mass_g": 8.44,
+        "log10_mass_msun": -24.859,
+        "log10_mass_GeV": 32.189,
+        "log10_width_m": 1.087,
+        "log10_mass_kg": 5.44
+      },
+      "plotted": {
+        "log10_width_m": 1.087,
+        "log10_mass_kg": 5.44,
+        "basis": "read_from_chart"
+      },
+      "main_chart_object_id": "blue_whale",
+      "same_as": {
+        "dataset": "objects",
+        "id": "blue_whale"
+      },
+      "first_appeared": {
+        "seconds_after_big_bang": 4.3491163277750957e+17,
+        "years_ago": 4500000.0,
+        "log10_seconds": 17.638401,
+        "label": "4.5 million years ago",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Baleen whales became giants within roughly the last 4.5 million years."
+      }
+    },
+    {
+      "id": "human",
+      "name": "Human",
+      "printed_label": "human",
+      "marker": "dot",
+      "image": {
+        "icon": {
+          "px": [
+            1063,
+            1350
+          ],
+          "norm": [
+            0.50118,
+            0.45
+          ]
+        },
+        "label": {
+          "px": [
+            1133,
+            1360
+          ],
+          "norm": [
+            0.53418,
+            0.45333
+          ]
+        }
+      },
+      "chart": {
+        "log10_radius_cm": 1.663,
+        "log10_mass_g": 4.92,
+        "log10_mass_msun": -28.379,
+        "log10_mass_GeV": 28.669,
+        "log10_width_m": -0.036,
+        "log10_mass_kg": 1.92
+      },
+      "plotted": {
+        "log10_width_m": -0.036,
+        "log10_mass_kg": 1.92,
+        "basis": "read_from_chart"
+      },
+      "main_chart_object_id": "humans",
+      "same_as": {
+        "dataset": "objects",
+        "id": "humans"
+      },
+      "first_appeared": {
+        "seconds_after_big_bang": 4.3504418477750957e+17,
+        "years_ago": 300000.0,
+        "log10_seconds": 17.638533,
+        "label": "300 thousand years ago",
+        "basis": "first_of_its_kind",
+        "confidence": "medium",
+        "note": "Homo sapiens appeared about 300,000 years ago."
+      }
+    },
+    {
+      "id": "flea",
+      "name": "Flea",
+      "printed_label": "flea",
+      "marker": "dot",
+      "image": {
+        "icon": {
+          "px": [
+            1022,
+            1477
+          ],
+          "norm": [
+            0.48185,
+            0.49233
+          ]
+        },
+        "label": {
+          "px": [
+            1070,
+            1480
+          ],
+          "norm": [
+            0.50448,
+            0.49333
+          ]
+        }
+      },
+      "chart": {
+        "log10_radius_cm": -1.044,
+        "log10_mass_g": -3.208,
+        "log10_mass_msun": -36.507,
+        "log10_mass_GeV": 20.541,
+        "log10_width_m": -2.743,
+        "log10_mass_kg": -6.208
+      },
+      "plotted": {
+        "log10_width_m": -2.743,
+        "log10_mass_kg": -6.208,
+        "basis": "read_from_chart"
+      },
+      "main_chart_object_id": null,
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 4.2984625277750957e+17,
+        "years_ago": 165000000.0,
+        "log10_seconds": 17.633313,
+        "label": "165 million years ago",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Flea-like insects are known from ~165 million years ago."
+      }
+    },
+    {
+      "id": "bacterium",
+      "name": "Bacterium",
+      "printed_label": "bacterium",
+      "marker": "dot",
+      "image": {
+        "icon": {
+          "px": [
+            970,
+            1617
+          ],
+          "norm": [
+            0.45733,
+            0.539
+          ]
+        },
+        "label": {
+          "px": [
+            1070,
+            1617
+          ],
+          "norm": [
+            0.50448,
+            0.539
+          ]
+        }
+      },
+      "chart": {
+        "log10_radius_cm": -4.477,
+        "log10_mass_g": -12.167,
+        "log10_mass_msun": -45.466,
+        "log10_mass_GeV": 11.582,
+        "log10_width_m": -6.176,
+        "log10_mass_kg": -15.167
+      },
+      "plotted": {
+        "log10_width_m": -6.176,
+        "log10_mass_kg": -15.167,
+        "basis": "read_from_chart"
+      },
+      "main_chart_object_id": "bacterium",
+      "same_as": {
+        "dataset": "objects",
+        "id": "bacterium"
+      },
+      "first_appeared": {
+        "seconds_after_big_bang": 3.1512565277750957e+17,
+        "years_ago": 3800000000.0,
+        "log10_seconds": 17.498484,
+        "label": "3.8 billion years ago",
+        "basis": "first_of_its_kind",
+        "confidence": "medium",
+        "note": "Life on Earth is at least ~3.5-3.8 billion years old."
+      }
+    },
+    {
+      "id": "covid_virus",
+      "name": "SARS-CoV-2 virus",
+      "printed_label": "COVID virus",
+      "marker": "dot",
+      "image": {
+        "icon": {
+          "px": [
+            957,
+            1658
+          ],
+          "norm": [
+            0.4512,
+            0.55267
+          ]
+        },
+        "label": {
+          "px": [
+            1040,
+            1665
+          ],
+          "norm": [
+            0.49033,
+            0.555
+          ]
+        }
+      },
+      "chart": {
+        "log10_radius_cm": -5.335,
+        "log10_mass_g": -14.791,
+        "log10_mass_msun": -48.09,
+        "log10_mass_GeV": 8.958,
+        "log10_width_m": -7.034,
+        "log10_mass_kg": -17.791
+      },
+      "plotted": {
+        "log10_width_m": -7.034,
+        "log10_mass_kg": -17.791,
+        "basis": "read_from_chart"
+      },
+      "main_chart_object_id": "virus",
+      "same_as": {
+        "dataset": "objects",
+        "id": "virus"
+      },
+      "first_appeared": {
+        "seconds_after_big_bang": 3.2459365277750957e+17,
+        "years_ago": 3500000000.0,
+        "log10_seconds": 17.51134,
+        "label": "3.5 billion years ago",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Viruses leave no fossils; they are probably nearly as old as cellular life."
+      }
+    },
+    {
+      "id": "atoms",
+      "name": "Atoms",
+      "printed_label": "atoms",
+      "marker": "ellipse",
+      "image": {
+        "icon": {
+          "px": [
+            913,
+            1780
+          ],
+          "norm": [
+            0.43046,
+            0.59333
+          ]
+        },
+        "label": {
+          "px": [
+            978,
+            1772
+          ],
+          "norm": [
+            0.4611,
+            0.59067
+          ]
+        }
+      },
+      "chart": {
+        "log10_radius_cm": -8.24,
+        "log10_mass_g": -22.599,
+        "log10_mass_msun": -55.898,
+        "log10_mass_GeV": 1.15,
+        "log10_width_m": -9.939,
+        "log10_mass_kg": -25.599
+      },
+      "plotted": {
+        "log10_width_m": -9.939,
+        "log10_mass_kg": -25.599,
+        "basis": "read_from_chart"
+      },
+      "main_chart_object_id": "oxygen_atom",
+      "same_as": {
+        "dataset": "objects",
+        "id": "oxygen_atom"
+      },
+      "first_appeared": {
+        "seconds_after_big_bang": 6312000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.800167,
+        "label": "200 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "medium",
+        "note": "Oxygen is forged in stars; the first supernovae spread it ~200 million years after the Big Bang."
+      }
+    },
+    {
+      "id": "top_quark",
+      "name": "Top quark",
+      "printed_label": "t",
+      "marker": "open_dot",
+      "image": {
+        "icon": {
+          "px": [
+            795,
+            1762
+          ],
+          "norm": [
+            0.37482,
+            0.58733
+          ]
+        },
+        "label": {
+          "px": [
+            752,
+            1677
+          ],
+          "norm": [
+            0.35455,
+            0.559
+          ]
+        }
+      },
+      "chart": {
+        "log10_radius_cm": -16.03,
+        "log10_mass_g": -21.447,
+        "log10_mass_msun": -54.746,
+        "log10_mass_GeV": 2.302,
+        "log10_width_m": -17.729,
+        "log10_mass_kg": -24.447
+      },
+      "plotted": {
+        "log10_width_m": -17.941778,
+        "log10_mass_kg": -24.511966,
+        "basis": "compton_line_reference_mass"
+      },
+      "main_chart_object_id": "fundamental_particles",
+      "same_as": {
+        "dataset": "fundamental_particles",
+        "id": "top"
+      },
+      "first_appeared": {
+        "seconds_after_big_bang": 1e-12,
+        "years_ago": null,
+        "log10_seconds": -12.0,
+        "label": "10^-12 seconds after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "medium",
+        "note": "Quarks, leptons and the W and Z gained their masses when the Higgs field switched on, ~10^-12 s after the Big Bang."
+      }
+    },
+    {
+      "id": "higgs_boson",
+      "name": "Higgs boson",
+      "printed_label": "H0",
+      "marker": "open_dot",
+      "image": {
+        "icon": {
+          "px": [
+            798,
+            1765
+          ],
+          "norm": [
+            0.37624,
+            0.58833
+          ]
+        },
+        "label": {
+          "px": [
+            785,
+            1667
+          ],
+          "norm": [
+            0.37011,
+            0.55567
+          ]
+        }
+      },
+      "chart": {
+        "log10_radius_cm": -15.832,
+        "log10_mass_g": -21.639,
+        "log10_mass_msun": -54.938,
+        "log10_mass_GeV": 2.11,
+        "log10_width_m": -17.531,
+        "log10_mass_kg": -24.639
+      },
+      "plotted": {
+        "log10_width_m": -17.802417,
+        "log10_mass_kg": -24.651327,
+        "basis": "compton_line_reference_mass"
+      },
+      "main_chart_object_id": "fundamental_particles",
+      "same_as": {
+        "dataset": "fundamental_particles",
+        "id": "higgs"
+      },
+      "first_appeared": {
+        "seconds_after_big_bang": 1e-12,
+        "years_ago": null,
+        "log10_seconds": -12.0,
+        "label": "10^-12 seconds after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "medium",
+        "note": "Quarks, leptons and the W and Z gained their masses when the Higgs field switched on, ~10^-12 s after the Big Bang."
+      }
+    },
+    {
+      "id": "w_boson",
+      "name": "W boson",
+      "printed_label": "W±",
+      "marker": "open_dot",
+      "image": {
+        "icon": {
+          "px": [
+            803,
+            1768
+          ],
+          "norm": [
+            0.3786,
+            0.58933
+          ]
+        },
+        "label": {
+          "px": [
+            818,
+            1712
+          ],
+          "norm": [
+            0.38567,
+            0.57067
+          ]
+        }
+      },
+      "chart": {
+        "log10_radius_cm": -15.502,
+        "log10_mass_g": -21.831,
+        "log10_mass_msun": -55.13,
+        "log10_mass_GeV": 1.918,
+        "log10_width_m": -17.201,
+        "log10_mass_kg": -24.831
+      },
+      "plotted": {
+        "log10_width_m": -17.609901,
+        "log10_mass_kg": -24.843843,
+        "basis": "compton_line_reference_mass"
+      },
+      "main_chart_object_id": "fundamental_particles",
+      "same_as": {
+        "dataset": "fundamental_particles",
+        "id": "w_boson"
+      },
+      "first_appeared": {
+        "seconds_after_big_bang": 1e-12,
+        "years_ago": null,
+        "log10_seconds": -12.0,
+        "label": "10^-12 seconds after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "medium",
+        "note": "Quarks, leptons and the W and Z gained their masses when the Higgs field switched on, ~10^-12 s after the Big Bang."
+      }
+    },
+    {
+      "id": "neutron",
+      "name": "Neutron",
+      "printed_label": "n",
+      "marker": "open_dot",
+      "image": {
+        "icon": {
+          "px": [
+            843,
+            1809
+          ],
+          "norm": [
+            0.39745,
+            0.603
+          ]
+        },
+        "label": {
+          "px": [
+            845,
+            1755
+          ],
+          "norm": [
+            0.3984,
+            0.585
+          ]
+        }
+      },
+      "chart": {
+        "log10_radius_cm": -12.861,
+        "log10_mass_g": -24.455,
+        "log10_mass_msun": -57.754,
+        "log10_mass_GeV": -0.706,
+        "log10_width_m": -14.56,
+        "log10_mass_kg": -27.455
+      },
+      "plotted": {
+        "log10_width_m": -15.677739,
+        "log10_mass_kg": -26.776005,
+        "basis": "compton_line_reference_mass"
+      },
+      "main_chart_object_id": "fundamental_particles",
+      "same_as": {
+        "dataset": "fundamental_particles",
+        "id": "neutron"
+      },
+      "first_appeared": {
+        "seconds_after_big_bang": 1e-12,
+        "years_ago": null,
+        "log10_seconds": -12.0,
+        "label": "10^-12 seconds after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "medium",
+        "note": "Quarks, leptons and the W and Z gained their masses when the Higgs field switched on, ~10^-12 s after the Big Bang."
+      }
+    },
+    {
+      "id": "proton",
+      "name": "Proton",
+      "printed_label": "p",
+      "marker": "open_dot",
+      "image": {
+        "icon": {
+          "px": [
+            843,
+            1809
+          ],
+          "norm": [
+            0.39745,
+            0.603
+          ]
+        },
+        "label": {
+          "px": [
+            873,
+            1783
+          ],
+          "norm": [
+            0.4116,
+            0.59433
+          ]
+        }
+      },
+      "chart": {
+        "log10_radius_cm": -12.861,
+        "log10_mass_g": -24.455,
+        "log10_mass_msun": -57.754,
+        "log10_mass_GeV": -0.706,
+        "log10_width_m": -14.56,
+        "log10_mass_kg": -27.455
+      },
+      "plotted": {
+        "log10_width_m": -15.677141,
+        "log10_mass_kg": -26.776603,
+        "basis": "compton_line_reference_mass"
+      },
+      "main_chart_object_id": "fundamental_particles",
+      "same_as": {
+        "dataset": "fundamental_particles",
+        "id": "proton"
+      },
+      "first_appeared": {
+        "seconds_after_big_bang": 1e-12,
+        "years_ago": null,
+        "log10_seconds": -12.0,
+        "label": "10^-12 seconds after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "medium",
+        "note": "Quarks, leptons and the W and Z gained their masses when the Higgs field switched on, ~10^-12 s after the Big Bang."
+      }
+    },
+    {
+      "id": "electron",
+      "name": "Electron",
+      "printed_label": "e",
+      "marker": "open_dot",
+      "image": {
+        "icon": {
+          "px": [
+            907,
+            1876
+          ],
+          "norm": [
+            0.42763,
+            0.62533
+          ]
+        },
+        "label": {
+          "px": [
+            940,
+            1847
+          ],
+          "norm": [
+            0.44319,
+            0.61567
+          ]
+        }
+      },
+      "chart": {
+        "log10_radius_cm": -8.636,
+        "log10_mass_g": -28.743,
+        "log10_mass_msun": -62.042,
+        "log10_mass_GeV": -4.994,
+        "log10_width_m": -10.335,
+        "log10_mass_kg": -31.743
+      },
+      "plotted": {
+        "log10_width_m": -12.413232,
+        "log10_mass_kg": -30.040511,
+        "basis": "compton_line_reference_mass"
+      },
+      "main_chart_object_id": "fundamental_particles",
+      "same_as": {
+        "dataset": "fundamental_particles",
+        "id": "electron"
+      },
+      "first_appeared": {
+        "seconds_after_big_bang": 1e-12,
+        "years_ago": null,
+        "log10_seconds": -12.0,
+        "label": "10^-12 seconds after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "medium",
+        "note": "Quarks, leptons and the W and Z gained their masses when the Higgs field switched on, ~10^-12 s after the Big Bang."
+      }
+    },
+    {
+      "id": "neutrino",
+      "name": "Neutrino",
+      "printed_label": "ν",
+      "marker": "open_dot",
+      "image": {
+        "icon": {
+          "px": [
+            979,
+            1950
+          ],
+          "norm": [
+            0.46157,
+            0.65
+          ]
+        },
+        "label": {
+          "px": [
+            1003,
+            1917
+          ],
+          "norm": [
+            0.47289,
+            0.639
+          ]
+        }
+      },
+      "chart": {
+        "log10_radius_cm": -3.882,
+        "log10_mass_g": -33.479,
+        "log10_mass_msun": -66.778,
+        "log10_mass_GeV": -9.73,
+        "log10_width_m": -5.581,
+        "log10_mass_kg": -36.479
+      },
+      "plotted": {
+        "log10_width_m": -5.974744,
+        "log10_mass_kg": -36.479,
+        "basis": "compton_line_read_mass"
+      },
+      "main_chart_object_id": "fundamental_particles",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 1e-12,
+        "years_ago": null,
+        "log10_seconds": -12.0,
+        "label": "10^-12 seconds after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "medium",
+        "note": "Quarks, leptons and the W and Z gained their masses when the Higgs field switched on, ~10^-12 s after the Big Bang."
+      }
+    },
+    {
+      "id": "visible_photons",
+      "name": "Visible-light photons (rainbow bars)",
+      "printed_label": null,
+      "marker": "rainbow",
+      "image": {
+        "icon": {
+          "px": [
+            952,
+            1926
+          ],
+          "norm": [
+            0.44884,
+            0.642
+          ]
+        },
+        "label": null
+      },
+      "chart": {
+        "log10_radius_cm": -5.665,
+        "log10_mass_g": -31.943,
+        "log10_mass_msun": -65.242,
+        "log10_mass_GeV": -8.194,
+        "log10_width_m": -7.364,
+        "log10_mass_kg": -34.943
+      },
+      "plotted": {
+        "log10_width_m": -6.259637,
+        "log10_mass_kg": -35.395927,
+        "basis": "photon_line_550nm"
+      },
+      "main_chart_object_id": null,
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 1e-12,
+        "years_ago": null,
+        "log10_seconds": -12.0,
+        "label": "10^-12 seconds after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "medium",
+        "note": "Light as we know it separated from the weak force at the electroweak transition."
+      }
+    },
+    {
+      "id": "quantum_gravity_point",
+      "name": "Planck point (quantum gravity)",
+      "printed_label": "QG",
+      "marker": "open_dot",
+      "image": {
+        "icon": {
+          "px": [
+            540,
+            1497
+          ],
+          "norm": [
+            0.2546,
+            0.499
+          ]
+        },
+        "label": {
+          "px": [
+            480,
+            1497
+          ],
+          "norm": [
+            0.22631,
+            0.499
+          ]
+        }
+      },
+      "chart": {
+        "log10_radius_cm": -32.866,
+        "log10_mass_g": -4.488,
+        "log10_mass_msun": -37.787,
+        "log10_mass_GeV": 19.261,
+        "log10_width_m": -34.564,
+        "log10_mass_kg": -7.488
+      },
+      "plotted": {
+        "log10_width_m": -34.49048,
+        "log10_mass_kg": -7.963263,
+        "basis": "planck_point"
+      },
+      "main_chart_object_id": null,
+      "same_as": {
+        "dataset": "main_chart.triangle",
+        "id": "big_bang_apex"
+      },
+      "first_appeared": {
+        "seconds_after_big_bang": 5.39e-44,
+        "years_ago": null,
+        "log10_seconds": -43.268411,
+        "label": "10^-43 seconds after the Big Bang",
+        "basis": "physics",
+        "confidence": "high",
+        "note": "The Planck time, the earliest moment physics can describe."
+      }
+    },
+    {
+      "id": "smallest_observable_pbh",
+      "name": "Smallest observable primordial black hole",
+      "printed_label": "smallest observable PBH",
+      "marker": "dot",
+      "image": {
+        "icon": {
+          "px": [
+            843,
+            1190
+          ],
+          "norm": [
+            0.39745,
+            0.39667
+          ]
+        },
+        "label": {
+          "px": [
+            768,
+            1080
+          ],
+          "norm": [
+            0.36209,
+            0.36
+          ]
+        }
+      },
+      "chart": {
+        "log10_radius_cm": -12.861,
+        "log10_mass_g": 15.16,
+        "log10_mass_msun": -18.139,
+        "log10_mass_GeV": 38.909,
+        "log10_width_m": -14.56,
+        "log10_mass_kg": 12.16
+      },
+      "plotted": {
+        "log10_width_m": -14.367217,
+        "log10_mass_kg": 12.16,
+        "basis": "black_hole_line_read_mass"
+      },
+      "main_chart_object_id": "primordial_black_hole",
+      "same_as": {
+        "dataset": "objects",
+        "id": "primordial_black_hole"
+      },
+      "first_appeared": {
+        "seconds_after_big_bang": 3.580068338371692e-24,
+        "years_ago": null,
+        "log10_seconds": -23.446109,
+        "label": "10^-23 seconds after the Big Bang",
+        "basis": "physics",
+        "confidence": "low",
+        "note": "Hypothetical primordial black hole; t ~ GM/c^3."
+      }
+    },
+    {
+      "id": "three_kelvin_bh",
+      "name": "Black hole with a 3 K Hawking temperature",
+      "printed_label": "3K BH",
+      "marker": "dot",
+      "image": {
+        "icon": {
+          "px": [
+            1003,
+            1025
+          ],
+          "norm": [
+            0.47289,
+            0.34167
+          ]
+        },
+        "label": {
+          "px": [
+            965,
+            970
+          ],
+          "norm": [
+            0.45497,
+            0.32333
+          ]
+        }
+      },
+      "chart": {
+        "log10_radius_cm": -2.298,
+        "log10_mass_g": 25.719,
+        "log10_mass_msun": -7.58,
+        "log10_mass_GeV": 49.468,
+        "log10_width_m": -3.997,
+        "log10_mass_kg": 22.719
+      },
+      "plotted": {
+        "log10_width_m": -3.87379,
+        "log10_mass_kg": 22.653427,
+        "basis": "black_hole_hawking_T_cmb"
+      },
+      "main_chart_object_id": null,
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 1.1151118687294156e-13,
+        "years_ago": null,
+        "log10_seconds": -12.952682,
+        "label": "10^-13 seconds after the Big Bang",
+        "basis": "physics",
+        "confidence": "low",
+        "note": "Hypothetical: only a primordial black hole could be this light; t ~ GM/c^3."
+      }
+    }
+  ],
+  "lines": [
+    {
+      "id": "black_hole_line",
+      "printed_label": "black holes",
+      "equation": "log10 M[g] = log10 r[cm] + 27.83  (r = 2GM/c^2)",
+      "endpoints": [
+        {
+          "px": [
+            540,
+            1497
+          ],
+          "norm": [
+            0.2546,
+            0.499
+          ]
+        },
+        {
+          "px": [
+            1468,
+            543
+          ],
+          "norm": [
+            0.69213,
+            0.181
+          ]
+        }
+      ]
+    },
+    {
+      "id": "compton_limit",
+      "printed_label": "Compton limit",
+      "equation": "log10 M[g] = -log10 r[cm] - 37.45  (r = hbar/Mc)",
+      "endpoints": [
+        {
+          "px": [
+            540,
+            1497
+          ],
+          "norm": [
+            0.2546,
+            0.499
+          ]
+        },
+        {
+          "px": [
+            1005,
+            1975
+          ],
+          "norm": [
+            0.47383,
+            0.65833
+          ]
+        }
+      ]
+    },
+    {
+      "id": "planck_mass",
+      "printed_label": "m_P",
+      "equation": "log10 M[g] = -4.66",
+      "style": "black dashed horizontal",
+      "y_px": 1497
+    },
+    {
+      "id": "planck_length",
+      "printed_label": "l_P",
+      "equation": "log10 r[cm] = -32.79",
+      "style": "white vertical",
+      "x_px": 540
+    }
+  ],
+  "time_lines": [
+    {
+      "id": "planck",
+      "printed_label": "Planck 10^-43 s",
+      "seconds": 5.39e-44,
+      "log10_seconds": -43.268,
+      "style": "white dashed",
+      "top_of_frame": {
+        "px": [
+          905,
+          365
+        ],
+        "norm": [
+          0.42669,
+          0.12167
+        ]
+      },
+      "label": {
+        "px": [
+          855,
+          530
+        ],
+        "norm": [
+          0.40311,
+          0.17667
+        ]
+      },
+      "chart_equation": "log10 M[g] = 3 log10 r[cm] + 94.26",
+      "chart_log10_density_g_cm3": 93.64
+    },
+    {
+      "id": "gut",
+      "printed_label": "GUT 10^-32 s",
+      "seconds": 1e-32,
+      "log10_seconds": -32.0,
+      "style": "white dashed",
+      "top_of_frame": {
+        "px": [
+          1000,
+          365
+        ],
+        "norm": [
+          0.47148,
+          0.12167
+        ]
+      },
+      "label": {
+        "px": [
+          945,
+          480
+        ],
+        "norm": [
+          0.44554,
+          0.16
+        ]
+      },
+      "chart_equation": "log10 M[g] = 3 log10 r[cm] + 75.45",
+      "chart_log10_density_g_cm3": 74.824
+    },
+    {
+      "id": "ew",
+      "printed_label": "EW 10^-11 s",
+      "seconds": 1e-11,
+      "log10_seconds": -11.0,
+      "style": "white dashed",
+      "top_of_frame": {
+        "px": [
+          1240,
+          365
+        ],
+        "norm": [
+          0.58463,
+          0.12167
+        ]
+      },
+      "label": {
+        "px": [
+          1190,
+          470
+        ],
+        "norm": [
+          0.56106,
+          0.15667
+        ]
+      },
+      "chart_equation": "log10 M[g] = 3 log10 r[cm] + 27.91",
+      "chart_log10_density_g_cm3": 27.289
+    },
+    {
+      "id": "nuclear",
+      "printed_label": "nuclear 10^-6 s",
+      "seconds": 1e-06,
+      "log10_seconds": -6.0,
+      "style": "white dashed",
+      "top_of_frame": {
+        "px": [
+          1300,
+          365
+        ],
+        "norm": [
+          0.61292,
+          0.12167
+        ]
+      },
+      "label": {
+        "px": [
+          1240,
+          500
+        ],
+        "norm": [
+          0.58463,
+          0.16667
+        ]
+      },
+      "chart_equation": "log10 M[g] = 3 log10 r[cm] + 16.03",
+      "chart_log10_density_g_cm3": 15.406
+    },
+    {
+      "id": "atomic",
+      "printed_label": "atomic 10^3 s",
+      "seconds": 1000.0,
+      "log10_seconds": 3.0,
+      "style": "white dashed",
+      "top_of_frame": {
+        "px": [
+          1375,
+          365
+        ],
+        "norm": [
+          0.64828,
+          0.12167
+        ]
+      },
+      "label": {
+        "px": [
+          1330,
+          440
+        ],
+        "norm": [
+          0.62706,
+          0.14667
+        ]
+      },
+      "chart_equation": "log10 M[g] = 3 log10 r[cm] + 1.17",
+      "chart_log10_density_g_cm3": 0.55
+    },
+    {
+      "id": "recombination",
+      "printed_label": "recomb. 10^13 s",
+      "seconds": 10000000000000.0,
+      "log10_seconds": 13.0,
+      "style": "white dashed",
+      "top_of_frame": {
+        "px": [
+          1465,
+          365
+        ],
+        "norm": [
+          0.69071,
+          0.12167
+        ]
+      },
+      "label": {
+        "px": [
+          1420,
+          480
+        ],
+        "norm": [
+          0.6695,
+          0.16
+        ]
+      },
+      "chart_equation": "log10 M[g] = 3 log10 r[cm] + -16.65",
+      "chart_log10_density_g_cm3": -17.276
+    },
+    {
+      "id": "now",
+      "printed_label": "now",
+      "seconds": 4.35e+17,
+      "log10_seconds": 17.638,
+      "style": "black dashed",
+      "top_of_frame": {
+        "px": [
+          1530,
+          365
+        ],
+        "norm": [
+          0.72136,
+          0.12167
+        ]
+      },
+      "label": {
+        "px": [
+          1500,
+          410
+        ],
+        "norm": [
+          0.70721,
+          0.13667
+        ]
+      },
+      "chart_equation": "log10 M[g] = 3 log10 r[cm] + -29.53",
+      "chart_log10_density_g_cm3": -30.149
+    }
+  ],
+  "time_lines_note": "Each dashed line is a constant-density line (the universe's mean density at that time); 'now' passes through the Hubble-radius dot.",
+  "regions": [
+    {
+      "id": "forbidden_by_gravity",
+      "printed_label": "forbidden by gravity",
+      "colour": "#83a7c5",
+      "text": {
+        "px": [
+          800,
+          700
+        ],
+        "norm": [
+          0.37718,
+          0.23333
+        ]
+      },
+      "rule": "above the black-hole line"
+    },
+    {
+      "id": "forbidden_by_quantum_uncertainty",
+      "printed_label": "forbidden by quantum uncertainty",
+      "colour": "#83a7c5",
+      "text": {
+        "px": [
+          800,
+          2000
+        ],
+        "norm": [
+          0.37718,
+          0.66667
+        ]
+      },
+      "rule": "below the Compton limit"
+    },
+    {
+      "id": "sub_planckian_unknown",
+      "printed_label": "sub-Planckian unknown",
+      "colour": "#83a7c5",
+      "text": {
+        "px": [
+          490,
+          800
+        ],
+        "norm": [
+          0.23102,
+          0.26667
+        ]
+      },
+      "rule": "radius below the Planck length"
+    },
+    {
+      "id": "quantum_gravity",
+      "printed_label": "QG",
+      "colour": "#000000",
+      "text": {
+        "px": [
+          480,
+          1497
+        ],
+        "norm": [
+          0.22631,
+          0.499
+        ]
+      },
+      "rule": "black wedge left of the Planck point"
+    },
+    {
+      "id": "qgp_band",
+      "printed_label": "QGP",
+      "text": {
+        "px": [
+          950,
+          1380
+        ],
+        "norm": [
+          0.4479,
+          0.46
+        ]
+      },
+      "rule": "lighter stripe between the EW and nuclear time lines"
+    },
+    {
+      "id": "bbn_band",
+      "printed_label": "BBN",
+      "text": {
+        "px": [
+          1030,
+          1410
+        ],
+        "norm": [
+          0.48562,
+          0.47
+        ]
+      },
+      "rule": "lighter stripe near the 'atomic' time line"
+    }
+  ],
+  "domination_legend": [
+    {
+      "symbol": "Ω_Λi",
+      "meaning": "false vacuum energy of inflation",
+      "colour": "#a5a5a5"
+    },
+    {
+      "symbol": "Ω_r",
+      "meaning": "radiation",
+      "colour": "#d1dcca"
+    },
+    {
+      "symbol": "Ω_m",
+      "meaning": "matter",
+      "colour": "#fbbc6c"
+    },
+    {
+      "symbol": "Ω_Λ",
+      "meaning": "dark energy",
+      "colour": "#f2f3f7"
+    }
+  ],
+  "domination_note": "The allowed triangle is shaded by which component dominated the universe when it had that density: inflation (grey sliver by the Planck point), radiation (sage), matter (orange band ending at 'now'), dark energy (pale, the future).",
+  "energy_markers": [
+    {
+      "label": "E_P",
+      "meaning": "Planck energy",
+      "y_px": 1500,
+      "chart_log10_GeV": 19.069,
+      "true_log10_GeV": 19.09
+    },
+    {
+      "label": "E_GUT",
+      "meaning": "grand unification energy",
+      "y_px": 1562,
+      "chart_log10_GeV": 15.101,
+      "true_log10_GeV": 16.0
+    },
+    {
+      "label": "E_EW",
+      "meaning": "electroweak energy",
+      "y_px": 1757,
+      "chart_log10_GeV": 2.622,
+      "true_log10_GeV": 2.4
+    },
+    {
+      "label": "CMB",
+      "meaning": "cosmic microwave background photon energy",
+      "y_px": 1995,
+      "chart_log10_GeV": -12.61,
+      "true_log10_GeV": -12.2
+    }
+  ],
+  "abbreviations": {
+    "GUT": "grand unified theories",
+    "QGP": "quark-gluon plasma",
+    "EW": "electro weak energy",
+    "BBN": "big bang nucleosynthesis",
+    "NS": "neutron stars",
+    "WD": "white dwarfs",
+    "BD": "brown dwarfs",
+    "BH": "black holes",
+    "CMB": "cosmic microwave background",
+    "SMBH": "supermassive black holes",
+    "PBH": "primordial black holes"
+  },
+  "brackets": [
+    {
+      "printed_label": "stellar mass BH",
+      "along": "black_hole_line",
+      "ends": [
+        {
+          "px": [
+            1128,
+            896
+          ],
+          "norm": [
+            0.53182,
+            0.29867
+          ]
+        },
+        {
+          "px": [
+            1175,
+            820
+          ],
+          "norm": [
+            0.55398,
+            0.27333
+          ]
+        }
+      ]
+    },
+    {
+      "printed_label": "SMBH",
+      "along": "black_hole_line",
+      "ends": [
+        {
+          "px": [
+            1288,
+            732
+          ],
+          "norm": [
+            0.60726,
+            0.244
+          ]
+        },
+        {
+          "px": [
+            1392,
+            623
+          ],
+          "norm": [
+            0.65629,
+            0.20767
+          ]
+        }
+      ]
+    }
+  ]
+}

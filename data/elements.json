@@ -1,0 +1,5173 @@
+{
+  "source": {
+    "elements": "PubChem periodic table, https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON (read 2026-10-24)",
+    "origins": "Johnson, J. A. (2019). Populating the periodic table: Nucleosynthesis of the elements. Science 363(6426), 474-478. Simplified to each element's leading sources."
+  },
+  "conventions": {
+    "width": "Van der Waals diameter (2x the radius): how close two atoms sit before their electron clouds push back. The same convention as the oxygen and helium atoms on the main chart.",
+    "mass": "Standard atomic weight, or the mass of the longest-lived isotope when there is no stable one.",
+    "first_appeared": "When the element's first neutral atoms existed: the earliest of its sources. Times for stellar sources are rough (the first stars formed ~100-200 million years in).",
+    "same_as": "The main-chart object that already is this element's atom; show that instead of a second dot."
+  },
+  "sources": [
+    {
+      "id": "big_bang",
+      "label": "The Big Bang",
+      "description": "Nuclei formed in the first few minutes; atoms once the universe cooled enough to hold electrons."
+    },
+    {
+      "id": "cosmic_rays",
+      "label": "Cosmic rays splitting heavier nuclei",
+      "description": "Made when cosmic rays from supernova remnants shatter carbon, nitrogen and oxygen."
+    },
+    {
+      "id": "massive_stars",
+      "label": "Exploding massive stars",
+      "description": "Forged in massive stars and spread by their supernovae, the first ~200 million years after the Big Bang."
+    },
+    {
+      "id": "low_mass_stars",
+      "label": "Dying low-mass stars",
+      "description": "Made by slow neutron capture (the s-process) in red giants and shed as they die."
+    },
+    {
+      "id": "white_dwarfs",
+      "label": "Exploding white dwarfs",
+      "description": "Made in thermonuclear (type Ia) supernovae, which need a white dwarf and a partner."
+    },
+    {
+      "id": "neutron_star_mergers",
+      "label": "Merging neutron stars",
+      "description": "Made by rapid neutron capture (the r-process) in neutron-star mergers and perhaps rare supernovae."
+    },
+    {
+      "id": "decay",
+      "label": "Decay of uranium and thorium",
+      "description": "Every isotope is short-lived; it exists in nature only as it is continually made by uranium and thorium decaying."
+    },
+    {
+      "id": "laboratory",
+      "label": "Made in laboratories",
+      "description": "Not found in nature; made one atom at a time in accelerators or reactors."
+    }
+  ],
+  "elements": [
+    {
+      "id": "hydrogen",
+      "atomic_number": 1,
+      "symbol": "H",
+      "name": "Hydrogen",
+      "kind": "Nonmetal",
+      "standard_state": "gas",
+      "state_is_predicted": false,
+      "radioactive": false,
+      "discovered": 1766,
+      "table": {
+        "period": 1,
+        "group": 1,
+        "row": 1,
+        "column": 1
+      },
+      "reference": {
+        "atomic_mass_u": 1.008,
+        "mass_kg": 1.67382e-27,
+        "log10_mass_kg": -26.77629,
+        "van_der_waals_radius_pm": 120.0,
+        "width_m": 2.4e-10,
+        "log10_width_m": -9.619789,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "big_bang"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 11992800000000.0,
+        "years_ago": null,
+        "log10_seconds": 13.078921,
+        "label": "380 thousand years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "medium",
+        "note": "Nuclei formed in the first few minutes; atoms once the universe cooled enough to hold electrons."
+      }
+    },
+    {
+      "id": "helium",
+      "atomic_number": 2,
+      "symbol": "He",
+      "name": "Helium",
+      "kind": "Noble gas",
+      "standard_state": "gas",
+      "state_is_predicted": false,
+      "radioactive": false,
+      "discovered": 1868,
+      "table": {
+        "period": 1,
+        "group": 18,
+        "row": 1,
+        "column": 18
+      },
+      "reference": {
+        "atomic_mass_u": 4.0026,
+        "mass_kg": 6.64647e-27,
+        "log10_mass_kg": -26.177409,
+        "van_der_waals_radius_pm": 140.0,
+        "width_m": 2.8e-10,
+        "log10_width_m": -9.552842,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "big_bang"
+      ],
+      "origin_note": "",
+      "same_as": {
+        "dataset": "objects",
+        "id": "helium_atom"
+      },
+      "first_appeared": {
+        "seconds_after_big_bang": 3156000000000.0,
+        "years_ago": null,
+        "log10_seconds": 12.499137,
+        "label": "100 thousand years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "medium",
+        "note": "Nuclei formed in the first few minutes; atoms once the universe cooled enough to hold electrons."
+      }
+    },
+    {
+      "id": "lithium",
+      "atomic_number": 3,
+      "symbol": "Li",
+      "name": "Lithium",
+      "kind": "Alkali metal",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": false,
+      "discovered": 1817,
+      "table": {
+        "period": 2,
+        "group": 1,
+        "row": 2,
+        "column": 1
+      },
+      "reference": {
+        "atomic_mass_u": 7.0,
+        "mass_kg": 1.16238e-26,
+        "log10_mass_kg": -25.934653,
+        "van_der_waals_radius_pm": 182.0,
+        "width_m": 3.64e-10,
+        "log10_width_m": -9.438899,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "big_bang",
+        "cosmic_rays",
+        "low_mass_stars"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 11992800000000.0,
+        "years_ago": null,
+        "log10_seconds": 13.078921,
+        "label": "380 thousand years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "medium",
+        "note": "Nuclei formed in the first few minutes; atoms once the universe cooled enough to hold electrons."
+      }
+    },
+    {
+      "id": "beryllium",
+      "atomic_number": 4,
+      "symbol": "Be",
+      "name": "Beryllium",
+      "kind": "Alkaline earth metal",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": false,
+      "discovered": 1798,
+      "table": {
+        "period": 2,
+        "group": 2,
+        "row": 2,
+        "column": 2
+      },
+      "reference": {
+        "atomic_mass_u": 9.012183,
+        "mass_kg": 1.49651e-26,
+        "log10_mass_kg": -25.824921,
+        "van_der_waals_radius_pm": 153.0,
+        "width_m": 3.06e-10,
+        "log10_width_m": -9.514279,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "cosmic_rays"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 9468000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.976258,
+        "label": "300 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Made when cosmic rays from supernova remnants shatter carbon, nitrogen and oxygen."
+      }
+    },
+    {
+      "id": "boron",
+      "atomic_number": 5,
+      "symbol": "B",
+      "name": "Boron",
+      "kind": "Metalloid",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": false,
+      "discovered": 1808,
+      "table": {
+        "period": 2,
+        "group": 13,
+        "row": 2,
+        "column": 13
+      },
+      "reference": {
+        "atomic_mass_u": 10.81,
+        "mass_kg": 1.79504e-26,
+        "log10_mass_kg": -25.745925,
+        "van_der_waals_radius_pm": 192.0,
+        "width_m": 3.84e-10,
+        "log10_width_m": -9.415669,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "cosmic_rays"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 9468000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.976258,
+        "label": "300 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Made when cosmic rays from supernova remnants shatter carbon, nitrogen and oxygen."
+      }
+    },
+    {
+      "id": "carbon",
+      "atomic_number": 6,
+      "symbol": "C",
+      "name": "Carbon",
+      "kind": "Nonmetal",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": false,
+      "discovered": "ancient",
+      "table": {
+        "period": 2,
+        "group": 14,
+        "row": 2,
+        "column": 14
+      },
+      "reference": {
+        "atomic_mass_u": 12.011,
+        "mass_kg": 1.99447e-26,
+        "log10_mass_kg": -25.700172,
+        "van_der_waals_radius_pm": 170.0,
+        "width_m": 3.4e-10,
+        "log10_width_m": -9.468521,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "low_mass_stars",
+        "massive_stars"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 6312000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.800167,
+        "label": "200 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "medium",
+        "note": "Forged in massive stars and spread by their supernovae, the first ~200 million years after the Big Bang."
+      }
+    },
+    {
+      "id": "nitrogen",
+      "atomic_number": 7,
+      "symbol": "N",
+      "name": "Nitrogen",
+      "kind": "Nonmetal",
+      "standard_state": "gas",
+      "state_is_predicted": false,
+      "radioactive": false,
+      "discovered": 1772,
+      "table": {
+        "period": 2,
+        "group": 15,
+        "row": 2,
+        "column": 15
+      },
+      "reference": {
+        "atomic_mass_u": 14.007,
+        "mass_kg": 2.32592e-26,
+        "log10_mass_kg": -25.633406,
+        "van_der_waals_radius_pm": 155.0,
+        "width_m": 3.1e-10,
+        "log10_width_m": -9.508638,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "low_mass_stars",
+        "massive_stars"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 6312000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.800167,
+        "label": "200 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "medium",
+        "note": "Forged in massive stars and spread by their supernovae, the first ~200 million years after the Big Bang."
+      }
+    },
+    {
+      "id": "oxygen",
+      "atomic_number": 8,
+      "symbol": "O",
+      "name": "Oxygen",
+      "kind": "Nonmetal",
+      "standard_state": "gas",
+      "state_is_predicted": false,
+      "radioactive": false,
+      "discovered": 1774,
+      "table": {
+        "period": 2,
+        "group": 16,
+        "row": 2,
+        "column": 16
+      },
+      "reference": {
+        "atomic_mass_u": 15.999,
+        "mass_kg": 2.6567e-26,
+        "log10_mass_kg": -25.575658,
+        "van_der_waals_radius_pm": 152.0,
+        "width_m": 3.04e-10,
+        "log10_width_m": -9.517126,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "massive_stars"
+      ],
+      "origin_note": "",
+      "same_as": {
+        "dataset": "objects",
+        "id": "oxygen_atom"
+      },
+      "first_appeared": {
+        "seconds_after_big_bang": 6312000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.800167,
+        "label": "200 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "medium",
+        "note": "Forged in massive stars and spread by their supernovae, the first ~200 million years after the Big Bang."
+      }
+    },
+    {
+      "id": "fluorine",
+      "atomic_number": 9,
+      "symbol": "F",
+      "name": "Fluorine",
+      "kind": "Halogen",
+      "standard_state": "gas",
+      "state_is_predicted": false,
+      "radioactive": false,
+      "discovered": 1670,
+      "table": {
+        "period": 2,
+        "group": 17,
+        "row": 2,
+        "column": 17
+      },
+      "reference": {
+        "atomic_mass_u": 18.99840316,
+        "mass_kg": 3.15476e-26,
+        "log10_mass_kg": -25.501034,
+        "van_der_waals_radius_pm": 135.0,
+        "width_m": 2.7e-10,
+        "log10_width_m": -9.568636,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "massive_stars",
+        "low_mass_stars"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 6312000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.800167,
+        "label": "200 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "medium",
+        "note": "Forged in massive stars and spread by their supernovae, the first ~200 million years after the Big Bang."
+      }
+    },
+    {
+      "id": "neon",
+      "atomic_number": 10,
+      "symbol": "Ne",
+      "name": "Neon",
+      "kind": "Noble gas",
+      "standard_state": "gas",
+      "state_is_predicted": false,
+      "radioactive": false,
+      "discovered": 1898,
+      "table": {
+        "period": 2,
+        "group": 18,
+        "row": 2,
+        "column": 18
+      },
+      "reference": {
+        "atomic_mass_u": 20.18,
+        "mass_kg": 3.35097e-26,
+        "log10_mass_kg": -25.47483,
+        "van_der_waals_radius_pm": 154.0,
+        "width_m": 3.08e-10,
+        "log10_width_m": -9.511449,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "massive_stars"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 6312000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.800167,
+        "label": "200 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "medium",
+        "note": "Forged in massive stars and spread by their supernovae, the first ~200 million years after the Big Bang."
+      }
+    },
+    {
+      "id": "sodium",
+      "atomic_number": 11,
+      "symbol": "Na",
+      "name": "Sodium",
+      "kind": "Alkali metal",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": false,
+      "discovered": 1807,
+      "table": {
+        "period": 3,
+        "group": 1,
+        "row": 3,
+        "column": 1
+      },
+      "reference": {
+        "atomic_mass_u": 22.9897693,
+        "mass_kg": 3.81754e-26,
+        "log10_mass_kg": -25.418216,
+        "van_der_waals_radius_pm": 227.0,
+        "width_m": 4.54e-10,
+        "log10_width_m": -9.342944,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "massive_stars"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 6312000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.800167,
+        "label": "200 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "medium",
+        "note": "Forged in massive stars and spread by their supernovae, the first ~200 million years after the Big Bang."
+      }
+    },
+    {
+      "id": "magnesium",
+      "atomic_number": 12,
+      "symbol": "Mg",
+      "name": "Magnesium",
+      "kind": "Alkaline earth metal",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": false,
+      "discovered": 1808,
+      "table": {
+        "period": 3,
+        "group": 2,
+        "row": 3,
+        "column": 2
+      },
+      "reference": {
+        "atomic_mass_u": 24.305,
+        "mass_kg": 4.03594e-26,
+        "log10_mass_kg": -25.394055,
+        "van_der_waals_radius_pm": 173.0,
+        "width_m": 3.46e-10,
+        "log10_width_m": -9.460924,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "massive_stars"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 6312000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.800167,
+        "label": "200 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "medium",
+        "note": "Forged in massive stars and spread by their supernovae, the first ~200 million years after the Big Bang."
+      }
+    },
+    {
+      "id": "aluminum",
+      "atomic_number": 13,
+      "symbol": "Al",
+      "name": "Aluminum",
+      "kind": "Post-transition metal",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": false,
+      "discovered": "ancient",
+      "table": {
+        "period": 3,
+        "group": 13,
+        "row": 3,
+        "column": 13
+      },
+      "reference": {
+        "atomic_mass_u": 26.981538,
+        "mass_kg": 4.48039e-26,
+        "log10_mass_kg": -25.348684,
+        "van_der_waals_radius_pm": 184.0,
+        "width_m": 3.68e-10,
+        "log10_width_m": -9.434152,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "massive_stars"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 6312000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.800167,
+        "label": "200 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "medium",
+        "note": "Forged in massive stars and spread by their supernovae, the first ~200 million years after the Big Bang."
+      }
+    },
+    {
+      "id": "silicon",
+      "atomic_number": 14,
+      "symbol": "Si",
+      "name": "Silicon",
+      "kind": "Metalloid",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": false,
+      "discovered": 1854,
+      "table": {
+        "period": 3,
+        "group": 14,
+        "row": 3,
+        "column": 14
+      },
+      "reference": {
+        "atomic_mass_u": 28.085,
+        "mass_kg": 4.66362e-26,
+        "log10_mass_kg": -25.331276,
+        "van_der_waals_radius_pm": 210.0,
+        "width_m": 4.2e-10,
+        "log10_width_m": -9.376751,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "massive_stars",
+        "white_dwarfs"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 6312000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.800167,
+        "label": "200 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "medium",
+        "note": "Forged in massive stars and spread by their supernovae, the first ~200 million years after the Big Bang."
+      }
+    },
+    {
+      "id": "phosphorus",
+      "atomic_number": 15,
+      "symbol": "P",
+      "name": "Phosphorus",
+      "kind": "Nonmetal",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": false,
+      "discovered": 1669,
+      "table": {
+        "period": 3,
+        "group": 15,
+        "row": 3,
+        "column": 15
+      },
+      "reference": {
+        "atomic_mass_u": 30.973762,
+        "mass_kg": 5.14331e-26,
+        "log10_mass_kg": -25.288757,
+        "van_der_waals_radius_pm": 180.0,
+        "width_m": 3.6e-10,
+        "log10_width_m": -9.443697,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "massive_stars"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 6312000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.800167,
+        "label": "200 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "medium",
+        "note": "Forged in massive stars and spread by their supernovae, the first ~200 million years after the Big Bang."
+      }
+    },
+    {
+      "id": "sulfur",
+      "atomic_number": 16,
+      "symbol": "S",
+      "name": "Sulfur",
+      "kind": "Nonmetal",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": false,
+      "discovered": "ancient",
+      "table": {
+        "period": 3,
+        "group": 16,
+        "row": 3,
+        "column": 16
+      },
+      "reference": {
+        "atomic_mass_u": 32.07,
+        "mass_kg": 5.32535e-26,
+        "log10_mass_kg": -25.273652,
+        "van_der_waals_radius_pm": 180.0,
+        "width_m": 3.6e-10,
+        "log10_width_m": -9.443697,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "massive_stars",
+        "white_dwarfs"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 6312000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.800167,
+        "label": "200 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "medium",
+        "note": "Forged in massive stars and spread by their supernovae, the first ~200 million years after the Big Bang."
+      }
+    },
+    {
+      "id": "chlorine",
+      "atomic_number": 17,
+      "symbol": "Cl",
+      "name": "Chlorine",
+      "kind": "Halogen",
+      "standard_state": "gas",
+      "state_is_predicted": false,
+      "radioactive": false,
+      "discovered": 1774,
+      "table": {
+        "period": 3,
+        "group": 17,
+        "row": 3,
+        "column": 17
+      },
+      "reference": {
+        "atomic_mass_u": 35.45,
+        "mass_kg": 5.88661e-26,
+        "log10_mass_kg": -25.230135,
+        "van_der_waals_radius_pm": 175.0,
+        "width_m": 3.5e-10,
+        "log10_width_m": -9.455932,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "massive_stars"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 6312000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.800167,
+        "label": "200 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "medium",
+        "note": "Forged in massive stars and spread by their supernovae, the first ~200 million years after the Big Bang."
+      }
+    },
+    {
+      "id": "argon",
+      "atomic_number": 18,
+      "symbol": "Ar",
+      "name": "Argon",
+      "kind": "Noble gas",
+      "standard_state": "gas",
+      "state_is_predicted": false,
+      "radioactive": false,
+      "discovered": 1894,
+      "table": {
+        "period": 3,
+        "group": 18,
+        "row": 3,
+        "column": 18
+      },
+      "reference": {
+        "atomic_mass_u": 39.9,
+        "mass_kg": 6.62555e-26,
+        "log10_mass_kg": -25.178778,
+        "van_der_waals_radius_pm": 188.0,
+        "width_m": 3.76e-10,
+        "log10_width_m": -9.424812,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "massive_stars",
+        "white_dwarfs"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 6312000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.800167,
+        "label": "200 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "medium",
+        "note": "Forged in massive stars and spread by their supernovae, the first ~200 million years after the Big Bang."
+      }
+    },
+    {
+      "id": "potassium",
+      "atomic_number": 19,
+      "symbol": "K",
+      "name": "Potassium",
+      "kind": "Alkali metal",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": false,
+      "discovered": 1807,
+      "table": {
+        "period": 4,
+        "group": 1,
+        "row": 4,
+        "column": 1
+      },
+      "reference": {
+        "atomic_mass_u": 39.0983,
+        "mass_kg": 6.49243e-26,
+        "log10_mass_kg": -25.187593,
+        "van_der_waals_radius_pm": 275.0,
+        "width_m": 5.5e-10,
+        "log10_width_m": -9.259637,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "massive_stars"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 6312000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.800167,
+        "label": "200 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "medium",
+        "note": "Forged in massive stars and spread by their supernovae, the first ~200 million years after the Big Bang."
+      }
+    },
+    {
+      "id": "calcium",
+      "atomic_number": 20,
+      "symbol": "Ca",
+      "name": "Calcium",
+      "kind": "Alkaline earth metal",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": false,
+      "discovered": "ancient",
+      "table": {
+        "period": 4,
+        "group": 2,
+        "row": 4,
+        "column": 2
+      },
+      "reference": {
+        "atomic_mass_u": 40.08,
+        "mass_kg": 6.65544e-26,
+        "log10_mass_kg": -25.176823,
+        "van_der_waals_radius_pm": 231.0,
+        "width_m": 4.62e-10,
+        "log10_width_m": -9.335358,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "massive_stars",
+        "white_dwarfs"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 6312000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.800167,
+        "label": "200 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "medium",
+        "note": "Forged in massive stars and spread by their supernovae, the first ~200 million years after the Big Bang."
+      }
+    },
+    {
+      "id": "scandium",
+      "atomic_number": 21,
+      "symbol": "Sc",
+      "name": "Scandium",
+      "kind": "Transition metal",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": false,
+      "discovered": 1879,
+      "table": {
+        "period": 4,
+        "group": 3,
+        "row": 4,
+        "column": 3
+      },
+      "reference": {
+        "atomic_mass_u": 44.95591,
+        "mass_kg": 7.4651e-26,
+        "log10_mass_kg": -25.126964,
+        "van_der_waals_radius_pm": 211.0,
+        "width_m": 4.22e-10,
+        "log10_width_m": -9.374688,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "massive_stars"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 6312000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.800167,
+        "label": "200 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "medium",
+        "note": "Forged in massive stars and spread by their supernovae, the first ~200 million years after the Big Bang."
+      }
+    },
+    {
+      "id": "titanium",
+      "atomic_number": 22,
+      "symbol": "Ti",
+      "name": "Titanium",
+      "kind": "Transition metal",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": false,
+      "discovered": 1791,
+      "table": {
+        "period": 4,
+        "group": 4,
+        "row": 4,
+        "column": 4
+      },
+      "reference": {
+        "atomic_mass_u": 47.867,
+        "mass_kg": 7.9485e-26,
+        "log10_mass_kg": -25.099715,
+        "van_der_waals_radius_pm": 187.0,
+        "width_m": 3.74e-10,
+        "log10_width_m": -9.427128,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "massive_stars",
+        "white_dwarfs"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 6312000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.800167,
+        "label": "200 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "medium",
+        "note": "Forged in massive stars and spread by their supernovae, the first ~200 million years after the Big Bang."
+      }
+    },
+    {
+      "id": "vanadium",
+      "atomic_number": 23,
+      "symbol": "V",
+      "name": "Vanadium",
+      "kind": "Transition metal",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": false,
+      "discovered": 1801,
+      "table": {
+        "period": 4,
+        "group": 5,
+        "row": 4,
+        "column": 5
+      },
+      "reference": {
+        "atomic_mass_u": 50.9415,
+        "mass_kg": 8.45904e-26,
+        "log10_mass_kg": -25.072679,
+        "van_der_waals_radius_pm": 179.0,
+        "width_m": 3.58e-10,
+        "log10_width_m": -9.446117,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "white_dwarfs",
+        "massive_stars"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 6312000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.800167,
+        "label": "200 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "medium",
+        "note": "Forged in massive stars and spread by their supernovae, the first ~200 million years after the Big Bang."
+      }
+    },
+    {
+      "id": "chromium",
+      "atomic_number": 24,
+      "symbol": "Cr",
+      "name": "Chromium",
+      "kind": "Transition metal",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": false,
+      "discovered": 1797,
+      "table": {
+        "period": 4,
+        "group": 6,
+        "row": 4,
+        "column": 6
+      },
+      "reference": {
+        "atomic_mass_u": 51.996,
+        "mass_kg": 8.63414e-26,
+        "log10_mass_kg": -25.063781,
+        "van_der_waals_radius_pm": 189.0,
+        "width_m": 3.78e-10,
+        "log10_width_m": -9.422508,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "white_dwarfs",
+        "massive_stars"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 6312000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.800167,
+        "label": "200 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "medium",
+        "note": "Forged in massive stars and spread by their supernovae, the first ~200 million years after the Big Bang."
+      }
+    },
+    {
+      "id": "manganese",
+      "atomic_number": 25,
+      "symbol": "Mn",
+      "name": "Manganese",
+      "kind": "Transition metal",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": false,
+      "discovered": 1774,
+      "table": {
+        "period": 4,
+        "group": 7,
+        "row": 4,
+        "column": 7
+      },
+      "reference": {
+        "atomic_mass_u": 54.93804,
+        "mass_kg": 9.12268e-26,
+        "log10_mass_kg": -25.039878,
+        "van_der_waals_radius_pm": 197.0,
+        "width_m": 3.94e-10,
+        "log10_width_m": -9.404504,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "white_dwarfs",
+        "massive_stars"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 6312000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.800167,
+        "label": "200 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "medium",
+        "note": "Forged in massive stars and spread by their supernovae, the first ~200 million years after the Big Bang."
+      }
+    },
+    {
+      "id": "iron",
+      "atomic_number": 26,
+      "symbol": "Fe",
+      "name": "Iron",
+      "kind": "Transition metal",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": false,
+      "discovered": "ancient",
+      "table": {
+        "period": 4,
+        "group": 8,
+        "row": 4,
+        "column": 8
+      },
+      "reference": {
+        "atomic_mass_u": 55.84,
+        "mass_kg": 9.27245e-26,
+        "log10_mass_kg": -25.032805,
+        "van_der_waals_radius_pm": 194.0,
+        "width_m": 3.88e-10,
+        "log10_width_m": -9.411168,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "white_dwarfs",
+        "massive_stars"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 6312000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.800167,
+        "label": "200 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "medium",
+        "note": "Forged in massive stars and spread by their supernovae, the first ~200 million years after the Big Bang."
+      }
+    },
+    {
+      "id": "cobalt",
+      "atomic_number": 27,
+      "symbol": "Co",
+      "name": "Cobalt",
+      "kind": "Transition metal",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": false,
+      "discovered": 1735,
+      "table": {
+        "period": 4,
+        "group": 9,
+        "row": 4,
+        "column": 9
+      },
+      "reference": {
+        "atomic_mass_u": 58.93319,
+        "mass_kg": 9.78609e-26,
+        "log10_mass_kg": -25.009391,
+        "van_der_waals_radius_pm": 192.0,
+        "width_m": 3.84e-10,
+        "log10_width_m": -9.415669,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "massive_stars",
+        "white_dwarfs"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 6312000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.800167,
+        "label": "200 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "medium",
+        "note": "Forged in massive stars and spread by their supernovae, the first ~200 million years after the Big Bang."
+      }
+    },
+    {
+      "id": "nickel",
+      "atomic_number": 28,
+      "symbol": "Ni",
+      "name": "Nickel",
+      "kind": "Transition metal",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": false,
+      "discovered": 1751,
+      "table": {
+        "period": 4,
+        "group": 10,
+        "row": 4,
+        "column": 10
+      },
+      "reference": {
+        "atomic_mass_u": 58.693,
+        "mass_kg": 9.7462e-26,
+        "log10_mass_kg": -25.011165,
+        "van_der_waals_radius_pm": 163.0,
+        "width_m": 3.26e-10,
+        "log10_width_m": -9.486782,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "white_dwarfs",
+        "massive_stars"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 6312000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.800167,
+        "label": "200 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "medium",
+        "note": "Forged in massive stars and spread by their supernovae, the first ~200 million years after the Big Bang."
+      }
+    },
+    {
+      "id": "copper",
+      "atomic_number": 29,
+      "symbol": "Cu",
+      "name": "Copper",
+      "kind": "Transition metal",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": false,
+      "discovered": "ancient",
+      "table": {
+        "period": 4,
+        "group": 11,
+        "row": 4,
+        "column": 11
+      },
+      "reference": {
+        "atomic_mass_u": 63.55,
+        "mass_kg": 1.05527e-25,
+        "log10_mass_kg": -24.976635,
+        "van_der_waals_radius_pm": 140.0,
+        "width_m": 2.8e-10,
+        "log10_width_m": -9.552842,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "massive_stars"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 6312000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.800167,
+        "label": "200 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "medium",
+        "note": "Forged in massive stars and spread by their supernovae, the first ~200 million years after the Big Bang."
+      }
+    },
+    {
+      "id": "zinc",
+      "atomic_number": 30,
+      "symbol": "Zn",
+      "name": "Zinc",
+      "kind": "Transition metal",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": false,
+      "discovered": 1746,
+      "table": {
+        "period": 4,
+        "group": 12,
+        "row": 4,
+        "column": 12
+      },
+      "reference": {
+        "atomic_mass_u": 65.4,
+        "mass_kg": 1.08599e-25,
+        "log10_mass_kg": -24.964173,
+        "van_der_waals_radius_pm": 139.0,
+        "width_m": 2.78e-10,
+        "log10_width_m": -9.555955,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "massive_stars"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 6312000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.800167,
+        "label": "200 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "medium",
+        "note": "Forged in massive stars and spread by their supernovae, the first ~200 million years after the Big Bang."
+      }
+    },
+    {
+      "id": "gallium",
+      "atomic_number": 31,
+      "symbol": "Ga",
+      "name": "Gallium",
+      "kind": "Post-transition metal",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": false,
+      "discovered": 1875,
+      "table": {
+        "period": 4,
+        "group": 13,
+        "row": 4,
+        "column": 13
+      },
+      "reference": {
+        "atomic_mass_u": 69.723,
+        "mass_kg": 1.15778e-25,
+        "log10_mass_kg": -24.936375,
+        "van_der_waals_radius_pm": 187.0,
+        "width_m": 3.74e-10,
+        "log10_width_m": -9.427128,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "massive_stars",
+        "low_mass_stars"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 6312000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.800167,
+        "label": "200 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "medium",
+        "note": "Forged in massive stars and spread by their supernovae, the first ~200 million years after the Big Bang."
+      }
+    },
+    {
+      "id": "germanium",
+      "atomic_number": 32,
+      "symbol": "Ge",
+      "name": "Germanium",
+      "kind": "Metalloid",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": false,
+      "discovered": 1886,
+      "table": {
+        "period": 4,
+        "group": 14,
+        "row": 4,
+        "column": 14
+      },
+      "reference": {
+        "atomic_mass_u": 72.63,
+        "mass_kg": 1.20605e-25,
+        "log10_mass_kg": -24.918635,
+        "van_der_waals_radius_pm": 211.0,
+        "width_m": 4.22e-10,
+        "log10_width_m": -9.374688,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "massive_stars",
+        "low_mass_stars"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 6312000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.800167,
+        "label": "200 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "medium",
+        "note": "Forged in massive stars and spread by their supernovae, the first ~200 million years after the Big Bang."
+      }
+    },
+    {
+      "id": "arsenic",
+      "atomic_number": 33,
+      "symbol": "As",
+      "name": "Arsenic",
+      "kind": "Metalloid",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": false,
+      "discovered": "ancient",
+      "table": {
+        "period": 4,
+        "group": 15,
+        "row": 4,
+        "column": 15
+      },
+      "reference": {
+        "atomic_mass_u": 74.92159,
+        "mass_kg": 1.2441e-25,
+        "log10_mass_kg": -24.905144,
+        "van_der_waals_radius_pm": 185.0,
+        "width_m": 3.7e-10,
+        "log10_width_m": -9.431798,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "massive_stars",
+        "neutron_star_mergers"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 6312000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.800167,
+        "label": "200 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "medium",
+        "note": "Forged in massive stars and spread by their supernovae, the first ~200 million years after the Big Bang."
+      }
+    },
+    {
+      "id": "selenium",
+      "atomic_number": 34,
+      "symbol": "Se",
+      "name": "Selenium",
+      "kind": "Nonmetal",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": false,
+      "discovered": 1817,
+      "table": {
+        "period": 4,
+        "group": 16,
+        "row": 4,
+        "column": 16
+      },
+      "reference": {
+        "atomic_mass_u": 78.97,
+        "mass_kg": 1.31133e-25,
+        "log10_mass_kg": -24.882289,
+        "van_der_waals_radius_pm": 190.0,
+        "width_m": 3.8e-10,
+        "log10_width_m": -9.420216,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "neutron_star_mergers",
+        "massive_stars"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 6312000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.800167,
+        "label": "200 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "medium",
+        "note": "Forged in massive stars and spread by their supernovae, the first ~200 million years after the Big Bang."
+      }
+    },
+    {
+      "id": "bromine",
+      "atomic_number": 35,
+      "symbol": "Br",
+      "name": "Bromine",
+      "kind": "Halogen",
+      "standard_state": "liquid",
+      "state_is_predicted": false,
+      "radioactive": false,
+      "discovered": 1826,
+      "table": {
+        "period": 4,
+        "group": 17,
+        "row": 4,
+        "column": 17
+      },
+      "reference": {
+        "atomic_mass_u": 79.9,
+        "mass_kg": 1.32677e-25,
+        "log10_mass_kg": -24.877204,
+        "van_der_waals_radius_pm": 183.0,
+        "width_m": 3.66e-10,
+        "log10_width_m": -9.436519,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "neutron_star_mergers",
+        "massive_stars"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 6312000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.800167,
+        "label": "200 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "medium",
+        "note": "Forged in massive stars and spread by their supernovae, the first ~200 million years after the Big Bang."
+      }
+    },
+    {
+      "id": "krypton",
+      "atomic_number": 36,
+      "symbol": "Kr",
+      "name": "Krypton",
+      "kind": "Noble gas",
+      "standard_state": "gas",
+      "state_is_predicted": false,
+      "radioactive": false,
+      "discovered": 1898,
+      "table": {
+        "period": 4,
+        "group": 18,
+        "row": 4,
+        "column": 18
+      },
+      "reference": {
+        "atomic_mass_u": 83.8,
+        "mass_kg": 1.39153e-25,
+        "log10_mass_kg": -24.856507,
+        "van_der_waals_radius_pm": 202.0,
+        "width_m": 4.04e-10,
+        "log10_width_m": -9.393619,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "massive_stars",
+        "low_mass_stars"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 6312000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.800167,
+        "label": "200 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "medium",
+        "note": "Forged in massive stars and spread by their supernovae, the first ~200 million years after the Big Bang."
+      }
+    },
+    {
+      "id": "rubidium",
+      "atomic_number": 37,
+      "symbol": "Rb",
+      "name": "Rubidium",
+      "kind": "Alkali metal",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": false,
+      "discovered": 1861,
+      "table": {
+        "period": 5,
+        "group": 1,
+        "row": 5,
+        "column": 1
+      },
+      "reference": {
+        "atomic_mass_u": 85.468,
+        "mass_kg": 1.41923e-25,
+        "log10_mass_kg": -24.847947,
+        "van_der_waals_radius_pm": 303.0,
+        "width_m": 6.06e-10,
+        "log10_width_m": -9.217527,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "low_mass_stars",
+        "neutron_star_mergers"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 9468000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.976258,
+        "label": "300 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Made by rapid neutron capture (the r-process) in neutron-star mergers and perhaps rare supernovae."
+      }
+    },
+    {
+      "id": "strontium",
+      "atomic_number": 38,
+      "symbol": "Sr",
+      "name": "Strontium",
+      "kind": "Alkaline earth metal",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": false,
+      "discovered": 1790,
+      "table": {
+        "period": 5,
+        "group": 2,
+        "row": 5,
+        "column": 2
+      },
+      "reference": {
+        "atomic_mass_u": 87.62,
+        "mass_kg": 1.45496e-25,
+        "log10_mass_kg": -24.837148,
+        "van_der_waals_radius_pm": 249.0,
+        "width_m": 4.98e-10,
+        "log10_width_m": -9.302771,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "low_mass_stars"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 1.2624e+16,
+        "years_ago": null,
+        "log10_seconds": 16.101197,
+        "label": "400 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Made by slow neutron capture (the s-process) in red giants and shed as they die."
+      }
+    },
+    {
+      "id": "yttrium",
+      "atomic_number": 39,
+      "symbol": "Y",
+      "name": "Yttrium",
+      "kind": "Transition metal",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": false,
+      "discovered": 1794,
+      "table": {
+        "period": 5,
+        "group": 3,
+        "row": 5,
+        "column": 3
+      },
+      "reference": {
+        "atomic_mass_u": 88.90584,
+        "mass_kg": 1.47632e-25,
+        "log10_mass_kg": -24.830821,
+        "van_der_waals_radius_pm": 219.0,
+        "width_m": 4.38e-10,
+        "log10_width_m": -9.358526,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "low_mass_stars"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 1.2624e+16,
+        "years_ago": null,
+        "log10_seconds": 16.101197,
+        "label": "400 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Made by slow neutron capture (the s-process) in red giants and shed as they die."
+      }
+    },
+    {
+      "id": "zirconium",
+      "atomic_number": 40,
+      "symbol": "Zr",
+      "name": "Zirconium",
+      "kind": "Transition metal",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": false,
+      "discovered": 1789,
+      "table": {
+        "period": 5,
+        "group": 4,
+        "row": 5,
+        "column": 4
+      },
+      "reference": {
+        "atomic_mass_u": 91.22,
+        "mass_kg": 1.51474e-25,
+        "log10_mass_kg": -24.819661,
+        "van_der_waals_radius_pm": 186.0,
+        "width_m": 3.72e-10,
+        "log10_width_m": -9.429457,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "low_mass_stars"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 1.2624e+16,
+        "years_ago": null,
+        "log10_seconds": 16.101197,
+        "label": "400 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Made by slow neutron capture (the s-process) in red giants and shed as they die."
+      }
+    },
+    {
+      "id": "niobium",
+      "atomic_number": 41,
+      "symbol": "Nb",
+      "name": "Niobium",
+      "kind": "Transition metal",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": false,
+      "discovered": 1801,
+      "table": {
+        "period": 5,
+        "group": 5,
+        "row": 5,
+        "column": 5
+      },
+      "reference": {
+        "atomic_mass_u": 92.90637,
+        "mass_kg": 1.54275e-25,
+        "log10_mass_kg": -24.811705,
+        "van_der_waals_radius_pm": 207.0,
+        "width_m": 4.14e-10,
+        "log10_width_m": -9.383,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "low_mass_stars"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 1.2624e+16,
+        "years_ago": null,
+        "log10_seconds": 16.101197,
+        "label": "400 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Made by slow neutron capture (the s-process) in red giants and shed as they die."
+      }
+    },
+    {
+      "id": "molybdenum",
+      "atomic_number": 42,
+      "symbol": "Mo",
+      "name": "Molybdenum",
+      "kind": "Transition metal",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": false,
+      "discovered": 1778,
+      "table": {
+        "period": 5,
+        "group": 6,
+        "row": 5,
+        "column": 6
+      },
+      "reference": {
+        "atomic_mass_u": 95.95,
+        "mass_kg": 1.59329e-25,
+        "log10_mass_kg": -24.797706,
+        "van_der_waals_radius_pm": 209.0,
+        "width_m": 4.18e-10,
+        "log10_width_m": -9.378824,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "low_mass_stars",
+        "neutron_star_mergers"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 9468000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.976258,
+        "label": "300 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Made by rapid neutron capture (the r-process) in neutron-star mergers and perhaps rare supernovae."
+      }
+    },
+    {
+      "id": "technetium",
+      "atomic_number": 43,
+      "symbol": "Tc",
+      "name": "Technetium",
+      "kind": "Transition metal",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": true,
+      "discovered": 1937,
+      "table": {
+        "period": 5,
+        "group": 7,
+        "row": 5,
+        "column": 7
+      },
+      "reference": {
+        "atomic_mass_u": 96.90636,
+        "mass_kg": 1.60917e-25,
+        "log10_mass_kg": -24.793399,
+        "van_der_waals_radius_pm": 209.0,
+        "width_m": 4.18e-10,
+        "log10_width_m": -9.378824,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "low_mass_stars"
+      ],
+      "origin_note": "No stable isotope (the longest-lived lasts ~4 million years). Red giants show it in their spectra, made there by the s-process; on Earth it was the first element made artificially (1937).",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 1.2624e+16,
+        "years_ago": null,
+        "log10_seconds": 16.101197,
+        "label": "400 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Made by slow neutron capture (the s-process) in red giants and shed as they die."
+      }
+    },
+    {
+      "id": "ruthenium",
+      "atomic_number": 44,
+      "symbol": "Ru",
+      "name": "Ruthenium",
+      "kind": "Transition metal",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": false,
+      "discovered": 1827,
+      "table": {
+        "period": 5,
+        "group": 8,
+        "row": 5,
+        "column": 8
+      },
+      "reference": {
+        "atomic_mass_u": 101.1,
+        "mass_kg": 1.6788e-25,
+        "log10_mass_kg": -24.775,
+        "van_der_waals_radius_pm": 207.0,
+        "width_m": 4.14e-10,
+        "log10_width_m": -9.383,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "neutron_star_mergers",
+        "low_mass_stars"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 9468000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.976258,
+        "label": "300 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Made by rapid neutron capture (the r-process) in neutron-star mergers and perhaps rare supernovae."
+      }
+    },
+    {
+      "id": "rhodium",
+      "atomic_number": 45,
+      "symbol": "Rh",
+      "name": "Rhodium",
+      "kind": "Transition metal",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": false,
+      "discovered": 1803,
+      "table": {
+        "period": 5,
+        "group": 9,
+        "row": 5,
+        "column": 9
+      },
+      "reference": {
+        "atomic_mass_u": 102.9055,
+        "mass_kg": 1.70879e-25,
+        "log10_mass_kg": -24.767312,
+        "van_der_waals_radius_pm": 195.0,
+        "width_m": 3.9e-10,
+        "log10_width_m": -9.408935,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "neutron_star_mergers"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 9468000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.976258,
+        "label": "300 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Made by rapid neutron capture (the r-process) in neutron-star mergers and perhaps rare supernovae."
+      }
+    },
+    {
+      "id": "palladium",
+      "atomic_number": 46,
+      "symbol": "Pd",
+      "name": "Palladium",
+      "kind": "Transition metal",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": false,
+      "discovered": 1803,
+      "table": {
+        "period": 5,
+        "group": 10,
+        "row": 5,
+        "column": 10
+      },
+      "reference": {
+        "atomic_mass_u": 106.42,
+        "mass_kg": 1.76715e-25,
+        "log10_mass_kg": -24.752728,
+        "van_der_waals_radius_pm": 202.0,
+        "width_m": 4.04e-10,
+        "log10_width_m": -9.393619,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "neutron_star_mergers",
+        "low_mass_stars"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 9468000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.976258,
+        "label": "300 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Made by rapid neutron capture (the r-process) in neutron-star mergers and perhaps rare supernovae."
+      }
+    },
+    {
+      "id": "silver",
+      "atomic_number": 47,
+      "symbol": "Ag",
+      "name": "Silver",
+      "kind": "Transition metal",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": false,
+      "discovered": "ancient",
+      "table": {
+        "period": 5,
+        "group": 11,
+        "row": 5,
+        "column": 11
+      },
+      "reference": {
+        "atomic_mass_u": 107.868,
+        "mass_kg": 1.79119e-25,
+        "log10_mass_kg": -24.746858,
+        "van_der_waals_radius_pm": 172.0,
+        "width_m": 3.44e-10,
+        "log10_width_m": -9.463442,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "neutron_star_mergers"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 9468000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.976258,
+        "label": "300 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Made by rapid neutron capture (the r-process) in neutron-star mergers and perhaps rare supernovae."
+      }
+    },
+    {
+      "id": "cadmium",
+      "atomic_number": 48,
+      "symbol": "Cd",
+      "name": "Cadmium",
+      "kind": "Transition metal",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": false,
+      "discovered": 1817,
+      "table": {
+        "period": 5,
+        "group": 12,
+        "row": 5,
+        "column": 12
+      },
+      "reference": {
+        "atomic_mass_u": 112.41,
+        "mass_kg": 1.86661e-25,
+        "log10_mass_kg": -24.728946,
+        "van_der_waals_radius_pm": 158.0,
+        "width_m": 3.16e-10,
+        "log10_width_m": -9.500313,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "low_mass_stars",
+        "neutron_star_mergers"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 9468000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.976258,
+        "label": "300 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Made by rapid neutron capture (the r-process) in neutron-star mergers and perhaps rare supernovae."
+      }
+    },
+    {
+      "id": "indium",
+      "atomic_number": 49,
+      "symbol": "In",
+      "name": "Indium",
+      "kind": "Post-transition metal",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": false,
+      "discovered": 1863,
+      "table": {
+        "period": 5,
+        "group": 13,
+        "row": 5,
+        "column": 13
+      },
+      "reference": {
+        "atomic_mass_u": 114.818,
+        "mass_kg": 1.9066e-25,
+        "log10_mass_kg": -24.719741,
+        "van_der_waals_radius_pm": 193.0,
+        "width_m": 3.86e-10,
+        "log10_width_m": -9.413413,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "low_mass_stars",
+        "neutron_star_mergers"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 9468000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.976258,
+        "label": "300 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Made by rapid neutron capture (the r-process) in neutron-star mergers and perhaps rare supernovae."
+      }
+    },
+    {
+      "id": "tin",
+      "atomic_number": 50,
+      "symbol": "Sn",
+      "name": "Tin",
+      "kind": "Post-transition metal",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": false,
+      "discovered": "ancient",
+      "table": {
+        "period": 5,
+        "group": 14,
+        "row": 5,
+        "column": 14
+      },
+      "reference": {
+        "atomic_mass_u": 118.71,
+        "mass_kg": 1.97123e-25,
+        "log10_mass_kg": -24.705264,
+        "van_der_waals_radius_pm": 217.0,
+        "width_m": 4.34e-10,
+        "log10_width_m": -9.36251,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "low_mass_stars"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 1.2624e+16,
+        "years_ago": null,
+        "log10_seconds": 16.101197,
+        "label": "400 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Made by slow neutron capture (the s-process) in red giants and shed as they die."
+      }
+    },
+    {
+      "id": "antimony",
+      "atomic_number": 51,
+      "symbol": "Sb",
+      "name": "Antimony",
+      "kind": "Metalloid",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": false,
+      "discovered": "ancient",
+      "table": {
+        "period": 5,
+        "group": 15,
+        "row": 5,
+        "column": 15
+      },
+      "reference": {
+        "atomic_mass_u": 121.76,
+        "mass_kg": 2.02187e-25,
+        "log10_mass_kg": -24.694246,
+        "van_der_waals_radius_pm": 206.0,
+        "width_m": 4.12e-10,
+        "log10_width_m": -9.385103,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "neutron_star_mergers",
+        "low_mass_stars"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 9468000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.976258,
+        "label": "300 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Made by rapid neutron capture (the r-process) in neutron-star mergers and perhaps rare supernovae."
+      }
+    },
+    {
+      "id": "tellurium",
+      "atomic_number": 52,
+      "symbol": "Te",
+      "name": "Tellurium",
+      "kind": "Metalloid",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": false,
+      "discovered": 1782,
+      "table": {
+        "period": 5,
+        "group": 16,
+        "row": 5,
+        "column": 16
+      },
+      "reference": {
+        "atomic_mass_u": 127.6,
+        "mass_kg": 2.11885e-25,
+        "log10_mass_kg": -24.6739,
+        "van_der_waals_radius_pm": 206.0,
+        "width_m": 4.12e-10,
+        "log10_width_m": -9.385103,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "neutron_star_mergers"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 9468000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.976258,
+        "label": "300 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Made by rapid neutron capture (the r-process) in neutron-star mergers and perhaps rare supernovae."
+      }
+    },
+    {
+      "id": "iodine",
+      "atomic_number": 53,
+      "symbol": "I",
+      "name": "Iodine",
+      "kind": "Halogen",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": false,
+      "discovered": 1811,
+      "table": {
+        "period": 5,
+        "group": 17,
+        "row": 5,
+        "column": 17
+      },
+      "reference": {
+        "atomic_mass_u": 126.9045,
+        "mass_kg": 2.1073e-25,
+        "log10_mass_kg": -24.676274,
+        "van_der_waals_radius_pm": 198.0,
+        "width_m": 3.96e-10,
+        "log10_width_m": -9.402305,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "neutron_star_mergers"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 9468000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.976258,
+        "label": "300 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Made by rapid neutron capture (the r-process) in neutron-star mergers and perhaps rare supernovae."
+      }
+    },
+    {
+      "id": "xenon",
+      "atomic_number": 54,
+      "symbol": "Xe",
+      "name": "Xenon",
+      "kind": "Noble gas",
+      "standard_state": "gas",
+      "state_is_predicted": false,
+      "radioactive": false,
+      "discovered": 1898,
+      "table": {
+        "period": 5,
+        "group": 18,
+        "row": 5,
+        "column": 18
+      },
+      "reference": {
+        "atomic_mass_u": 131.29,
+        "mass_kg": 2.18012e-25,
+        "log10_mass_kg": -24.661519,
+        "van_der_waals_radius_pm": 216.0,
+        "width_m": 4.32e-10,
+        "log10_width_m": -9.364516,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "neutron_star_mergers"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 9468000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.976258,
+        "label": "300 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Made by rapid neutron capture (the r-process) in neutron-star mergers and perhaps rare supernovae."
+      }
+    },
+    {
+      "id": "cesium",
+      "atomic_number": 55,
+      "symbol": "Cs",
+      "name": "Cesium",
+      "kind": "Alkali metal",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": false,
+      "discovered": 1860,
+      "table": {
+        "period": 6,
+        "group": 1,
+        "row": 6,
+        "column": 1
+      },
+      "reference": {
+        "atomic_mass_u": 132.905452,
+        "mass_kg": 2.20695e-25,
+        "log10_mass_kg": -24.656208,
+        "van_der_waals_radius_pm": 343.0,
+        "width_m": 6.86e-10,
+        "log10_width_m": -9.163676,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "neutron_star_mergers"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 9468000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.976258,
+        "label": "300 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Made by rapid neutron capture (the r-process) in neutron-star mergers and perhaps rare supernovae."
+      }
+    },
+    {
+      "id": "barium",
+      "atomic_number": 56,
+      "symbol": "Ba",
+      "name": "Barium",
+      "kind": "Alkaline earth metal",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": false,
+      "discovered": 1808,
+      "table": {
+        "period": 6,
+        "group": 2,
+        "row": 6,
+        "column": 2
+      },
+      "reference": {
+        "atomic_mass_u": 137.33,
+        "mass_kg": 2.28042e-25,
+        "log10_mass_kg": -24.641985,
+        "van_der_waals_radius_pm": 268.0,
+        "width_m": 5.36e-10,
+        "log10_width_m": -9.270835,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "low_mass_stars"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 1.2624e+16,
+        "years_ago": null,
+        "log10_seconds": 16.101197,
+        "label": "400 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Made by slow neutron capture (the s-process) in red giants and shed as they die."
+      }
+    },
+    {
+      "id": "lanthanum",
+      "atomic_number": 57,
+      "symbol": "La",
+      "name": "Lanthanum",
+      "kind": "Lanthanide",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": false,
+      "discovered": 1839,
+      "table": {
+        "period": 6,
+        "group": null,
+        "row": 9,
+        "column": 3
+      },
+      "reference": {
+        "atomic_mass_u": 138.9055,
+        "mass_kg": 2.30658e-25,
+        "log10_mass_kg": -24.637031,
+        "van_der_waals_radius_pm": 240.0,
+        "width_m": 4.8e-10,
+        "log10_width_m": -9.318759,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "low_mass_stars"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 1.2624e+16,
+        "years_ago": null,
+        "log10_seconds": 16.101197,
+        "label": "400 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Made by slow neutron capture (the s-process) in red giants and shed as they die."
+      }
+    },
+    {
+      "id": "cerium",
+      "atomic_number": 58,
+      "symbol": "Ce",
+      "name": "Cerium",
+      "kind": "Lanthanide",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": false,
+      "discovered": 1803,
+      "table": {
+        "period": 6,
+        "group": null,
+        "row": 9,
+        "column": 4
+      },
+      "reference": {
+        "atomic_mass_u": 140.116,
+        "mass_kg": 2.32668e-25,
+        "log10_mass_kg": -24.633263,
+        "van_der_waals_radius_pm": 235.0,
+        "width_m": 4.7e-10,
+        "log10_width_m": -9.327902,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "low_mass_stars"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 1.2624e+16,
+        "years_ago": null,
+        "log10_seconds": 16.101197,
+        "label": "400 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Made by slow neutron capture (the s-process) in red giants and shed as they die."
+      }
+    },
+    {
+      "id": "praseodymium",
+      "atomic_number": 59,
+      "symbol": "Pr",
+      "name": "Praseodymium",
+      "kind": "Lanthanide",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": false,
+      "discovered": 1885,
+      "table": {
+        "period": 6,
+        "group": null,
+        "row": 9,
+        "column": 5
+      },
+      "reference": {
+        "atomic_mass_u": 140.90766,
+        "mass_kg": 2.33983e-25,
+        "log10_mass_kg": -24.630816,
+        "van_der_waals_radius_pm": 239.0,
+        "width_m": 4.78e-10,
+        "log10_width_m": -9.320572,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "low_mass_stars",
+        "neutron_star_mergers"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 9468000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.976258,
+        "label": "300 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Made by rapid neutron capture (the r-process) in neutron-star mergers and perhaps rare supernovae."
+      }
+    },
+    {
+      "id": "neodymium",
+      "atomic_number": 60,
+      "symbol": "Nd",
+      "name": "Neodymium",
+      "kind": "Lanthanide",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": false,
+      "discovered": 1885,
+      "table": {
+        "period": 6,
+        "group": null,
+        "row": 9,
+        "column": 6
+      },
+      "reference": {
+        "atomic_mass_u": 144.24,
+        "mass_kg": 2.39516e-25,
+        "log10_mass_kg": -24.620665,
+        "van_der_waals_radius_pm": 229.0,
+        "width_m": 4.58e-10,
+        "log10_width_m": -9.339135,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "low_mass_stars",
+        "neutron_star_mergers"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 9468000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.976258,
+        "label": "300 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Made by rapid neutron capture (the r-process) in neutron-star mergers and perhaps rare supernovae."
+      }
+    },
+    {
+      "id": "promethium",
+      "atomic_number": 61,
+      "symbol": "Pm",
+      "name": "Promethium",
+      "kind": "Lanthanide",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": true,
+      "discovered": 1945,
+      "table": {
+        "period": 6,
+        "group": null,
+        "row": 9,
+        "column": 7
+      },
+      "reference": {
+        "atomic_mass_u": 144.91276,
+        "mass_kg": 2.40633e-25,
+        "log10_mass_kg": -24.618644,
+        "van_der_waals_radius_pm": 236.0,
+        "width_m": 4.72e-10,
+        "log10_width_m": -9.326058,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "decay"
+      ],
+      "origin_note": "No stable isotope; traces come from uranium splitting spontaneously in ores.",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 9468000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.976258,
+        "label": "300 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Every isotope is short-lived; it exists in nature only as it is continually made by uranium and thorium decaying."
+      }
+    },
+    {
+      "id": "samarium",
+      "atomic_number": 62,
+      "symbol": "Sm",
+      "name": "Samarium",
+      "kind": "Lanthanide",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": false,
+      "discovered": 1879,
+      "table": {
+        "period": 6,
+        "group": null,
+        "row": 9,
+        "column": 8
+      },
+      "reference": {
+        "atomic_mass_u": 150.4,
+        "mass_kg": 2.49745e-25,
+        "log10_mass_kg": -24.602503,
+        "van_der_waals_radius_pm": 229.0,
+        "width_m": 4.58e-10,
+        "log10_width_m": -9.339135,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "neutron_star_mergers",
+        "low_mass_stars"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 9468000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.976258,
+        "label": "300 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Made by rapid neutron capture (the r-process) in neutron-star mergers and perhaps rare supernovae."
+      }
+    },
+    {
+      "id": "europium",
+      "atomic_number": 63,
+      "symbol": "Eu",
+      "name": "Europium",
+      "kind": "Lanthanide",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": false,
+      "discovered": 1901,
+      "table": {
+        "period": 6,
+        "group": null,
+        "row": 9,
+        "column": 9
+      },
+      "reference": {
+        "atomic_mass_u": 151.964,
+        "mass_kg": 2.52342e-25,
+        "log10_mass_kg": -24.59801,
+        "van_der_waals_radius_pm": 233.0,
+        "width_m": 4.66e-10,
+        "log10_width_m": -9.331614,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "neutron_star_mergers"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 9468000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.976258,
+        "label": "300 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Made by rapid neutron capture (the r-process) in neutron-star mergers and perhaps rare supernovae."
+      }
+    },
+    {
+      "id": "gadolinium",
+      "atomic_number": 64,
+      "symbol": "Gd",
+      "name": "Gadolinium",
+      "kind": "Lanthanide",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": false,
+      "discovered": 1880,
+      "table": {
+        "period": 6,
+        "group": null,
+        "row": 9,
+        "column": 10
+      },
+      "reference": {
+        "atomic_mass_u": 157.25,
+        "mass_kg": 2.6112e-25,
+        "log10_mass_kg": -24.58316,
+        "van_der_waals_radius_pm": 237.0,
+        "width_m": 4.74e-10,
+        "log10_width_m": -9.324222,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "neutron_star_mergers"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 9468000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.976258,
+        "label": "300 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Made by rapid neutron capture (the r-process) in neutron-star mergers and perhaps rare supernovae."
+      }
+    },
+    {
+      "id": "terbium",
+      "atomic_number": 65,
+      "symbol": "Tb",
+      "name": "Terbium",
+      "kind": "Lanthanide",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": false,
+      "discovered": 1843,
+      "table": {
+        "period": 6,
+        "group": null,
+        "row": 9,
+        "column": 11
+      },
+      "reference": {
+        "atomic_mass_u": 158.92535,
+        "mass_kg": 2.63902e-25,
+        "log10_mass_kg": -24.578558,
+        "van_der_waals_radius_pm": 221.0,
+        "width_m": 4.42e-10,
+        "log10_width_m": -9.354578,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "neutron_star_mergers"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 9468000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.976258,
+        "label": "300 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Made by rapid neutron capture (the r-process) in neutron-star mergers and perhaps rare supernovae."
+      }
+    },
+    {
+      "id": "dysprosium",
+      "atomic_number": 66,
+      "symbol": "Dy",
+      "name": "Dysprosium",
+      "kind": "Lanthanide",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": false,
+      "discovered": 1886,
+      "table": {
+        "period": 6,
+        "group": null,
+        "row": 9,
+        "column": 12
+      },
+      "reference": {
+        "atomic_mass_u": 162.5,
+        "mass_kg": 2.69838e-25,
+        "log10_mass_kg": -24.568898,
+        "van_der_waals_radius_pm": 229.0,
+        "width_m": 4.58e-10,
+        "log10_width_m": -9.339135,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "neutron_star_mergers"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 9468000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.976258,
+        "label": "300 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Made by rapid neutron capture (the r-process) in neutron-star mergers and perhaps rare supernovae."
+      }
+    },
+    {
+      "id": "holmium",
+      "atomic_number": 67,
+      "symbol": "Ho",
+      "name": "Holmium",
+      "kind": "Lanthanide",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": false,
+      "discovered": 1878,
+      "table": {
+        "period": 6,
+        "group": null,
+        "row": 9,
+        "column": 13
+      },
+      "reference": {
+        "atomic_mass_u": 164.93033,
+        "mass_kg": 2.73873e-25,
+        "log10_mass_kg": -24.56245,
+        "van_der_waals_radius_pm": 216.0,
+        "width_m": 4.32e-10,
+        "log10_width_m": -9.364516,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "neutron_star_mergers"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 9468000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.976258,
+        "label": "300 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Made by rapid neutron capture (the r-process) in neutron-star mergers and perhaps rare supernovae."
+      }
+    },
+    {
+      "id": "erbium",
+      "atomic_number": 68,
+      "symbol": "Er",
+      "name": "Erbium",
+      "kind": "Lanthanide",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": false,
+      "discovered": 1843,
+      "table": {
+        "period": 6,
+        "group": null,
+        "row": 9,
+        "column": 14
+      },
+      "reference": {
+        "atomic_mass_u": 167.26,
+        "mass_kg": 2.77742e-25,
+        "log10_mass_kg": -24.556359,
+        "van_der_waals_radius_pm": 235.0,
+        "width_m": 4.7e-10,
+        "log10_width_m": -9.327902,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "neutron_star_mergers"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 9468000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.976258,
+        "label": "300 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Made by rapid neutron capture (the r-process) in neutron-star mergers and perhaps rare supernovae."
+      }
+    },
+    {
+      "id": "thulium",
+      "atomic_number": 69,
+      "symbol": "Tm",
+      "name": "Thulium",
+      "kind": "Lanthanide",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": false,
+      "discovered": 1879,
+      "table": {
+        "period": 6,
+        "group": null,
+        "row": 9,
+        "column": 15
+      },
+      "reference": {
+        "atomic_mass_u": 168.93422,
+        "mass_kg": 2.80522e-25,
+        "log10_mass_kg": -24.552033,
+        "van_der_waals_radius_pm": 227.0,
+        "width_m": 4.54e-10,
+        "log10_width_m": -9.342944,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "neutron_star_mergers"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 9468000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.976258,
+        "label": "300 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Made by rapid neutron capture (the r-process) in neutron-star mergers and perhaps rare supernovae."
+      }
+    },
+    {
+      "id": "ytterbium",
+      "atomic_number": 70,
+      "symbol": "Yb",
+      "name": "Ytterbium",
+      "kind": "Lanthanide",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": false,
+      "discovered": 1878,
+      "table": {
+        "period": 6,
+        "group": null,
+        "row": 9,
+        "column": 16
+      },
+      "reference": {
+        "atomic_mass_u": 173.05,
+        "mass_kg": 2.87356e-25,
+        "log10_mass_kg": -24.541579,
+        "van_der_waals_radius_pm": 242.0,
+        "width_m": 4.84e-10,
+        "log10_width_m": -9.315155,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "neutron_star_mergers",
+        "low_mass_stars"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 9468000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.976258,
+        "label": "300 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Made by rapid neutron capture (the r-process) in neutron-star mergers and perhaps rare supernovae."
+      }
+    },
+    {
+      "id": "lutetium",
+      "atomic_number": 71,
+      "symbol": "Lu",
+      "name": "Lutetium",
+      "kind": "Lanthanide",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": false,
+      "discovered": 1907,
+      "table": {
+        "period": 6,
+        "group": null,
+        "row": 9,
+        "column": 17
+      },
+      "reference": {
+        "atomic_mass_u": 174.9667,
+        "mass_kg": 2.90539e-25,
+        "log10_mass_kg": -24.536796,
+        "van_der_waals_radius_pm": 221.0,
+        "width_m": 4.42e-10,
+        "log10_width_m": -9.354578,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "neutron_star_mergers"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 9468000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.976258,
+        "label": "300 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Made by rapid neutron capture (the r-process) in neutron-star mergers and perhaps rare supernovae."
+      }
+    },
+    {
+      "id": "hafnium",
+      "atomic_number": 72,
+      "symbol": "Hf",
+      "name": "Hafnium",
+      "kind": "Transition metal",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": false,
+      "discovered": 1923,
+      "table": {
+        "period": 6,
+        "group": 4,
+        "row": 6,
+        "column": 4
+      },
+      "reference": {
+        "atomic_mass_u": 178.49,
+        "mass_kg": 2.9639e-25,
+        "log10_mass_kg": -24.528137,
+        "van_der_waals_radius_pm": 212.0,
+        "width_m": 4.24e-10,
+        "log10_width_m": -9.372634,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "low_mass_stars",
+        "neutron_star_mergers"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 9468000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.976258,
+        "label": "300 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Made by rapid neutron capture (the r-process) in neutron-star mergers and perhaps rare supernovae."
+      }
+    },
+    {
+      "id": "tantalum",
+      "atomic_number": 73,
+      "symbol": "Ta",
+      "name": "Tantalum",
+      "kind": "Transition metal",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": false,
+      "discovered": 1802,
+      "table": {
+        "period": 6,
+        "group": 5,
+        "row": 6,
+        "column": 5
+      },
+      "reference": {
+        "atomic_mass_u": 180.9479,
+        "mass_kg": 3.00471e-25,
+        "log10_mass_kg": -24.522197,
+        "van_der_waals_radius_pm": 217.0,
+        "width_m": 4.34e-10,
+        "log10_width_m": -9.36251,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "neutron_star_mergers",
+        "low_mass_stars"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 9468000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.976258,
+        "label": "300 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Made by rapid neutron capture (the r-process) in neutron-star mergers and perhaps rare supernovae."
+      }
+    },
+    {
+      "id": "tungsten",
+      "atomic_number": 74,
+      "symbol": "W",
+      "name": "Tungsten",
+      "kind": "Transition metal",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": false,
+      "discovered": 1783,
+      "table": {
+        "period": 6,
+        "group": 6,
+        "row": 6,
+        "column": 6
+      },
+      "reference": {
+        "atomic_mass_u": 183.84,
+        "mass_kg": 3.05274e-25,
+        "log10_mass_kg": -24.515311,
+        "van_der_waals_radius_pm": 210.0,
+        "width_m": 4.2e-10,
+        "log10_width_m": -9.376751,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "low_mass_stars",
+        "neutron_star_mergers"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 9468000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.976258,
+        "label": "300 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Made by rapid neutron capture (the r-process) in neutron-star mergers and perhaps rare supernovae."
+      }
+    },
+    {
+      "id": "rhenium",
+      "atomic_number": 75,
+      "symbol": "Re",
+      "name": "Rhenium",
+      "kind": "Transition metal",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": false,
+      "discovered": 1925,
+      "table": {
+        "period": 6,
+        "group": 7,
+        "row": 6,
+        "column": 7
+      },
+      "reference": {
+        "atomic_mass_u": 186.207,
+        "mass_kg": 3.09204e-25,
+        "log10_mass_kg": -24.509755,
+        "van_der_waals_radius_pm": 217.0,
+        "width_m": 4.34e-10,
+        "log10_width_m": -9.36251,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "neutron_star_mergers"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 9468000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.976258,
+        "label": "300 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Made by rapid neutron capture (the r-process) in neutron-star mergers and perhaps rare supernovae."
+      }
+    },
+    {
+      "id": "osmium",
+      "atomic_number": 76,
+      "symbol": "Os",
+      "name": "Osmium",
+      "kind": "Transition metal",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": false,
+      "discovered": 1803,
+      "table": {
+        "period": 6,
+        "group": 8,
+        "row": 6,
+        "column": 8
+      },
+      "reference": {
+        "atomic_mass_u": 190.2,
+        "mass_kg": 3.15835e-25,
+        "log10_mass_kg": -24.50054,
+        "van_der_waals_radius_pm": 216.0,
+        "width_m": 4.32e-10,
+        "log10_width_m": -9.364516,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "neutron_star_mergers"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 9468000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.976258,
+        "label": "300 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Made by rapid neutron capture (the r-process) in neutron-star mergers and perhaps rare supernovae."
+      }
+    },
+    {
+      "id": "iridium",
+      "atomic_number": 77,
+      "symbol": "Ir",
+      "name": "Iridium",
+      "kind": "Transition metal",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": false,
+      "discovered": 1803,
+      "table": {
+        "period": 6,
+        "group": 9,
+        "row": 6,
+        "column": 9
+      },
+      "reference": {
+        "atomic_mass_u": 192.22,
+        "mass_kg": 3.19189e-25,
+        "log10_mass_kg": -24.495952,
+        "van_der_waals_radius_pm": 202.0,
+        "width_m": 4.04e-10,
+        "log10_width_m": -9.393619,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "neutron_star_mergers"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 9468000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.976258,
+        "label": "300 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Made by rapid neutron capture (the r-process) in neutron-star mergers and perhaps rare supernovae."
+      }
+    },
+    {
+      "id": "platinum",
+      "atomic_number": 78,
+      "symbol": "Pt",
+      "name": "Platinum",
+      "kind": "Transition metal",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": false,
+      "discovered": 1735,
+      "table": {
+        "period": 6,
+        "group": 10,
+        "row": 6,
+        "column": 10
+      },
+      "reference": {
+        "atomic_mass_u": 195.08,
+        "mass_kg": 3.23938e-25,
+        "log10_mass_kg": -24.489538,
+        "van_der_waals_radius_pm": 209.0,
+        "width_m": 4.18e-10,
+        "log10_width_m": -9.378824,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "neutron_star_mergers"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 9468000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.976258,
+        "label": "300 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Made by rapid neutron capture (the r-process) in neutron-star mergers and perhaps rare supernovae."
+      }
+    },
+    {
+      "id": "gold",
+      "atomic_number": 79,
+      "symbol": "Au",
+      "name": "Gold",
+      "kind": "Transition metal",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": false,
+      "discovered": "ancient",
+      "table": {
+        "period": 6,
+        "group": 11,
+        "row": 6,
+        "column": 11
+      },
+      "reference": {
+        "atomic_mass_u": 196.96657,
+        "mass_kg": 3.27071e-25,
+        "log10_mass_kg": -24.485358,
+        "van_der_waals_radius_pm": 166.0,
+        "width_m": 3.32e-10,
+        "log10_width_m": -9.478862,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "neutron_star_mergers"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 9468000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.976258,
+        "label": "300 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Made by rapid neutron capture (the r-process) in neutron-star mergers and perhaps rare supernovae."
+      }
+    },
+    {
+      "id": "mercury",
+      "atomic_number": 80,
+      "symbol": "Hg",
+      "name": "Mercury",
+      "kind": "Transition metal",
+      "standard_state": "liquid",
+      "state_is_predicted": false,
+      "radioactive": false,
+      "discovered": "ancient",
+      "table": {
+        "period": 6,
+        "group": 12,
+        "row": 6,
+        "column": 12
+      },
+      "reference": {
+        "atomic_mass_u": 200.59,
+        "mass_kg": 3.33088e-25,
+        "log10_mass_kg": -24.477442,
+        "van_der_waals_radius_pm": 209.0,
+        "width_m": 4.18e-10,
+        "log10_width_m": -9.378824,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "low_mass_stars",
+        "neutron_star_mergers"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 9468000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.976258,
+        "label": "300 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Made by rapid neutron capture (the r-process) in neutron-star mergers and perhaps rare supernovae."
+      }
+    },
+    {
+      "id": "thallium",
+      "atomic_number": 81,
+      "symbol": "Tl",
+      "name": "Thallium",
+      "kind": "Post-transition metal",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": false,
+      "discovered": 1861,
+      "table": {
+        "period": 6,
+        "group": 13,
+        "row": 6,
+        "column": 13
+      },
+      "reference": {
+        "atomic_mass_u": 204.383,
+        "mass_kg": 3.39386e-25,
+        "log10_mass_kg": -24.469306,
+        "van_der_waals_radius_pm": 196.0,
+        "width_m": 3.92e-10,
+        "log10_width_m": -9.406714,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "low_mass_stars"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 1.2624e+16,
+        "years_ago": null,
+        "log10_seconds": 16.101197,
+        "label": "400 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Made by slow neutron capture (the s-process) in red giants and shed as they die."
+      }
+    },
+    {
+      "id": "lead",
+      "atomic_number": 82,
+      "symbol": "Pb",
+      "name": "Lead",
+      "kind": "Post-transition metal",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": false,
+      "discovered": "ancient",
+      "table": {
+        "period": 6,
+        "group": 14,
+        "row": 6,
+        "column": 14
+      },
+      "reference": {
+        "atomic_mass_u": 207.0,
+        "mass_kg": 3.43732e-25,
+        "log10_mass_kg": -24.463781,
+        "van_der_waals_radius_pm": 202.0,
+        "width_m": 4.04e-10,
+        "log10_width_m": -9.393619,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "low_mass_stars"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 1.2624e+16,
+        "years_ago": null,
+        "log10_seconds": 16.101197,
+        "label": "400 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Made by slow neutron capture (the s-process) in red giants and shed as they die."
+      }
+    },
+    {
+      "id": "bismuth",
+      "atomic_number": 83,
+      "symbol": "Bi",
+      "name": "Bismuth",
+      "kind": "Post-transition metal",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": false,
+      "discovered": 1753,
+      "table": {
+        "period": 6,
+        "group": 15,
+        "row": 6,
+        "column": 15
+      },
+      "reference": {
+        "atomic_mass_u": 208.9804,
+        "mass_kg": 3.4702e-25,
+        "log10_mass_kg": -24.459645,
+        "van_der_waals_radius_pm": 207.0,
+        "width_m": 4.14e-10,
+        "log10_width_m": -9.383,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "low_mass_stars"
+      ],
+      "origin_note": "Its only natural isotope is radioactive, but with a half-life a billion times the age of the universe.",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 1.2624e+16,
+        "years_ago": null,
+        "log10_seconds": 16.101197,
+        "label": "400 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Made by slow neutron capture (the s-process) in red giants and shed as they die."
+      }
+    },
+    {
+      "id": "polonium",
+      "atomic_number": 84,
+      "symbol": "Po",
+      "name": "Polonium",
+      "kind": "Metalloid",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": true,
+      "discovered": 1898,
+      "table": {
+        "period": 6,
+        "group": 16,
+        "row": 6,
+        "column": 16
+      },
+      "reference": {
+        "atomic_mass_u": 208.98243,
+        "mass_kg": 3.47023e-25,
+        "log10_mass_kg": -24.459641,
+        "van_der_waals_radius_pm": 197.0,
+        "width_m": 3.94e-10,
+        "log10_width_m": -9.404504,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "decay"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 9468000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.976258,
+        "label": "300 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Every isotope is short-lived; it exists in nature only as it is continually made by uranium and thorium decaying."
+      }
+    },
+    {
+      "id": "astatine",
+      "atomic_number": 85,
+      "symbol": "At",
+      "name": "Astatine",
+      "kind": "Halogen",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": true,
+      "discovered": 1940,
+      "table": {
+        "period": 6,
+        "group": 17,
+        "row": 6,
+        "column": 17
+      },
+      "reference": {
+        "atomic_mass_u": 209.98715,
+        "mass_kg": 3.48692e-25,
+        "log10_mass_kg": -24.457558,
+        "van_der_waals_radius_pm": 202.0,
+        "width_m": 4.04e-10,
+        "log10_width_m": -9.393619,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "decay"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 9468000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.976258,
+        "label": "300 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Every isotope is short-lived; it exists in nature only as it is continually made by uranium and thorium decaying."
+      }
+    },
+    {
+      "id": "radon",
+      "atomic_number": 86,
+      "symbol": "Rn",
+      "name": "Radon",
+      "kind": "Noble gas",
+      "standard_state": "gas",
+      "state_is_predicted": false,
+      "radioactive": true,
+      "discovered": 1900,
+      "table": {
+        "period": 6,
+        "group": 18,
+        "row": 6,
+        "column": 18
+      },
+      "reference": {
+        "atomic_mass_u": 222.01758,
+        "mass_kg": 3.68669e-25,
+        "log10_mass_kg": -24.433364,
+        "van_der_waals_radius_pm": 220.0,
+        "width_m": 4.4e-10,
+        "log10_width_m": -9.356547,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "decay"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 9468000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.976258,
+        "label": "300 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Every isotope is short-lived; it exists in nature only as it is continually made by uranium and thorium decaying."
+      }
+    },
+    {
+      "id": "francium",
+      "atomic_number": 87,
+      "symbol": "Fr",
+      "name": "Francium",
+      "kind": "Alkali metal",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": true,
+      "discovered": 1939,
+      "table": {
+        "period": 7,
+        "group": 1,
+        "row": 7,
+        "column": 1
+      },
+      "reference": {
+        "atomic_mass_u": 223.01973,
+        "mass_kg": 3.70333e-25,
+        "log10_mass_kg": -24.431408,
+        "van_der_waals_radius_pm": 348.0,
+        "width_m": 6.96e-10,
+        "log10_width_m": -9.157391,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "decay"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 9468000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.976258,
+        "label": "300 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Every isotope is short-lived; it exists in nature only as it is continually made by uranium and thorium decaying."
+      }
+    },
+    {
+      "id": "radium",
+      "atomic_number": 88,
+      "symbol": "Ra",
+      "name": "Radium",
+      "kind": "Alkaline earth metal",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": true,
+      "discovered": 1898,
+      "table": {
+        "period": 7,
+        "group": 2,
+        "row": 7,
+        "column": 2
+      },
+      "reference": {
+        "atomic_mass_u": 226.02541,
+        "mass_kg": 3.75324e-25,
+        "log10_mass_kg": -24.425594,
+        "van_der_waals_radius_pm": 283.0,
+        "width_m": 5.66e-10,
+        "log10_width_m": -9.247184,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "decay"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 9468000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.976258,
+        "label": "300 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Every isotope is short-lived; it exists in nature only as it is continually made by uranium and thorium decaying."
+      }
+    },
+    {
+      "id": "actinium",
+      "atomic_number": 89,
+      "symbol": "Ac",
+      "name": "Actinium",
+      "kind": "Actinide",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": true,
+      "discovered": 1899,
+      "table": {
+        "period": 7,
+        "group": null,
+        "row": 10,
+        "column": 3
+      },
+      "reference": {
+        "atomic_mass_u": 227.02775,
+        "mass_kg": 3.76988e-25,
+        "log10_mass_kg": -24.423672,
+        "van_der_waals_radius_pm": 260.0,
+        "width_m": 5.2e-10,
+        "log10_width_m": -9.283997,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "decay"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 9468000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.976258,
+        "label": "300 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Every isotope is short-lived; it exists in nature only as it is continually made by uranium and thorium decaying."
+      }
+    },
+    {
+      "id": "thorium",
+      "atomic_number": 90,
+      "symbol": "Th",
+      "name": "Thorium",
+      "kind": "Actinide",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": true,
+      "discovered": 1828,
+      "table": {
+        "period": 7,
+        "group": null,
+        "row": 10,
+        "column": 4
+      },
+      "reference": {
+        "atomic_mass_u": 232.038,
+        "mass_kg": 3.85308e-25,
+        "log10_mass_kg": -24.414192,
+        "van_der_waals_radius_pm": 237.0,
+        "width_m": 4.74e-10,
+        "log10_width_m": -9.324222,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "neutron_star_mergers"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 9468000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.976258,
+        "label": "300 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Made by rapid neutron capture (the r-process) in neutron-star mergers and perhaps rare supernovae."
+      }
+    },
+    {
+      "id": "protactinium",
+      "atomic_number": 91,
+      "symbol": "Pa",
+      "name": "Protactinium",
+      "kind": "Actinide",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": true,
+      "discovered": 1913,
+      "table": {
+        "period": 7,
+        "group": null,
+        "row": 10,
+        "column": 5
+      },
+      "reference": {
+        "atomic_mass_u": 231.03588,
+        "mass_kg": 3.83644e-25,
+        "log10_mass_kg": -24.416071,
+        "van_der_waals_radius_pm": 243.0,
+        "width_m": 4.86e-10,
+        "log10_width_m": -9.313364,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "decay"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 9468000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.976258,
+        "label": "300 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Every isotope is short-lived; it exists in nature only as it is continually made by uranium and thorium decaying."
+      }
+    },
+    {
+      "id": "uranium",
+      "atomic_number": 92,
+      "symbol": "U",
+      "name": "Uranium",
+      "kind": "Actinide",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": true,
+      "discovered": 1789,
+      "table": {
+        "period": 7,
+        "group": null,
+        "row": 10,
+        "column": 6
+      },
+      "reference": {
+        "atomic_mass_u": 238.0289,
+        "mass_kg": 3.95256e-25,
+        "log10_mass_kg": -24.403121,
+        "van_der_waals_radius_pm": 240.0,
+        "width_m": 4.8e-10,
+        "log10_width_m": -9.318759,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "neutron_star_mergers"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 9468000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.976258,
+        "label": "300 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Made by rapid neutron capture (the r-process) in neutron-star mergers and perhaps rare supernovae."
+      }
+    },
+    {
+      "id": "neptunium",
+      "atomic_number": 93,
+      "symbol": "Np",
+      "name": "Neptunium",
+      "kind": "Actinide",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": true,
+      "discovered": 1940,
+      "table": {
+        "period": 7,
+        "group": null,
+        "row": 10,
+        "column": 7
+      },
+      "reference": {
+        "atomic_mass_u": 237.048172,
+        "mass_kg": 3.93628e-25,
+        "log10_mass_kg": -24.404914,
+        "van_der_waals_radius_pm": 221.0,
+        "width_m": 4.42e-10,
+        "log10_width_m": -9.354578,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "decay"
+      ],
+      "origin_note": "Traces form in uranium ores when uranium captures neutrons; first made in a lab in 1940.",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 9468000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.976258,
+        "label": "300 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Every isotope is short-lived; it exists in nature only as it is continually made by uranium and thorium decaying."
+      }
+    },
+    {
+      "id": "plutonium",
+      "atomic_number": 94,
+      "symbol": "Pu",
+      "name": "Plutonium",
+      "kind": "Actinide",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": true,
+      "discovered": 1940,
+      "table": {
+        "period": 7,
+        "group": null,
+        "row": 10,
+        "column": 8
+      },
+      "reference": {
+        "atomic_mass_u": 244.0642,
+        "mass_kg": 4.05278e-25,
+        "log10_mass_kg": -24.392247,
+        "van_der_waals_radius_pm": 243.0,
+        "width_m": 4.86e-10,
+        "log10_width_m": -9.313364,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "neutron_star_mergers"
+      ],
+      "origin_note": "Plutonium-244 (half-life 80 million years) is an r-process product, and traces of it survive in nature; first made in a lab in 1940.",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 9468000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.976258,
+        "label": "300 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": "Made by rapid neutron capture (the r-process) in neutron-star mergers and perhaps rare supernovae."
+      }
+    },
+    {
+      "id": "americium",
+      "atomic_number": 95,
+      "symbol": "Am",
+      "name": "Americium",
+      "kind": "Actinide",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": true,
+      "discovered": 1944,
+      "table": {
+        "period": 7,
+        "group": null,
+        "row": 10,
+        "column": 9
+      },
+      "reference": {
+        "atomic_mass_u": 243.06138,
+        "mass_kg": 4.03613e-25,
+        "log10_mass_kg": -24.394035,
+        "van_der_waals_radius_pm": 244.0,
+        "width_m": 4.88e-10,
+        "log10_width_m": -9.31158,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "laboratory"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 4.3505365018958957e+17,
+        "years_ago": 82.0,
+        "log10_seconds": 17.638543,
+        "label": "82 years ago",
+        "basis": "this_object",
+        "confidence": "high",
+        "note": "First made in a laboratory in 1944."
+      }
+    },
+    {
+      "id": "curium",
+      "atomic_number": 96,
+      "symbol": "Cm",
+      "name": "Curium",
+      "kind": "Actinide",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": true,
+      "discovered": 1944,
+      "table": {
+        "period": 7,
+        "group": null,
+        "row": 10,
+        "column": 10
+      },
+      "reference": {
+        "atomic_mass_u": 247.07035,
+        "mass_kg": 4.1027e-25,
+        "log10_mass_kg": -24.38693,
+        "van_der_waals_radius_pm": 245.0,
+        "width_m": 4.9e-10,
+        "log10_width_m": -9.309804,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "laboratory"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 4.3505365018958957e+17,
+        "years_ago": 82.0,
+        "log10_seconds": 17.638543,
+        "label": "82 years ago",
+        "basis": "this_object",
+        "confidence": "high",
+        "note": "First made in a laboratory in 1944."
+      }
+    },
+    {
+      "id": "berkelium",
+      "atomic_number": 97,
+      "symbol": "Bk",
+      "name": "Berkelium",
+      "kind": "Actinide",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": true,
+      "discovered": 1949,
+      "table": {
+        "period": 7,
+        "group": null,
+        "row": 10,
+        "column": 11
+      },
+      "reference": {
+        "atomic_mass_u": 247.07031,
+        "mass_kg": 4.1027e-25,
+        "log10_mass_kg": -24.38693,
+        "van_der_waals_radius_pm": 244.0,
+        "width_m": 4.88e-10,
+        "log10_width_m": -9.31158,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "laboratory"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 4.350536503473896e+17,
+        "years_ago": 77.0,
+        "log10_seconds": 17.638543,
+        "label": "77 years ago",
+        "basis": "this_object",
+        "confidence": "high",
+        "note": "First made in a laboratory in 1949."
+      }
+    },
+    {
+      "id": "californium",
+      "atomic_number": 98,
+      "symbol": "Cf",
+      "name": "Californium",
+      "kind": "Actinide",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": true,
+      "discovered": 1950,
+      "table": {
+        "period": 7,
+        "group": null,
+        "row": 10,
+        "column": 12
+      },
+      "reference": {
+        "atomic_mass_u": 251.07959,
+        "mass_kg": 4.16927e-25,
+        "log10_mass_kg": -24.379939,
+        "van_der_waals_radius_pm": 245.0,
+        "width_m": 4.9e-10,
+        "log10_width_m": -9.309804,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "laboratory"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 4.3505365037894957e+17,
+        "years_ago": 76.0,
+        "log10_seconds": 17.638543,
+        "label": "76 years ago",
+        "basis": "this_object",
+        "confidence": "high",
+        "note": "First made in a laboratory in 1950."
+      }
+    },
+    {
+      "id": "einsteinium",
+      "atomic_number": 99,
+      "symbol": "Es",
+      "name": "Einsteinium",
+      "kind": "Actinide",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": true,
+      "discovered": 1952,
+      "table": {
+        "period": 7,
+        "group": null,
+        "row": 10,
+        "column": 13
+      },
+      "reference": {
+        "atomic_mass_u": 252.083,
+        "mass_kg": 4.18594e-25,
+        "log10_mass_kg": -24.378207,
+        "van_der_waals_radius_pm": 245.0,
+        "width_m": 4.9e-10,
+        "log10_width_m": -9.309804,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": false,
+        "confidence": "high",
+        "notes": ""
+      },
+      "origin": [
+        "laboratory"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 4.3505365044206957e+17,
+        "years_ago": 74.0,
+        "log10_seconds": 17.638543,
+        "label": "74 years ago",
+        "basis": "this_object",
+        "confidence": "high",
+        "note": "First made in a laboratory in 1952."
+      }
+    },
+    {
+      "id": "fermium",
+      "atomic_number": 100,
+      "symbol": "Fm",
+      "name": "Fermium",
+      "kind": "Actinide",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": true,
+      "discovered": 1952,
+      "table": {
+        "period": 7,
+        "group": null,
+        "row": 10,
+        "column": 14
+      },
+      "reference": {
+        "atomic_mass_u": 257.09511,
+        "mass_kg": 4.26916e-25,
+        "log10_mass_kg": -24.369657,
+        "van_der_waals_radius_pm": 235.0,
+        "width_m": 4.7e-10,
+        "log10_width_m": -9.327902,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": true,
+        "confidence": "low",
+        "notes": "No measured radius; uses Erbium's (Er), the element above it."
+      },
+      "origin": [
+        "laboratory"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 4.3505365044206957e+17,
+        "years_ago": 74.0,
+        "log10_seconds": 17.638543,
+        "label": "74 years ago",
+        "basis": "this_object",
+        "confidence": "high",
+        "note": "First made in a laboratory in 1952."
+      }
+    },
+    {
+      "id": "mendelevium",
+      "atomic_number": 101,
+      "symbol": "Md",
+      "name": "Mendelevium",
+      "kind": "Actinide",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": true,
+      "discovered": 1955,
+      "table": {
+        "period": 7,
+        "group": null,
+        "row": 10,
+        "column": 15
+      },
+      "reference": {
+        "atomic_mass_u": 258.09843,
+        "mass_kg": 4.28583e-25,
+        "log10_mass_kg": -24.367966,
+        "van_der_waals_radius_pm": 227.0,
+        "width_m": 4.54e-10,
+        "log10_width_m": -9.342944,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": true,
+        "confidence": "low",
+        "notes": "No measured radius; uses Thulium's (Tm), the element above it."
+      },
+      "origin": [
+        "laboratory"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 4.350536505367496e+17,
+        "years_ago": 71.0,
+        "log10_seconds": 17.638543,
+        "label": "71 years ago",
+        "basis": "this_object",
+        "confidence": "high",
+        "note": "First made in a laboratory in 1955."
+      }
+    },
+    {
+      "id": "nobelium",
+      "atomic_number": 102,
+      "symbol": "No",
+      "name": "Nobelium",
+      "kind": "Actinide",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": true,
+      "discovered": 1957,
+      "table": {
+        "period": 7,
+        "group": null,
+        "row": 10,
+        "column": 16
+      },
+      "reference": {
+        "atomic_mass_u": 259.101,
+        "mass_kg": 4.30247e-25,
+        "log10_mass_kg": -24.366282,
+        "van_der_waals_radius_pm": 242.0,
+        "width_m": 4.84e-10,
+        "log10_width_m": -9.315155,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": true,
+        "confidence": "low",
+        "notes": "No measured radius; uses Ytterbium's (Yb), the element above it."
+      },
+      "origin": [
+        "laboratory"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 4.350536505998696e+17,
+        "years_ago": 69.0,
+        "log10_seconds": 17.638543,
+        "label": "69 years ago",
+        "basis": "this_object",
+        "confidence": "high",
+        "note": "First made in a laboratory in 1957."
+      }
+    },
+    {
+      "id": "lawrencium",
+      "atomic_number": 103,
+      "symbol": "Lr",
+      "name": "Lawrencium",
+      "kind": "Actinide",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": true,
+      "discovered": 1961,
+      "table": {
+        "period": 7,
+        "group": null,
+        "row": 10,
+        "column": 17
+      },
+      "reference": {
+        "atomic_mass_u": 266.12,
+        "mass_kg": 4.41903e-25,
+        "log10_mass_kg": -24.354673,
+        "van_der_waals_radius_pm": 221.0,
+        "width_m": 4.42e-10,
+        "log10_width_m": -9.354578,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": true,
+        "confidence": "low",
+        "notes": "No measured radius; uses Lutetium's (Lu), the element above it."
+      },
+      "origin": [
+        "laboratory"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 4.350536507261096e+17,
+        "years_ago": 65.0,
+        "log10_seconds": 17.638543,
+        "label": "65 years ago",
+        "basis": "this_object",
+        "confidence": "high",
+        "note": "First made in a laboratory in 1961."
+      }
+    },
+    {
+      "id": "rutherfordium",
+      "atomic_number": 104,
+      "symbol": "Rf",
+      "name": "Rutherfordium",
+      "kind": "Transition metal",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": true,
+      "discovered": 1964,
+      "table": {
+        "period": 7,
+        "group": 4,
+        "row": 7,
+        "column": 4
+      },
+      "reference": {
+        "atomic_mass_u": 267.122,
+        "mass_kg": 4.43567e-25,
+        "log10_mass_kg": -24.353041,
+        "van_der_waals_radius_pm": 212.0,
+        "width_m": 4.24e-10,
+        "log10_width_m": -9.372634,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": true,
+        "confidence": "low",
+        "notes": "No measured radius; uses Hafnium's (Hf), the element above it."
+      },
+      "origin": [
+        "laboratory"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 4.3505365082078957e+17,
+        "years_ago": 62.0,
+        "log10_seconds": 17.638543,
+        "label": "62 years ago",
+        "basis": "this_object",
+        "confidence": "high",
+        "note": "First made in a laboratory in 1964."
+      }
+    },
+    {
+      "id": "dubnium",
+      "atomic_number": 105,
+      "symbol": "Db",
+      "name": "Dubnium",
+      "kind": "Transition metal",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": true,
+      "discovered": 1967,
+      "table": {
+        "period": 7,
+        "group": 5,
+        "row": 7,
+        "column": 5
+      },
+      "reference": {
+        "atomic_mass_u": 268.126,
+        "mass_kg": 4.45234e-25,
+        "log10_mass_kg": -24.351412,
+        "van_der_waals_radius_pm": 217.0,
+        "width_m": 4.34e-10,
+        "log10_width_m": -9.36251,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": true,
+        "confidence": "low",
+        "notes": "No measured radius; uses Tantalum's (Ta), the element above it."
+      },
+      "origin": [
+        "laboratory"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 4.350536509154696e+17,
+        "years_ago": 59.0,
+        "log10_seconds": 17.638543,
+        "label": "59 years ago",
+        "basis": "this_object",
+        "confidence": "high",
+        "note": "First made in a laboratory in 1967."
+      }
+    },
+    {
+      "id": "seaborgium",
+      "atomic_number": 106,
+      "symbol": "Sg",
+      "name": "Seaborgium",
+      "kind": "Transition metal",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": true,
+      "discovered": 1974,
+      "table": {
+        "period": 7,
+        "group": 6,
+        "row": 7,
+        "column": 6
+      },
+      "reference": {
+        "atomic_mass_u": 269.128,
+        "mass_kg": 4.46898e-25,
+        "log10_mass_kg": -24.349792,
+        "van_der_waals_radius_pm": 210.0,
+        "width_m": 4.2e-10,
+        "log10_width_m": -9.376751,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": true,
+        "confidence": "low",
+        "notes": "No measured radius; uses Tungsten's (W), the element above it."
+      },
+      "origin": [
+        "laboratory"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 4.3505365113638957e+17,
+        "years_ago": 52.0,
+        "log10_seconds": 17.638543,
+        "label": "52 years ago",
+        "basis": "this_object",
+        "confidence": "high",
+        "note": "First made in a laboratory in 1974."
+      }
+    },
+    {
+      "id": "bohrium",
+      "atomic_number": 107,
+      "symbol": "Bh",
+      "name": "Bohrium",
+      "kind": "Transition metal",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": true,
+      "discovered": 1976,
+      "table": {
+        "period": 7,
+        "group": 7,
+        "row": 7,
+        "column": 7
+      },
+      "reference": {
+        "atomic_mass_u": 270.133,
+        "mass_kg": 4.48566e-25,
+        "log10_mass_kg": -24.348173,
+        "van_der_waals_radius_pm": 217.0,
+        "width_m": 4.34e-10,
+        "log10_width_m": -9.36251,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": true,
+        "confidence": "low",
+        "notes": "No measured radius; uses Rhenium's (Re), the element above it."
+      },
+      "origin": [
+        "laboratory"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 4.3505365119950957e+17,
+        "years_ago": 50.0,
+        "log10_seconds": 17.638543,
+        "label": "50 years ago",
+        "basis": "this_object",
+        "confidence": "high",
+        "note": "First made in a laboratory in 1976."
+      }
+    },
+    {
+      "id": "hassium",
+      "atomic_number": 108,
+      "symbol": "Hs",
+      "name": "Hassium",
+      "kind": "Transition metal",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": true,
+      "discovered": 1984,
+      "table": {
+        "period": 7,
+        "group": 8,
+        "row": 7,
+        "column": 8
+      },
+      "reference": {
+        "atomic_mass_u": 269.1336,
+        "mass_kg": 4.46907e-25,
+        "log10_mass_kg": -24.349783,
+        "van_der_waals_radius_pm": 216.0,
+        "width_m": 4.32e-10,
+        "log10_width_m": -9.364516,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": true,
+        "confidence": "low",
+        "notes": "No measured radius; uses Osmium's (Os), the element above it."
+      },
+      "origin": [
+        "laboratory"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 4.3505365145198957e+17,
+        "years_ago": 42.0,
+        "log10_seconds": 17.638543,
+        "label": "42 years ago",
+        "basis": "this_object",
+        "confidence": "high",
+        "note": "First made in a laboratory in 1984."
+      }
+    },
+    {
+      "id": "meitnerium",
+      "atomic_number": 109,
+      "symbol": "Mt",
+      "name": "Meitnerium",
+      "kind": "Transition metal",
+      "standard_state": "solid",
+      "state_is_predicted": false,
+      "radioactive": true,
+      "discovered": 1982,
+      "table": {
+        "period": 7,
+        "group": 9,
+        "row": 7,
+        "column": 9
+      },
+      "reference": {
+        "atomic_mass_u": 277.154,
+        "mass_kg": 4.60225e-25,
+        "log10_mass_kg": -24.33703,
+        "van_der_waals_radius_pm": 202.0,
+        "width_m": 4.04e-10,
+        "log10_width_m": -9.393619,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": true,
+        "confidence": "low",
+        "notes": "No measured radius; uses Iridium's (Ir), the element above it."
+      },
+      "origin": [
+        "laboratory"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 4.3505365138886957e+17,
+        "years_ago": 44.0,
+        "log10_seconds": 17.638543,
+        "label": "44 years ago",
+        "basis": "this_object",
+        "confidence": "high",
+        "note": "First made in a laboratory in 1982."
+      }
+    },
+    {
+      "id": "darmstadtium",
+      "atomic_number": 110,
+      "symbol": "Ds",
+      "name": "Darmstadtium",
+      "kind": "Transition metal",
+      "standard_state": "solid",
+      "state_is_predicted": true,
+      "radioactive": true,
+      "discovered": 1994,
+      "table": {
+        "period": 7,
+        "group": 10,
+        "row": 7,
+        "column": 10
+      },
+      "reference": {
+        "atomic_mass_u": 282.166,
+        "mass_kg": 4.68548e-25,
+        "log10_mass_kg": -24.329246,
+        "van_der_waals_radius_pm": 209.0,
+        "width_m": 4.18e-10,
+        "log10_width_m": -9.378824,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": true,
+        "confidence": "low",
+        "notes": "No measured radius; uses Platinum's (Pt), the element above it."
+      },
+      "origin": [
+        "laboratory"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 4.3505365176758957e+17,
+        "years_ago": 32.0,
+        "log10_seconds": 17.638543,
+        "label": "32 years ago",
+        "basis": "this_object",
+        "confidence": "high",
+        "note": "First made in a laboratory in 1994."
+      }
+    },
+    {
+      "id": "roentgenium",
+      "atomic_number": 111,
+      "symbol": "Rg",
+      "name": "Roentgenium",
+      "kind": "Transition metal",
+      "standard_state": "solid",
+      "state_is_predicted": true,
+      "radioactive": true,
+      "discovered": 1994,
+      "table": {
+        "period": 7,
+        "group": 11,
+        "row": 7,
+        "column": 11
+      },
+      "reference": {
+        "atomic_mass_u": 282.169,
+        "mass_kg": 4.68553e-25,
+        "log10_mass_kg": -24.329242,
+        "van_der_waals_radius_pm": 166.0,
+        "width_m": 3.32e-10,
+        "log10_width_m": -9.478862,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": true,
+        "confidence": "low",
+        "notes": "No measured radius; uses Gold's (Au), the element above it."
+      },
+      "origin": [
+        "laboratory"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 4.3505365176758957e+17,
+        "years_ago": 32.0,
+        "log10_seconds": 17.638543,
+        "label": "32 years ago",
+        "basis": "this_object",
+        "confidence": "high",
+        "note": "First made in a laboratory in 1994."
+      }
+    },
+    {
+      "id": "copernicium",
+      "atomic_number": 112,
+      "symbol": "Cn",
+      "name": "Copernicium",
+      "kind": "Transition metal",
+      "standard_state": "solid",
+      "state_is_predicted": true,
+      "radioactive": true,
+      "discovered": 1996,
+      "table": {
+        "period": 7,
+        "group": 12,
+        "row": 7,
+        "column": 12
+      },
+      "reference": {
+        "atomic_mass_u": 286.179,
+        "mass_kg": 4.75211e-25,
+        "log10_mass_kg": -24.323113,
+        "van_der_waals_radius_pm": 209.0,
+        "width_m": 4.18e-10,
+        "log10_width_m": -9.378824,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": true,
+        "confidence": "low",
+        "notes": "No measured radius; uses Mercury's (Hg), the element above it."
+      },
+      "origin": [
+        "laboratory"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 4.3505365183070957e+17,
+        "years_ago": 30.0,
+        "log10_seconds": 17.638543,
+        "label": "30 years ago",
+        "basis": "this_object",
+        "confidence": "high",
+        "note": "First made in a laboratory in 1996."
+      }
+    },
+    {
+      "id": "nihonium",
+      "atomic_number": 113,
+      "symbol": "Nh",
+      "name": "Nihonium",
+      "kind": "Post-transition metal",
+      "standard_state": "solid",
+      "state_is_predicted": true,
+      "radioactive": true,
+      "discovered": 2004,
+      "table": {
+        "period": 7,
+        "group": 13,
+        "row": 7,
+        "column": 13
+      },
+      "reference": {
+        "atomic_mass_u": 286.182,
+        "mass_kg": 4.75216e-25,
+        "log10_mass_kg": -24.323109,
+        "van_der_waals_radius_pm": 196.0,
+        "width_m": 3.92e-10,
+        "log10_width_m": -9.406714,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": true,
+        "confidence": "low",
+        "notes": "No measured radius; uses Thallium's (Tl), the element above it."
+      },
+      "origin": [
+        "laboratory"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 4.3505365208318957e+17,
+        "years_ago": 22.0,
+        "log10_seconds": 17.638543,
+        "label": "22 years ago",
+        "basis": "this_object",
+        "confidence": "high",
+        "note": "First made in a laboratory in 2004."
+      }
+    },
+    {
+      "id": "flerovium",
+      "atomic_number": 114,
+      "symbol": "Fl",
+      "name": "Flerovium",
+      "kind": "Post-transition metal",
+      "standard_state": "solid",
+      "state_is_predicted": true,
+      "radioactive": true,
+      "discovered": 1998,
+      "table": {
+        "period": 7,
+        "group": 14,
+        "row": 7,
+        "column": 14
+      },
+      "reference": {
+        "atomic_mass_u": 290.192,
+        "mass_kg": 4.81875e-25,
+        "log10_mass_kg": -24.317065,
+        "van_der_waals_radius_pm": 202.0,
+        "width_m": 4.04e-10,
+        "log10_width_m": -9.393619,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": true,
+        "confidence": "low",
+        "notes": "No measured radius; uses Lead's (Pb), the element above it."
+      },
+      "origin": [
+        "laboratory"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 4.3505365189382957e+17,
+        "years_ago": 28.0,
+        "log10_seconds": 17.638543,
+        "label": "28 years ago",
+        "basis": "this_object",
+        "confidence": "high",
+        "note": "First made in a laboratory in 1998."
+      }
+    },
+    {
+      "id": "moscovium",
+      "atomic_number": 115,
+      "symbol": "Mc",
+      "name": "Moscovium",
+      "kind": "Post-transition metal",
+      "standard_state": "solid",
+      "state_is_predicted": true,
+      "radioactive": true,
+      "discovered": 2003,
+      "table": {
+        "period": 7,
+        "group": 15,
+        "row": 7,
+        "column": 15
+      },
+      "reference": {
+        "atomic_mass_u": 290.196,
+        "mass_kg": 4.81882e-25,
+        "log10_mass_kg": -24.317059,
+        "van_der_waals_radius_pm": 207.0,
+        "width_m": 4.14e-10,
+        "log10_width_m": -9.383,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": true,
+        "confidence": "low",
+        "notes": "No measured radius; uses Bismuth's (Bi), the element above it."
+      },
+      "origin": [
+        "laboratory"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 4.350536520516296e+17,
+        "years_ago": 23.0,
+        "log10_seconds": 17.638543,
+        "label": "23 years ago",
+        "basis": "this_object",
+        "confidence": "high",
+        "note": "First made in a laboratory in 2003."
+      }
+    },
+    {
+      "id": "livermorium",
+      "atomic_number": 116,
+      "symbol": "Lv",
+      "name": "Livermorium",
+      "kind": "Post-transition metal",
+      "standard_state": "solid",
+      "state_is_predicted": true,
+      "radioactive": true,
+      "discovered": 2000,
+      "table": {
+        "period": 7,
+        "group": 16,
+        "row": 7,
+        "column": 16
+      },
+      "reference": {
+        "atomic_mass_u": 293.205,
+        "mass_kg": 4.86878e-25,
+        "log10_mass_kg": -24.31258,
+        "van_der_waals_radius_pm": 197.0,
+        "width_m": 3.94e-10,
+        "log10_width_m": -9.404504,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": true,
+        "confidence": "low",
+        "notes": "No measured radius; uses Polonium's (Po), the element above it."
+      },
+      "origin": [
+        "laboratory"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 4.3505365195694957e+17,
+        "years_ago": 26.0,
+        "log10_seconds": 17.638543,
+        "label": "26 years ago",
+        "basis": "this_object",
+        "confidence": "high",
+        "note": "First made in a laboratory in 2000."
+      }
+    },
+    {
+      "id": "tennessine",
+      "atomic_number": 117,
+      "symbol": "Ts",
+      "name": "Tennessine",
+      "kind": "Halogen",
+      "standard_state": "solid",
+      "state_is_predicted": true,
+      "radioactive": true,
+      "discovered": 2010,
+      "table": {
+        "period": 7,
+        "group": 17,
+        "row": 7,
+        "column": 17
+      },
+      "reference": {
+        "atomic_mass_u": 294.211,
+        "mass_kg": 4.88549e-25,
+        "log10_mass_kg": -24.311092,
+        "van_der_waals_radius_pm": 202.0,
+        "width_m": 4.04e-10,
+        "log10_width_m": -9.393619,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": true,
+        "confidence": "low",
+        "notes": "No measured radius; uses Astatine's (At), the element above it."
+      },
+      "origin": [
+        "laboratory"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 4.3505365227254957e+17,
+        "years_ago": 16.0,
+        "log10_seconds": 17.638543,
+        "label": "16 years ago",
+        "basis": "this_object",
+        "confidence": "high",
+        "note": "First made in a laboratory in 2010."
+      }
+    },
+    {
+      "id": "oganesson",
+      "atomic_number": 118,
+      "symbol": "Og",
+      "name": "Oganesson",
+      "kind": "Noble gas",
+      "standard_state": "gas",
+      "state_is_predicted": true,
+      "radioactive": true,
+      "discovered": 2006,
+      "table": {
+        "period": 7,
+        "group": 18,
+        "row": 7,
+        "column": 18
+      },
+      "reference": {
+        "atomic_mass_u": 295.216,
+        "mass_kg": 4.90218e-25,
+        "log10_mass_kg": -24.309611,
+        "van_der_waals_radius_pm": 220.0,
+        "width_m": 4.4e-10,
+        "log10_width_m": -9.356547,
+        "width_basis": "van_der_waals_diameter",
+        "width_is_estimate": true,
+        "confidence": "low",
+        "notes": "No measured radius; uses Radon's (Rn), the element above it."
+      },
+      "origin": [
+        "laboratory"
+      ],
+      "origin_note": "",
+      "same_as": null,
+      "first_appeared": {
+        "seconds_after_big_bang": 4.3505365214630957e+17,
+        "years_ago": 20.0,
+        "log10_seconds": 17.638543,
+        "label": "20 years ago",
+        "basis": "this_object",
+        "confidence": "high",
+        "note": "First made in a laboratory in 2006."
+      }
+    }
+  ]
+}

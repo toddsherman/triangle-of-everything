@@ -1,0 +1,18 @@
+id,name,printed_label,category,icon_x_px,icon_y_px,chart_log10_mass_msun,chart_log10_diameter_km,ref_mass_msun,ref_diameter_km,ref_confidence,main_chart_object_id
+black_holes,Stellar black holes,BLACK HOLES,black_hole,842,780,1.902,3.671,10.0,59.08,medium,v616_monocerotis
+neutron_stars,Neutron stars,NEUTRON STARS,stellar_remnant,706,978,0.471,2.687,1.4,24.0,medium,neutron_star
+white_dwarfs,White dwarfs,WHITE DWARFS,stellar_remnant,1107,1060,-0.122,5.588,0.6,17000.0,medium,white_dwarfs
+sun,Sun,SUN,star,1343,1045,-0.014,7.295,1.0,1393000.0,high,sun
+main_sequence,Main-sequence stars,MAIN SEQUENCE,star,1296,1131,-0.636,6.955,,,medium,
+red_giants,Red giants,RED GIANTS,star,1604,1045,-0.014,9.183,1.08,35340000.0,medium,
+super_giants,Supergiants,SUPER GIANTS,star,1501,825,1.577,8.438,18.0,1063000000.0,medium,
+wr_stars,Wolf-Rayet stars,W.R. STARS,star,1353,778,1.917,7.368,20.0,6957000.0,low,
+brown_dwarfs,Brown dwarfs,BROWN DWARFS,substellar,1200,1207,-1.185,6.261,0.04,140000.0,medium,brown_dwarf
+beta_pictoris_b,Beta Pictoris b,BETA PICTORIS B,planet,1201,1332,-2.089,6.268,0.0105,204100.0,medium,
+jupiter,Jupiter,JUPITER,planet,1193,1472,-3.101,6.21,0.0009542,139800.0,high,jupiter
+saturn,Saturn,SATURN,planet,1197,1561,-3.745,6.239,0.0002857,116500.0,high,saturn
+uranus,Uranus,"URANUS, NEPTUNE",planet,1107,1677,-4.583,5.588,4.365e-05,50720.0,high,uranus
+neptune,Neptune,"URANUS, NEPTUNE",planet,1138,1677,-4.583,5.812,5.148e-05,49240.0,high,neptune
+kepler_22b,Kepler-22b,KEPLER 22-B,planet,1083,1761,-5.191,5.414,,30330.0,medium,
+earth,Earth,"EARTH, VENUS",planet,1028,1844,-5.791,5.017,3.003e-06,12740.0,high,earth
+venus,Venus,"EARTH, VENUS",planet,1028,1844,-5.791,5.017,2.447e-06,12100.0,high,venus

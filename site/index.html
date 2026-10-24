@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Triangle of Everything</title>
+  <meta name="description" content="Every object in the universe on one mass-versus-size chart, from the Big Bang to the observable universe.">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+</head>
+<body>
+  <nav class="returnbar" aria-label="Site">
+    <a href="/">&larr;&nbsp;&nbsp;todd.sh</a>
+    <a class="returnbar-story" href="../story/">The story behind this</a>
+  </nav>
+  <header class="topbar">
+    <a class="brand" href="#" id="brand"><span class="brand-mark" aria-hidden="true"></span>Triangle of Everything</a>
+    <div class="search">
+      <input id="search" type="search" placeholder="Search objects, particles, moments…" autocomplete="off"
+             aria-label="Search" aria-controls="search-results">
+      <ul id="search-results" class="search-results" role="listbox" hidden></ul>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section class="stage timing" aria-label="Chart">
+      <div id="view-triangle" class="view"><svg id="triangle-svg" class="chart" aria-label="Mass versus width of everything"></svg></div>
+      <div id="view-stars" class="view" hidden><svg id="stars-svg" class="chart" aria-label="Stellar evolution: diameter versus mass"></svg></div>
+      <div id="view-particles" class="view" hidden><svg id="particles-svg" class="chart" aria-label="Fundamental particle masses"></svg></div>
+      <div id="view-elements" class="view" hidden><svg id="elements-svg" class="chart" aria-label="Periodic table of the elements"></svg></div>
+      <div id="view-timeline" class="view" hidden><svg id="timeline-svg" class="chart" aria-label="Cosmic timeline"></svg></div>
+
+      <div class="float-controls">
+        <button id="back" class="back-btn" hidden>&#8249; Triangle</button>
+        <div class="btn-group">
+          <button data-zoom="in" title="Zoom in" aria-label="Zoom in">+</button>
+          <button data-zoom="out" title="Zoom out" aria-label="Zoom out">&minus;</button>
+          <button data-zoom="home" title="Reset view" aria-label="Reset view">&#8962;</button>
+        </div>
+        <div class="tour" id="tour" aria-label="Scale tour">
+          <button id="tour-prev" aria-label="Previous stop">&#8249;</button>
+          <span class="tour-label"><span class="tour-kicker">Scale tour</span><span id="tour-name">smallest to largest</span></span>
+          <button id="tour-next" aria-label="Next stop">&#8250;</button>
+        </div>
+      </div>
+      <div id="tooltip" class="tooltip" hidden></div>
+
+      <div class="timebar" id="timebar" aria-label="Cosmic time">
+        <button id="time-play" class="time-play" aria-label="Play from the Big Bang" title="Play from the Big Bang">&#9654;</button>
+        <button id="time-sound" class="time-sound" aria-label="Sound" aria-pressed="true" title="Sound on">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path class="spk" d="M3 9.5h4l5-4v13l-5-4H3z"/>
+            <path class="on" d="M15.5 9a4.5 4.5 0 0 1 0 6M18 6.5a8 8 0 0 1 0 11"/><path class="off" d="M16 9.5l5 5M21 9.5l-5 5"/></svg>
+        </button>
+        <div class="timebar-readout">
+          <strong id="time-when">Today</strong>
+          <span id="time-facts"></span>
+          <span id="time-new" class="time-new"></span>
+        </div>
+        <div class="timebar-track">
+          <input type="range" id="time-slider" min="0" max="1000" step="1" value="1000" aria-label="Cosmic time">
+          <div class="time-ticks" id="time-ticks"></div>
+        </div>
+        <button id="open-timeline" class="time-link" title="Open the timeline">Timeline &#8250;</button>
+      </div>
+    </section>
+
+    <aside class="sidebar">
+      <section id="details" class="panel details" aria-live="polite"></section>
+      <section class="panel" id="layers-panel">
+        <h2>Layers</h2>
+        <div id="layers" class="toggles"></div>
+      </section>
+      <section class="panel" id="legend-panel">
+        <h2>Legend <span class="hint">click to filter</span></h2>
+        <div id="legend" class="legend"></div>
+      </section>
+      <section class="panel">
+        <h2>Poster errors <span class="hint">found while transcribing</span></h2>
+        <div id="errata" class="errata"></div>
+      </section>
+    </aside>
+  </main>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

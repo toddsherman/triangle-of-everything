@@ -1,0 +1,20 @@
+id,name,printed_label,class,chart_colour,legend_says,icon_x_px,icon_y_px,chart_log10_mass_eV,chart_log10_wavelength_m,ref_mass_eV,ref_log10_mass_eV,electric_charge,spin,generation,notes
+top,Top quark,TOP,quark,yellow,QUARKS,705,2785,11.245,-18.271,172570000000.0,11.236965,+2/3,1/2,3,
+higgs,Higgs boson,HIGGS,boson,orange,BOSON,735,2812,11.049,-18.053,125200000000.0,11.097604,0,0,,
+z_boson,Z boson,Z,boson,orange,BOSON,750,2830,10.919,-17.944,91188000000.0,10.959938,0,1,,
+w_boson,W boson,W,boson,orange,BOSON,771,2845,10.811,-17.792,80369000000.0,10.905089,±1,1,,
+bottom,Bottom quark,BOTTOM,quark,yellow,QUARKS,938,3019,9.553,-16.579,4180000000.0,9.621176,-1/3,1/2,3,
+tau,Tau lepton,TAU,lepton,blue,HADRONS,988,3059,9.264,-16.216,1776930000.0,9.24967,-1,1/2,3,
+charm,Charm quark,CHARM,quark,yellow,QUARKS,1008,3088,9.054,-16.071,1273000000.0,9.104828,+2/3,1/2,2,
+proton,Proton,PROTON,hadron,green,LEPTON,1039,3133,8.729,-15.846,938272000.0,8.972329,+1,1/2,,
+neutron,Neutron,NEUTRON,hadron,green,LEPTON,1075,3166,8.49,-15.585,939565000.0,8.972927,0,1/2,,
+meson,Meson (pion),MESON,hadron,green,LEPTON,1120,3200,8.245,-15.258,139570000.0,8.144792,±1,0,,Charged pion used as the representative meson.
+muon,Muon,MUON,lepton,blue,HADRONS,1156,3236,7.984,-14.996,105658000.0,8.023902,-1,1/2,2,
+strange,Strange quark,STRANGE,quark,yellow,QUARKS,1181,3252,7.869,-14.815,93500000.0,7.970812,-1/3,1/2,2,
+tau_neutrino,Tau neutrino,NEUTRINO (TAU),lepton,blue,HADRONS,1225,3310,7.449,-14.495,,,0,1/2,3,Chart position matches the old direct upper limit (<18.2 MeV); oscillation data imply < ~1 eV.
+down,Down quark,DOWN,quark,yellow,QUARKS,1324,3414,6.698,-13.777,4700000.0,6.672098,-1/3,1/2,1,
+up,Up quark,UP,quark,yellow,QUARKS,1376,3451,6.43,-13.399,2160000.0,6.334454,+2/3,1/2,1,
+electron,Electron,ELECTRON,lepton,blue,HADRONS,1470,3554,5.686,-12.717,510999.0,5.70842,-1,1/2,1,
+muon_neutrino,Muon neutrino,NEUTRINO (MUON),lepton,blue,HADRONS,1513,3593,5.404,-12.404,,,0,1/2,2,Chart position matches the old direct upper limit (<0.19 MeV).
+photon,Photon (gamma ray),PHOTON (GAMMA RAY),boson,orange,BOSON,1573,3666,4.876,-11.969,0.0,,0,1,,Massless; plotted at a gamma-ray energy (~10^5 eV).
+electron_neutrino,Electron neutrino,NEUTRINO (ELECTRON),lepton,blue,HADRONS,1834,3912,3.098,-10.074,,,0,1/2,1,Upper limit < 0.45 eV (KATRIN); the chart places it near 10^3 eV.

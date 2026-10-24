@@ -1,0 +1,60 @@
+axis,label,kind,x_px,y_px,true_log10,chart_log10,unit
+mass,1 T Solar Masses,dotted,,2055.5,42.298635,42.302,kg
+mass,1 B Solar Masses,dotted,,2193.5,39.298635,39.314,kg
+mass,1 M Solar Masses,dotted,,2332.0,36.298635,36.315,kg
+mass,1000 Solar Masses,dotted,,2470.0,33.298635,33.327,kg
+mass,1 Solar mass = 2*10^30 Kg,dotted,,2608.5,30.298635,30.328,kg
+mass,1 gigatonne,tick,,3454.5,12.0,12.009,kg
+mass,1 megatonne,tick,,3593.5,9.0,8.999,kg
+mass,1 kilotonne,tick,,3731.5,6.0,6.011,kg
+mass,1 tonne,tick,,3870.5,3.0,3.001,kg
+mass,1 kg,tick,,4008.5,0.0,0.013,kg
+mass,1 lb,dotted,,4026.0,-0.343337,-0.366,kg
+mass,1 oz,dotted,,4080.0,-1.547447,-1.536,kg
+mass,1 gram,tick,,4147.5,-3.0,-2.997,kg
+mass,1 mg,tick,,4285.5,-6.0,-5.985,kg
+mass,1 PLANCK MASS,dotted (extends across the chart),,4377.0,-7.662341,-7.967,kg
+mass,1 µg,tick,,4424.5,-9.0,-8.995,kg
+mass,1 ng,tick,,4562.5,-12.0,-11.983,kg
+mass,1 pg,tick,,4701.5,-15.0,-14.993,kg
+mass,1 TeV/c^2 (1.8*10^-21 g),dotted,,5091.5,-23.748931,-23.438,kg
+mass,1 GeV/c^2,dotted,,5230.0,-26.748931,-26.437,kg
+mass,1 MeV/c^2,dotted,,5368.0,-29.748931,-29.425,kg
+mass,1 KeV/c^2,dotted,,5506.5,-32.748931,-32.424,kg
+mass,1 eV/c^2,dotted,,5645.0,-35.748931,-35.423,kg
+width,1 PLANCK LENGTH,dotted vertical line,2116.0,,-34.791559,-34.763,m
+width,10 pm,label at tick,3167.5,,-11.0,-12.003,m
+width,1 nm,label at tick,3306.5,,-9.0,-8.995,m
+width,1 µm,label at tick,3444.5,,-6.0,-6.008,m
+width,1 mm,label at tick,3583.5,,-3.0,-2.999,m
+width,1 inch,dotted,3684.5,,-1.595166,-0.813,m
+width,1 meter,label at tick,3722.0,,0.0,-0.001,m
+width,1 km,label at tick,3860.5,,3.0,2.997,m
+width,1 mile,dotted,3877.0,,3.206648,3.354,m
+width,1000 km,label at tick,3999.5,,6.0,6.006,m
+width,1M km,label at tick,4137.5,,9.0,8.993,m
+width,1light-second,dotted,4153.0,,8.476832,9.328,m
+width,1 AU,dotted,4227.5,,11.174932,10.941,m
+width,1light-year,dotted,4451.0,,15.975923,15.778,m
+width,1 parsec,dotted,4473.0,,16.489354,16.255,m
+width,"1,000 ly",dotted,4589.0,,18.975923,18.766,m
+width,1 kpc,dotted,4610.5,,19.489354,19.231,m
+width,1M ly,dotted,4727.0,,21.975923,21.753,m
+width,1 Mpc,dotted,4748.0,,22.489354,22.207,m
+width,1B ly,dotted,4865.0,,24.975923,24.74,m
+width,1 Gpc,dotted,4885.5,,25.489354,25.183,m
+energy,1 PLANCK ENERGY,dotted,,4375.0,28.08636,27.516,eV
+energy,GRAND UNIFICATION THEORY*,bracket,,"[4400, 4486]","[24.0, 25.0]","[26.974, 25.112]",eV
+energy,ELECTROWEAK,bracket,,"[4495, 5131]","[11.0, 24.0]","[24.917, 11.141]",eV
+energy,LARGE HADRON COLLIDER (MAXIMUM ENERGY),arrow,,5069.0,13.133539,12.484,eV
+energy,FUNDAMENTAL PARTICLES,bracket,,"[5145, 5443]","[5.708421, 11.238046]","[10.838, 4.383]",eV
+energy,1 B K,dotted,,5414.5,4.935356,5.0,eV
+energy,1 M °C ≈ 1 M K,dotted,,5553.5,1.935356,1.989,eV
+energy,100 °C,dotted,,5685.0,-1.49276,-0.859,eV
+energy,LIQUID WATER RANGE,bracket,,"[5694, 5729]","[-1.628243, -1.49276]","[-1.054, -1.812]",eV
+energy,0 °C,dotted,,5738.0,-1.628243,-2.007,eV
+energy,SUPERCONDUCTIVITY,bracket,,"[5763, 5816]","[-4.064644, -1.888553]","[-2.548, -3.696]",eV
+energy,1 Kelvin (-272 °C),dotted,,5829.5,-4.064644,-3.989,eV
+energy,BOSE-EINSTEIN CONDENSATE,bracket,,"[6214, 6317]","[-11.064644, -10.064644]","[-12.317, -14.548]",eV
+energy,QUANTUM TUNNELING*,bracket,,"[6395, 6500]",null,"[-16.238, -18.512]",eV
+energy,ZERO-POINT ENERGY,arrow,,7145.0,null,-32.483,eV

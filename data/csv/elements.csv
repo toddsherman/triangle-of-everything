@@ -1,0 +1,119 @@
+atomic_number,symbol,name,kind,standard_state,radioactive,discovered,period,group,atomic_mass_u,mass_kg,van_der_waals_radius_pm,width_m,width_is_estimate,origin,first_appeared
+1,H,Hydrogen,Nonmetal,gas,False,1766,1,1,1.008,1.67382e-27,120.0,2.4e-10,False,big_bang,380 thousand years after the Big Bang
+2,He,Helium,Noble gas,gas,False,1868,1,18,4.0026,6.64647e-27,140.0,2.8e-10,False,big_bang,100 thousand years after the Big Bang
+3,Li,Lithium,Alkali metal,solid,False,1817,2,1,7.0,1.16238e-26,182.0,3.64e-10,False,big_bang cosmic_rays low_mass_stars,380 thousand years after the Big Bang
+4,Be,Beryllium,Alkaline earth metal,solid,False,1798,2,2,9.012183,1.49651e-26,153.0,3.06e-10,False,cosmic_rays,300 million years after the Big Bang
+5,B,Boron,Metalloid,solid,False,1808,2,13,10.81,1.79504e-26,192.0,3.84e-10,False,cosmic_rays,300 million years after the Big Bang
+6,C,Carbon,Nonmetal,solid,False,ancient,2,14,12.011,1.99447e-26,170.0,3.4e-10,False,low_mass_stars massive_stars,200 million years after the Big Bang
+7,N,Nitrogen,Nonmetal,gas,False,1772,2,15,14.007,2.32592e-26,155.0,3.1e-10,False,low_mass_stars massive_stars,200 million years after the Big Bang
+8,O,Oxygen,Nonmetal,gas,False,1774,2,16,15.999,2.6567e-26,152.0,3.04e-10,False,massive_stars,200 million years after the Big Bang
+9,F,Fluorine,Halogen,gas,False,1670,2,17,18.99840316,3.15476e-26,135.0,2.7e-10,False,massive_stars low_mass_stars,200 million years after the Big Bang
+10,Ne,Neon,Noble gas,gas,False,1898,2,18,20.18,3.35097e-26,154.0,3.08e-10,False,massive_stars,200 million years after the Big Bang
+11,Na,Sodium,Alkali metal,solid,False,1807,3,1,22.9897693,3.81754e-26,227.0,4.54e-10,False,massive_stars,200 million years after the Big Bang
+12,Mg,Magnesium,Alkaline earth metal,solid,False,1808,3,2,24.305,4.03594e-26,173.0,3.46e-10,False,massive_stars,200 million years after the Big Bang
+13,Al,Aluminum,Post-transition metal,solid,False,ancient,3,13,26.981538,4.48039e-26,184.0,3.68e-10,False,massive_stars,200 million years after the Big Bang
+14,Si,Silicon,Metalloid,solid,False,1854,3,14,28.085,4.66362e-26,210.0,4.2e-10,False,massive_stars white_dwarfs,200 million years after the Big Bang
+15,P,Phosphorus,Nonmetal,solid,False,1669,3,15,30.973762,5.14331e-26,180.0,3.6e-10,False,massive_stars,200 million years after the Big Bang
+16,S,Sulfur,Nonmetal,solid,False,ancient,3,16,32.07,5.32535e-26,180.0,3.6e-10,False,massive_stars white_dwarfs,200 million years after the Big Bang
+17,Cl,Chlorine,Halogen,gas,False,1774,3,17,35.45,5.88661e-26,175.0,3.5e-10,False,massive_stars,200 million years after the Big Bang
+18,Ar,Argon,Noble gas,gas,False,1894,3,18,39.9,6.62555e-26,188.0,3.76e-10,False,massive_stars white_dwarfs,200 million years after the Big Bang
+19,K,Potassium,Alkali metal,solid,False,1807,4,1,39.0983,6.49243e-26,275.0,5.5e-10,False,massive_stars,200 million years after the Big Bang
+20,Ca,Calcium,Alkaline earth metal,solid,False,ancient,4,2,40.08,6.65544e-26,231.0,4.62e-10,False,massive_stars white_dwarfs,200 million years after the Big Bang
+21,Sc,Scandium,Transition metal,solid,False,1879,4,3,44.95591,7.4651e-26,211.0,4.22e-10,False,massive_stars,200 million years after the Big Bang
+22,Ti,Titanium,Transition metal,solid,False,1791,4,4,47.867,7.9485e-26,187.0,3.74e-10,False,massive_stars white_dwarfs,200 million years after the Big Bang
+23,V,Vanadium,Transition metal,solid,False,1801,4,5,50.9415,8.45904e-26,179.0,3.58e-10,False,white_dwarfs massive_stars,200 million years after the Big Bang
+24,Cr,Chromium,Transition metal,solid,False,1797,4,6,51.996,8.63414e-26,189.0,3.78e-10,False,white_dwarfs massive_stars,200 million years after the Big Bang
+25,Mn,Manganese,Transition metal,solid,False,1774,4,7,54.93804,9.12268e-26,197.0,3.94e-10,False,white_dwarfs massive_stars,200 million years after the Big Bang
+26,Fe,Iron,Transition metal,solid,False,ancient,4,8,55.84,9.27245e-26,194.0,3.88e-10,False,white_dwarfs massive_stars,200 million years after the Big Bang
+27,Co,Cobalt,Transition metal,solid,False,1735,4,9,58.93319,9.78609e-26,192.0,3.84e-10,False,massive_stars white_dwarfs,200 million years after the Big Bang
+28,Ni,Nickel,Transition metal,solid,False,1751,4,10,58.693,9.7462e-26,163.0,3.26e-10,False,white_dwarfs massive_stars,200 million years after the Big Bang
+29,Cu,Copper,Transition metal,solid,False,ancient,4,11,63.55,1.05527e-25,140.0,2.8e-10,False,massive_stars,200 million years after the Big Bang
+30,Zn,Zinc,Transition metal,solid,False,1746,4,12,65.4,1.08599e-25,139.0,2.78e-10,False,massive_stars,200 million years after the Big Bang
+31,Ga,Gallium,Post-transition metal,solid,False,1875,4,13,69.723,1.15778e-25,187.0,3.74e-10,False,massive_stars low_mass_stars,200 million years after the Big Bang
+32,Ge,Germanium,Metalloid,solid,False,1886,4,14,72.63,1.20605e-25,211.0,4.22e-10,False,massive_stars low_mass_stars,200 million years after the Big Bang
+33,As,Arsenic,Metalloid,solid,False,ancient,4,15,74.92159,1.2441e-25,185.0,3.7e-10,False,massive_stars neutron_star_mergers,200 million years after the Big Bang
+34,Se,Selenium,Nonmetal,solid,False,1817,4,16,78.97,1.31133e-25,190.0,3.8e-10,False,neutron_star_mergers massive_stars,200 million years after the Big Bang
+35,Br,Bromine,Halogen,liquid,False,1826,4,17,79.9,1.32677e-25,183.0,3.66e-10,False,neutron_star_mergers massive_stars,200 million years after the Big Bang
+36,Kr,Krypton,Noble gas,gas,False,1898,4,18,83.8,1.39153e-25,202.0,4.04e-10,False,massive_stars low_mass_stars,200 million years after the Big Bang
+37,Rb,Rubidium,Alkali metal,solid,False,1861,5,1,85.468,1.41923e-25,303.0,6.06e-10,False,low_mass_stars neutron_star_mergers,300 million years after the Big Bang
+38,Sr,Strontium,Alkaline earth metal,solid,False,1790,5,2,87.62,1.45496e-25,249.0,4.98e-10,False,low_mass_stars,400 million years after the Big Bang
+39,Y,Yttrium,Transition metal,solid,False,1794,5,3,88.90584,1.47632e-25,219.0,4.38e-10,False,low_mass_stars,400 million years after the Big Bang
+40,Zr,Zirconium,Transition metal,solid,False,1789,5,4,91.22,1.51474e-25,186.0,3.72e-10,False,low_mass_stars,400 million years after the Big Bang
+41,Nb,Niobium,Transition metal,solid,False,1801,5,5,92.90637,1.54275e-25,207.0,4.14e-10,False,low_mass_stars,400 million years after the Big Bang
+42,Mo,Molybdenum,Transition metal,solid,False,1778,5,6,95.95,1.59329e-25,209.0,4.18e-10,False,low_mass_stars neutron_star_mergers,300 million years after the Big Bang
+43,Tc,Technetium,Transition metal,solid,True,1937,5,7,96.90636,1.60917e-25,209.0,4.18e-10,False,low_mass_stars,400 million years after the Big Bang
+44,Ru,Ruthenium,Transition metal,solid,False,1827,5,8,101.1,1.6788e-25,207.0,4.14e-10,False,neutron_star_mergers low_mass_stars,300 million years after the Big Bang
+45,Rh,Rhodium,Transition metal,solid,False,1803,5,9,102.9055,1.70879e-25,195.0,3.9e-10,False,neutron_star_mergers,300 million years after the Big Bang
+46,Pd,Palladium,Transition metal,solid,False,1803,5,10,106.42,1.76715e-25,202.0,4.04e-10,False,neutron_star_mergers low_mass_stars,300 million years after the Big Bang
+47,Ag,Silver,Transition metal,solid,False,ancient,5,11,107.868,1.79119e-25,172.0,3.44e-10,False,neutron_star_mergers,300 million years after the Big Bang
+48,Cd,Cadmium,Transition metal,solid,False,1817,5,12,112.41,1.86661e-25,158.0,3.16e-10,False,low_mass_stars neutron_star_mergers,300 million years after the Big Bang
+49,In,Indium,Post-transition metal,solid,False,1863,5,13,114.818,1.9066e-25,193.0,3.86e-10,False,low_mass_stars neutron_star_mergers,300 million years after the Big Bang
+50,Sn,Tin,Post-transition metal,solid,False,ancient,5,14,118.71,1.97123e-25,217.0,4.34e-10,False,low_mass_stars,400 million years after the Big Bang
+51,Sb,Antimony,Metalloid,solid,False,ancient,5,15,121.76,2.02187e-25,206.0,4.12e-10,False,neutron_star_mergers low_mass_stars,300 million years after the Big Bang
+52,Te,Tellurium,Metalloid,solid,False,1782,5,16,127.6,2.11885e-25,206.0,4.12e-10,False,neutron_star_mergers,300 million years after the Big Bang
+53,I,Iodine,Halogen,solid,False,1811,5,17,126.9045,2.1073e-25,198.0,3.96e-10,False,neutron_star_mergers,300 million years after the Big Bang
+54,Xe,Xenon,Noble gas,gas,False,1898,5,18,131.29,2.18012e-25,216.0,4.32e-10,False,neutron_star_mergers,300 million years after the Big Bang
+55,Cs,Cesium,Alkali metal,solid,False,1860,6,1,132.905452,2.20695e-25,343.0,6.86e-10,False,neutron_star_mergers,300 million years after the Big Bang
+56,Ba,Barium,Alkaline earth metal,solid,False,1808,6,2,137.33,2.28042e-25,268.0,5.36e-10,False,low_mass_stars,400 million years after the Big Bang
+57,La,Lanthanum,Lanthanide,solid,False,1839,6,,138.9055,2.30658e-25,240.0,4.8e-10,False,low_mass_stars,400 million years after the Big Bang
+58,Ce,Cerium,Lanthanide,solid,False,1803,6,,140.116,2.32668e-25,235.0,4.7e-10,False,low_mass_stars,400 million years after the Big Bang
+59,Pr,Praseodymium,Lanthanide,solid,False,1885,6,,140.90766,2.33983e-25,239.0,4.78e-10,False,low_mass_stars neutron_star_mergers,300 million years after the Big Bang
+60,Nd,Neodymium,Lanthanide,solid,False,1885,6,,144.24,2.39516e-25,229.0,4.58e-10,False,low_mass_stars neutron_star_mergers,300 million years after the Big Bang
+61,Pm,Promethium,Lanthanide,solid,True,1945,6,,144.91276,2.40633e-25,236.0,4.72e-10,False,decay,300 million years after the Big Bang
+62,Sm,Samarium,Lanthanide,solid,False,1879,6,,150.4,2.49745e-25,229.0,4.58e-10,False,neutron_star_mergers low_mass_stars,300 million years after the Big Bang
+63,Eu,Europium,Lanthanide,solid,False,1901,6,,151.964,2.52342e-25,233.0,4.66e-10,False,neutron_star_mergers,300 million years after the Big Bang
+64,Gd,Gadolinium,Lanthanide,solid,False,1880,6,,157.25,2.6112e-25,237.0,4.74e-10,False,neutron_star_mergers,300 million years after the Big Bang
+65,Tb,Terbium,Lanthanide,solid,False,1843,6,,158.92535,2.63902e-25,221.0,4.42e-10,False,neutron_star_mergers,300 million years after the Big Bang
+66,Dy,Dysprosium,Lanthanide,solid,False,1886,6,,162.5,2.69838e-25,229.0,4.58e-10,False,neutron_star_mergers,300 million years after the Big Bang
+67,Ho,Holmium,Lanthanide,solid,False,1878,6,,164.93033,2.73873e-25,216.0,4.32e-10,False,neutron_star_mergers,300 million years after the Big Bang
+68,Er,Erbium,Lanthanide,solid,False,1843,6,,167.26,2.77742e-25,235.0,4.7e-10,False,neutron_star_mergers,300 million years after the Big Bang
+69,Tm,Thulium,Lanthanide,solid,False,1879,6,,168.93422,2.80522e-25,227.0,4.54e-10,False,neutron_star_mergers,300 million years after the Big Bang
+70,Yb,Ytterbium,Lanthanide,solid,False,1878,6,,173.05,2.87356e-25,242.0,4.84e-10,False,neutron_star_mergers low_mass_stars,300 million years after the Big Bang
+71,Lu,Lutetium,Lanthanide,solid,False,1907,6,,174.9667,2.90539e-25,221.0,4.42e-10,False,neutron_star_mergers,300 million years after the Big Bang
+72,Hf,Hafnium,Transition metal,solid,False,1923,6,4,178.49,2.9639e-25,212.0,4.24e-10,False,low_mass_stars neutron_star_mergers,300 million years after the Big Bang
+73,Ta,Tantalum,Transition metal,solid,False,1802,6,5,180.9479,3.00471e-25,217.0,4.34e-10,False,neutron_star_mergers low_mass_stars,300 million years after the Big Bang
+74,W,Tungsten,Transition metal,solid,False,1783,6,6,183.84,3.05274e-25,210.0,4.2e-10,False,low_mass_stars neutron_star_mergers,300 million years after the Big Bang
+75,Re,Rhenium,Transition metal,solid,False,1925,6,7,186.207,3.09204e-25,217.0,4.34e-10,False,neutron_star_mergers,300 million years after the Big Bang
+76,Os,Osmium,Transition metal,solid,False,1803,6,8,190.2,3.15835e-25,216.0,4.32e-10,False,neutron_star_mergers,300 million years after the Big Bang
+77,Ir,Iridium,Transition metal,solid,False,1803,6,9,192.22,3.19189e-25,202.0,4.04e-10,False,neutron_star_mergers,300 million years after the Big Bang
+78,Pt,Platinum,Transition metal,solid,False,1735,6,10,195.08,3.23938e-25,209.0,4.18e-10,False,neutron_star_mergers,300 million years after the Big Bang
+79,Au,Gold,Transition metal,solid,False,ancient,6,11,196.96657,3.27071e-25,166.0,3.32e-10,False,neutron_star_mergers,300 million years after the Big Bang
+80,Hg,Mercury,Transition metal,liquid,False,ancient,6,12,200.59,3.33088e-25,209.0,4.18e-10,False,low_mass_stars neutron_star_mergers,300 million years after the Big Bang
+81,Tl,Thallium,Post-transition metal,solid,False,1861,6,13,204.383,3.39386e-25,196.0,3.92e-10,False,low_mass_stars,400 million years after the Big Bang
+82,Pb,Lead,Post-transition metal,solid,False,ancient,6,14,207.0,3.43732e-25,202.0,4.04e-10,False,low_mass_stars,400 million years after the Big Bang
+83,Bi,Bismuth,Post-transition metal,solid,False,1753,6,15,208.9804,3.4702e-25,207.0,4.14e-10,False,low_mass_stars,400 million years after the Big Bang
+84,Po,Polonium,Metalloid,solid,True,1898,6,16,208.98243,3.47023e-25,197.0,3.94e-10,False,decay,300 million years after the Big Bang
+85,At,Astatine,Halogen,solid,True,1940,6,17,209.98715,3.48692e-25,202.0,4.04e-10,False,decay,300 million years after the Big Bang
+86,Rn,Radon,Noble gas,gas,True,1900,6,18,222.01758,3.68669e-25,220.0,4.4e-10,False,decay,300 million years after the Big Bang
+87,Fr,Francium,Alkali metal,solid,True,1939,7,1,223.01973,3.70333e-25,348.0,6.96e-10,False,decay,300 million years after the Big Bang
+88,Ra,Radium,Alkaline earth metal,solid,True,1898,7,2,226.02541,3.75324e-25,283.0,5.66e-10,False,decay,300 million years after the Big Bang
+89,Ac,Actinium,Actinide,solid,True,1899,7,,227.02775,3.76988e-25,260.0,5.2e-10,False,decay,300 million years after the Big Bang
+90,Th,Thorium,Actinide,solid,True,1828,7,,232.038,3.85308e-25,237.0,4.74e-10,False,neutron_star_mergers,300 million years after the Big Bang
+91,Pa,Protactinium,Actinide,solid,True,1913,7,,231.03588,3.83644e-25,243.0,4.86e-10,False,decay,300 million years after the Big Bang
+92,U,Uranium,Actinide,solid,True,1789,7,,238.0289,3.95256e-25,240.0,4.8e-10,False,neutron_star_mergers,300 million years after the Big Bang
+93,Np,Neptunium,Actinide,solid,True,1940,7,,237.048172,3.93628e-25,221.0,4.42e-10,False,decay,300 million years after the Big Bang
+94,Pu,Plutonium,Actinide,solid,True,1940,7,,244.0642,4.05278e-25,243.0,4.86e-10,False,neutron_star_mergers,300 million years after the Big Bang
+95,Am,Americium,Actinide,solid,True,1944,7,,243.06138,4.03613e-25,244.0,4.88e-10,False,laboratory,82 years ago
+96,Cm,Curium,Actinide,solid,True,1944,7,,247.07035,4.1027e-25,245.0,4.9e-10,False,laboratory,82 years ago
+97,Bk,Berkelium,Actinide,solid,True,1949,7,,247.07031,4.1027e-25,244.0,4.88e-10,False,laboratory,77 years ago
+98,Cf,Californium,Actinide,solid,True,1950,7,,251.07959,4.16927e-25,245.0,4.9e-10,False,laboratory,76 years ago
+99,Es,Einsteinium,Actinide,solid,True,1952,7,,252.083,4.18594e-25,245.0,4.9e-10,False,laboratory,74 years ago
+100,Fm,Fermium,Actinide,solid,True,1952,7,,257.09511,4.26916e-25,235.0,4.7e-10,True,laboratory,74 years ago
+101,Md,Mendelevium,Actinide,solid,True,1955,7,,258.09843,4.28583e-25,227.0,4.54e-10,True,laboratory,71 years ago
+102,No,Nobelium,Actinide,solid,True,1957,7,,259.101,4.30247e-25,242.0,4.84e-10,True,laboratory,69 years ago
+103,Lr,Lawrencium,Actinide,solid,True,1961,7,,266.12,4.41903e-25,221.0,4.42e-10,True,laboratory,65 years ago
+104,Rf,Rutherfordium,Transition metal,solid,True,1964,7,4,267.122,4.43567e-25,212.0,4.24e-10,True,laboratory,62 years ago
+105,Db,Dubnium,Transition metal,solid,True,1967,7,5,268.126,4.45234e-25,217.0,4.34e-10,True,laboratory,59 years ago
+106,Sg,Seaborgium,Transition metal,solid,True,1974,7,6,269.128,4.46898e-25,210.0,4.2e-10,True,laboratory,52 years ago
+107,Bh,Bohrium,Transition metal,solid,True,1976,7,7,270.133,4.48566e-25,217.0,4.34e-10,True,laboratory,50 years ago
+108,Hs,Hassium,Transition metal,solid,True,1984,7,8,269.1336,4.46907e-25,216.0,4.32e-10,True,laboratory,42 years ago
+109,Mt,Meitnerium,Transition metal,solid,True,1982,7,9,277.154,4.60225e-25,202.0,4.04e-10,True,laboratory,44 years ago
+110,Ds,Darmstadtium,Transition metal,solid,True,1994,7,10,282.166,4.68548e-25,209.0,4.18e-10,True,laboratory,32 years ago
+111,Rg,Roentgenium,Transition metal,solid,True,1994,7,11,282.169,4.68553e-25,166.0,3.32e-10,True,laboratory,32 years ago
+112,Cn,Copernicium,Transition metal,solid,True,1996,7,12,286.179,4.75211e-25,209.0,4.18e-10,True,laboratory,30 years ago
+113,Nh,Nihonium,Post-transition metal,solid,True,2004,7,13,286.182,4.75216e-25,196.0,3.92e-10,True,laboratory,22 years ago
+114,Fl,Flerovium,Post-transition metal,solid,True,1998,7,14,290.192,4.81875e-25,202.0,4.04e-10,True,laboratory,28 years ago
+115,Mc,Moscovium,Post-transition metal,solid,True,2003,7,15,290.196,4.81882e-25,207.0,4.14e-10,True,laboratory,23 years ago
+116,Lv,Livermorium,Post-transition metal,solid,True,2000,7,16,293.205,4.86878e-25,197.0,3.94e-10,True,laboratory,26 years ago
+117,Ts,Tennessine,Halogen,solid,True,2010,7,17,294.211,4.88549e-25,202.0,4.04e-10,True,laboratory,16 years ago
+118,Og,Oganesson,Noble gas,gas,True,2006,7,18,295.216,4.90218e-25,220.0,4.4e-10,True,laboratory,20 years ago

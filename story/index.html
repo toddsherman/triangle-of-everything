@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Triangle of Everything: playing the universe from the Big Bang</title>
+<meta name="description" content="Everything in the universe fits inside one triangle on a chart of mass against size. I rebuilt the chart from the data up so you can play it from the instant the universe began to today.">
+<link rel="canonical" href="https://www.todd.sh/triangle">
+<meta property="og:title" content="The Triangle of Everything">
+<meta property="og:description" content="Everything in the universe fits inside one triangle of mass against size. Press play and watch it open from the Big Bang to today.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.todd.sh/triangle">
+<meta property="og:image" content="https://www.todd.sh/project-previews/triangle-palette-v1.webp">
+<meta property="og:image:alt" content="Three walls meeting at a point, fencing in a band of objects, with a ring closing in on one of them">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@tdd">
+<meta name="twitter:title" content="The Triangle of Everything">
+<meta name="twitter:description" content="Everything in the universe fits inside one triangle of mass against size. Press play and watch it open from the Big Bang to today.">
+<meta name="twitter:image" content="https://www.todd.sh/project-previews/triangle-palette-v1.webp">
+<link rel="icon" href="/icon.png" type="image/png">
+<style>
+  :root {
+    --paper: #F4F1EA;
+    --paper-deep: #E9E4D9;
+    --ink: #1D1C19;
+    --stone: #8D887E;
+    --muted: color-mix(in srgb, var(--stone) 65%, var(--ink));
+    --line: #D4CEC2;
+    --red: #B64832;
+    --blue: #31566B;
+    --ochre: #B58A43;
+    --serif: Georgia, "Times New Roman", serif;
+    --sans: Arial, Helvetica, sans-serif;
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--serif);
+    font-size: 18px;
+    line-height: 1.62;
+  }
+
+  /* ---- shared return bar ---------------------------------------------- */
+  .returnbar {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    background: var(--paper);
+    border-bottom: 1px solid var(--line);
+  }
+  .returnbar a {
+    font-family: var(--sans);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ink);
+    text-decoration: none;
+  }
+  .returnbar a:hover { color: var(--red); }
+  .returnbar a:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
+
+  /* ---- layout ---------------------------------------------------------- */
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 20px 96px; }
+  header.masthead { padding: 56px 0 8px; }
+  h1 {
+    font-size: 54px;
+    line-height: 1.04;
+    font-weight: 400;
+    margin: 0 0 20px;
+    letter-spacing: -0.01em;
+  }
+  .standfirst { font-size: 21px; line-height: 1.55; color: #3A382F; margin: 0 0 28px; }
+  h2 { font-size: 30px; font-weight: 400; line-height: 1.2; margin: 64px 0 16px; }
+  p { margin: 0 0 20px; }
+  a.inline { color: var(--red); text-decoration: none; border-bottom: 1px solid rgba(182,72,50,.35); }
+  a.inline:hover { border-bottom-color: var(--red); }
+  a.inline:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+
+  /* ---- buttons ---------------------------------------------------------- */
+  .actions { display: flex; flex-wrap: wrap; gap: 12px; margin: 0 0 36px; }
+  .button {
+    display: inline-flex; align-items: center; min-height: 44px; padding: 0 20px;
+    font-family: var(--sans); font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
+    text-decoration: none; border: 1px solid var(--ink); border-radius: 4px;
+  }
+  .button.primary { background: var(--ink); color: var(--paper); }
+  .button.primary:hover { background: var(--red); border-color: var(--red); }
+  .button.secondary { background: transparent; color: var(--ink); }
+  .button.secondary:hover { background: var(--paper-deep); }
+  .button:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
+
+  /* ---- figures ---------------------------------------------------------- */
+  figure { margin: 32px 0 36px; }
+  figure.wide { margin-left: calc(50% - min(48vw, 560px)); margin-right: calc(50% - min(48vw, 560px)); }
+  figure video, figure img { display: block; width: 100%; height: auto; border: 1px solid var(--line); border-radius: 8px; background: var(--ink); }
+  figure.chart-image img { max-width: 520px; margin: 0 auto; background: #fff; }
+  figure svg { display: block; width: 100%; height: auto; }
+  figcaption {
+    font-family: var(--sans); font-size: 13px; line-height: 1.5; color: var(--muted);
+    margin: 12px auto 0; max-width: 760px; padding: 0 2px;
+  }
+  figure.chart-image figcaption { max-width: 520px; }
+  figcaption a { color: var(--muted); }
+  figcaption a:hover { color: var(--red); }
+
+  /* ---- the three walls ---------------------------------------------------- */
+  .walls { list-style: none; margin: 0 0 24px; padding: 0; }
+  .walls li { border-top: 1px solid var(--line); padding: 14px 0 10px 22px; position: relative; }
+  .walls li:last-child { border-bottom: 1px solid var(--line); }
+  .walls li::before { content: ""; position: absolute; left: 0; top: 23px; width: 10px; height: 10px; border-radius: 50%; background: var(--c); }
+  .walls strong { font-family: var(--sans); font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; display: block; margin-bottom: 2px; }
+  .walls span { display: block; }
+
+  .playlist { margin: 0 0 24px; padding-left: 22px; }
+  .playlist li { margin: 0 0 10px; padding-left: 4px; }
+  .playlist li::marker { color: var(--red); }
+
+  /* diagram text */
+  .dg-label { font-family: var(--sans); font-size: 12px; fill: var(--ink); }
+  .dg-wall { font-family: var(--sans); font-size: 12px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
+  .dg-region { font-family: var(--sans); font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; fill: var(--stone); }
+  .dg-axis { font-family: var(--sans); font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; fill: var(--muted); }
+
+  /* ---- sources ---------------------------------------------------------- */
+  .sources { font-family: var(--sans); font-size: 14px; line-height: 1.55; padding-left: 20px; color: #3A382F; }
+  .sources li { margin: 0 0 10px; }
+  .sources a { color: var(--ink); }
+  .sources a:hover { color: var(--red); }
+
+  footer.end { border-top: 1px solid var(--line); margin-top: 64px; padding-top: 28px; }
+  footer.end p { font-family: var(--sans); font-size: 13px; }
+  footer.end a { color: var(--ink); }
+  footer.end a:hover { color: var(--red); }
+
+  @media (max-width: 640px) {
+    body { font-size: 17px; }
+    header.masthead { padding-top: 36px; }
+    h1 { font-size: 40px; }
+    .standfirst { font-size: 19px; }
+    h2 { font-size: 26px; margin-top: 52px; }
+    figure.wide { margin-left: -20px; margin-right: -20px; }
+    figure.wide video { border-radius: 0; border-left: 0; border-right: 0; }
+    figure.wide figcaption { padding: 0 20px; }
+  }
+</style>
+</head>
+<body>
+<nav class="returnbar"><a href="/"><span data-sanity-copy="returnbar">&larr;&nbsp;&nbsp;todd.sh</span></a></nav>
+
+<main class="wrap">
+  <header class="masthead">
+    <h1 data-sanity-copy="title">The Triangle of Everything</h1>
+    <p class="standfirst" data-sanity-copy="standfirst">Plot anything in the universe by its size and its mass, and it lands inside one triangle. I ran across that chart on Reddit, couldn't stop looking at it, and rebuilt it as something you can play, from the instant the universe began to today.</p>
+    <div class="actions">
+      <a class="button primary" href="../site/"><span data-sanity-copy="cta_play">Play the universe</span>&nbsp;&rarr;</a>
+      <a class="button secondary" href="https://github.com/toddsherman/triangle-of-everything"><span data-sanity-copy="cta_code">Code and data on GitHub</span></a>
+    </div>
+  </header>
+
+  <figure class="wide">
+    <video autoplay muted loop playsinline preload="metadata" poster="assets/today.webp" aria-label="The triangle opening from a single point at the Big Bang as objects appear over cosmic time">
+      <source src="assets/playback.mp4" type="video/mp4">
+    </video>
+    <figcaption data-sanity-copy="hero_caption">One playback, three times faster than the real thing: the triangle opens from a single point as the universe ages, and each thing appears when it first existed.</figcaption>
+  </figure>
+
+  <h2 data-sanity-copy="found_title">Found on Reddit</h2>
+  <p data-sanity-copy="found_p1">I ran across the Triangle of Everything on Reddit. It is one chart with everything on it: quarks, atoms, viruses, people, planets, stars, black holes, galaxies and the observable universe, each placed by how wide it is and how much it weighs, on scales that run from the smallest length physics knows to the edge of everything we can see.</p>
+
+  <figure class="chart-image">
+    <img src="assets/all-objects.webp" width="1400" height="1980" loading="lazy"
+         alt="Lineweaver and Patel's All objects chart: a log-log plot of mass against radius in which every kind of object, from particles to the Hubble radius, falls inside a triangle bounded by black holes, the Compton limit and the Hubble radius">
+    <figcaption><span data-sanity-copy="figure_credit">The chart I found: “All objects,” by Charles H. Lineweaver and Vihan M. Patel, from</span> <a href="https://pubs.aip.org/aapt/ajp/article/91/10/819/2911822/All-objects-and-some-questions"><span data-sanity-copy="figure_link">All objects and some questions</span></a><span data-sanity-copy="figure_journal">, American Journal of Physics 91, 819 (2023).</span></figcaption>
+  </figure>
+
+  <p data-sanity-copy="found_p2">I was fascinated. Nothing we know of falls outside the triangle, and that isn't an accident of who drew it. Each edge is a law of physics.</p>
+
+  <h2 data-sanity-copy="walls_title">Three walls</h2>
+  <p data-sanity-copy="walls_p1">Both axes are logarithmic, so each step along them is a factor of ten. On those axes, three lines fence everything in.</p>
+
+  <figure>
+    <svg viewBox="0 0 640 390" role="img" aria-label="Schematic of the triangle: the Schwarzschild wall above, the Compton wall below, the Hubble wall on the right, meeting at the Big Bang corner">
+      <rect x="40" y="20" width="580" height="350" fill="#E9E4D9" opacity=".45"/>
+      <polygon points="40,20 90,20 90,370 40,370" fill="#8D887E" opacity=".18"/>
+      <polygon points="90,20 620,20 620,25.7 90,215" fill="#B64832" opacity=".10"/>
+      <polygon points="90,215 620,361 620,370 90,370" fill="#31566B" opacity=".10"/>
+      <polygon points="580,40 620,25.7 620,361 580,350" fill="#8D887E" opacity=".14"/>
+      <polygon points="90,215 580,40 580,350" fill="#F4F1EA"/>
+      <line x1="90" y1="215" x2="620" y2="25.7" stroke="#B64832" stroke-width="2.5"/>
+      <line x1="90" y1="215" x2="620" y2="361" stroke="#31566B" stroke-width="2.5"/>
+      <line x1="580" y1="20" x2="580" y2="370" stroke="#1D1C19" stroke-width="2.5"/>
+      <line x1="40" y1="370" x2="620" y2="370" stroke="#8D887E"/>
+      <line x1="40" y1="20" x2="40" y2="370" stroke="#8D887E"/>
+      <text class="dg-wall" fill="#B64832" text-anchor="middle" transform="translate(330,122) rotate(-19.65) translate(0,-8)">Schwarzschild radius</text>
+      <text class="dg-wall" fill="#31566B" text-anchor="middle" transform="translate(330,281) rotate(15.4) translate(0,20)">Compton limit</text>
+      <text class="dg-wall" fill="#1D1C19" text-anchor="middle" transform="translate(596,195) rotate(90)">Hubble radius</text>
+      <text class="dg-region" x="230" y="58">Forbidden by gravity</text>
+      <text class="dg-region" x="200" y="352">Forbidden by quantum uncertainty</text>
+      <text class="dg-region" text-anchor="middle" transform="translate(66,110) rotate(-90)">Below the Planck length</text>
+      <circle cx="90" cy="215" r="6" fill="#1D1C19"/>
+      <text class="dg-label" x="98" y="244" font-weight="700">Big Bang</text>
+      <circle cx="440" cy="90" r="5" fill="#B64832"/><text class="dg-label" x="448" y="108">black hole</text>
+      <circle cx="200" cy="245" r="5" fill="#31566B"/><text class="dg-label" x="196" y="266" text-anchor="middle">proton</text>
+      <circle cx="240" cy="235" r="4.5" fill="#8D887E"/><text class="dg-label" x="248" y="230">atom</text>
+      <circle cx="322" cy="214" r="4.5" fill="#8D887E"/><text class="dg-label" x="330" y="218">virus</text>
+      <circle cx="388" cy="182" r="4.5" fill="#B58A43"/><text class="dg-label" x="396" y="186">you</text>
+      <circle cx="455" cy="140" r="4.5" fill="#B58A43"/><text class="dg-label" x="463" y="144">the Sun</text>
+      <circle cx="530" cy="88" r="4.5" fill="#8D887E"/><text class="dg-label" x="537" y="104">galaxy</text>
+      <circle cx="580" cy="40" r="6" fill="#1D1C19"/><text class="dg-label" x="570" y="36" text-anchor="end">observable universe</text>
+      <text class="dg-axis" x="616" y="386" text-anchor="end">Size →</text>
+      <text class="dg-axis" text-anchor="end" transform="translate(30,24) rotate(-90)">Mass →</text>
+    </svg>
+    <figcaption data-sanity-copy="walls_caption">A sketch of the chart. Black holes sit on the top wall and fundamental particles on the bottom one; everything else is somewhere in between.</figcaption>
+  </figure>
+
+  <ul class="walls">
+    <li style="--c: var(--red)"><strong data-sanity-copy="wall1_name">Schwarzschild radius</strong><span data-sanity-copy="wall1_text">Squeeze any mass inside this size and it becomes a black hole. Nothing can be denser, so nothing sits above the line, and every black hole sits right on it.</span></li>
+    <li style="--c: var(--blue)"><strong data-sanity-copy="wall2_name">Compton limit</strong><span data-sanity-copy="wall2_text">Quantum uncertainty smears a particle over a size set by its mass, and nothing can be pinned down any smaller. Fundamental particles sit on this line.</span></li>
+    <li style="--c: var(--ink)"><strong data-sanity-copy="wall3_name">Hubble radius</strong><span data-sanity-copy="wall3_text">The distance beyond which space recedes from us faster than light. Fill a sphere that wide at the universe's average density and it is exactly as dense as a black hole of the same size, which is why this wall meets the black-hole line at the top corner.</span></li>
+  </ul>
+  <p data-sanity-copy="walls_p2">The two slanted walls meet at the Planck scale, the smallest size and the highest density physics can describe. That corner is the Big Bang.</p>
+
+  <h2 data-sanity-copy="play_q_title">Could it play?</h2>
+  <p data-sanity-copy="play_q_p1">The longer I looked, the more I wondered whether it could be more than a picture. The right-hand wall isn't fixed. The Hubble radius measures the universe at one moment, and it has been growing since the beginning. Wind the clock back and that wall slides down the black-hole line toward the corner, until all three walls meet at a single point.</p>
+
+  <figure>
+    <svg viewBox="0 0 640 290" role="img" aria-label="Three nested triangles sharing the Big Bang corner, their right-hand walls at a tiny fraction of a second, at one second and today">
+      <polygon points="70,150 590,35.6 590,254" fill="#E9E4D9"/>
+      <polygon points="70,150 439,68.8 439,223.8" fill="#D4CEC2" opacity=".7"/>
+      <polygon points="70,150 184,124.9 184,172.8" fill="#8D887E" opacity=".55"/>
+      <line x1="70" y1="150" x2="620" y2="29" stroke="#B64832" stroke-width="2"/>
+      <line x1="70" y1="150" x2="620" y2="260" stroke="#31566B" stroke-width="2"/>
+      <line x1="184" y1="124.9" x2="184" y2="172.8" stroke="#1D1C19" stroke-width="1.5" stroke-dasharray="4 3"/>
+      <line x1="439" y1="68.8" x2="439" y2="223.8" stroke="#1D1C19" stroke-width="1.5" stroke-dasharray="4 3"/>
+      <line x1="590" y1="35.6" x2="590" y2="254" stroke="#1D1C19" stroke-width="2.5"/>
+      <circle cx="70" cy="150" r="5" fill="#1D1C19"/>
+      <text class="dg-label" x="62" y="154" text-anchor="end" font-weight="700">Big Bang</text>
+      <text class="dg-label" x="184" y="192" text-anchor="middle">10⁻³⁰ seconds</text>
+      <text class="dg-label" x="439" y="243" text-anchor="middle">1 second</text>
+      <text class="dg-label" x="590" y="274" text-anchor="middle" font-weight="700">today</text>
+    </svg>
+    <figcaption data-sanity-copy="grow_caption">The Hubble wall at three moments, roughly to scale on the chart's log axes. Most of the widening happens in the first second.</figcaption>
+  </figure>
+
+  <p data-sanity-copy="play_q_p2">So the chart isn't only a map of everything. It's one frame of a triangle that has been opening for 13.8 billion years. I wanted to watch it open: to press play at the Big Bang and see each kind of thing appear when it first existed.</p>
+
+  <h2 data-sanity-copy="data_title">Rebuilding it from the data</h2>
+  <p data-sanity-copy="data_p1">A chart you can play needs data, not pixels. Working with Claude Code, I transcribed the chart, and an illustrated poster version of it, into datasets: 53 objects, the 17 entries of its stellar-evolution inset, 19 particles, the timeline of cosmic eras, and 33 points from Lineweaver and Patel's chart.</p>
+  <p data-sanity-copy="data_p2">Then I stopped trusting the artwork. Every wall, density line and time line is drawn from its equation with exact constants. Black holes are placed from their mass by the Schwarzschild formula and particles by their Compton wavelength, so a dot that belongs on a wall stays on it even zoomed in 150 times. Checking everything that way turned up 14 places where the poster contradicts itself or physics, from a mislabelled mass axis to a legend that swaps leptons and hadrons. They're listed beside the chart.</p>
+  <p data-sanity-copy="data_p3">The motion comes from cosmology. Using the Planck 2018 model of the expanding universe, I worked out 701 moments from the instant the walls meet to today: how dense the universe was, how wide its Hubble sphere and observable universe were, and how hot it was. Every object carries the date it first existed, and at each moment the chart draws only what existed then and fit inside the universe of the time.</p>
+  <p data-sanity-copy="data_p4">Later I added all 118 elements, with masses and sizes from PubChem and the cosmic source of each one's atoms: the Big Bang for hydrogen and helium, exploding stars for oxygen and iron, merging neutron stars for gold, and laboratories for the last two dozen.</p>
+
+  <figure class="wide">
+    <img src="assets/early.webp" width="1600" height="1000" loading="lazy" alt="The interactive chart at 380,000 years after the Big Bang: a small triangle with particles, hydrogen and helium atoms, and the background light glowing in the infrared">
+    <figcaption data-sanity-copy="early_caption">380,000 years after the Big Bang: the first atoms have formed, and the background light, marked by the glowing ring, has cooled to the infrared.</figcaption>
+  </figure>
+
+  <h2 data-sanity-copy="playing_title">Playing the universe</h2>
+  <p data-sanity-copy="playing_p1">Press play and 13.8 billion years pass in 48 seconds. The time bar runs on a scale that gives the first trillionth of a second as much room as the last few thousand years.</p>
+  <ul class="playlist">
+    <li data-sanity-copy="playing_li1">It starts with the three walls meeting at a point, half a Planck time after the Big Bang.</li>
+    <li data-sanity-copy="playing_li2">Light appears at a trillionth of a second, atoms at 380,000 years, the first stars at about 100 million years, and the newest elements in the last 82 years.</li>
+    <li data-sanity-copy="playing_li3">A glowing marker follows the peak of the universe's background light as it cools from gamma rays to the microwaves we see today.</li>
+    <li data-sanity-copy="playing_li4">Nothing is drawn beyond the Hubble wall of the moment, so the chart only ever shows a universe that could exist then.</li>
+    <li data-sanity-copy="playing_li5">A Shepard tone rises underneath without end. Each new arrival gets a ring that closes in on it and a pop pitched by its mass: particles ring high and galaxies low.</li>
+  </ul>
+  <p data-sanity-copy="playing_p2">From the triangle you can open views of stellar evolution, the particle zoo, the periodic table and the timeline.</p>
+
+  <figure class="wide">
+    <img src="assets/elements.webp" width="1600" height="1000" loading="lazy" alt="The periodic table view, each element coloured by where its atoms are made, with gold selected and its details in the sidebar">
+    <figcaption data-sanity-copy="elements_caption">The periodic table, coloured by where each element's atoms are made. Gold comes from merging neutron stars.</figcaption>
+  </figure>
+
+  <div class="actions">
+    <a class="button primary" href="../site/"><span data-sanity-copy="cta_play_end">Play the universe</span>&nbsp;&rarr;</a>
+    <a class="button secondary" href="https://github.com/toddsherman/triangle-of-everything"><span data-sanity-copy="cta_code_end">Code and data on GitHub</span></a>
+  </div>
+
+  <h2 data-sanity-copy="sources_title">Sources</h2>
+  <ol class="sources">
+    <li><span data-sanity-copy="src_lp">Charles H. Lineweaver and Vihan M. Patel,</span> <a href="https://pubs.aip.org/aapt/ajp/article/91/10/819/2911822/All-objects-and-some-questions"><span data-sanity-copy="src_lp_title">All objects and some questions</span></a><span data-sanity-copy="src_lp_journal">, American Journal of Physics 91, 819 (2023).</span></li>
+    <li><span data-sanity-copy="src_planck">Planck Collaboration,</span> <a href="https://arxiv.org/abs/1807.06209"><span data-sanity-copy="src_planck_title">Planck 2018 results. VI. Cosmological parameters</span></a><span data-sanity-copy="src_planck_journal">, Astronomy &amp; Astrophysics 641, A6 (2020): the expansion history.</span></li>
+    <li><a href="https://pubchem.ncbi.nlm.nih.gov/periodic-table/"><span data-sanity-copy="src_pubchem">PubChem periodic table</span></a><span data-sanity-copy="src_pubchem_note">: element masses and van der Waals radii.</span></li>
+    <li><span data-sanity-copy="src_johnson">Jennifer A. Johnson,</span> <a href="https://www.science.org/doi/10.1126/science.aau9540"><span data-sanity-copy="src_johnson_title">Populating the periodic table: Nucleosynthesis of the elements</span></a><span data-sanity-copy="src_johnson_journal">, Science 363, 474 (2019): where each element is made.</span></li>
+    <li><a href="https://pdg.lbl.gov/"><span data-sanity-copy="src_pdg">Particle Data Group</span></a><span data-sanity-copy="src_pdg_note">: particle masses.</span></li>
+    <li><span data-sanity-copy="src_macro">David M. Jacobs, Glenn D. Starkman and Bryan W. Lynn,</span> <a href="https://arxiv.org/abs/1410.2236"><span data-sanity-copy="src_macro_title">Macro dark matter</span></a><span data-sanity-copy="src_macro_journal">, Monthly Notices of the Royal Astronomical Society 450, 3418 (2015): the dark-matter windows.</span></li>
+  </ol>
+
+  <footer class="end">
+    <p><a href="/"><span data-sanity-copy="back">&larr; Back to todd.sh</span></a></p>
+  </footer>
+</main>
+
+<script>
+  // honour reduced motion: show the poster frame instead of the looping playback
+  if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    document.querySelectorAll("video[autoplay]").forEach(function (v) { v.removeAttribute("autoplay"); v.pause(); v.controls = true; });
+  }
+</script>
+</body>
+</html>
