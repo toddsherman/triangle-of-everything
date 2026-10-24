@@ -12,3 +12,5 @@ web/
 /Triangle_of_Everything.png
 /b6y2fthj95ie1.png
 data/qa/
+.vercel
+.env*
