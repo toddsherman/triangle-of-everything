@@ -10,7 +10,7 @@ Plot anything in the universe by its size and its mass, and it lands inside one 
 
 | Folder | Contents |
 | --- | --- |
-| [`data/`](data/) | The datasets, as JSON and CSV: 53 objects, the stellar-evolution and particle insets, the cosmic timeline with 701 moments of expansion history, Lineweaver & Patel's points, all 118 elements, and 14 errors found in the poster. See [`data/README.md`](data/README.md). |
+| [`data/`](data/) | The datasets, as JSON and CSV: 53 objects, the stellar-evolution and particle insets, the cosmic timeline with 701 moments of expansion history, Lineweaver & Patel's points, all 118 elements, 24 molecules, and 14 errors found in the poster. See [`data/README.md`](data/README.md). |
 | [`scripts/`](scripts/) | `build_data.py` writes everything in `data/` (standard library only). `check_physics.py` confirms the data is physically consistent. `render_overlay.py` draws the data back onto the source images. `build-web.mjs` assembles the site for deployment. |
 | [`site/`](site/) | The interactive chart: plain HTML, CSS and ES modules with D3, no build step. See [`site/README.md`](site/README.md). |
 | [`story/`](story/) | The write-up page served at todd.sh/triangle. |

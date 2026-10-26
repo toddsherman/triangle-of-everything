@@ -1,0 +1,25 @@
+id,name,formula,kind,mass_da,mass_kg,width_m,width_basis,width_is_estimate,first_appeared
+heh_ion,Helium hydride ion,HeH+,Simple molecule,5.01005,8.31939e-27,3e-10,estimate,True,100 thousand years after the Big Bang
+hydrogen_molecule,Hydrogen molecule,H2,Simple molecule,2.016,3.34765e-27,2.89e-10,kinetic_diameter,False,400 thousand years after the Big Bang
+water,Water,H2O,Simple molecule,18.015,2.99146e-26,2.65e-10,kinetic_diameter,False,200 million years after the Big Bang
+ammonia,Ammonia,NH3,Simple molecule,17.031,2.82806e-26,2.6e-10,kinetic_diameter,False,200 million years after the Big Bang
+methane,Methane,CH4,Simple molecule,16.043,2.664e-26,3.8e-10,kinetic_diameter,False,200 million years after the Big Bang
+nitrogen_molecule,Nitrogen molecule,N2,Simple molecule,28.014,4.65183e-26,3.64e-10,kinetic_diameter,False,200 million years after the Big Bang
+carbon_monoxide,Carbon monoxide,CO,Simple molecule,28.01,4.65117e-26,3.76e-10,kinetic_diameter,False,200 million years after the Big Bang
+carbon_dioxide,Carbon dioxide,CO2,Simple molecule,44.009,7.30787e-26,3.3e-10,kinetic_diameter,False,200 million years after the Big Bang
+ethanol,Ethanol,C2H6O,Organic molecule,46.069,7.64994e-26,4.5e-10,kinetic_diameter,False,1 billion years after the Big Bang
+glycine,Glycine,C2H5NO2,Organic molecule,75.067,1.24652e-25,5.291e-10,volume_sphere,False,4.6 billion years ago
+glucose,Glucose,C6H12O6,Organic molecule,180.156,2.99156e-25,7.186e-10,volume_sphere,False,3.8 billion years ago
+caffeine,Caffeine,C8H10N4O2,Organic molecule,194.194,3.22467e-25,7.941e-10,volume_sphere,False,20 million years ago
+aspirin,Aspirin,C9H8O4,Organic molecule,180.159,2.99161e-25,7.418e-10,volume_sphere,False,173 years ago
+cholesterol,Cholesterol,C27H46O,Organic molecule,386.664,6.42071e-25,1.052e-09,volume_sphere,False,2 billion years ago
+atp,ATP,C10H16N5O13P3,Organic molecule,507.181,8.42194e-25,1.024e-09,volume_sphere,True,3.8 billion years ago
+buckminsterfullerene,Buckminsterfullerene (C60),C60,Organic molecule,720.66,1.19668e-24,1e-09,structure,False,400 million years after the Big Bang
+insulin,Insulin,,Protein,5808.0,9.64441e-24,2.39e-09,volume_sphere,False,600 million years ago
+haemoglobin,Haemoglobin,,Protein,64500.0,1.07105e-22,6.4e-09,structure,False,500 million years ago
+antibody,Antibody (IgG),,Protein,150000.0,2.49081e-22,1.45e-08,structure,False,450 million years ago
+rubisco,Rubisco,,Protein,550000.0,9.13296e-22,1.1e-08,structure,False,3.4 billion years ago
+collagen,Collagen,,Protein,300000.0,4.98162e-22,3e-07,structure,False,600 million years ago
+titin,Titin,,Protein,3800000.0,6.31005e-21,1e-06,structure,False,540 million years ago
+ribosome,Ribosome,,Molecular machine,2500000.0,4.15135e-21,2.1e-08,structure,False,3.8 billion years ago
+human_cell_dna,DNA in one human cell,,Nucleic acid,3813000000000.0,6.33164e-15,2.108,contour_length,False,300 thousand years ago

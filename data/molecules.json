@@ -1,0 +1,660 @@
+{
+  "source": "Curated for this project, not read from either chart. Atomic masses from PubChem; kinetic diameters from D. W. Breck, Zeolite Molecular Sieves (1974); structure sizes from published structures (rounded); densities from standard tables.",
+  "width_bases": {
+    "kinetic_diameter": "The measured size a gas molecule presents in collisions.",
+    "volume_sphere": "The diameter of a sphere with the molecule's volume in its pure solid, from its density (1.35 g/cm3 for proteins).",
+    "structure": "The longest dimension of its measured 3D structure, rounded.",
+    "contour_length": "The length of a chain molecule stretched end to end.",
+    "estimate": "No measurement; a rough size."
+  },
+  "molecules": [
+    {
+      "id": "heh_ion",
+      "name": "Helium hydride ion",
+      "formula": "HeH+",
+      "kind": "Simple molecule",
+      "reference": {
+        "mass_da": 5.01005,
+        "mass_kg": 8.31939e-27,
+        "log10_mass_kg": -26.079909,
+        "width_m": 3e-10,
+        "log10_width_m": -9.522879,
+        "width_basis": "estimate",
+        "density_kg_m3": null,
+        "width_is_estimate": true,
+        "confidence": "low"
+      },
+      "description": "The first molecule in the universe, formed once neutral helium could bond with a proton, about 100,000 years after the Big Bang. It was finally found in space in 2019, in the nebula NGC 7027. No size has been measured; it is about as wide as a helium atom.",
+      "first_appeared": {
+        "seconds_after_big_bang": 3156000000000.0,
+        "years_ago": null,
+        "log10_seconds": 12.499137,
+        "label": "100 thousand years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "medium",
+        "note": null
+      }
+    },
+    {
+      "id": "hydrogen_molecule",
+      "name": "Hydrogen molecule",
+      "formula": "H2",
+      "kind": "Simple molecule",
+      "reference": {
+        "mass_da": 2.016,
+        "mass_kg": 3.34765e-27,
+        "log10_mass_kg": -26.47526,
+        "width_m": 2.89e-10,
+        "log10_width_m": -9.539102,
+        "width_basis": "kinetic_diameter",
+        "density_kg_m3": null,
+        "width_is_estimate": false,
+        "confidence": "high"
+      },
+      "description": "The most common molecule in the universe. It formed soon after the first hydrogen atoms, and by about 100 million years it was cooling the gas clouds that made the first stars.",
+      "first_appeared": {
+        "seconds_after_big_bang": 12624000000000.0,
+        "years_ago": null,
+        "log10_seconds": 13.101197,
+        "label": "400 thousand years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": null
+      }
+    },
+    {
+      "id": "water",
+      "name": "Water",
+      "formula": "H2O",
+      "kind": "Simple molecule",
+      "reference": {
+        "mass_da": 18.015,
+        "mass_kg": 2.99146e-26,
+        "log10_mass_kg": -25.524117,
+        "width_m": 2.65e-10,
+        "log10_width_m": -9.576754,
+        "width_basis": "kinetic_diameter",
+        "density_kg_m3": null,
+        "width_is_estimate": false,
+        "confidence": "high"
+      },
+      "description": "Water needs oxygen, so it first formed in the debris of the first supernovae, a couple of hundred million years after the Big Bang.",
+      "first_appeared": {
+        "seconds_after_big_bang": 6312000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.800167,
+        "label": "200 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": null
+      }
+    },
+    {
+      "id": "ammonia",
+      "name": "Ammonia",
+      "formula": "NH3",
+      "kind": "Simple molecule",
+      "reference": {
+        "mass_da": 17.031,
+        "mass_kg": 2.82806e-26,
+        "log10_mass_kg": -25.548511,
+        "width_m": 2.6e-10,
+        "log10_width_m": -9.585027,
+        "width_basis": "kinetic_diameter",
+        "density_kg_m3": null,
+        "width_is_estimate": false,
+        "confidence": "high"
+      },
+      "description": "One of the first molecules found in interstellar space (1968). Its nitrogen came from the first stars.",
+      "first_appeared": {
+        "seconds_after_big_bang": 6312000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.800167,
+        "label": "200 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": null
+      }
+    },
+    {
+      "id": "methane",
+      "name": "Methane",
+      "formula": "CH4",
+      "kind": "Simple molecule",
+      "reference": {
+        "mass_da": 16.043,
+        "mass_kg": 2.664e-26,
+        "log10_mass_kg": -25.574465,
+        "width_m": 3.8e-10,
+        "log10_width_m": -9.420216,
+        "width_basis": "kinetic_diameter",
+        "density_kg_m3": null,
+        "width_is_estimate": false,
+        "confidence": "high"
+      },
+      "description": "The simplest hydrocarbon, common in cold interstellar ice and the atmospheres of the giant planets.",
+      "first_appeared": {
+        "seconds_after_big_bang": 6312000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.800167,
+        "label": "200 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": null
+      }
+    },
+    {
+      "id": "nitrogen_molecule",
+      "name": "Nitrogen molecule",
+      "formula": "N2",
+      "kind": "Simple molecule",
+      "reference": {
+        "mass_da": 28.014,
+        "mass_kg": 4.65183e-26,
+        "log10_mass_kg": -25.332376,
+        "width_m": 3.64e-10,
+        "log10_width_m": -9.438899,
+        "width_basis": "kinetic_diameter",
+        "density_kg_m3": null,
+        "width_is_estimate": false,
+        "confidence": "high"
+      },
+      "description": "Four-fifths of the air we breathe. Its atoms were forged in stars.",
+      "first_appeared": {
+        "seconds_after_big_bang": 6312000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.800167,
+        "label": "200 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": null
+      }
+    },
+    {
+      "id": "carbon_monoxide",
+      "name": "Carbon monoxide",
+      "formula": "CO",
+      "kind": "Simple molecule",
+      "reference": {
+        "mass_da": 28.01,
+        "mass_kg": 4.65117e-26,
+        "log10_mass_kg": -25.332438,
+        "width_m": 3.76e-10,
+        "log10_width_m": -9.424812,
+        "width_basis": "kinetic_diameter",
+        "density_kg_m3": null,
+        "width_is_estimate": false,
+        "confidence": "high"
+      },
+      "description": "After hydrogen, the most common molecule in space; astronomers use its glow to map cold gas in galaxies.",
+      "first_appeared": {
+        "seconds_after_big_bang": 6312000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.800167,
+        "label": "200 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": null
+      }
+    },
+    {
+      "id": "carbon_dioxide",
+      "name": "Carbon dioxide",
+      "formula": "CO2",
+      "kind": "Simple molecule",
+      "reference": {
+        "mass_da": 44.009,
+        "mass_kg": 7.30787e-26,
+        "log10_mass_kg": -25.136209,
+        "width_m": 3.3e-10,
+        "log10_width_m": -9.481486,
+        "width_basis": "kinetic_diameter",
+        "density_kg_m3": null,
+        "width_is_estimate": false,
+        "confidence": "high"
+      },
+      "description": "Forms wherever carbon meets oxygen, mostly on icy dust in space. The first carbon and oxygen came from the first supernovae.",
+      "first_appeared": {
+        "seconds_after_big_bang": 6312000000000000.0,
+        "years_ago": null,
+        "log10_seconds": 15.800167,
+        "label": "200 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": null
+      }
+    },
+    {
+      "id": "ethanol",
+      "name": "Ethanol",
+      "formula": "C2H6O",
+      "kind": "Organic molecule",
+      "reference": {
+        "mass_da": 46.069,
+        "mass_kg": 7.64994e-26,
+        "log10_mass_kg": -25.116342,
+        "width_m": 4.5e-10,
+        "log10_width_m": -9.346787,
+        "width_basis": "kinetic_diameter",
+        "density_kg_m3": null,
+        "width_is_estimate": false,
+        "confidence": "high"
+      },
+      "description": "The alcohol in drinks. It forms on icy dust in star-forming clouds, and there are vast clouds of it near the Milky Way's centre. When the first formed is a guess.",
+      "first_appeared": {
+        "seconds_after_big_bang": 3.156e+16,
+        "years_ago": null,
+        "log10_seconds": 16.499137,
+        "label": "1 billion years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": null
+      }
+    },
+    {
+      "id": "glycine",
+      "name": "Glycine",
+      "formula": "C2H5NO2",
+      "kind": "Organic molecule",
+      "reference": {
+        "mass_da": 75.067,
+        "mass_kg": 1.24652e-25,
+        "log10_mass_kg": -24.904302,
+        "width_m": 5.291e-10,
+        "log10_width_m": -9.276439,
+        "width_basis": "volume_sphere",
+        "density_kg_m3": 1607,
+        "width_is_estimate": false,
+        "confidence": "high"
+      },
+      "description": "The simplest amino acid. It is in meteorites and in comet 67P, so it was here when the Solar System formed, and probably long before.",
+      "first_appeared": {
+        "seconds_after_big_bang": 2.8987765277750957e+17,
+        "years_ago": 4600000000.0,
+        "log10_seconds": 17.462215,
+        "label": "4.6 billion years ago",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": null
+      }
+    },
+    {
+      "id": "glucose",
+      "name": "Glucose",
+      "formula": "C6H12O6",
+      "kind": "Organic molecule",
+      "reference": {
+        "mass_da": 180.156,
+        "mass_kg": 2.99156e-25,
+        "log10_mass_kg": -24.524102,
+        "width_m": 7.186e-10,
+        "log10_width_m": -9.143541,
+        "width_basis": "volume_sphere",
+        "density_kg_m3": 1540,
+        "width_is_estimate": false,
+        "confidence": "high"
+      },
+      "description": "The sugar living things burn for energy, made and used since the earliest cells.",
+      "first_appeared": {
+        "seconds_after_big_bang": 3.1512565277750957e+17,
+        "years_ago": 3800000000.0,
+        "log10_seconds": 17.498484,
+        "label": "3.8 billion years ago",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": null
+      }
+    },
+    {
+      "id": "caffeine",
+      "name": "Caffeine",
+      "formula": "C8H10N4O2",
+      "kind": "Organic molecule",
+      "reference": {
+        "mass_da": 194.194,
+        "mass_kg": 3.22467e-25,
+        "log10_mass_kg": -24.491515,
+        "width_m": 7.941e-10,
+        "log10_width_m": -9.10014,
+        "width_basis": "volume_sphere",
+        "density_kg_m3": 1230,
+        "width_is_estimate": false,
+        "confidence": "high"
+      },
+      "description": "Coffee, tea and cacao plants each evolved to make it on their own. When the first did is uncertain.",
+      "first_appeared": {
+        "seconds_after_big_bang": 4.3442245277750957e+17,
+        "years_ago": 20000000.0,
+        "log10_seconds": 17.637912,
+        "label": "20 million years ago",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": null
+      }
+    },
+    {
+      "id": "aspirin",
+      "name": "Aspirin",
+      "formula": "C9H8O4",
+      "kind": "Organic molecule",
+      "reference": {
+        "mass_da": 180.159,
+        "mass_kg": 2.99161e-25,
+        "log10_mass_kg": -24.524095,
+        "width_m": 7.418e-10,
+        "log10_width_m": -9.129741,
+        "width_basis": "volume_sphere",
+        "density_kg_m3": 1400,
+        "width_is_estimate": false,
+        "confidence": "high"
+      },
+      "description": "First made in 1853 by the chemist Charles Gerhardt; Bayer began selling it as Aspirin in 1899.",
+      "first_appeared": {
+        "seconds_after_big_bang": 4.350536473176296e+17,
+        "years_ago": 173.0,
+        "log10_seconds": 17.638543,
+        "label": "173 years ago",
+        "basis": "this_object",
+        "confidence": "high",
+        "note": null
+      }
+    },
+    {
+      "id": "cholesterol",
+      "name": "Cholesterol",
+      "formula": "C27H46O",
+      "kind": "Organic molecule",
+      "reference": {
+        "mass_da": 386.664,
+        "mass_kg": 6.42071e-25,
+        "log10_mass_kg": -24.192417,
+        "width_m": 1.052e-09,
+        "log10_width_m": -8.977811,
+        "width_basis": "volume_sphere",
+        "density_kg_m3": 1052,
+        "width_is_estimate": false,
+        "confidence": "high"
+      },
+      "description": "Stiffens the membranes of animal cells. Making it takes oxygen, so it arrived with complex cells after oxygen built up in the air, about 2 billion years ago.",
+      "first_appeared": {
+        "seconds_after_big_bang": 3.7193365277750957e+17,
+        "years_ago": 2000000000.0,
+        "log10_seconds": 17.570465,
+        "label": "2 billion years ago",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": null
+      }
+    },
+    {
+      "id": "atp",
+      "name": "ATP",
+      "formula": "C10H16N5O13P3",
+      "kind": "Organic molecule",
+      "reference": {
+        "mass_da": 507.181,
+        "mass_kg": 8.42194e-25,
+        "log10_mass_kg": -24.074588,
+        "width_m": 1.024e-09,
+        "log10_width_m": -8.989893,
+        "width_basis": "volume_sphere",
+        "density_kg_m3": 1500,
+        "width_is_estimate": true,
+        "confidence": "low"
+      },
+      "description": "The energy currency of every living cell, so as old as life. Its density is estimated.",
+      "first_appeared": {
+        "seconds_after_big_bang": 3.1512565277750957e+17,
+        "years_ago": 3800000000.0,
+        "log10_seconds": 17.498484,
+        "label": "3.8 billion years ago",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": null
+      }
+    },
+    {
+      "id": "buckminsterfullerene",
+      "name": "Buckminsterfullerene (C60)",
+      "formula": "C60",
+      "kind": "Organic molecule",
+      "reference": {
+        "mass_da": 720.66,
+        "mass_kg": 1.19668e-24,
+        "log10_mass_kg": -23.92202,
+        "width_m": 1e-09,
+        "log10_width_m": -9.0,
+        "width_basis": "structure",
+        "density_kg_m3": null,
+        "width_is_estimate": false,
+        "confidence": "high"
+      },
+      "description": "A football-shaped cage of 60 carbon atoms. First made in a laboratory in 1985; found in space in 2010, around dying stars that shed carbon.",
+      "first_appeared": {
+        "seconds_after_big_bang": 1.2624e+16,
+        "years_ago": null,
+        "log10_seconds": 16.101197,
+        "label": "400 million years after the Big Bang",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": null
+      }
+    },
+    {
+      "id": "insulin",
+      "name": "Insulin",
+      "formula": null,
+      "kind": "Protein",
+      "reference": {
+        "mass_da": 5808.0,
+        "mass_kg": 9.64441e-24,
+        "log10_mass_kg": -23.015724,
+        "width_m": 2.39e-09,
+        "log10_width_m": -8.621686,
+        "width_basis": "volume_sphere",
+        "density_kg_m3": 1350,
+        "width_is_estimate": false,
+        "confidence": "high"
+      },
+      "description": "The hormone that tells cells to take up sugar. Insulin-like hormones are found across the animal kingdom, so they are at least as old as animals.",
+      "first_appeared": {
+        "seconds_after_big_bang": 4.1611765277750957e+17,
+        "years_ago": 600000000.0,
+        "log10_seconds": 17.619216,
+        "label": "600 million years ago",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": null
+      }
+    },
+    {
+      "id": "haemoglobin",
+      "name": "Haemoglobin",
+      "formula": null,
+      "kind": "Protein",
+      "reference": {
+        "mass_da": 64500.0,
+        "mass_kg": 1.07105e-22,
+        "log10_mass_kg": -21.970191,
+        "width_m": 6.4e-09,
+        "log10_width_m": -8.19382,
+        "width_basis": "structure",
+        "density_kg_m3": null,
+        "width_is_estimate": false,
+        "confidence": "high"
+      },
+      "description": "Carries oxygen in red blood cells. Our four-part version evolved in early vertebrates, about 500 million years ago.",
+      "first_appeared": {
+        "seconds_after_big_bang": 4.1927365277750957e+17,
+        "years_ago": 500000000.0,
+        "log10_seconds": 17.622498,
+        "label": "500 million years ago",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": null
+      }
+    },
+    {
+      "id": "antibody",
+      "name": "Antibody (IgG)",
+      "formula": null,
+      "kind": "Protein",
+      "reference": {
+        "mass_da": 150000.0,
+        "mass_kg": 2.49081e-22,
+        "log10_mass_kg": -21.60366,
+        "width_m": 1.45e-08,
+        "log10_width_m": -7.838632,
+        "width_basis": "structure",
+        "density_kg_m3": null,
+        "width_is_estimate": false,
+        "confidence": "high"
+      },
+      "description": "The Y-shaped protein that tags invaders. Antibodies appeared with the first jawed fish, about 450 million years ago.",
+      "first_appeared": {
+        "seconds_after_big_bang": 4.2085165277750957e+17,
+        "years_ago": 450000000.0,
+        "log10_seconds": 17.624129,
+        "label": "450 million years ago",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": null
+      }
+    },
+    {
+      "id": "rubisco",
+      "name": "Rubisco",
+      "formula": null,
+      "kind": "Protein",
+      "reference": {
+        "mass_da": 550000.0,
+        "mass_kg": 9.13296e-22,
+        "log10_mass_kg": -21.039388,
+        "width_m": 1.1e-08,
+        "log10_width_m": -7.958607,
+        "width_basis": "structure",
+        "density_kg_m3": null,
+        "width_is_estimate": false,
+        "confidence": "high"
+      },
+      "description": "The enzyme that pulls carbon dioxide out of the air in photosynthesis, probably the most abundant protein on Earth. It evolved with the first photosynthetic microbes.",
+      "first_appeared": {
+        "seconds_after_big_bang": 3.2774965277750957e+17,
+        "years_ago": 3400000000.0,
+        "log10_seconds": 17.515542,
+        "label": "3.4 billion years ago",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": null
+      }
+    },
+    {
+      "id": "collagen",
+      "name": "Collagen",
+      "formula": null,
+      "kind": "Protein",
+      "reference": {
+        "mass_da": 300000.0,
+        "mass_kg": 4.98162e-22,
+        "log10_mass_kg": -21.30263,
+        "width_m": 3e-07,
+        "log10_width_m": -6.522879,
+        "width_basis": "structure",
+        "density_kg_m3": null,
+        "width_is_estimate": false,
+        "confidence": "high"
+      },
+      "description": "The most abundant protein in animals: a rope 300 nanometres long and only 1.5 wide, which is why it sits so far from the other proteins.",
+      "first_appeared": {
+        "seconds_after_big_bang": 4.1611765277750957e+17,
+        "years_ago": 600000000.0,
+        "log10_seconds": 17.619216,
+        "label": "600 million years ago",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": null
+      }
+    },
+    {
+      "id": "titin",
+      "name": "Titin",
+      "formula": null,
+      "kind": "Protein",
+      "reference": {
+        "mass_da": 3800000.0,
+        "mass_kg": 6.31005e-21,
+        "log10_mass_kg": -20.199967,
+        "width_m": 1e-06,
+        "log10_width_m": -6.0,
+        "width_basis": "structure",
+        "density_kg_m3": null,
+        "width_is_estimate": false,
+        "confidence": "high"
+      },
+      "description": "The largest known protein, a molecular spring about a micrometre long that runs through muscle fibres.",
+      "first_appeared": {
+        "seconds_after_big_bang": 4.1801125277750957e+17,
+        "years_ago": 540000000.0,
+        "log10_seconds": 17.621188,
+        "label": "540 million years ago",
+        "basis": "first_of_its_kind",
+        "confidence": "low",
+        "note": null
+      }
+    },
+    {
+      "id": "ribosome",
+      "name": "Ribosome",
+      "formula": null,
+      "kind": "Molecular machine",
+      "reference": {
+        "mass_da": 2500000.0,
+        "mass_kg": 4.15135e-21,
+        "log10_mass_kg": -20.381811,
+        "width_m": 2.1e-08,
+        "log10_width_m": -7.677781,
+        "width_basis": "structure",
+        "density_kg_m3": null,
+        "width_is_estimate": false,
+        "confidence": "high"
+      },
+      "description": "The machine every cell builds its proteins on (this is a bacterial one). Ribosomes were already in the last common ancestor of all life.",
+      "first_appeared": {
+        "seconds_after_big_bang": 3.1512565277750957e+17,
+        "years_ago": 3800000000.0,
+        "log10_seconds": 17.498484,
+        "label": "3.8 billion years ago",
+        "basis": "first_of_its_kind",
+        "confidence": "medium",
+        "note": null
+      }
+    },
+    {
+      "id": "human_cell_dna",
+      "name": "DNA in one human cell",
+      "formula": null,
+      "kind": "Nucleic acid",
+      "reference": {
+        "mass_da": 3813000000000.0,
+        "mass_kg": 6.33164e-15,
+        "log10_mass_kg": -14.198484,
+        "width_m": 2.108,
+        "log10_width_m": 0.323871,
+        "width_basis": "contour_length",
+        "density_kg_m3": null,
+        "width_is_estimate": false,
+        "confidence": "high"
+      },
+      "description": "Both copies of the human genome, 6.2 billion base pairs, stretched end to end: about 2 metres of strand weighing 6 picograms, packed into a nucleus a few micrometres across.",
+      "first_appeared": {
+        "seconds_after_big_bang": 4.3504418477750957e+17,
+        "years_ago": 300000.0,
+        "log10_seconds": 17.638533,
+        "label": "300 thousand years ago",
+        "basis": "first_of_its_kind",
+        "confidence": "medium",
+        "note": null
+      }
+    }
+  ]
+}

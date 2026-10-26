@@ -7,7 +7,8 @@
   - the observable universe's width is exactly the particle horizon, which is wider than the Hubble sphere
   - Lineweaver & Patel points placed by physics sit on the line their basis names, and each same_as link
     names an entry that exists
-  - every element's atom lies inside the triangle, and the main-chart atoms that stand in for elements agree with them
+  - every element's atom and every molecule lies inside the triangle, and the main-chart atoms that stand in for
+    elements agree with them
   - first-appearance times lie within cosmic history; the history table starts where all three walls meet
     and ends at today's walls
 
@@ -112,8 +113,13 @@ def main():
                 ref = o["reference"]
                 check(abs(ref["log10_mass_kg"] - m) < 1e-3 and abs(ref["log10_width_m"] - w) < 1e-3,
                       f"element {e['symbol']}: disagrees with {same['id']}")
+    for mol in load("molecules.json")["molecules"]:
+        r = mol["reference"]
+        m, w = r["log10_mass_kg"], r["log10_width_m"]
+        check(m - w <= S + TOL and m + w >= Q - TOL, f"molecule {mol['id']}: outside the triangle")
+        check(w <= HUB, f"molecule {mol['id']}: wider than the Hubble sphere")
     for o in load("stellar_evolution.json")["objects"] + load("fundamental_particles.json")["particles"] + \
-            load("elements.json")["elements"]:
+            load("elements.json")["elements"] + load("molecules.json")["molecules"]:
         fa = o.get("first_appeared")
         if fa:
             check(0 < fa["seconds_after_big_bang"] <= age * (1 + 1e-9), f"{o['id']}: first_appeared outside cosmic history")

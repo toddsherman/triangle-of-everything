@@ -34,7 +34,7 @@ export function renderIntro(el, data) {
       <p>Click any dot, or take the <strong>scale tour</strong> from smallest to largest. The <strong>Open Stars</strong> and
          <strong>Open Particles</strong> boxes zoom into stellar evolution and the particle zoo, and <strong>Timeline &#8250;</strong>
          lays cosmic history out end to end.</p>
-      <p class="note">${n("object")} objects · ${data.elements.elements.length} elements · ${n("stellar")} stellar-evolution entries · ${n("particle")} particles ·
+      <p class="note">${n("object")} objects · ${data.elements.elements.length} elements · ${n("molecule")} molecules · ${n("stellar")} stellar-evolution entries · ${n("particle")} particles ·
          ${n("time") + n("era")} timeline entries · ${n("lp")} extra Lineweaver &amp; Patel points · ${n("erratum")} poster errors</p>
     </div>`;
 }
@@ -127,6 +127,16 @@ function factsFor(it, data) {
       ${ref.notes ? `<p class="note">${esc(ref.notes)}</p>` : ""}
       ${origins(r, data)}`;
     }
+    case "molecule": {
+      const ref = r.reference;
+      const da = ref.mass_da < 1e7 ? ref.mass_da.toLocaleString("en", { maximumSignificantDigits: 4 }) : sci(Math.log10(ref.mass_da));
+      return `<table class="facts"><tbody>
+        ${r.formula ? row("Formula", formula(r.formula)) : ""}
+        ${row("Mass", `${da} u<span class="sub">${sci(ref.log10_mass_kg)} kg</span>`)}
+        ${row("Width", `${esc(friendlyLength(ref.log10_width_m))}<span class="sub">${esc(data.molecules.width_bases[ref.width_basis])}</span>`)}
+        ${row("Kind", esc(r.kind))}
+      </tbody></table>`;
+    }
     case "lp": {
       return `<table class="facts"><tbody>
         ${row("Mass", massCell(r.plotted.log10_mass_kg))}
@@ -180,6 +190,9 @@ function lpBasis(o) {
     : `Placed by physics rather than read off their image: ${esc(o.plotted.basis.replaceAll("_", " "))}. `
       + "Lineweaver &amp; Patel plot radius; here everything uses full width, so points on a wall stay exactly on it.";
 }
+
+/** C6H12O6 -> C₆H₁₂O₆, HeH+ -> HeH⁺ */
+const formula = (f) => esc(f).replace(/\d/g, (d) => "₀₁₂₃₄₅₆₇₈₉"[d]).replace(/\+/g, "⁺");
 
 const discovered = (e) => (e.discovered === "ancient" ? "Known since ancient times" : String(e.discovered));
 

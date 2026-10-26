@@ -45,7 +45,8 @@ const SAME_AS_PREFIX = {
   objects: "object", stellar_evolution: "stellar", fundamental_particles: "particle", "main_chart.physics.horizons": "boundary",
 };
 const TYPE_LABEL = {
-  object: "Object", stellar: "Stellar evolution", particle: "Particle", element: "Element", lp: "Lineweaver & Patel",
+  object: "Object", stellar: "Stellar evolution", particle: "Particle", element: "Element", molecule: "Molecule",
+  lp: "Lineweaver & Patel",
   time: "Moment", era: "Era", erratum: "Poster error", boundary: "Boundary",
 };
 
@@ -58,10 +59,10 @@ async function getJSON(name) {
 const pos = (w, m) => (w == null || m == null ? null : { w, m });
 
 export async function loadData() {
-  const [objects, main, stellar, particles, timeline, lp, errata, elements] = await Promise.all([
+  const [objects, main, stellar, particles, timeline, lp, errata, elements, molecules] = await Promise.all([
     getJSON("objects.json"), getJSON("main_chart.json"), getJSON("stellar_evolution.json"),
     getJSON("fundamental_particles.json"), getJSON("cosmic_timeline.json"), getJSON("lineweaver_patel.json"),
-    getJSON("errata.json"), getJSON("elements.json"),
+    getJSON("errata.json"), getJSON("elements.json"), getJSON("molecules.json"),
   ]);
   const L = main.physics.lines;
   const LOG_MSUN = Math.log10(main.physics.constants_si.M_sun);
@@ -130,6 +131,16 @@ export async function loadData() {
       key: `element:${e.id}`, type: "element", id: e.id, name: e.name, symbol: e.symbol,
       group: "chemistry", categoryLabel: e.kind, views: ["triangle"],
       real: pos(r.log10_width_m, r.log10_mass_kg), raw: e,
+    });
+  }
+
+  // molecules: a curated set between the atoms and the viruses (searchable by formula, too)
+  for (const mol of molecules.molecules) {
+    const r = mol.reference;
+    add({
+      key: `molecule:${mol.id}`, type: "molecule", id: mol.id, name: mol.name, symbol: mol.formula,
+      group: "chemistry", categoryLabel: mol.kind, views: ["triangle"],
+      real: pos(r.log10_width_m, r.log10_mass_kg), raw: mol,
     });
   }
 
@@ -209,7 +220,7 @@ export async function loadData() {
     .sort((a, b) => a.raw.chart.log10_mass_kg - b.raw.chart.log10_mass_kg)
     .map((i) => i.key);
 
-  return { items, byKey, tour, main, stellar, particles, timeline, lp, errata, elements };
+  return { items, byKey, tour, main, stellar, particles, timeline, lp, errata, elements, molecules };
 }
 
 function titleCase(s) {

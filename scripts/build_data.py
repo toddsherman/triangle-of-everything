@@ -20,6 +20,7 @@ Run:  python3 scripts/build_data.py      (stdlib only; writes ./data)
 import csv
 import json
 import math
+import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -1927,6 +1928,153 @@ def periodic_table():
     }
 
 
+# --------------------------------------------------------------------------------------------------- molecules
+# A curated set filling the gap between atoms and viruses. Not on either chart. Mass comes from the formula
+# (PubChem atomic masses, as for the elements) or, for big molecules, a published mass in daltons. "Width"
+# isn't one number for a molecule, so each says how it was measured:
+#   kinetic_diameter  the measured size a gas molecule presents in collisions (Breck, Zeolite Molecular Sieves)
+#   volume_sphere     the diameter of a sphere holding the molecule's volume in its pure solid, from density
+#   structure         the longest dimension of its measured 3D structure
+#   contour_length    a chain molecule's length stretched end to end
+#   estimate          no measurement; a rough size
+ELECTRON_DA = 5.4858e-4
+PROTEIN_DENSITY = 1350          # kg/m^3, a compact protein
+MOLECULES = [
+    # id, name, formula, kind, mass Da (None: from formula), width (m, or kg/m^3 density for volume_sphere),
+    # width basis, width is an estimate, when, confidence, description
+    ("heh_ion", "Helium hydride ion", "HeH+", "Simple molecule", None, 3e-10, "estimate", True,
+     ("after_yr", 1e5), "medium",
+     "The first molecule in the universe, formed once neutral helium could bond with a proton, about 100,000 years "
+     "after the Big Bang. It was finally found in space in 2019, in the nebula NGC 7027. No size has been measured; "
+     "it is about as wide as a helium atom."),
+    ("hydrogen_molecule", "Hydrogen molecule", "H2", "Simple molecule", None, 2.89e-10, "kinetic_diameter", False,
+     ("after_yr", 4e5), "low",
+     "The most common molecule in the universe. It formed soon after the first hydrogen atoms, and by about 100 "
+     "million years it was cooling the gas clouds that made the first stars."),
+    ("water", "Water", "H2O", "Simple molecule", None, 2.65e-10, "kinetic_diameter", False,
+     ("after_yr", 2e8), "low",
+     "Water needs oxygen, so it first formed in the debris of the first supernovae, a couple of hundred million "
+     "years after the Big Bang."),
+    ("ammonia", "Ammonia", "NH3", "Simple molecule", None, 2.6e-10, "kinetic_diameter", False,
+     ("after_yr", 2e8), "low",
+     "One of the first molecules found in interstellar space (1968). Its nitrogen came from the first stars."),
+    ("methane", "Methane", "CH4", "Simple molecule", None, 3.8e-10, "kinetic_diameter", False,
+     ("after_yr", 2e8), "low",
+     "The simplest hydrocarbon, common in cold interstellar ice and the atmospheres of the giant planets."),
+    ("nitrogen_molecule", "Nitrogen molecule", "N2", "Simple molecule", None, 3.64e-10, "kinetic_diameter", False,
+     ("after_yr", 2e8), "low",
+     "Four-fifths of the air we breathe. Its atoms were forged in stars."),
+    ("carbon_monoxide", "Carbon monoxide", "CO", "Simple molecule", None, 3.76e-10, "kinetic_diameter", False,
+     ("after_yr", 2e8), "low",
+     "After hydrogen, the most common molecule in space; astronomers use its glow to map cold gas in galaxies."),
+    ("carbon_dioxide", "Carbon dioxide", "CO2", "Simple molecule", None, 3.3e-10, "kinetic_diameter", False,
+     ("after_yr", 2e8), "low",
+     "Forms wherever carbon meets oxygen, mostly on icy dust in space. The first carbon and oxygen came from the "
+     "first supernovae."),
+    ("ethanol", "Ethanol", "C2H6O", "Organic molecule", None, 4.5e-10, "kinetic_diameter", False,
+     ("after_yr", 1e9), "low",
+     "The alcohol in drinks. It forms on icy dust in star-forming clouds, and there are vast clouds of it near the "
+     "Milky Way's centre. When the first formed is a guess."),
+    ("glycine", "Glycine", "C2H5NO2", "Organic molecule", None, 1607, "volume_sphere", False,
+     ("ago_yr", 4.6e9), "low",
+     "The simplest amino acid. It is in meteorites and in comet 67P, so it was here when the Solar System formed, "
+     "and probably long before."),
+    ("glucose", "Glucose", "C6H12O6", "Organic molecule", None, 1540, "volume_sphere", False,
+     ("ago_yr", 3.8e9), "low",
+     "The sugar living things burn for energy, made and used since the earliest cells."),
+    ("caffeine", "Caffeine", "C8H10N4O2", "Organic molecule", None, 1230, "volume_sphere", False,
+     ("ago_yr", 2e7), "low",
+     "Coffee, tea and cacao plants each evolved to make it on their own. When the first did is uncertain."),
+    ("aspirin", "Aspirin", "C9H8O4", "Organic molecule", None, 1400, "volume_sphere", False,
+     ("ago_yr", DATA_YEAR - 1853), "high",
+     "First made in 1853 by the chemist Charles Gerhardt; Bayer began selling it as Aspirin in 1899."),
+    ("cholesterol", "Cholesterol", "C27H46O", "Organic molecule", None, 1052, "volume_sphere", False,
+     ("ago_yr", 2e9), "low",
+     "Stiffens the membranes of animal cells. Making it takes oxygen, so it arrived with complex cells after "
+     "oxygen built up in the air, about 2 billion years ago."),
+    ("atp", "ATP", "C10H16N5O13P3", "Organic molecule", None, 1500, "volume_sphere", True,
+     ("ago_yr", 3.8e9), "low",
+     "The energy currency of every living cell, so as old as life. Its density is estimated."),
+    ("buckminsterfullerene", "Buckminsterfullerene (C60)", "C60", "Organic molecule", None, 1.0e-9, "structure", False,
+     ("after_yr", 4e8), "low",
+     "A football-shaped cage of 60 carbon atoms. First made in a laboratory in 1985; found in space in 2010, "
+     "around dying stars that shed carbon."),
+    ("insulin", "Insulin", None, "Protein", 5808, PROTEIN_DENSITY, "volume_sphere", False,
+     ("ago_yr", 6e8), "low",
+     "The hormone that tells cells to take up sugar. Insulin-like hormones are found across the animal kingdom, "
+     "so they are at least as old as animals."),
+    ("haemoglobin", "Haemoglobin", None, "Protein", 64500, 6.4e-9, "structure", False,
+     ("ago_yr", 5e8), "low",
+     "Carries oxygen in red blood cells. Our four-part version evolved in early vertebrates, about 500 million "
+     "years ago."),
+    ("antibody", "Antibody (IgG)", None, "Protein", 150000, 1.45e-8, "structure", False,
+     ("ago_yr", 4.5e8), "low",
+     "The Y-shaped protein that tags invaders. Antibodies appeared with the first jawed fish, about 450 million "
+     "years ago."),
+    ("rubisco", "Rubisco", None, "Protein", 550000, 1.1e-8, "structure", False,
+     ("ago_yr", 3.4e9), "low",
+     "The enzyme that pulls carbon dioxide out of the air in photosynthesis, probably the most abundant protein "
+     "on Earth. It evolved with the first photosynthetic microbes."),
+    ("collagen", "Collagen", None, "Protein", 300000, 3.0e-7, "structure", False,
+     ("ago_yr", 6e8), "low",
+     "The most abundant protein in animals: a rope 300 nanometres long and only 1.5 wide, which is why it sits "
+     "so far from the other proteins."),
+    ("titin", "Titin", None, "Protein", 3.8e6, 1.0e-6, "structure", False,
+     ("ago_yr", 5.4e8), "low",
+     "The largest known protein, a molecular spring about a micrometre long that runs through muscle fibres."),
+    ("ribosome", "Ribosome", None, "Molecular machine", 2.5e6, 2.1e-8, "structure", False,
+     ("ago_yr", 3.8e9), "medium",
+     "The machine every cell builds its proteins on (this is a bacterial one). Ribosomes were already in the last "
+     "common ancestor of all life."),
+    ("human_cell_dna", "DNA in one human cell", None, "Nucleic acid", 6.2e9 * 615, 6.2e9 * 0.34e-9, "contour_length", False,
+     ("ago_yr", 3e5), "medium",
+     "Both copies of the human genome, 6.2 billion base pairs, stretched end to end: about 2 metres of strand "
+     "weighing 6 picograms, packed into a nucleus a few micrometres across."),
+]
+
+
+def formula_mass_da(formula):
+    """Molecular mass from a formula like C6H12O6 or HeH+ (each + removes an electron)."""
+    masses = {r.split("|")[1]: float(r.split("|")[3]) for r in PUBCHEM_ELEMENTS.strip().splitlines()}
+    da = sum(masses[el] * int(n or 1) for el, n in re.findall(r"([A-Z][a-z]?)(\d*)", formula))
+    return da - formula.count("+") * ELECTRON_DA
+
+
+def molecules():
+    out = []
+    for mid, name, formula, kind, mass_da, size, basis, estimate, when, conf, desc in MOLECULES:
+        mass_da = mass_da or formula_mass_da(formula)
+        mass_kg = mass_da * AMU_KG
+        density = None
+        if basis == "volume_sphere":
+            density, size = size, (6 * mass_kg / (math.pi * size)) ** (1 / 3)
+        out.append({
+            "id": mid, "name": name, "formula": formula, "kind": kind,
+            "reference": {
+                "mass_da": float(f"{mass_da:.6g}"), "mass_kg": float(f"{mass_kg:.6g}"), "log10_mass_kg": lg(mass_kg),
+                "width_m": float(f"{size:.4g}"), "log10_width_m": lg(size), "width_basis": basis,
+                "density_kg_m3": density, "width_is_estimate": estimate,
+                "confidence": "low" if estimate else "high",
+            },
+            "description": desc,
+            "first_appeared": appearance((when, "this_object" if mid == "aspirin" else "first_of_its_kind", conf, None)),
+        })
+    return {
+        "source": "Curated for this project, not read from either chart. Atomic masses from PubChem; kinetic "
+                  "diameters from D. W. Breck, Zeolite Molecular Sieves (1974); structure sizes from published "
+                  "structures (rounded); densities from standard tables.",
+        "width_bases": {
+            "kinetic_diameter": "The measured size a gas molecule presents in collisions.",
+            "volume_sphere": "The diameter of a sphere with the molecule's volume in its pure solid, from its density "
+                             "(1.35 g/cm3 for proteins).",
+            "structure": "The longest dimension of its measured 3D structure, rounded.",
+            "contour_length": "The length of a chain molecule stretched end to end.",
+            "estimate": "No measurement; a rough size.",
+        },
+        "molecules": out,
+    }
+
+
 # Where an LP point must sit by physics, rather than where it was read off the image.
 LP_PARTICLE_EV = {"top_quark": 172.57e9, "higgs_boson": 125.2e9, "w_boson": 80.369e9, "neutron": 939.565e6,
                   "proton": 938.272e6, "electron": 0.51099895e6}
@@ -2196,6 +2344,7 @@ def main():
     particles = particles_inset()
     lp = lineweaver_patel()
     elements = periodic_table()
+    mols = molecules()
 
     main_chart = {
         "source": {**MAIN_IMG, "title": "The Triangle of Everything",
@@ -2235,6 +2384,7 @@ def main():
     write_json("cosmic_timeline.json", timeline())
     write_json("lineweaver_patel.json", lp)
     write_json("elements.json", elements)
+    write_json("molecules.json", mols)
     write_json("errata.json", {"errata": [{**e, "anchor": point(ERRATA_ANCHORS[e["id"]], MAIN_IMG)}
                                           for e in ERRATA]})
 
@@ -2277,6 +2427,13 @@ def main():
                 o["chart"]["log10_width_m"], o["chart"]["log10_mass_kg"], o["main_chart_object_id"],
                 f'{o["same_as"]["dataset"]}:{o["same_as"]["id"]}' if o["same_as"] else None]
                for o in lp["objects"]])
+    write_csv("molecules.csv",
+              ["id", "name", "formula", "kind", "mass_da", "mass_kg", "width_m", "width_basis", "width_is_estimate",
+               "first_appeared"],
+              [[m["id"], m["name"], m["formula"], m["kind"], m["reference"]["mass_da"], m["reference"]["mass_kg"],
+                m["reference"]["width_m"], m["reference"]["width_basis"], m["reference"]["width_is_estimate"],
+                m["first_appeared"]["label"]]
+               for m in mols["molecules"]])
     write_csv("elements.csv",
               ["atomic_number", "symbol", "name", "kind", "standard_state", "radioactive", "discovered",
                "period", "group", "atomic_mass_u", "mass_kg", "van_der_waals_radius_pm", "width_m", "width_is_estimate",
